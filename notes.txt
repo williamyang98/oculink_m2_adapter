@@ -1,0 +1,29 @@
+- impedance control of shielding film for ffc connector is extremely difficult
+	- complex stackup for shielding film (multiple layers)
+	- need to get various parameters for insulating layers and conductive aluminium (alloy?) layer
+- mcio connector and cables are rated for pcie 5
+- occulink connector and cables are not very reliable at pcie 4
+	- so expect a downgrade to pcie 3 for anything that is suboptimal
+
+- stitching ground planes for shielding differential pairs
+	- use copper filled vias
+	- use staggered stacked vias (dont have a single via connect 4 ground layers)
+	- lower stray capacitance
+	- =╦=====╦===
+	  =╩==╦==╩==╦
+	  =╦==╩==╦==╩
+	  =╩=====╩===
+	- non-staggered through vias have worse characteristics
+	- =╦=====╦===
+	  =╬=====╬===
+	  =╬=====╬===
+	  =╩=====╩===
+- via fence for coplanar waveguide
+	- need to figure out a calculator that can handle this???
+- 85 ohm differential, 42.5 ohm single ended
+- design against 4GHz or 8GHz
+
+- broadside coupled differential pairs will be susceptible to manufacturing tolerances
+- differential coplanar waveguide for top pairs
+- differential coplanar stripline
+- use via fence to connect planes

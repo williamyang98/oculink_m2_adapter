@@ -1,0 +1,58 @@
+Prepreg type	Dielectric constant
+7628			4.6
+3313			4.05
+2116			4.25
+
+
+Solder mask thickness over the laminate		Solder mask thickness over traces		Solder mask dielectric constant
+0.8mil										0.5mil									3.8
+
+# Using 3313 stackup
+Impedance (Ω)	Type							Signal Layer	Top Ref		Bottom Ref	Trace Spacing（mil）	Impedance trace to copper（mil）
+85				Coplanar Differential Pair		L1				/			L2			8					8
+85				Coplanar Differential Pair		L3				L2			L4			8					8
+42.5			Coplanar Single Ended			L1				/			L2			/					8
+42.5			Coplanar Single Ended			L3				L2			L4			/					8
+
+
+pcb: jlc 04081H-3313
+Impedance (Ω)	Type							Signal Layer	Top Ref		Bottom Ref	Trace Width		Trace Spacing	Impedance trace to copper
+85				Coplanar Differential Pair		L1				/			L2			6.9200			8.0000			8.0000
+85				Coplanar Differential Pair		L3				L2			L4			5.8900			8.0000			8.0000
+42.5			Coplanar Single Ended			L1				/			L2			8.1300			/				8.0000
+42.5			Coplanar Single Ended			L3				L2			L4			6.8600			/				8.0000
+
+
+Layer			Material						Thickness (mil)		Thickness (mm)
+L1				Outer Copper Weight (1oz)		1.38				0.0350
+Prepreg			3313 RC57% 4.2mil				3.91				0.0994
+L2				Inner Copper Weight				0.60				0.0152
+Core			0.5mm H/HOZ without copper		19.68				0.5000
+L3				Inner Copper Weight				0.60				0.0152
+Prepreg			3313 RC57% 4.2mil				3.91				0.0994
+L4				Outer Copper Weight1oz			1.38				0.0350
+
+# Using 7628 stackup
+Impedance (Ω)	Type							Signal Layer	Top Ref		Bottom Ref	Trace Spacing（mil）	Impedance trace to copper（mil）
+85				Coplanar Differential Pair		L1				/			L2			8					8
+85				Coplanar Differential Pair		L3				L2			L4			8					8
+42.5			Coplanar Single Ended			L1				/			L2			/					8
+42.5			Coplanar Single Ended			L3				L2			L4			/					8
+
+
+pcb: jlc 04081H-3313
+Impedance (Ω)	Type							Signal Layer	Top Ref		Bottom Ref	Trace Width		Trace Spacing	Impedance trace to copper
+85				Coplanar Differential Pair		L1				/			L2			12.0500			8.0000			8.0000
+85				Coplanar Differential Pair		L3				L2			L4			8.3300			8.0000			8.0000
+42.5			Coplanar Single Ended			L1				/			L2			16.1500			/				8.0000
+42.5			Coplanar Single Ended			L3				L2			L4			9.9900			/				8.0000
+
+
+Layer			Material						Thickness (mil)		Thickness (mm)
+L1				Outer Copper Weight (1oz)		1.38				0.0350
+Prepreg			7628, RC 49%, 8.6 mil			8.28				0.2104
+L2				Inner Copper Weight				0.60				0.0152
+Core			0.25mm H/HOZ without copper		9.84				0.2500
+L3				Inner Copper Weight				0.60				0.0152
+Prepreg			3313 RC57% 4.2mil				3.91				0.0994
+L4				Outer Copper Weight (1oz)		1.38				0.0350

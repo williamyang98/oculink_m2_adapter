@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "custom_edge_connector")(type "KiCad")(uri "${KIPRJMOD}/custom_edge_connector.pretty")(options "")(descr ""))
+  (lib (name "amphenol_oculink")(type "KiCad")(uri "${KIPRJMOD}/amphenol_oculink.pretty")(options "")(descr ""))
+)
