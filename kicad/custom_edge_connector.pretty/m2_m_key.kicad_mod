@@ -4,7 +4,7 @@
 	(generator_version "8.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at -6.25 10.55 0)
+		(at -7.5 13.5 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "671c6c56-ca2d-4e32-aeca-5eb83bb8ec1a")
@@ -17,7 +17,7 @@
 		)
 	)
 	(property "Value" "m2_m_key_2240"
-		(at 0 6.6 0)
+		(at 0 10 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "7ebd6f7d-f842-465b-9a49-5391403a70af")
@@ -164,6 +164,28 @@
 		)
 		(layer "Dwgs.User")
 		(uuid "f3e51780-0fb1-48e3-a5d8-1af75a93ee0f")
+	)
+	(fp_circle
+		(center 0 -23.5)
+		(end 2 -23.5)
+		(stroke
+			(width 0.05)
+			(type dot)
+		)
+		(fill none)
+		(layer "Dwgs.User")
+		(uuid "ebc76926-71d3-4d82-b8a9-fe8473fa7691")
+	)
+	(fp_circle
+		(center 0 -23.5)
+		(end 3 -23.5)
+		(stroke
+			(width 0.05)
+			(type dot)
+		)
+		(fill none)
+		(layer "Dwgs.User")
+		(uuid "51a19adc-7cb9-4dac-9e29-d7e149e03f19")
 	)
 	(fp_line
 		(start -10.808579 14.5)
@@ -355,6 +377,17 @@
 		(layer "Edge.Cuts")
 		(uuid "041db346-7b4e-4bf2-9eb5-b7b81ffbb5da")
 	)
+	(fp_text user "4mm diameter mount hole"
+		(at 0 -19.5 0)
+		(layer "Cmts.User")
+		(uuid "62f4dc13-eb49-41a2-b2d7-576fb219b7dc")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
 	(fp_text user "PCB Thickness 0.8 mm"
 		(at 0 19.3 0)
 		(layer "Cmts.User")
@@ -389,7 +422,7 @@
 		)
 	)
 	(fp_text user "${REFERENCE}"
-		(at 4.35 10.3 0)
+		(at 2 13.5 0)
 		(layer "F.Fab")
 		(uuid "b089bf7a-99c0-4495-9d20-fde530ad7b4b")
 		(effects
@@ -398,15 +431,6 @@
 				(thickness 0.15)
 			)
 		)
-	)
-	(pad "1" thru_hole circle
-		(at 0 -23.5)
-		(size 6 6)
-		(drill 4)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(solder_mask_margin 0.1016)
-		(uuid "27448ff3-f443-4cd5-b101-affa6b6d12b8")
 	)
 	(pad "1" smd oval
 		(at 9.3 17.1)
