@@ -549,10 +549,10 @@
 					)
 				)
 			)
-			(pin no_connect line
+			(pin passive line
 				(at -15.24 -7.62 0)
 				(length 2.54)
-				(name "NC"
+				(name "USB_D-"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -566,6 +566,7 @@
 						)
 					)
 				)
+				(alternate "NC" no_connect line)
 			)
 			(pin output line
 				(at 13.97 -6.35 180)
@@ -585,10 +586,10 @@
 					)
 				)
 			)
-			(pin no_connect line
+			(pin passive line
 				(at -15.24 -5.08 0)
 				(length 2.54)
-				(name "NC"
+				(name "USB_D+"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -602,6 +603,7 @@
 						)
 					)
 				)
+				(alternate "NC" no_connect line)
 			)
 			(pin output line
 				(at 13.97 -3.81 180)
@@ -621,7 +623,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin passive line
 				(at -15.24 -2.54 0)
 				(length 2.54)
 				(name "DEVSLP"
@@ -638,6 +640,7 @@
 						)
 					)
 				)
+				(alternate "GND" power_in line)
 			)
 			(pin power_in line
 				(at 13.97 -1.27 180)
@@ -675,10 +678,10 @@
 					)
 				)
 			)
-			(pin no_connect line
+			(pin passive line
 				(at -15.24 0 0)
 				(length 2.54)
-				(name "NC"
+				(name "SMB_CLOCK"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -711,10 +714,10 @@
 					)
 				)
 			)
-			(pin no_connect line
+			(pin passive line
 				(at -15.24 2.54 0)
 				(length 2.54)
-				(name "NC"
+				(name "SMB_DATA"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -981,10 +984,10 @@
 					)
 				)
 			)
-			(pin no_connect line
+			(pin passive line
 				(at -15.24 20.32 0)
 				(length 2.54)
-				(name "NC"
+				(name "MFG_DATA"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1017,10 +1020,10 @@
 					)
 				)
 			)
-			(pin no_connect line
+			(pin passive line
 				(at -15.24 22.86 0)
 				(length 2.54)
-				(name "NC"
+				(name "MFG_CLOCK"
 					(effects
 						(font
 							(size 1.27 1.27)
