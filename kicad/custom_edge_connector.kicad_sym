@@ -84,7 +84,7 @@
 			(pin output line
 				(at -15.24 -38.1 0)
 				(length 2.54)
-				(name "LED1"
+				(name "~{LED1}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -750,10 +750,10 @@
 					)
 				)
 			)
-			(pin no_connect line
+			(pin passive line
 				(at -15.24 5.08 0)
 				(length 2.54)
-				(name "NC"
+				(name "~{ALERT}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -767,6 +767,7 @@
 						)
 					)
 				)
+				(alternate "NC" no_connect line)
 			)
 			(pin power_in line
 				(at 13.97 6.35 180)
