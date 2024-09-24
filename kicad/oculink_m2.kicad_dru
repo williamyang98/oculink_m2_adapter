@@ -74,6 +74,11 @@
 	(constraint hole_size (min 0.2mm) (max 6.3mm))
 )
 
+(rule "Via hole size"
+	(condition "A.Type == 'Via'")
+	(constraint hole_size (min 0.15mm) (max 6.3mm))
+)
+
 (rule "Hole (NPTH) diameter"
 	(layer outer)
 	(condition "!A.isPlated()")
@@ -131,3 +136,7 @@
 	(constraint clearance (min 0.127mm))
 )
 
+# No buried or micro vias
+(rule "No buried or micro vias"
+	(constraint disallow micro_via buried_via)
+)

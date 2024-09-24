@@ -27,3 +27,8 @@
 - differential coplanar waveguide for top pairs
 - differential coplanar stripline
 - use via fence to connect planes
+
+WARNING WARNING WARNING
+RX AND TX PAIRS MIGHT BE MIXED UP
+PEWAKE AND PERST as differential pair????
+CLKREQ REMAINS UNCONNECTED????
