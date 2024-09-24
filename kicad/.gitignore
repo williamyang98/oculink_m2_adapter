@@ -1,6 +1,10 @@
 # For PCBs designed using KiCad: https://www.kicad.org/
 # Format documentation: https://kicad.org/help/file-formats/
 
+# ignore output of plot based on JLCPCB instructions
+# https://jlcpcb.com/help/article/how-to-generate-gerber-and-drill-files-in-kicad-7
+plots/
+
 # Temporary files
 *.000
 *.bak
