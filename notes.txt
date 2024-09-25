@@ -29,6 +29,7 @@
 - use via fence to connect planes
 
 WARNING WARNING WARNING
-RX AND TX PAIRS MIGHT BE MIXED UP
-PEWAKE AND PERST as differential pair????
-CLKREQ REMAINS UNCONNECTED????
+- NEED TO CROSS VERIFY PIN ASSIGNMENT WITH ADTLINK BOARD. TOO MUCH CONFLICTING DESIGNS
+- 0.8mm is required, 6 layer board not possible since it is at least 1.2mm
+- thin top and bottom dieletric needed since that allows for thinner traces otherwise we wouldn't be able to fit it on our motherboard
+- 
