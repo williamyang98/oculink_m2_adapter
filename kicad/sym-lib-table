@@ -3,4 +3,5 @@
   (lib (name "custom_edge_connector")(type "KiCad")(uri "${KIPRJMOD}/custom_edge_connector.kicad_sym")(options "")(descr ""))
   (lib (name "G14A421211112HR")(type "KiCad")(uri "${KIPRJMOD}/G14A421211112HR.kicad_sym")(options "")(descr ""))
   (lib (name "G14A42121B12HR")(type "KiCad")(uri "${KIPRJMOD}/G14A42121B12HR.kicad_sym")(options "")(descr ""))
+  (lib (name "G14A42211612HR")(type "KiCad")(uri "${KIPRJMOD}/G14A42211612HR.kicad_sym")(options "")(descr ""))
 )
