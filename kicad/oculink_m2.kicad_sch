@@ -5952,7 +5952,7 @@
 			)
 		)
 	)
-	(global_label "SMB-"
+	(global_label "SMB+"
 		(shape output)
 		(at 207.01 106.68 0)
 		(fields_autoplaced yes)
@@ -6832,7 +6832,7 @@
 			)
 		)
 	)
-	(global_label "SMB+"
+	(global_label "SMB-"
 		(shape output)
 		(at 207.01 104.14 0)
 		(fields_autoplaced yes)
@@ -8032,7 +8032,7 @@
 				)
 			)
 		)
-		(property "Value" "G14A42121B12HR"
+		(property "Value" "G14A421211112HR"
 			(at 186.69 78.74 0)
 			(effects
 				(font
