@@ -1,25 +1,27 @@
-(footprint "test_pad"
+(footprint "secondary_mounting_hole"
 	(version 20240108)
 	(generator "pcbnew")
 	(generator_version "8.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at 0 -0.5 0)
+		(at 0 2 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "30e1a36f-a627-454b-a695-c450c7c9b89e")
+		(uuid "e8921cb8-5f54-4493-bea3-ade00c81f2ec")
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.1)
+				(thickness 0.2)
+				(bold yes)
 			)
 		)
 	)
-	(property "Value" "test_pad"
-		(at 0 1 0)
+	(property "Value" "secondary_mounting_hole"
+		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "b69f79c1-badd-424f-9273-748d8d11cff8")
+		(hide yes)
+		(uuid "d30dad27-33ef-4d65-9a52-ed497da39851")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +34,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "86f86ac0-17ea-472d-977c-851a92e71ebf")
+		(uuid "02226b34-541e-48b1-853a-7485a2720c7c")
 		(effects
 			(font
 				(size 1 1)
@@ -45,7 +47,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "d58f1ab7-d248-4a35-a845-f354750a26c9")
+		(uuid "a8abaf40-1c22-4449-902f-e488602bbfe3")
 		(effects
 			(font
 				(size 1 1)
@@ -58,7 +60,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "83123228-e20a-44f7-b1be-86fc75244c49")
+		(uuid "6334337b-f076-4e15-add4-fa3da20905e1")
 		(effects
 			(font
 				(size 1 1)
@@ -66,25 +68,12 @@
 			)
 		)
 	)
-	(attr smd)
-	(fp_text user "${REFERENCE}"
-		(at 0 2.5 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(uuid "fc3fa2f9-d2c8-4b21-9604-a33ed03a1ce2")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(pad "1" smd oval
-		(at -0.025 5.4)
-		(size 0.35 2.4)
-		(layers "F.Cu")
-		(solder_mask_margin 0.1016)
-		(clearance 0.075)
-		(uuid "b6cbce9b-9591-45f5-b25a-950639fac100")
+	(attr through_hole)
+	(pad "" np_thru_hole circle
+		(at 0 5)
+		(size 2.7 2.7)
+		(drill oval 2.7 4)
+		(layers "F&B.Cu" "*.Mask")
+		(uuid "9a60c658-b7eb-406e-a1c1-e6f1cd979ec9")
 	)
 )

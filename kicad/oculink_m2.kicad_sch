@@ -2400,6 +2400,88 @@
 				)
 			)
 		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 		(symbol "Mechanical:MountingHole_Pad"
 			(pin_numbers hide)
 			(pin_names
@@ -4335,10 +4417,6 @@
 		(uuid "5836e9f8-c036-4be6-b948-0008b9c3f981")
 	)
 	(no_connect
-		(at 250.19 48.26)
-		(uuid "60a1eb31-5e1d-45b1-aade-e09209e43456")
-	)
-	(no_connect
 		(at 68.58 82.55)
 		(uuid "8c985eb4-3fca-4ab5-adc6-500fd2bb9033")
 	)
@@ -4373,10 +4451,6 @@
 	(no_connect
 		(at 68.58 92.71)
 		(uuid "d3e0f5f6-3f00-4733-97d0-2d2dcb3384df")
-	)
-	(no_connect
-		(at 233.68 48.26)
-		(uuid "e27eacea-00d1-4b8b-b3c0-69f7dc7bce7e")
 	)
 	(no_connect
 		(at 68.58 113.03)
@@ -8811,7 +8885,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
+		(lib_id "Mechanical:MountingHole")
 		(at 233.68 45.72 0)
 		(unit 1)
 		(exclude_from_sim yes)
@@ -8821,7 +8895,7 @@
 		(fields_autoplaced yes)
 		(uuid "800f15a4-0350-4b8b-9756-2039c7388d37")
 		(property "Reference" "H2"
-			(at 236.22 43.1799 0)
+			(at 236.22 44.4499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8830,7 +8904,7 @@
 			)
 		)
 		(property "Value" "MOUNT_1"
-			(at 236.22 45.7199 0)
+			(at 236.22 46.9899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8838,7 +8912,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm"
+		(property "Footprint" "custom_edge_connector:secondary_mounting_hole"
 			(at 233.68 45.72 0)
 			(effects
 				(font
@@ -8856,7 +8930,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole with connection"
+		(property "Description" "Mounting Hole without connection"
 			(at 233.68 45.72 0)
 			(effects
 				(font
@@ -8864,9 +8938,6 @@
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "2524c3f2-fe12-4f88-a79c-539df26e7636")
 		)
 		(instances
 			(project ""
@@ -9078,7 +9149,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
+		(lib_id "Mechanical:MountingHole")
 		(at 250.19 45.72 0)
 		(unit 1)
 		(exclude_from_sim yes)
@@ -9088,7 +9159,7 @@
 		(fields_autoplaced yes)
 		(uuid "c4751131-73c5-4c11-8127-22e2053d1181")
 		(property "Reference" "H3"
-			(at 252.73 43.1799 0)
+			(at 252.73 44.4499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9097,7 +9168,7 @@
 			)
 		)
 		(property "Value" "MOUNT_2"
-			(at 252.73 45.7199 0)
+			(at 252.73 46.9899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9105,7 +9176,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm"
+		(property "Footprint" "custom_edge_connector:secondary_mounting_hole"
 			(at 250.19 45.72 0)
 			(effects
 				(font
@@ -9123,7 +9194,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole with connection"
+		(property "Description" "Mounting Hole without connection"
 			(at 250.19 45.72 0)
 			(effects
 				(font
@@ -9131,9 +9202,6 @@
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "090f6021-7dd3-4582-bd59-431c0af66f08")
 		)
 		(instances
 			(project "oculink_m2"
