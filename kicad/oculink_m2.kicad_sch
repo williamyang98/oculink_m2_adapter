@@ -243,6 +243,151 @@
 				)
 			)
 		)
+		(symbol "Device:D_Schottky"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Schottky"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Schottky diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode Schottky"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_Schottky_0_1"
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Schottky_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:LED"
 			(pin_numbers hide)
 			(pin_names
@@ -4772,16 +4917,6 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 114.3) (xy 207.01 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4338db8c-4bff-429d-8da6-d0d83ddf229d")
-	)
-	(wire
-		(pts
 			(xy 153.67 114.3) (xy 153.67 106.68)
 		)
 		(stroke
@@ -5139,6 +5274,16 @@
 			(type default)
 		)
 		(uuid "66a0d162-47cd-4d79-a41b-ae5a0b0f45fb")
+	)
+	(wire
+		(pts
+			(xy 199.39 114.3) (xy 233.68 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66a9e556-2e8f-442f-80e6-ba22b21fd5c1")
 	)
 	(wire
 		(pts
@@ -5882,6 +6027,16 @@
 	)
 	(wire
 		(pts
+			(xy 241.3 114.3) (xy 245.11 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbfe105f-2bed-4894-a79f-0cfc483aad73")
+	)
+	(wire
+		(pts
 			(xy 146.05 100.33) (xy 153.67 100.33)
 		)
 		(stroke
@@ -6200,17 +6355,6 @@
 		)
 		(uuid "fcc7db00-866c-47c8-9723-2eb4a40ecc0b")
 	)
-	(text "LCSC Part #: C513772"
-		(exclude_from_sim no)
-		(at 108.966 43.942 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(href "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC---SMD-SMT_Samwha-Capacitor-Samwha-Capacitor-CS1005X7R104K500NR_C513772.html")
-		)
-		(uuid "0da76392-342f-47fa-b8bb-55b204f42d17")
-	)
 	(text "Digikey Link"
 		(exclude_from_sim no)
 		(at 186.436 73.914 0)
@@ -6221,6 +6365,17 @@
 			(href "https://www.digikey.com.au/en/products/detail/G14A421211112HR/664-G14A421211112HRCT-ND/17084317?curr=usd&utm_campaign=buynow&utm_medium=aggregator&utm_source=octopart")
 		)
 		(uuid "7c4883ab-98b8-417b-9abb-45877ee44f58")
+	)
+	(label "CLKREQ_EXT"
+		(at 231.14 114.3 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "491aadf5-cc24-4278-94ea-5308c0d77dcc")
 	)
 	(label "PEWAKE_EXT"
 		(at 156.21 106.68 0)
@@ -6609,6 +6764,28 @@
 		(uuid "5e56a110-c488-4167-8a7d-7ee9d06603e0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 214.9542 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CLKREQ"
+		(shape output)
+		(at 245.11 114.3 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "68ef32ca-65cd-4ea4-9c7c-9b3a0a4c03e4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 255.4128 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7164,28 +7341,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "CLKREQ"
-		(shape output)
-		(at 207.01 114.3 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "debfda12-5084-42a3-a0dc-93d2fa1152fa")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 217.3128 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -9006,6 +9161,83 @@
 			(project ""
 				(path "/b3a59d80-e104-4a02-9d1b-dc2012df0476"
 					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 237.49 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "98847577-38e7-4173-a27e-e26264c96f3b")
+		(property "Reference" "D2"
+			(at 237.1725 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_Schottky"
+			(at 237.1725 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 237.49 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 237.49 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 237.49 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C475624"
+			(at 237.49 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a031e8b9-7bbe-4d7e-a1a6-4d3ecff17fa2")
+		)
+		(pin "2"
+			(uuid "04ba0ec6-e54f-4040-aaac-296c8c564e33")
+		)
+		(instances
+			(project ""
+				(path "/b3a59d80-e104-4a02-9d1b-dc2012df0476"
+					(reference "D2")
 					(unit 1)
 				)
 			)
