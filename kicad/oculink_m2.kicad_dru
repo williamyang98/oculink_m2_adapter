@@ -100,27 +100,45 @@
 	(constraint annular_width (min 0.075mm))
 )
 
-(rule "Clearance: hole to hole (perimeter), different nets"
+# Hole to hole spacing for vias should be the same regardless if different net
+#(rule "Clearance: hole to hole (perimeter), different nets"
+#	(layer outer)
+#	(condition "A.Net != B.Net")
+#	(constraint hole_to_hole (min 0.5mm))
+#)
+#
+#(rule "Clearance: hole to hole (perimeter), same net"
+#	(layer outer)
+#	(condition "A.Net == B.Net")
+#	(constraint hole_to_hole (min 0.2mm))
+#)
+
+(rule "Clearance: via hole to via hole distance"
 	(layer outer)
-	(condition "A.Net != B.Net")
+	(condition "A.Type == 'Via' && B.Type == 'Via'")
+	(constraint hole_to_hole (min 0.2mm))
+)
+
+(rule "Clearance: non via hole to maybe via hole distance"
+	(layer outer)
+	(condition "A.Type != 'Via' || B.Type != 'Via'")
 	(constraint hole_to_hole (min 0.5mm))
 )
 
-(rule "Clearance: hole to hole (perimeter), same net"
-	(layer outer)
-	(condition "A.Net == B.Net")
-	(constraint hole_to_hole (min 0.254mm))
-)
-
 (rule "Clearance: track to NPTH hole (perimeter)"
-#	(condition "A.Pad_Type == 'NPTH, mechanical' && B.Type == 'track' && A.Net != B.Net")
+	(condition "A.Pad_Type == 'NPTH, mechanical' && B.Type == 'track' && A.Net != B.Net")
 	(condition "!A.isPlated() && B.Type == 'track' && A.Net != B.Net")
 	(constraint hole_clearance (min 0.254mm))
 )
 
 (rule "Clearance: track to PTH hole perimeter"
-	(condition "A.isPlated() && B.Type == 'track' && A.Net != B.Net")
-	(constraint hole_clearance (min 0.33mm))
+	(condition "A.isPlated() && A.Type != 'Via' && B.Type == 'track' && A.Net != B.Net")
+	(constraint hole_clearance (min 0.35mm))
+)
+
+(rule "Clearance: track to via hole perimeter"
+	(condition "A.isPlated() && A.Type == 'Via' && B.Type == 'track' && A.Net != B.Net")
+	(constraint hole_clearance (min 0.2mm))
 )
 
 # TODO: try combining with rule "Clearance: PTH to track, different nets"
@@ -131,8 +149,7 @@
 
 (rule "Clearance: pad/via to pad/via"
 	(layer outer)
-#	(condition "(A.Type == 'Pad' || A.Type == 'Via') && (B.Type == 'Pad' || B.Type == 'Via') && A.Net != B.Net")	
-	(condition "A.isPlated() && B.isPlated() && A.Net != B.Net")
+ 	(condition "(A.Type == 'Pad' || A.Type == 'Via') && (B.Type == 'Pad' || B.Type == 'Via') && A.Net != B.Net")	
 	(constraint clearance (min 0.127mm))
 )
 
@@ -143,14 +160,14 @@
 
 # Make sure differential pairs are impedance matched
 (rule "85 ohm impedance matched differential pairs (Outer layers)"
-	(condition "A.inDiffPair('*') && (A.Layer == 'F.Cu' || A.Layer == 'B.Cu')")
+	(condition "A.Type == 'Track' && B.Type == 'Track' && A.inDiffPair('*') && (A.Layer == 'F.Cu' || A.Layer == 'B.Cu')")
 	(constraint track_width (min 0.1549mm) (max 0.1549mm))	
 	(constraint diff_pair_gap (min 0.15mm) (max 0.15mm))
 	(constraint clearance (min 0.15mm) (max 0.15mm))
 )
 
 (rule "85 ohm impedance matched differential pairs (Inner layers)"
-	(condition "A.inDiffPair('*') && (A.Layer == 'In1.Cu' || A.Layer == 'In2.Cu')")
+	(condition "A.Type == 'Track' && B.Type == 'Track' && A.inDiffPair('*') && (A.Layer == 'In1.Cu' || A.Layer == 'In2.Cu')")
 	(constraint track_width (min 0.1334mm) (max 0.1334mm))
 	(constraint diff_pair_gap (min 0.15mm) (max 0.15mm))
 	(constraint clearance (min 0.15mm) (max 0.15mm))
