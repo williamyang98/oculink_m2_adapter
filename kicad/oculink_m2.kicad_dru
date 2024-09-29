@@ -140,3 +140,18 @@
 (rule "No buried or micro vias"
 	(constraint disallow micro_via buried_via)
 )
+
+# Make sure differential pairs are impedance matched
+(rule "85 ohm impedance matched differential pairs (Outer layers)"
+	(condition "A.isCoupledDiffPair() && (A.Layer == 'F.Cu' || A.Layer == 'B.Cu')")
+	(constraint track_width (min 0.1549mm) (max 0.1549mm))	
+	(constraint diff_pair_gap (min 0.15mm) (max 0.15mm))
+	(constraint clearance (min 0.15mm) (max 0.15mm))
+)
+
+(rule "85 ohm impedance matched differential pairs (Inner layers)"
+	(condition "A.isCoupledDiffPair() && (A.Layer == 'In1.Cu' || A.Layer == 'In2.Cu')")
+	(constraint track_width (min 0.1334mm) (max 0.1334mm))
+	(constraint diff_pair_gap (min 0.15mm) (max 0.15mm))
+	(constraint clearance (min 0.15mm) (max 0.15mm))
+)
