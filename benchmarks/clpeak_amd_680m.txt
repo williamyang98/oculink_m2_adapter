@@ -1,0 +1,75 @@
+
+Platform: AMD Accelerated Parallel Processing
+  Device: gfx1035
+    Driver version  : 3628.0 (PAL,LC) (Win64)
+    Compute units   : 6
+    Clock frequency : 2200 MHz
+
+    Global memory bandwidth (GBPS)
+      float   : 79.88
+      float2  : 84.09
+      float4  : 83.44
+      float8  : 86.36
+      float16 : 90.50
+
+    Single-precision compute (GFLOPS)
+      float   : 3357.57
+      float2  : 3015.80
+      float4  : 3349.37
+      float8  : 3312.88
+      float16 : 3286.32
+
+    Half-precision compute (GFLOPS)
+      half   : 3357.13
+      half2  : 6571.36
+      half4  : 5369.08
+      half8  : 5377.60
+      half16 : 6457.84
+
+    Double-precision compute (GFLOPS)
+      double   : 212.04
+      double2  : 211.90
+      double4  : 211.45
+      double8  : 204.77
+      double16 : 208.89
+
+    Integer compute (GIOPS)
+      int   : 675.91
+      int2  : 675.86
+      int4  : 675.31
+      int8  : 673.77
+      int16 : 671.40
+
+    Integer compute Fast 24bit (GIOPS)
+      int   : 3309.14
+      int2  : 3306.48
+      int4  : 3289.65
+      int8  : 3249.99
+      int16 : 2834.55
+
+    Integer char (8bit) compute (GIOPS)
+      char   : 3332.93
+      char2  : 1920.25
+      char4  : 1842.42
+      char8  : 1683.29
+      char16 : 1660.61
+
+    Integer short (16bit) compute (GIOPS)
+      short   : 3315.72
+      short2  : 3311.58
+      short4  : 3298.69
+      short8  : 3254.42
+      short16 : 3183.76
+
+    Transfer bandwidth (GBPS)
+      enqueueWriteBuffer              : 17.87
+      enqueueReadBuffer               : 17.68
+      enqueueWriteBuffer non-blocking : 17.77
+      enqueueReadBuffer non-blocking  : 17.72
+      enqueueMapBuffer(for read)      : 327860.09
+        memcpy from mapped ptr        : 17.68
+      enqueueUnmap(after write)       : 766958.44
+        memcpy to mapped ptr          : 17.92
+
+    Kernel launch latency : 66.78 us
+
