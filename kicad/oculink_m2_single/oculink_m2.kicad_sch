@@ -703,7 +703,7 @@
 					(justify left bottom)
 				)
 			)
-			(property "Footprint" "G14A42121B12HR:AMPHENOL_G14A42121B12HR"
+			(property "Footprint" "amphenol_oculink:AMPHENOL_G14A42121B12HR"
 				(at 1.27 43.18 0)
 				(effects
 					(font

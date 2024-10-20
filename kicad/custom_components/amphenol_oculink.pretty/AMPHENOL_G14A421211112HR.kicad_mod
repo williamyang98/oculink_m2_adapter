@@ -613,7 +613,7 @@
 		(solder_mask_margin 0.102)
 		(uuid "6ca4460f-95ac-485b-93d5-191b6531d269")
 	)
-	(model "${KIPRJMOD}/amphenol_oculink_models/G14A421211112HR.step"
+	(model "${KIPRJMOD}/../custom_components/amphenol_oculink_models/G14A421211112HR.step"
 		(offset
 			(xyz 0 -1.825 2.25)
 		)

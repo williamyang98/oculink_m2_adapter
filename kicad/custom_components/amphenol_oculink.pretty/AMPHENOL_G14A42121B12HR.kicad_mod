@@ -1540,7 +1540,7 @@
 	)
 	(fp_line
 		(start -6.725 4.46)
-		(end 15.75 4.46)
+		(end 6.7 4.46)
 		(stroke
 			(width 0.127)
 			(type solid)
@@ -1902,7 +1902,7 @@
 		(solder_mask_margin 0.102)
 		(uuid "1bba33b3-bf70-4b20-8401-790cbb168ba4")
 	)
-	(model "${KIPRJMOD}/amphenol_oculink_models/G14A42121B12HR.step"
+	(model "${KIPRJMOD}/../custom_components/amphenol_oculink_models/G14A42121B12HR.step"
 		(offset
 			(xyz 0 -1.825 2.25)
 		)
