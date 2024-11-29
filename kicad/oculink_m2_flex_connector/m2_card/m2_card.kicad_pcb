@@ -883,7 +883,7 @@
 		)
 		(fp_arc
 			(start 10.494934 -23.502139)
-			(mid 10.849978 -23.355054)
+			(mid 10.850013 -23.35506)
 			(end 10.997073 -23)
 			(stroke
 				(width 0.05)
@@ -3298,6 +3298,19 @@
 	)
 	(gr_poly
 		(pts
+			(xy 118.447723 68.3) (xy 118.447723 68.85) (xy 120.997723 68.585906)
+		)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill solid)
+		(layer "In1.Cu")
+		(net 2)
+		(uuid "3e153d73-c56d-4611-a4c2-4fcba901444e")
+	)
+	(gr_poly
+		(pts
 			(xy 118.45 83.25) (xy 118.45 83.6) (xy 121 83.425)
 		)
 		(stroke
@@ -3324,6 +3337,19 @@
 	)
 	(gr_poly
 		(pts
+			(xy 118.444387 84.555039) (xy 118.444387 85.105039) (xy 120.994387 84.840945)
+		)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill solid)
+		(layer "In1.Cu")
+		(net 2)
+		(uuid "53870f98-1d92-4287-8699-a7c76abbd588")
+	)
+	(gr_poly
+		(pts
 			(xy 118.44977 73.447533) (xy 118.44977 73.797533) (xy 120.99977 73.622533)
 		)
 		(stroke
@@ -3347,6 +3373,19 @@
 		(layer "In1.Cu")
 		(net 2)
 		(uuid "5fe49f3b-b72a-42d1-8446-c236a7fc7305")
+	)
+	(gr_poly
+		(pts
+			(xy 118.45503 81.782809) (xy 118.45503 82.332809) (xy 121.00503 82.068715)
+		)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill solid)
+		(layer "In1.Cu")
+		(net 2)
+		(uuid "643af309-e2d9-4f94-b479-755fbb78c57d")
 	)
 	(gr_poly
 		(pts
@@ -3415,6 +3454,32 @@
 	)
 	(gr_poly
 		(pts
+			(xy 118.457434 80.286364) (xy 118.457434 80.836364) (xy 121.007434 80.57227)
+		)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill solid)
+		(layer "In1.Cu")
+		(net 2)
+		(uuid "8185f9ce-a5dc-42be-b316-cf3c446b691c")
+	)
+	(gr_poly
+		(pts
+			(xy 118.445319 69.796445) (xy 118.445319 70.346445) (xy 120.995319 70.082351)
+		)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill solid)
+		(layer "In1.Cu")
+		(net 2)
+		(uuid "87b7164a-d14b-4205-9f44-5da6d5aeb2e1")
+	)
+	(gr_poly
+		(pts
 			(xy 118.456663 70.447092) (xy 118.456663 70.797092) (xy 121.006663 70.622092)
 		)
 		(stroke
@@ -3480,6 +3545,19 @@
 	)
 	(gr_poly
 		(pts
+			(xy 118.457434 71.286364) (xy 118.457434 71.836364) (xy 121.007434 71.57227)
+		)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill solid)
+		(layer "In1.Cu")
+		(net 2)
+		(uuid "b84af206-bc82-4521-96ca-993285a18d63")
+	)
+	(gr_poly
+		(pts
 			(xy 118.443107 73.850441) (xy 118.443107 74.200441) (xy 120.993107 74.025441)
 		)
 		(stroke
@@ -3532,6 +3610,45 @@
 	)
 	(gr_poly
 		(pts
+			(xy 118.457434 77.286364) (xy 118.457434 77.836364) (xy 121.007434 77.57227)
+		)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill solid)
+		(layer "In1.Cu")
+		(net 2)
+		(uuid "cc8a3ddd-67f9-403f-954e-d443ef691167")
+	)
+	(gr_poly
+		(pts
+			(xy 118.457434 74.286364) (xy 118.457434 74.836364) (xy 121.007434 74.57227)
+		)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill solid)
+		(layer "In1.Cu")
+		(net 2)
+		(uuid "cfc765c8-d0c7-4e7d-b9dc-1ffb1c77dbb9")
+	)
+	(gr_poly
+		(pts
+			(xy 118.45503 75.782809) (xy 118.45503 76.332809) (xy 121.00503 76.068715)
+		)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill solid)
+		(layer "In1.Cu")
+		(net 2)
+		(uuid "d621938a-975b-4bec-9b76-5758f611f1fe")
+	)
+	(gr_poly
+		(pts
 			(xy 118.45 70.85) (xy 118.45 71.2) (xy 121 71.025)
 		)
 		(stroke
@@ -3555,6 +3672,32 @@
 		(layer "In1.Cu")
 		(net 2)
 		(uuid "ec6a4c3f-c052-4a7a-9543-747f077f526c")
+	)
+	(gr_poly
+		(pts
+			(xy 118.45503 78.782809) (xy 118.45503 79.332809) (xy 121.00503 79.068715)
+		)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill solid)
+		(layer "In1.Cu")
+		(net 2)
+		(uuid "f610ac3c-d31e-4648-ad96-7622d5fdf95f")
+	)
+	(gr_poly
+		(pts
+			(xy 118.45503 72.782809) (xy 118.45503 73.332809) (xy 121.00503 73.068715)
+		)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill solid)
+		(layer "In1.Cu")
+		(net 2)
+		(uuid "fba85d2b-0903-4ffd-8fcf-356cec56cb5d")
 	)
 	(gr_line
 		(start 106.7 86.5)
