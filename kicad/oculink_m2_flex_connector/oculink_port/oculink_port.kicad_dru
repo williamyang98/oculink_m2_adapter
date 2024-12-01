@@ -82,7 +82,7 @@
 (rule "Hole (NPTH) diameter"
 	(layer outer)
 	(condition "!A.isPlated()")
-	(constraint hole_size (min 0.5mm))
+	(constraint hole_size (min 0.45mm))
 )
 
 # TODO: Hole to board edge ≥ 1 mm. Min. board size 10 × 10 mm
@@ -103,13 +103,13 @@
 (rule "Clearance: hole to hole (perimeter), different nets"
 	(layer outer)
 	(condition "A.Net != B.Net")
-	(constraint hole_to_hole (min 0.5mm))
+	(constraint hole_to_hole (min 0.35mm))
 )
 
 (rule "Clearance: hole to hole (perimeter), same net"
 	(layer outer)
 	(condition "A.Net == B.Net")
-	(constraint hole_to_hole (min 0.254mm))
+	(constraint hole_to_hole (min 0.2mm))
 )
 
 (rule "Clearance: track to NPTH hole (perimeter)"
@@ -119,8 +119,13 @@
 )
 
 (rule "Clearance: track to PTH hole perimeter"
-	(condition "A.isPlated() && B.Type == 'track' && A.Net != B.Net")
-	(constraint hole_clearance (min 0.33mm))
+	(condition "A.isPlated() && A.Type != 'Via' && B.Type == 'track' && A.Net != B.Net")
+	(constraint hole_clearance (min 0.35mm))
+)
+
+(rule "Clearance: track to via hole perimeter"
+	(condition "A.isPlated() && A.Type == 'Via' && B.Type == 'track' && A.Net != B.Net")
+	(constraint hole_clearance (min 0.2mm))
 )
 
 # TODO: try combining with rule "Clearance: PTH to track, different nets"
@@ -144,14 +149,7 @@
 # Make sure differential pairs are impedance matched
 (rule "85 ohm impedance matched differential pairs (Outer layers)"
 	(condition "A.inDiffPair('*') && (A.Layer == 'F.Cu' || A.Layer == 'B.Cu')")
-	(constraint track_width (min 0.1549mm) (max 0.1549mm))	
-	(constraint diff_pair_gap (min 0.15mm) (max 0.15mm))
-	(constraint clearance (min 0.15mm) (max 0.15mm))
-)
-
-(rule "85 ohm impedance matched differential pairs (Inner layers)"
-	(condition "A.inDiffPair('*') && (A.Layer == 'In1.Cu' || A.Layer == 'In2.Cu')")
-	(constraint track_width (min 0.1334mm) (max 0.1334mm))
-	(constraint diff_pair_gap (min 0.15mm) (max 0.15mm))
+	(constraint track_width (min 0.1712mm) (max 0.1712mm))	
+	(constraint diff_pair_gap (min 0.2mm) (max 0.2mm))
 	(constraint clearance (min 0.15mm) (max 0.15mm))
 )

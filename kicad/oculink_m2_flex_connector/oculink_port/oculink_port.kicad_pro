@@ -73,7 +73,10 @@
           "width": 0.3
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "hole_clearance|195280000|101850000|7a7802a1-8c49-4f8c-89e3-b7a8a75db23e|682c6714-019b-43de-a8dc-4ebeee451ac5",
+        "hole_clearance|195280000|111850000|1db50dab-3904-493e-96b6-1649a0c9a20e|8bd3d614-d83f-40a1-94a1-0eb93d882b03"
+      ],
       "meta": {
         "version": 2
       },
@@ -145,7 +148,7 @@
         "min_through_hole_diameter": 0.3,
         "min_track_width": 0.0,
         "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.5,
+        "min_via_diameter": 0.45,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -194,6 +197,7 @@
       ],
       "track_widths": [
         0.0,
+        0.15,
         0.5
       ],
       "tuning_pattern_settings": {
