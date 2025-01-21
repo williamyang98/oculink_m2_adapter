@@ -16,6 +16,9 @@ Many possible transmission line geometries
 - Limitation on design options set by price and fabrication (minimum via size and annular ring)
 - Spacing requirements and equation for spacing for maximum design frequency
 
+- Staggered via fence performance better than regular via fence
+- Requries micro vias and buried vias which JLCPCB does not support
+
 ## Skin effect
 - Copper thickness and surface roughness
 - Effect at higher frequencies

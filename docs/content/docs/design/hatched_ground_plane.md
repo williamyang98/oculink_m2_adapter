@@ -16,3 +16,7 @@ weight: 6
 - Limits in resolution and speed of openEMS due to CPU based design (GPU acceleration not available)
 - Ansys supports CUDA acceleration but is difficult to use with exported gerber files
 - OpenEMS can be used with a python toolchain to process and setup openEMS harness with gerber files and drill files
+
+## Results
+- Table of results
+- Graph of impedance
