@@ -1,7 +1,7 @@
 ---
 title: Design
-prev: /docs/specifications/adtlink_reference
-next: /docs/design/laptop_measurements
+prev: /docs/specifications/components
+next: /docs/design/reference_designs
 weight: 4
 ---
 

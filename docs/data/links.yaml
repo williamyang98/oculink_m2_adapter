@@ -1,0 +1,15 @@
+pcie_fibermall:
+  title: "PCIe: 8 Things You Need to Know Early"
+  path: "https://www.fibermall.com/blog/pci-e-8-things-need-to-know.htm?srsltid=AfmBOopgeGo-dXRX-pSEtWbIZLO_PH3ypMCtOfEtcSswcBTuCEQRbUBx#%E2%97%8F_PCI_Express_10"
+altium_backdrilling_stubs:
+  title: "Altium: Stubs and backdrilling in high speed design"
+  path: "https://resources.altium.com/p/backdrill-it-baby-how-to-reduce-signal-distortions-on-your-pcb"
+altium_via_stitching:
+  title: "Altium: Adding via stitching & via shielding"
+  path: "https://www.altium.com/documentation/altium-designer/via-stitching-via-shielding-pcb"
+altium_copper_roughness:
+  title: "Altium: Copper choice and efficiency for high frequency PCB design"
+  path: "https://resources.altium.com/p/copper-choice-and-copper-efficiency-high-frequency-pcb-design"
+hackaday_rf_via_fence:
+  title: "Hackaday: RF & Via Stitching/Fencing"
+  path: "https://hackaday.io/project/161821-journey-sbc/log/155995-rf-via-stitchingfencing-pt-2"

@@ -2,7 +2,9 @@
 title: Single Board
 prev: /docs/design/kicad_jlcpcb
 next: /docs/design/flex_pcb
-weight: 3
+weight: 4
+params:
+  icon: bookmark
 ---
 
 ## Advantages of single board

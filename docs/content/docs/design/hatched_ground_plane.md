@@ -2,7 +2,7 @@
 title: Hatched ground plane
 prev: /docs/design/transmission_line
 next: /docs/manufacturing
-weight: 6
+weight: 7
 params:
   icon: hashtag
 ---

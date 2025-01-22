@@ -1,0 +1,20 @@
+pcie_x4_pinout:
+  path: "/images/diagrams/pcie_x4_pinout.png"
+  description: "Image 1. PCIe x4 connector pinout"
+  source: "https://www.adt.link/download/ADT-Cable-R42SF-specification.html"
+m2_connector_pinout_table:
+  path: "/images/diagrams/m2_connector_pinout_table.png"
+  description: "Table 1. M.2 connector pinout"
+  source: "https://www.anandtech.com/show/13609/pcisig-warns-of-incompatibilities-between-m2-and-samsungs-ngsff"
+m2_card_size:
+  path: "/images/diagrams/m2_card_size.png"
+  description: "Image 2. M.2 card size standards"
+  source: "https://www.unitek-products.com/products/usb3-1-gen2-type-c-to-m-2-ssd-pcie-nvme-enclosure"
+amphenol_oculink_port_pinout_table:
+  path: "/images/diagrams/amphenol_oculink_port_pinout_table.png"
+  description: "Table 2. Amphenol Oculink connector pinout"
+  source: "https://electronics.stackexchange.com/questions/675174/oculink-connector-pin-configuration-for-root-port-and-endpoint"
+amphenol_oculink_port:
+  path: "/images/diagrams/amphenol_oculink_port.jpg"
+  description: "Image 3. Amphenol oculink port"
+  source: "https://www.amphenol-cs.com/product-series/oculink.html"

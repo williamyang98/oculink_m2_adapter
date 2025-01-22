@@ -1,7 +1,7 @@
 ---
 title: Specifications
 prev: /docs/
-next: /docs/specifications/components
+next: /docs/specifications/pcie_specification
 weight: 1
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: Laptop Measurements
-prev: /docs/design
+prev: /docs/design/reference_designs
 next: /docs/design/kicad_jlcpcb
-weight: 1
+weight: 2
 params:
   icon: color-swatch
 ---

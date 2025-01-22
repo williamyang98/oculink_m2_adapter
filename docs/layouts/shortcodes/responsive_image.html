@@ -1,0 +1,15 @@
+{{- $key := .Get "key" -}}
+{{- $style := .Get "style" -}}
+
+{{- $images := .Site.Data.images -}}
+{{- $image := index $images $key -}}
+
+<div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="{{ $style | safeCSS }}">
+  <img loading="lazy" decoding="async" src="{{ $image.path }}" style="margin-top: 0rem; margin-bottom: 0rem"/>
+  <div class="hx-text-center hx-my-2">
+    <i>{{ $image.description }}</i>
+    {{ with $image.source }}
+      <a href="{{ . }}">(source)</a>
+    {{ end }}
+  </div>
+</div>
