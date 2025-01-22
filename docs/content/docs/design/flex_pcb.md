@@ -3,6 +3,8 @@ title: Flex PCB
 prev: /docs/design/single_board
 next: /docs/design/transmission_line
 weight: 4
+params:
+  icon: bookmark
 ---
 
 ## Advantages of flex pcb

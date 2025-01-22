@@ -1,8 +1,10 @@
 ---
-title: Testing
+title: Electrical Testing
 prev: /docs/manufacturing/reflow_soldering
 next: /docs/results
 weight: 3
+params:
+  icon: badge-check
 ---
 
 ## Checking for shorts

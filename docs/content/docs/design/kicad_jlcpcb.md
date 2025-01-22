@@ -3,6 +3,8 @@ title: KiCAD & JLCPCB
 prev: /docs/design/laptop_measurements
 next: /docs/design/single_board
 weight: 2
+params:
+  icon: calculator
 ---
 
 ## KiCAD

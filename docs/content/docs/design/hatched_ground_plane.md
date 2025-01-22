@@ -3,6 +3,8 @@ title: Hatched ground plane
 prev: /docs/design/transmission_line
 next: /docs/manufacturing
 weight: 6
+params:
+  icon: hashtag
 ---
 
 ## openEMS simulation

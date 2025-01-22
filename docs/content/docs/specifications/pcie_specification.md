@@ -3,6 +3,8 @@ title: PCIe Specification
 prev: /docs/specifications/oculink_pinout
 next: /docs/specifications/adtlink_reference
 weight: 2
+params:
+  icon: lightning-bolt
 ---
 
 ## PCIe electrical properties

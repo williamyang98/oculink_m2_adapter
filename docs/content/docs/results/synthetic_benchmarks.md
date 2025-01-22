@@ -3,6 +3,8 @@ title: Synthetic benchmarks
 prev: /docs/results/gpu_bandwidth
 next: /docs/conclusion
 weight: 2
+params:
+  icon: calculator
 ---
 
 ## Custom adapter compared to Aliexpress PCIe 4.0 rated adapter

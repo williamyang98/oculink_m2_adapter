@@ -3,6 +3,8 @@ title: Components
 prev: /docs/specifications/
 next: /docs/specifications/pcie_specification
 weight: 1
+params:
+  icon: chip
 ---
 
 ## M.2 Card Pinout and Geometry

@@ -1,8 +1,10 @@
 ---
 title: Reflow Soldering
 prev: /docs/manufacturing/jlcpcb
-next: /docs/manufacturing/testing
+next: /docs/manufacturing/electrical_testing
 weight: 2
+params:
+  icon: fire
 ---
 
 ## Equipment

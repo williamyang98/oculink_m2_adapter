@@ -3,6 +3,8 @@ title: AdtLink Reference
 prev: /docs/specifications/pcie_specification
 next: /docs/design/
 weight: 3
+params:
+  icon: clipboard
 ---
 
 ## Adtlink reference adapter purchased with eGPU board
