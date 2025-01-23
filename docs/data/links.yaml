@@ -13,3 +13,12 @@ altium_copper_roughness:
 hackaday_rf_via_fence:
   title: "Hackaday: RF & Via Stitching/Fencing"
   path: "https://hackaday.io/project/161821-journey-sbc/log/155995-rf-via-stitchingfencing-pt-2"
+adtlink_pcie4_egpu_dock:
+  title: "Adtlink PCIe 4.0 eGPU Oculink dock"
+  path: "https://www.adt.link/product/F9GV4.html"
+jlcpcb_manufacturing_capabilities:
+  title: "JLCPCB manufacturing capabilities"
+  path: "https://jlcpcb.com/capabilities/pcb-capabilities"
+kicad_drc_file_example:
+  title: "Sample KiCAD design rules file"
+  path: "https://github.com/williamyang98/oculink_m2_adapter/blob/895a01a6bca91c96aabc5325dedf5facfeb502c6/kicad/oculink_m2_single/oculink_m2.kicad_dru"

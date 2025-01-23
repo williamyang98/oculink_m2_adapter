@@ -1,5 +1,5 @@
 ---
-title: Single Board
+title: Single board design
 prev: /docs/design/kicad_jlcpcb
 next: /docs/design/flex_pcb
 weight: 4
@@ -7,14 +7,29 @@ params:
   icon: bookmark
 ---
 
-## Advantages of single board
-- Only need to solder oculink port and passives
-- Can reflow components of opposite sides of the board easily by doing it in parts
-- Single kicad schematic required
+## Advantages
+- Easier manufacturing and testing since we only need to solder the Oculink port and passive components.
+- Single KiCAD schematic required allowing for easier design.
 
-## Difficulties
-- Referring to laptop layout, the lanes have to go through a very narrow section
-- Requires moving certain PCIe lanes to other layer which can introduce electrical performance issues
-- Board has to bend so that port is at the correct position when screwed into laptop
-    - Might result in damage to circuit
-    - Probably fine since the flex is tolerable
+## Disadvantages
+- PCIe signal lanes have to fit through a very narrow region, which requires routing differential pairs onto other layers.
+    - Requires careful design of via jumps to prevent impedance mismatch and signal reflection.
+    - PCIe RX lanes have 1 via jump and PCIe TX lanes have 2 via jumps.
+- Board has to be slightly bent so that Oculink port is at the correct height.
+    - Might result in damage to circuit if the board isn't flexible enough.
+    - Could result in degraded transmission line performance due to stretching of traces.
+    - Could result in Oculink port pad connection breaking due to mechanical stress.
+- PCIe lanes have to be routed over a moderately long distance (12cm).
+    - We are using FR4-TG135 which has a high dielectric loss at high frequencies.
+    - If we are targetting PCIe 4.0 then we need to handle the 5th harmonic of the fundemental frequency which is 40GHz.
+    - It is highly unlikely to maintain PCIe 4.0 over such a long distance with a high loss dielectric.
+- Single board design is relatively large.
+    - M.2 slot requires 0.8mm thickness which results in mandatory lead free HASL that costs $4.80USD.
+    - Exceeds 50mm x 50mm threshold meaning board goes from $2.00USD to $7.00USD.
+    - Exceeds 100mm x 100mm threshold meaning additional engineering fee of $24.00USD.
+    - Overall cost of $35.80USD.
+
+## Images
+{{< responsive_image key="kicad_single_board_pcb" >}}
+{{< responsive_image key="kicad_single_board_render" >}}
+

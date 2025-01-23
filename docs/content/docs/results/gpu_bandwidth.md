@@ -1,5 +1,5 @@
 ---
-title: GPU Bandwidth
+title: GPU bandwidth
 prev: /docs/results/
 next: /docs/results/synthetic_benchmarks
 weight: 1

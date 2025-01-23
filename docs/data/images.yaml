@@ -18,3 +18,34 @@ amphenol_oculink_port:
   path: "/images/diagrams/amphenol_oculink_port.jpg"
   description: "Image 3. Amphenol oculink port"
   source: "https://www.amphenol-cs.com/product-series/oculink.html"
+adtlink_m2_to_pcie4_adapter_schematic:
+  path: "/images/diagrams/adtlink_m2_to_pcie4_adapter_schematic.png"
+  description: "Image 4. Adtlink M.2 to PCIe 4.0 adapter"
+  source: "https://www.adt.link/download/ADT-Cable-R42SF-specification.html"
+gpdwin1_m2_to_oculink_adapter_schematic:
+  path: "/images/diagrams/gpdwin1_m2_to_oculink_adapter_schematic.png"
+  description: "Image 5. GPD win 1 M.2 to Oculink adapter card"
+  source: "https://gpd.hk/gpdg1firmwaredriver"
+adtlink_f4c_m2_to_oculink_adapter:
+  path: "/images/diagrams/adtlink_f4c_m2_to_oculink_adapter.png"
+  description: "Image 6. Adtlink F4C M.2 to Oculink adapter card"
+  source: "https://www.adt.link/product/F9GV4.html"
+adtlink_f4c_m2_to_oculink_adapter_photo:
+  path: "/images/diagrams/adtlink_f4c_m2_to_oculink_adapter_photo.png"
+  description: "Image 7. Purchased Adtlink F4C M.2 to Oculink adapter card with modifications"
+lenovo_16arp8_dimensions:
+  path: "/images/diagrams/lenovo_16arp8_adapter_layout_prototype.png"
+  description: "Image 8. Measurements and prototype layout for M.2 to Oculink adapter"
+lenovo_16arp8_3d_model:
+  path: "/images/diagrams/lenovo_16arp8_3d_model.png"
+  description: "Image 9. 3D modelling of Lenovo 16arp8 based on measurements"
+nfhk_vertical_m2_to_oculink_adapter:
+  path: "/images/diagrams/nfhk_vertical_m2_to_oculink_adapter.png"
+  description: "Image 10. NFHK vertical M.2 to Oculink adapter card"
+  source: "https://www.aliexpress.com/item/1005007302462841.html"
+kicad_single_board_pcb:
+  path: "/images/diagrams/kicad_single_board_pcb.png"
+  description: "Image 11. Custom single board M.2 to Oculink adapter PCB"
+kicad_single_board_render:
+  path: "/images/diagrams/kicad_single_board_render.png"
+  description: "Image 12. Custom single board M.2 to Oculink adapter 3D render"

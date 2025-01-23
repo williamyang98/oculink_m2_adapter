@@ -19,7 +19,7 @@ params:
 - ```CLKREQ``` is pull downed by device to request PCIe reference clock.
 - ```PERST``` is used to reset the PCIe link.
 - ```PEWAKE``` is used by device to signal to host to wake up (maybe for network cards?).
-- ```SMCLK``` and ```SMDAT``` is the system management bus and is an I2C interface (optional?)
+- ```SMBCLK``` and ```SMBDAT``` is the system management bus and is an I2C interface (optional?)
 
 {{< responsive_image key="pcie_x4_pinout" >}}
 

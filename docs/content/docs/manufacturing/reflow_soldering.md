@@ -1,5 +1,5 @@
 ---
-title: Reflow Soldering
+title: Reflow soldering
 prev: /docs/manufacturing/jlcpcb
 next: /docs/manufacturing/electrical_testing
 weight: 2
