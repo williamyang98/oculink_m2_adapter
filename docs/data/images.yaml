@@ -1,6 +1,6 @@
 pcie_x4_pinout:
   path: "/images/diagrams/pcie_x4_pinout.png"
-  description: "Image 1. PCIe x4 connector pinout"
+  description: "Diagram 1. PCIe x4 connector pinout"
   source: "https://www.adt.link/download/ADT-Cable-R42SF-specification.html"
 m2_connector_pinout_table:
   path: "/images/diagrams/m2_connector_pinout_table.png"
@@ -8,7 +8,7 @@ m2_connector_pinout_table:
   source: "https://www.anandtech.com/show/13609/pcisig-warns-of-incompatibilities-between-m2-and-samsungs-ngsff"
 m2_card_size:
   path: "/images/diagrams/m2_card_size.png"
-  description: "Image 2. M.2 card size standards"
+  description: "Diagram 2. M.2 card size standards"
   source: "https://www.unitek-products.com/products/usb3-1-gen2-type-c-to-m-2-ssd-pcie-nvme-enclosure"
 amphenol_oculink_port_pinout_table:
   path: "/images/diagrams/amphenol_oculink_port_pinout_table.png"
@@ -16,36 +16,50 @@ amphenol_oculink_port_pinout_table:
   source: "https://electronics.stackexchange.com/questions/675174/oculink-connector-pin-configuration-for-root-port-and-endpoint"
 amphenol_oculink_port:
   path: "/images/diagrams/amphenol_oculink_port.jpg"
-  description: "Image 3. Amphenol oculink port"
+  description: "Diagram 3. Amphenol oculink port"
   source: "https://www.amphenol-cs.com/product-series/oculink.html"
 adtlink_m2_to_pcie4_adapter_schematic:
   path: "/images/diagrams/adtlink_m2_to_pcie4_adapter_schematic.png"
-  description: "Image 4. Adtlink M.2 to PCIe 4.0 adapter"
+  description: "Diagram 4. Adtlink M.2 to PCIe 4.0 adapter"
   source: "https://www.adt.link/download/ADT-Cable-R42SF-specification.html"
 gpdwin1_m2_to_oculink_adapter_schematic:
   path: "/images/diagrams/gpdwin1_m2_to_oculink_adapter_schematic.png"
-  description: "Image 5. GPD win 1 M.2 to Oculink adapter card"
+  description: "Diagram 5. GPD win 1 M.2 to Oculink adapter card"
   source: "https://gpd.hk/gpdg1firmwaredriver"
 adtlink_f4c_m2_to_oculink_adapter:
   path: "/images/diagrams/adtlink_f4c_m2_to_oculink_adapter.png"
-  description: "Image 6. Adtlink F4C M.2 to Oculink adapter card"
+  description: "Diagram 6. Adtlink F4C M.2 to Oculink adapter card"
   source: "https://www.adt.link/product/F9GV4.html"
 adtlink_f4c_m2_to_oculink_adapter_photo:
   path: "/images/diagrams/adtlink_f4c_m2_to_oculink_adapter_photo.png"
-  description: "Image 7. Purchased Adtlink F4C M.2 to Oculink adapter card with modifications"
+  description: "Diagram 7. Purchased Adtlink F4C M.2 to Oculink adapter card with modifications"
 lenovo_16arp8_dimensions:
   path: "/images/diagrams/lenovo_16arp8_adapter_layout_prototype.png"
-  description: "Image 8. Measurements and prototype layout for M.2 to Oculink adapter"
+  description: "Diagram 8. Measurements and prototype layout for M.2 to Oculink adapter"
 lenovo_16arp8_3d_model:
   path: "/images/diagrams/lenovo_16arp8_3d_model.png"
-  description: "Image 9. 3D modelling of Lenovo 16arp8 based on measurements"
+  description: "Diagram 9. 3D modelling of Lenovo 16arp8 based on measurements"
 nfhk_vertical_m2_to_oculink_adapter:
   path: "/images/diagrams/nfhk_vertical_m2_to_oculink_adapter.png"
-  description: "Image 10. NFHK vertical M.2 to Oculink adapter card"
+  description: "Diagram 10. NFHK vertical M.2 to Oculink adapter card"
   source: "https://www.aliexpress.com/item/1005007302462841.html"
 kicad_single_board_pcb:
   path: "/images/diagrams/kicad_single_board_pcb.png"
-  description: "Image 11. Custom single board M.2 to Oculink adapter PCB"
+  description: "Diagram 11. Custom single board M.2 to Oculink adapter PCB"
 kicad_single_board_render:
   path: "/images/diagrams/kicad_single_board_render.png"
-  description: "Image 12. Custom single board M.2 to Oculink adapter 3D render"
+  description: "Diagram 12. Custom single board M.2 to Oculink adapter 3D render"
+kicad_flex_connector_pcb:
+  path: "/images/diagrams/kicad_flex_connector_pcb.png"
+  description: "Diagram 13. Custom M.2 to Oculink adapter with flex connector PCBs"
+kicad_flex_connector_render:
+  path: "/images/diagrams/kicad_flex_connector_render.png"
+  description: "Diagram 14. Custom M.2 to Oculink adapter with flex connector 3D renders"
+sierra_express_differential_pair_topologies:
+  path: "/images/diagrams/sierra_express_differential_pair_topologies.png"
+  description: "Diagram 15. Differential pair topologies"
+  source: "https://impedance.app.protoexpress.com/"
+altium_eye_diagram:
+  path: "/images/diagrams/altium_eye_diagram.png"
+  description: "Diagram 16. Eye diagram"
+  source: "https://resources.altium.com/p/what-eye-diagram"

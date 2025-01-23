@@ -7,11 +7,12 @@ params:
   icon: clipboard
 ---
 
-- Both the M.2 and Oculink port have very similarly named PCIe pinouts.
-- Oculink port pinout sometimes has TX and RX names swapped (PERxy/PETxy).
+## Points to verify
 - Do you wire from PERxy on the M.2 side to PERxy on the Oculink side, or PERxy to PETxy?
+- Do all of the control signals need to be connected?
 - Is SMB (system management bus) data and clock required or is it optional?
 - What about the MFG (manufacturer) data and clock on the M.2 card which is not present on the Oculink connector or PCIe standard?
+- Is lane reordering and polarity inversion okay to use for routing PCIe connections?
 
 ## AdtLink M.2 to PCIe extension
 {{< responsive_image key="adtlink_m2_to_pcie4_adapter_schematic" >}}

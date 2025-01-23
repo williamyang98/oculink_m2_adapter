@@ -1,3 +1,7 @@
+texas_instrument_pcie4_layout_guidelines:
+  path: "/pdfs/texas_instrument_pcie4_layout_guidelines.pdf"
+  title: "Layout guidelines for PCIe Gen 4.0"
+  source: "https://www.ti.com/lit/an/slaae45/slaae45.pdf"
 adtlink_m2_pcie_x4_extension:
   path: "/pdfs/adtlink_m2_pcie_x4_extension.pdf"
   title: "Adtlink M.2 PCIe x4 extension cable schematic"

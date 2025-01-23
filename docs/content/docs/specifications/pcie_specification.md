@@ -39,16 +39,7 @@ params:
 
 - {{< website_link key="pcie_fibermall" >}}
 
-## Design requirements
-- For a good eye opening the transmissions lines should be designed for 5x the fundemental frequency.
-- For PCIe 4.0 and above the fundemental frequency is 8GHz which means a maximum design frequency of 40GHz.
-- Requires special low loss dielectrics for high speed signalling.
-- Consideration of skin effect, copper roughness and trace width.
-- If transmission lines have via jumps they must not have stubs and should use backdrilling to remove them.
-- Use via fences to reduce crosstalk between adjacent PCIe lanes.
+## Maximum design frequency
+For a good eye opening the transmissions lines should be designed for 5x the fundemental frequency. For PCIe 4.0 the fundamental frequency is 8GHz which means an ideal maximum design frequency of 40GHz.
 
-### Design resources
-- {{< website_link key="altium_backdrilling_stubs" >}}
-- {{< website_link key="altium_via_stitching" >}}
-- {{< website_link key="altium_copper_roughness" >}}
-- {{< website_link key="hackaday_rf_via_fence" >}}
+{{< responsive_image key="altium_eye_diagram" >}}

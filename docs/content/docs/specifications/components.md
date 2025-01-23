@@ -12,7 +12,7 @@ params:
 - Pins follow the PCIe specification for x4 lanes.
 
 {{< responsive_image key="m2_card_size" style="width: 75%" >}}
-{{< responsive_image key="m2_connector_pinout_table" >}}
+{{< responsive_image key="m2_connector_pinout_table" style="width: 50%" >}}
 
 ## Oculink port
 - Follows the SFF-9402 specification which is compatible with PCIe

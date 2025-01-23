@@ -7,13 +7,13 @@ params:
   icon: calculator
 ---
 
-## KiCAD
+## Reasons to use KiCAD
 - Free and open source. No license required for usage.
 - More than adequate for passive M.2 to Oculink adapter.
 - Transmission line calculators are limited but there are plenty of more capable free and public options.
 - Lacks high end simulation capabilities like Altium but open source substitutes are available.
 
-## JLCPCB
+## Reasons to use JLCPCB
 - The cheapest PCB manufacturer.
 - Offers plenty of discounts for extremely low prices.
 - If you stay under certain size requirements the cost will remain exceptionally low.
@@ -26,6 +26,11 @@ params:
 - Inexpensive 4 layer boards which are important for maintaining solid ground plane if signal traces need to be routed on separate layers.
 - Controlled impedance stackup to meet transmission line design requirements.
 - Allows choosing denser more uniform fibre weaves to improve signal integrity in transmission lines.
+    - A non-uniform weave could cause problems if a differential trace were routed over it.
+    - Each side of the pair could be on a piece of the weave with different densities of fibres.
+    - This would mean each trace in the pair experiences a different dielectric constant.
+    - Since the speed of propagation is dependent on the dielectric constant, a skew in the time domain would be induced in the differential pair.
+    - PCIe standard has relatively 
 - ENIG (gold plating) to prevent oxidation of M.2 edge connector and flatter profile for more reliable reflow soldering.
 - Flexible PCBs for designs that require large amounts of vertical routing.
 - Very generous constraints minimum via sizes and pad pitch which is important for high frequency design where physical dimensions of traces, vias, and connector pitch can get very small.
