@@ -1,6 +1,6 @@
 pcie_x4_pinout:
   path: "/images/diagrams/pcie_x4_pinout.png"
-  description: "Diagram 1. PCIe x4 connector pinout"
+  description: "Image 1. PCIe x4 connector pinout"
   source: "https://www.adt.link/download/ADT-Cable-R42SF-specification.html"
 m2_connector_pinout_table:
   path: "/images/diagrams/m2_connector_pinout_table.png"
@@ -8,7 +8,7 @@ m2_connector_pinout_table:
   source: "https://www.anandtech.com/show/13609/pcisig-warns-of-incompatibilities-between-m2-and-samsungs-ngsff"
 m2_card_size:
   path: "/images/diagrams/m2_card_size.png"
-  description: "Diagram 2. M.2 card size standards"
+  description: "Image 2. M.2 card size standards"
   source: "https://www.unitek-products.com/products/usb3-1-gen2-type-c-to-m-2-ssd-pcie-nvme-enclosure"
 amphenol_oculink_port_pinout_table:
   path: "/images/diagrams/amphenol_oculink_port_pinout_table.png"
@@ -16,50 +16,101 @@ amphenol_oculink_port_pinout_table:
   source: "https://electronics.stackexchange.com/questions/675174/oculink-connector-pin-configuration-for-root-port-and-endpoint"
 amphenol_oculink_port:
   path: "/images/diagrams/amphenol_oculink_port.jpg"
-  description: "Diagram 3. Amphenol oculink port"
+  description: "Image 3. Amphenol oculink port"
   source: "https://www.amphenol-cs.com/product-series/oculink.html"
 adtlink_m2_to_pcie4_adapter_schematic:
   path: "/images/diagrams/adtlink_m2_to_pcie4_adapter_schematic.png"
-  description: "Diagram 4. Adtlink M.2 to PCIe 4.0 adapter"
+  description: "Image 4. Adtlink M.2 to PCIe 4.0 adapter"
   source: "https://www.adt.link/download/ADT-Cable-R42SF-specification.html"
 gpdwin1_m2_to_oculink_adapter_schematic:
   path: "/images/diagrams/gpdwin1_m2_to_oculink_adapter_schematic.png"
-  description: "Diagram 5. GPD win 1 M.2 to Oculink adapter card"
+  description: "Image 5. GPD win 1 M.2 to Oculink adapter card"
   source: "https://gpd.hk/gpdg1firmwaredriver"
 adtlink_f4c_m2_to_oculink_adapter:
   path: "/images/diagrams/adtlink_f4c_m2_to_oculink_adapter.png"
-  description: "Diagram 6. Adtlink F4C M.2 to Oculink adapter card"
+  description: "Image 6. Adtlink F4C M.2 to Oculink adapter card"
   source: "https://www.adt.link/product/F9GV4.html"
 adtlink_f4c_m2_to_oculink_adapter_photo:
   path: "/images/diagrams/adtlink_f4c_m2_to_oculink_adapter_photo.png"
-  description: "Diagram 7. Purchased Adtlink F4C M.2 to Oculink adapter card with modifications"
+  description: "Image 7. Purchased Adtlink F4C M.2 to Oculink adapter card with modifications"
 lenovo_16arp8_dimensions:
   path: "/images/diagrams/lenovo_16arp8_adapter_layout_prototype.png"
-  description: "Diagram 8. Measurements and prototype layout for M.2 to Oculink adapter"
+  description: "Image 8. Measurements and prototype layout for M.2 to Oculink adapter"
 lenovo_16arp8_3d_model:
   path: "/images/diagrams/lenovo_16arp8_3d_model.png"
-  description: "Diagram 9. 3D modelling of Lenovo 16arp8 based on measurements"
+  description: "Image 9. 3D modelling of Lenovo 16arp8 based on measurements"
 nfhk_vertical_m2_to_oculink_adapter:
   path: "/images/diagrams/nfhk_vertical_m2_to_oculink_adapter.png"
-  description: "Diagram 10. NFHK vertical M.2 to Oculink adapter card"
+  description: "Image 10. NFHK vertical M.2 to Oculink adapter card"
   source: "https://www.aliexpress.com/item/1005007302462841.html"
 kicad_single_board_pcb:
   path: "/images/diagrams/kicad_single_board_pcb.png"
-  description: "Diagram 11. Custom single board M.2 to Oculink adapter PCB"
+  description: "Image 11. Custom single board M.2 to Oculink adapter PCB"
 kicad_single_board_render:
   path: "/images/diagrams/kicad_single_board_render.png"
-  description: "Diagram 12. Custom single board M.2 to Oculink adapter 3D render"
+  description: "Image 12. Custom single board M.2 to Oculink adapter 3D render"
 kicad_flex_connector_pcb:
   path: "/images/diagrams/kicad_flex_connector_pcb.png"
-  description: "Diagram 13. Custom M.2 to Oculink adapter with flex connector PCBs"
+  description: "Image 13. Custom M.2 to Oculink adapter with flex connector PCBs"
 kicad_flex_connector_render:
   path: "/images/diagrams/kicad_flex_connector_render.png"
-  description: "Diagram 14. Custom M.2 to Oculink adapter with flex connector 3D renders"
+  description: "Image 14. Custom M.2 to Oculink adapter with flex connector 3D renders"
 sierra_express_differential_pair_topologies:
   path: "/images/diagrams/sierra_express_differential_pair_topologies.png"
-  description: "Diagram 15. Differential pair topologies"
+  description: "Image 15. Differential pair topologies"
   source: "https://impedance.app.protoexpress.com/"
 altium_eye_diagram:
   path: "/images/diagrams/altium_eye_diagram.png"
-  description: "Diagram 16. Eye diagram"
+  description: "Image 16. Eye diagram"
   source: "https://resources.altium.com/p/what-eye-diagram"
+via_fence_diagram:
+  path: "/images/diagrams/via_fence_diagram.png"
+  description: "Image 17. Via fence"
+via_jump_diagram:
+  path: "/images/diagrams/via_jump_diagram.png"
+  description: "Image 18. Via jump with current path (red/blue) and E-field (yellow)"
+via_jump_pcb:
+  path: "/images/diagrams/via_jump_pcb.png"
+  description: "Image 19. Via jump design with teardrop taper"
+sierra_express_via_stub_back_drilling:
+  path: "/images/diagrams/sierra_express_via_stub_back_drilling.png"
+  description: "Image 20. Via stub back drilling"
+  source: "https://www.protoexpress.com/blog/back-drilling-pcb-design-and-manufacturing/"
+jlcpcb_what_is_pcb_via:
+  path: "/images/diagrams/jlcpcb_what_is_pcb_via.png"
+  description: "Image 21. Buried, blind and through hole vias"
+  source: "https://jlcpcb.com/blog/what-is-pcb-via"
+copper_roughness_skin_effect:
+  path: "/images/diagrams/copper_roughness_skin_effect.png"
+  description: "Image 22. Visualisation of skin effect on rough conductive surfaces"
+  source: "https://industrial.evidentscientific.com.cn/en/applications/copper-foil-surface-roughness-for-5g-printed-circuit-boards/"
+sierra_express_length_matching:
+  path: "/images/diagrams/sierra_express_length_matching.jpg"
+  description: "Image 23. Techniques to length match differential pair"
+  source: "https://www.protoexpress.com/blog/signal-propagation-delay-pcb/"
+fibre_weave_skew_time_domain:
+  description: "Image 24. Asymmetric routing over fibre-weave can produce intra-pair skew"
+  path: "/images/diagrams/fibre_weave_skew_time_domain.jpg"
+  source: "https://www.signalintegrityjournal.com/articles/2459-beware-of-the-skew-budget-how-fiber-weave-effect-can-affect-your-high-speed-design"
+fibre_weave_skew_eye_opening:
+  description: "Image 25. Asymmetric routing over fibre-weave will degrade eye opening"
+  path: "/images/diagrams/fibre_weave_skew_eye_diagram.jpg"
+  source: "https://www.signalintegrityjournal.com/articles/2459-beware-of-the-skew-budget-how-fiber-weave-effect-can-affect-your-high-speed-design"
+fibre_weave_patterns:
+  description: "Image 26. Fibre weave patterns that are available from manufacturers"
+  path: "/images/diagrams/fibre_weave_patterns.png"
+  source: "https://resources.pcb.cadence.com/blog/2019-the-fiber-weave-effect-skew-losses-and-resonance"
+altium_fibre_weave_flattened:
+  description: "Image 27. Mechnically compressed fibre glass with flattened weave pattern"
+  path: "/images/diagrams/altium_fibre_weave_flattened.png"
+  source: "https://resources.altium.com/p/how-the-fiber-weave-effect-influences-high-frequency-signal-integrity"
+jlcpcb_controlled_impedance_stackup_weave_patterns:
+  description: "Image 28. JLCPCB fibre glass weave patterns for controlled impedance stackups"
+  path: "/images/diagrams/jlcpcb_controlled_impedance_stackup_weave_patterns.png"
+  source: "https://jlcpcb.com/impedance"
+hatched_ground_plane_unbalanced:
+  description: "Image 29. Balanced and unbalanced routing of differential pair over hatched ground plane"
+  path: "/images/diagrams/hatched_ground_plane_unbalanced.png"
+hatched_ground_plane_manual_differential_bend:
+  description: "Image 30. Manually warped hatched ground plane with differential pair bend"
+  path: "/images/diagrams/hatched_ground_plane_manual_differential_bend.png"

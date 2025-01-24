@@ -30,3 +30,12 @@ lenovo_ideapad_pro_5_16arp8_specification:
   path: "/pdfs/lenovo_ideapad_pro_5_16arp8_specification.pdf"
   title: "Lenovo IdeaPad Pro 5 16arp8 specifications"
   source: "https://psref.lenovo.com/WDProduct/IdeaPad/IdeaPad_Pro_5_16ARP8?tab=spec"
+north_dakota_university_via_fencing:
+  path: "/pdfs/north_dakota_university_via_fencing.pdf"
+  title: "Effectiveness of PCB perimeter via fencing"
+  source: "https://www.ndsu.edu/pubweb/~braaten/EMC_2016_1.pdf"
+isola_group_fibre_weave_patterns:
+  path: "/pdfs/isola_group_fibre_weave_patterns.pdf"
+  title: "Isola group: Fibre weave patterns"
+  source: "https://www.isola-group.com/wp-content/uploads/Understanding-Laminate-Prepreg-Manufacturing.pdf"
+

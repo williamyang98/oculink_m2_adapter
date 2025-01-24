@@ -22,3 +22,24 @@ jlcpcb_manufacturing_capabilities:
 kicad_drc_file_example:
   title: "Sample KiCAD design rules file"
   path: "https://github.com/williamyang98/oculink_m2_adapter/blob/895a01a6bca91c96aabc5325dedf5facfeb502c6/kicad/oculink_m2_single/oculink_m2.kicad_dru"
+sierra_coaxial_via:
+  title: "Sierra Circuits: Coaxial via geometry"
+  path: "https://www.protoexpress.com/blog/how-via-impedance-impacts-signal-integrity-in-pcbs/"
+sierra_via_stub_back_drilling:
+  title: "Sierra circuits: Via stub backdrilling"
+  path: "https://www.protoexpress.com/blog/back-drilling-pcb-design-and-manufacturing/"
+samtec_blog_via_stub:
+  title: "Samtec blog: Practical strategies to mitigate return loss from via stubs"
+  path: "https://blog.samtec.com/post/via-stubs-practical-strategies-to-mitigate-return-loss/"
+evident_scientific_copper_foil_surface_roughness:
+  title: "Evident Scientific: Copper foil surface roughness for 5G PCBs"
+  path: "https://industrial.evidentscientific.com.cn/en/applications/copper-foil-surface-roughness-for-5g-printed-circuit-boards/"
+signal_integrity_skew_budget:
+  title: "Signal integrity: Beware of the skew budget with fibre weave effect"
+  path: "https://www.signalintegrityjournal.com/articles/2459-beware-of-the-skew-budget-how-fiber-weave-effect-can-affect-your-high-speed-design"
+cadence_fibre_weave_effect:
+  title: "Cadence: The fibre weave effect, skew, losses and resonance"
+  path: "https://resources.pcb.cadence.com/blog/2019-the-fiber-weave-effect-skew-losses-and-resonance"
+altium_types_pcb_copper_foil:
+  title: "Altium: Types of PCB copper foils for high frequency design"
+  path: "https://resources.altium.com/p/types-pcb-copper-foil-high-frequency-design"
