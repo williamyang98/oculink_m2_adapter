@@ -1,1 +1,15 @@
+<script>
+  window.MathJax = {
+    startup: {
+      ready: () => {
+        const FONT_PATH = "/fonts";
+        MathJax.config.chtml.fontURL = FONT_PATH;
+        MathJax.config.chtml.font.options.fontURL = FONT_PATH;
+        MathJax.startup.defaultReady();
+      }
+    }
+  };
+</script>
 <script id="MathJax-script" async src="/js/mathjax-3.2.2.js"></script>
+<script>
+</script>
