@@ -43,3 +43,10 @@ cadence_fibre_weave_effect:
 altium_types_pcb_copper_foil:
   title: "Altium: Types of PCB copper foils for high frequency design"
   path: "https://resources.altium.com/p/types-pcb-copper-foil-high-frequency-design"
+university_san_diego_characteristic_impedance:
+  title: "University of San Diego: Waves and impedances on transmission_lines"
+  path: "https://home.sandiego.edu/~ekim/e194rfs01/tlsmthek.pdf"
+altium_rf_trace_taper:
+  title: "Altium: How to design an RF taper for impedance matching"
+  path: "https://resources.altium.com/p/rf-trace-taper"
+

@@ -114,3 +114,28 @@ hatched_ground_plane_unbalanced:
 hatched_ground_plane_manual_differential_bend:
   description: "Image 30. Manually warped hatched ground plane with differential pair bend"
   path: "/images/diagrams/hatched_ground_plane_manual_differential_bend.png"
+sierra_express_coplanar_ground_plane_via_fence_transmission_line:
+  description: "Image 31. Differential pair with coplanar ground plane stitched with via fence"
+  path: "/images/diagrams/sierra_express_coplanar_ground_plane_via_fence_transmission_line.png"
+jlcpcb_stackup_diagram:
+  description: "Image 32. JLCPCB FR4 stackup vs flexible PCB stackup"
+  path: "/images/diagrams/jlcpcb_stackup_diagram.png"
+  source: "https://jlcpcb.com/impedance"
+jlcpcb_stackup_connection:
+  description: "Image 33. JLCPCB transmission line connection between FR4 stackup and flexible PCB"
+  path: "/images/diagrams/jlcpcb_stackup_connection.png"
+wire_plane_inductance:
+  description: "Image 34. Solid wire over ground plane"
+  path: "/images/diagrams/wire_over_plane.png"
+  source: "https://www.allaboutcircuits.com/tools/wire-over-plane-inductance-calculator/"
+parallel_plate_capacitor:
+  description: "Image 35. Parallel plate capacitor"
+  path: "/images/diagrams/parallel_plate_capacitor.png"
+  source: "https://byjus.com/physics/parallel-plate-capacitor/"
+molex_ffc_fpc_connector:
+  description: "Image 36. Molex FFC/FPC connector"
+  path: "/images/diagrams/molex_ffc_fpc_connector.png"
+  source: "https://www.molex.com/en-us/products/connectors/ffc-fpc-connectors"
+flex_pcb_transmission_line_taper:
+  description: "Image 37. Flexible PCB transmission line taper"
+  path: "/images/diagrams/flex_pcb_transmission_line_taper.png"

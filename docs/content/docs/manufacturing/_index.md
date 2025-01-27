@@ -1,6 +1,6 @@
 ---
 title: Manufacturing
-prev: /docs/design/hatched_ground_plane
+prev: /docs/design/openEMS
 next: /docs/manufacturing/jlcpcb
 weight: 4
 ---

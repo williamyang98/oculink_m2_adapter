@@ -7,8 +7,6 @@ params:
   icon: switch-horizontal
 ---
 
-{{< mathjax_import >}}
-
 - Via jumps are necessary if a transmission line needs to switch lanes. 
 - In order to avoid signal reflections the characteristic impedance of the transmission line needs to remain constant when traversing from between layers through a via.
 
@@ -45,12 +43,12 @@ params:
 - If via jump isn't between the top and bottom layers then there will be a stub segment in the via.
 - This will have the most signficant impact at the following frequency:
 
-{{< mathjax_body >}}
+{{< mathjax body >}}
 f_0 = \frac{c}{4 \sqrt{\epsilon_r} \times d_{stub}}
-{{< /mathjax_body >}}
+{{< /mathjax >}}
 
 - Actual performance degradation happens well before this frequency.
-- By decreasing {{< mathjax_inline >}}d_{stub}{{< /mathjax_inline >}} we can increase {{< mathjax_inline >}}f_0{{< /mathjax_inline >}} well past our maximum design frequency and avoid problems.
+- By decreasing {{< mathjax >}}d_{stub}{{< /mathjax >}} we can increase {{< mathjax >}}f_0{{< /mathjax >}} well past our maximum design frequency and avoid problems.
 - If the via stub is sufficiently short then it will not have a noticeable impact on signal integrity below our maximum design frequency.
 
 ## Buried, blind and through hole vias

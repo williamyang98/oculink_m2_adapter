@@ -44,10 +44,10 @@ The following are phenomena that can contribute to intra-pair skew and methods t
 
 - There should be careful selection of an appropriate fibre weave pattern for maximum uniformity.
 - Additionally there is also mechanically compressed fibre glass which flattens the weave and fills in any gaps to produce a uniform weave pattern.
-- Here is a pdf from Isola group who are a copper clad laminate and prepeg materials manufacturer.
+- Here is a pdf from Isola group who are a copper clad laminate and prepreg materials manufacturer.
     - {{< pdf_link key="isola_group_fibre_weave_patterns" >}}
     - It contains various high quality images of fibre weave patterns and their fill factor measurements.
-    - They also include treatment processes for bonding the prepeg and core to copper layers and how that effects the copper smoothness which is relevant for [skin effect](/docs/design/transmission_line/skin_effect).
+    - They also include treatment processes for bonding the prepreg and core to copper layers and how that effects the copper smoothness which is relevant for [skin effect](/docs/design/transmission_line/skin_effect).
 
 
 #### JLCPCB controlled impedance stackup
@@ -62,7 +62,7 @@ The following are phenomena that can contribute to intra-pair skew and methods t
 - For hatched ground planes in a flexible pcb design asymmetric routing can produce large intra-pair skews.
 - For straight transmission line routes it is trivial to route the differential pair symmetrically.
 - However if the transmission line needs to bend then the hatched ground plane needs to warp to avoid introducing skew.
-- This is exceptionally difficult to do with KiCAD built in hatched ground fill tool.
+- This is exceptionally difficult to do with KiCAD's built in hatched ground fill tool.
 - Requires manual layout and distortion of hatched ground plane to accomodate bends in a differential pair.
 
 {{< responsive_image key="hatched_ground_plane_manual_differential_bend" >}}
