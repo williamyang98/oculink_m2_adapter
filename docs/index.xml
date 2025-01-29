@@ -42,7 +42,7 @@
 &lt;li>&lt;code>SMBCLK&lt;/code> and &lt;code>SMBDAT&lt;/code> is the system management bus and is an I2C interface (optional?)&lt;/li>
 &lt;/ul>
 &lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/pcie_x4_pinout.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/pcie_x4_pinout.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 1. PCIe x4 connector pinout&lt;/i>
 &lt;a href="https://www.adt.link/download/ADT-Cable-R42SF-specification.html">(source)&lt;/a>
@@ -122,7 +122,7 @@
 &lt;h2>Maximum design frequency&lt;span class="hx-absolute -hx-mt-20" id="maximum-design-frequency">&lt;/span>
 &lt;a href="#maximum-design-frequency" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>For a good eye opening the transmissions lines should be designed for 5x the fundemental frequency. For PCIe 4.0 the fundamental frequency is 8GHz which means an ideal maximum design frequency of 40GHz.&lt;/p>
 &lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/altium_eye_diagram.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/altium_eye_diagram.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 16. Eye diagram&lt;/i>
 &lt;a href="https://resources.altium.com/p/what-eye-diagram">(source)&lt;/a>
@@ -138,7 +138,7 @@
 &lt;/ul>
 &lt;h2>AdtLink M.2 to PCIe extension&lt;span class="hx-absolute -hx-mt-20" id="adtlink-m2-to-pcie-extension">&lt;/span>
 &lt;a href="#adtlink-m2-to-pcie-extension" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/adtlink_m2_to_pcie4_adapter_schematic.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/adtlink_m2_to_pcie4_adapter_schematic.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 4. Adtlink M.2 to PCIe 4.0 adapter&lt;/i>
 &lt;a href="https://www.adt.link/download/ADT-Cable-R42SF-specification.html">(source)&lt;/a>
@@ -146,7 +146,7 @@
 &lt;/div>
 &lt;ul>
 &lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
-&lt;a class="hx-flex" href="https://williamyang98.github.io/oculink_m2_adapter/pdfs/adtlink_m2_pcie_x4_extension.pdf">
+&lt;a class="hx-flex" href="https://williamyang98.github.io/oculink_m2_adapter//pdfs/adtlink_m2_pcie_x4_extension.pdf">
 &lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
 &lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
 &lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>&lt;/svg>
@@ -167,7 +167,7 @@
 &lt;/ul>
 &lt;h2>GPD Win v1 M.2 to Oculink card&lt;span class="hx-absolute -hx-mt-20" id="gpd-win-v1-m2-to-oculink-card">&lt;/span>
 &lt;a href="#gpd-win-v1-m2-to-oculink-card" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/gpdwin1_m2_to_oculink_adapter_schematic.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/gpdwin1_m2_to_oculink_adapter_schematic.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 5. GPD win 1 M.2 to Oculink adapter card&lt;/i>
 &lt;a href="https://gpd.hk/gpdg1firmwaredriver">(source)&lt;/a>
@@ -175,7 +175,7 @@
 &lt;/div>
 &lt;ul>
 &lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
-&lt;a class="hx-flex" href="https://williamyang98.github.io/oculink_m2_adapter/pdfs/gpdwin1_schematic.pdf">
+&lt;a class="hx-flex" href="https://williamyang98.github.io/oculink_m2_adapter//pdfs/gpdwin1_schematic.pdf">
 &lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
 &lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
 &lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>&lt;/svg>
@@ -197,14 +197,14 @@
 &lt;/ul>
 &lt;h2>Adtlink M.2 to Oculink card&lt;span class="hx-absolute -hx-mt-20" id="adtlink-m2-to-oculink-card">&lt;/span>
 &lt;a href="#adtlink-m2-to-oculink-card" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/adtlink_f4c_m2_to_oculink_adapter.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/adtlink_f4c_m2_to_oculink_adapter.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 6. Adtlink F4C M.2 to Oculink adapter card&lt;/i>
 &lt;a href="https://www.adt.link/product/F9GV4.html">(source)&lt;/a>
 &lt;/div>
 &lt;/div>
 &lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/adtlink_f4c_m2_to_oculink_adapter_photo.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/adtlink_f4c_m2_to_oculink_adapter_photo.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 7. Purchased Adtlink F4C M.2 to Oculink adapter card with modifications&lt;/i>
 &lt;/div>
@@ -244,7 +244,7 @@
 &lt;/ul></description></item><item><title>Structures</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/structures/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/structures/</guid><description>
 &lt;p>PCIe receive and transmit lanes and reference clock are high frequency differential signals. There are many possible designs for a differential transmission line.&lt;/p>
 &lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/sierra_express_differential_pair_topologies.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/sierra_express_differential_pair_topologies.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 15. Differential pair topologies&lt;/i>
 &lt;a href="https://impedance.app.protoexpress.com/">(source)&lt;/a>
@@ -286,7 +286,7 @@
 &lt;h2>Resources&lt;span class="hx-absolute -hx-mt-20" id="resources">&lt;/span>
 &lt;a href="#resources" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
 &lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
-&lt;a class="hx-flex" href="https://williamyang98.github.io/oculink_m2_adapter/pdfs/texas_instrument_pcie4_layout_guidelines.pdf">
+&lt;a class="hx-flex" href="https://williamyang98.github.io/oculink_m2_adapter//pdfs/texas_instrument_pcie4_layout_guidelines.pdf">
 &lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
 &lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
 &lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>&lt;/svg>
@@ -300,13 +300,13 @@
 &lt;/ul></description></item><item><title>Laptop measurements</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/laptop_measurements/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/laptop_measurements/</guid><description>
 &lt;h2>Measurement and modelling&lt;span class="hx-absolute -hx-mt-20" id="measurement-and-modelling">&lt;/span>
 &lt;a href="#measurement-and-modelling" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/lenovo_16arp8_adapter_layout_prototype.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/lenovo_16arp8_adapter_layout_prototype.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 8. Measurements and prototype layout for M.2 to Oculink adapter&lt;/i>
 &lt;/div>
 &lt;/div>
 &lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/lenovo_16arp8_3d_model.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/lenovo_16arp8_3d_model.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 9. 3D modelling of Lenovo 16arp8 based on measurements&lt;/i>
 &lt;/div>
@@ -328,7 +328,7 @@
 &lt;li>&lt;strong>Option 3&lt;/strong>: Use vertical Oculink adapter and have port on bottom instead of side of laptop.&lt;/li>
 &lt;/ul>
 &lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 75%">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/nfhk_vertical_m2_to_oculink_adapter.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/nfhk_vertical_m2_to_oculink_adapter.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 10. NFHK vertical M.2 to Oculink adapter card&lt;/i>
 &lt;a href="https://www.aliexpress.com/item/1005007302462841.html">(source)&lt;/a>
@@ -340,14 +340,14 @@
 &lt;li>Pins follow the PCIe specification for x4 lanes.&lt;/li>
 &lt;/ul>
 &lt;p>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 75%">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/m2_card_size.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/m2_card_size.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 2. M.2 card size standards&lt;/i>
 &lt;a href="https://www.unitek-products.com/products/usb3-1-gen2-type-c-to-m-2-ssd-pcie-nvme-enclosure">(source)&lt;/a>
 &lt;/div>
 &lt;/div>
 &lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 50%">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/m2_connector_pinout_table.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/m2_connector_pinout_table.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Table 1. M.2 connector pinout&lt;/i>
 &lt;a href="https://www.anandtech.com/show/13609/pcisig-warns-of-incompatibilities-between-m2-and-samsungs-ngsff">(source)&lt;/a>
@@ -358,7 +358,7 @@
 &lt;a href="#oculink-port" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
 &lt;li>Follows the SFF-9402 specification which is compatible with PCIe&lt;/li>
 &lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
-&lt;a class="hx-flex" href="https://williamyang98.github.io/oculink_m2_adapter/pdfs/sff_9402_specification.pdf">
+&lt;a class="hx-flex" href="https://williamyang98.github.io/oculink_m2_adapter//pdfs/sff_9402_specification.pdf">
 &lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
 &lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
 &lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>&lt;/svg>
@@ -374,7 +374,7 @@
 &lt;li>Compatible with the PCIe specification for x4 or x8 lanes.&lt;/li>
 &lt;li>Wider x8 lane variant is not as useful since no M.2 slot as of yet supports PCIe x8 lanes.&lt;/li>
 &lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
-&lt;a class="hx-flex" href="https://williamyang98.github.io/oculink_m2_adapter/pdfs/amphenol_oculink_port_datasheet.pdf">
+&lt;a class="hx-flex" href="https://williamyang98.github.io/oculink_m2_adapter//pdfs/amphenol_oculink_port_datasheet.pdf">
 &lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
 &lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
 &lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>&lt;/svg>
@@ -387,14 +387,14 @@
 &lt;/li>
 &lt;/ul>
 &lt;p>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 50%">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/amphenol_oculink_port.jpg" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/amphenol_oculink_port.jpg" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 3. Amphenol oculink port&lt;/i>
 &lt;a href="https://www.amphenol-cs.com/product-series/oculink.html">(source)&lt;/a>
 &lt;/div>
 &lt;/div>
 &lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/amphenol_oculink_port_pinout_table.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/amphenol_oculink_port_pinout_table.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Table 2. Amphenol Oculink connector pinout&lt;/i>
 &lt;a href="https://electronics.stackexchange.com/questions/675174/oculink-connector-pin-configuration-for-root-port-and-endpoint">(source)&lt;/a>
@@ -437,7 +437,7 @@
 &lt;/li>
 &lt;/ul></description></item><item><title>Via fence</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/via_fence/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/via_fence/</guid><description>
 &lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/via_fence_diagram.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/via_fence_diagram.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 17. Via fence&lt;/i>
 &lt;/div>
@@ -550,7 +550,7 @@ for FR4.&lt;/p>
 &lt;h2>Resources&lt;span class="hx-absolute -hx-mt-20" id="resources">&lt;/span>
 &lt;a href="#resources" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
 &lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
-&lt;a class="hx-flex" href="https://williamyang98.github.io/oculink_m2_adapter/pdfs/north_dakota_university_via_fencing.pdf">
+&lt;a class="hx-flex" href="https://williamyang98.github.io/oculink_m2_adapter//pdfs/north_dakota_university_via_fencing.pdf">
 &lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
 &lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
 &lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>&lt;/svg>
@@ -699,7 +699,7 @@ for FR4.&lt;/p>
 &lt;li>Gerber and drill files must match what the fabricator expects.&lt;/li>
 &lt;li>JLCPCB specifies instructions for KiCAD 7.0 as well as other versions.&lt;/li>
 &lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
-&lt;a class="hx-flex" href="https://williamyang98.github.io/oculink_m2_adapter/pdfs/jlcpcb_kicad_7_generate_gerber_and_drill_files.pdf">
+&lt;a class="hx-flex" href="https://williamyang98.github.io/oculink_m2_adapter//pdfs/jlcpcb_kicad_7_generate_gerber_and_drill_files.pdf">
 &lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
 &lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
 &lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>&lt;/svg>
@@ -719,7 +719,7 @@ for FR4.&lt;/p>
 &lt;/ul>
 &lt;h2>Coaxial via&lt;span class="hx-absolute -hx-mt-20" id="coaxial-via">&lt;/span>
 &lt;a href="#coaxial-via" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/via_jump_diagram.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/via_jump_diagram.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 18. Via jump with current path (red/blue) and E-field (yellow)&lt;/i>
 &lt;/div>
@@ -739,7 +739,7 @@ for FR4.&lt;/p>
 &lt;/ul>
 &lt;h2>Teardrop taper&lt;span class="hx-absolute -hx-mt-20" id="teardrop-taper">&lt;/span>
 &lt;a href="#teardrop-taper" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/via_jump_pcb.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/via_jump_pcb.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 19. Via jump design with teardrop taper&lt;/i>
 &lt;/div>
@@ -763,7 +763,7 @@ for FR4.&lt;/p>
 &lt;/ul>
 &lt;h2>Via stubs&lt;span class="hx-absolute -hx-mt-20" id="via-stubs">&lt;/span>
 &lt;a href="#via-stubs" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/sierra_express_via_stub_back_drilling.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/sierra_express_via_stub_back_drilling.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 20. Via stub back drilling&lt;/i>
 &lt;a href="https://www.protoexpress.com/blog/back-drilling-pcb-design-and-manufacturing/">(source)&lt;/a>
@@ -787,7 +787,7 @@ well past our maximum design frequency and avoid problems.&lt;/li>
 &lt;/ul>
 &lt;h2>Buried, blind and through hole vias&lt;span class="hx-absolute -hx-mt-20" id="buried-blind-and-through-hole-vias">&lt;/span>
 &lt;a href="#buried-blind-and-through-hole-vias" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/jlcpcb_what_is_pcb_via.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/jlcpcb_what_is_pcb_via.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 21. Buried, blind and through hole vias&lt;/i>
 &lt;a href="https://jlcpcb.com/blog/what-is-pcb-via">(source)&lt;/a>
@@ -836,13 +836,13 @@ well past our maximum design frequency and avoid problems.&lt;/li>
 &lt;/ul></description></item><item><title>Single board design</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/single_board/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/single_board/</guid><description>
 &lt;h2>Images&lt;span class="hx-absolute -hx-mt-20" id="images">&lt;/span>
 &lt;a href="#images" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/kicad_single_board_pcb.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/kicad_single_board_pcb.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 11. Custom single board M.2 to Oculink adapter PCB&lt;/i>
 &lt;/div>
 &lt;/div>
 &lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/kicad_single_board_render.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/kicad_single_board_render.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 12. Custom single board M.2 to Oculink adapter 3D render&lt;/i>
 &lt;/div>
@@ -892,7 +892,7 @@ well past our maximum design frequency and avoid problems.&lt;/li>
 &lt;li>Overall cost of $35.80USD.&lt;/li>
 &lt;/ul></description></item><item><title>Skin effect</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/skin_effect/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/skin_effect/</guid><description>
 &lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/copper_roughness_skin_effect.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/copper_roughness_skin_effect.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 22. Visualisation of skin effect on rough conductive surfaces&lt;/i>
 &lt;a href="https://industrial.evidentscientific.com.cn/en/applications/copper-foil-surface-roughness-for-5g-printed-circuit-boards/">(source)&lt;/a>
@@ -1080,13 +1080,13 @@ well past our maximum design frequency and avoid problems.&lt;/li>
 &lt;/ul></description></item><item><title>Flex connector design</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/flex_pcb/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/flex_pcb/</guid><description>
 &lt;h2>Images&lt;span class="hx-absolute -hx-mt-20" id="images">&lt;/span>
 &lt;a href="#images" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/kicad_flex_connector_pcb.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/kicad_flex_connector_pcb.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 13. Custom M.2 to Oculink adapter with flex connector PCBs&lt;/i>
 &lt;/div>
 &lt;/div>
 &lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/kicad_flex_connector_render.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/kicad_flex_connector_render.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 14. Custom M.2 to Oculink adapter with flex connector 3D renders&lt;/i>
 &lt;/div>
@@ -1196,7 +1196,7 @@ well past our maximum design frequency and avoid problems.&lt;/li>
 The following are phenomena that can contribute to intra-pair skew and methods to mitigate them.&lt;/p>
 &lt;h3>Bends in transmission line&lt;span class="hx-absolute -hx-mt-20" id="bends-in-transmission-line">&lt;/span>
 &lt;a href="#bends-in-transmission-line" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/sierra_express_length_matching.jpg" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/sierra_express_length_matching.jpg" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 23. Techniques to length match differential pair&lt;/i>
 &lt;a href="https://www.protoexpress.com/blog/signal-propagation-delay-pcb/">(source)&lt;/a>
@@ -1210,14 +1210,14 @@ The following are phenomena that can contribute to intra-pair skew and methods t
 &lt;/ul>
 &lt;h3>Fibre weave effect&lt;span class="hx-absolute -hx-mt-20" id="fibre-weave-effect">&lt;/span>
 &lt;a href="#fibre-weave-effect" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/fibre_weave_skew_time_domain.jpg" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/fibre_weave_skew_time_domain.jpg" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 24. Asymmetric routing over fibre-weave can produce intra-pair skew&lt;/i>
 &lt;a href="https://www.signalintegrityjournal.com/articles/2459-beware-of-the-skew-budget-how-fiber-weave-effect-can-affect-your-high-speed-design">(source)&lt;/a>
 &lt;/div>
 &lt;/div>
 &lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/fibre_weave_skew_eye_diagram.jpg" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/fibre_weave_skew_eye_diagram.jpg" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 25. Asymmetric routing over fibre-weave will degrade eye opening&lt;/i>
 &lt;a href="https://www.signalintegrityjournal.com/articles/2459-beware-of-the-skew-budget-how-fiber-weave-effect-can-affect-your-high-speed-design">(source)&lt;/a>
@@ -1252,14 +1252,14 @@ The following are phenomena that can contribute to intra-pair skew and methods t
 &lt;/ul>
 &lt;h4>Better fibre weave patterns&lt;span class="hx-absolute -hx-mt-20" id="better-fibre-weave-patterns">&lt;/span>
 &lt;a href="#better-fibre-weave-patterns" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/fibre_weave_patterns.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/fibre_weave_patterns.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 26. Fibre weave patterns that are available from manufacturers&lt;/i>
 &lt;a href="https://resources.pcb.cadence.com/blog/2019-the-fiber-weave-effect-skew-losses-and-resonance">(source)&lt;/a>
 &lt;/div>
 &lt;/div>
 &lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/altium_fibre_weave_flattened.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/altium_fibre_weave_flattened.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 27. Mechnically compressed fibre glass with flattened weave pattern&lt;/i>
 &lt;a href="https://resources.altium.com/p/how-the-fiber-weave-effect-influences-high-frequency-signal-integrity">(source)&lt;/a>
@@ -1272,7 +1272,7 @@ The following are phenomena that can contribute to intra-pair skew and methods t
 &lt;li>Here is a pdf from Isola group who are a copper clad laminate and prepreg materials manufacturer.
 &lt;ul>
 &lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
-&lt;a class="hx-flex" href="https://williamyang98.github.io/oculink_m2_adapter/pdfs/isola_group_fibre_weave_patterns.pdf">
+&lt;a class="hx-flex" href="https://williamyang98.github.io/oculink_m2_adapter//pdfs/isola_group_fibre_weave_patterns.pdf">
 &lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
 &lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
 &lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>&lt;/svg>
@@ -1290,7 +1290,7 @@ The following are phenomena that can contribute to intra-pair skew and methods t
 &lt;/ul>
 &lt;h4>JLCPCB controlled impedance stackup&lt;span class="hx-absolute -hx-mt-20" id="jlcpcb-controlled-impedance-stackup">&lt;/span>
 &lt;a href="#jlcpcb-controlled-impedance-stackup" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/jlcpcb_controlled_impedance_stackup_weave_patterns.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/jlcpcb_controlled_impedance_stackup_weave_patterns.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 28. JLCPCB fibre glass weave patterns for controlled impedance stackups&lt;/i>
 &lt;a href="https://jlcpcb.com/impedance">(source)&lt;/a>
@@ -1302,7 +1302,7 @@ The following are phenomena that can contribute to intra-pair skew and methods t
 &lt;/ul>
 &lt;h3>Hatched ground plane&lt;span class="hx-absolute -hx-mt-20" id="hatched-ground-plane">&lt;/span>
 &lt;a href="#hatched-ground-plane" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/hatched_ground_plane_unbalanced.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/hatched_ground_plane_unbalanced.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 29. Balanced and unbalanced routing of differential pair over hatched ground plane&lt;/i>
 &lt;/div>
@@ -1315,7 +1315,7 @@ The following are phenomena that can contribute to intra-pair skew and methods t
 &lt;li>Requires manual layout and distortion of hatched ground plane to accomodate bends in a differential pair.&lt;/li>
 &lt;/ul>
 &lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/hatched_ground_plane_manual_differential_bend.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/hatched_ground_plane_manual_differential_bend.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 30. Manually warped hatched ground plane with differential pair bend&lt;/i>
 &lt;/div>
@@ -1357,7 +1357,7 @@ The following are phenomena that can contribute to intra-pair skew and methods t
 &lt;h2>Type of connection&lt;span class="hx-absolute -hx-mt-20" id="type-of-connection">&lt;/span>
 &lt;a href="#type-of-connection" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>Flexible flat/printed cable connector&lt;span class="hx-absolute -hx-mt-20" id="flexible-flatprinted-cable-connector">&lt;/span>
 &lt;a href="#flexible-flatprinted-cable-connector" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/molex_ffc_fpc_connector.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/molex_ffc_fpc_connector.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 36. Molex FFC/FPC connector&lt;/i>
 &lt;a href="https://www.molex.com/en-us/products/connectors/ffc-fpc-connectors">(source)&lt;/a>
@@ -1392,7 +1392,7 @@ The following are phenomena that can contribute to intra-pair skew and methods t
 &lt;/table>
 &lt;ul>
 &lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
-&lt;a class="hx-flex" href="https://williamyang98.github.io/oculink_m2_adapter/pdfs/molex_ffc_fpc_datasheet.pdf">
+&lt;a class="hx-flex" href="https://williamyang98.github.io/oculink_m2_adapter//pdfs/molex_ffc_fpc_datasheet.pdf">
 &lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
 &lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
 &lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>&lt;/svg>
@@ -1435,7 +1435,7 @@ The following are phenomena that can contribute to intra-pair skew and methods t
 &lt;a href="#final-choice" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>The &lt;strong>soldered connection&lt;/strong> allows closer control over the design of the tranmission line and avoids the downsides of a FFC connector. This should allow us to avoid or mitigate the signal integrity issues that will arise from the use of a FFC connector.&lt;/p>
 &lt;h2>Structure of transmission line&lt;span class="hx-absolute -hx-mt-20" id="structure-of-transmission-line">&lt;/span>
 &lt;a href="#structure-of-transmission-line" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/sierra_express_coplanar_ground_plane_via_fence_transmission_line.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/sierra_express_coplanar_ground_plane_via_fence_transmission_line.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 31. Differential pair with coplanar ground plane stitched with via fence&lt;/i>
 &lt;/div>
@@ -1462,7 +1462,7 @@ Z_0 = \sqrt{\frac{L}{C}}
 &lt;p>\[ C = \frac{\epsilon_0 A}{d} \]&lt;/p>
 &lt;/p>
 &lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/parallel_plate_capacitor.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/parallel_plate_capacitor.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 35. Parallel plate capacitor&lt;/i>
 &lt;a href="https://byjus.com/physics/parallel-plate-capacitor/">(source)&lt;/a>
@@ -1473,7 +1473,7 @@ Z_0 = \sqrt{\frac{L}{C}}
 &lt;p>\[ L = \frac{\mu_0 \mu_r d}{2 \pi} cosh^{-1}{\frac{h}{2r}} \]&lt;/p>
 &lt;/p>
 &lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/wire_over_plane.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/wire_over_plane.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 34. Solid wire over ground plane&lt;/i>
 &lt;a href="https://www.allaboutcircuits.com/tools/wire-over-plane-inductance-calculator/">(source)&lt;/a>
@@ -1481,7 +1481,7 @@ Z_0 = \sqrt{\frac{L}{C}}
 &lt;/div>
 &lt;h2>Stackup height differences&lt;span class="hx-absolute -hx-mt-20" id="stackup-height-differences">&lt;/span>
 &lt;a href="#stackup-height-differences" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/jlcpcb_stackup_diagram.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/jlcpcb_stackup_diagram.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 32. JLCPCB FR4 stackup vs flexible PCB stackup&lt;/i>
 &lt;a href="https://jlcpcb.com/impedance">(source)&lt;/a>
@@ -1499,7 +1499,7 @@ Z_0 = \sqrt{\frac{L}{C}}
 &lt;/ul>
 &lt;h2>Vertical transmission line connection&lt;span class="hx-absolute -hx-mt-20" id="vertical-transmission-line-connection">&lt;/span>
 &lt;a href="#vertical-transmission-line-connection" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/jlcpcb_stackup_connection.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/jlcpcb_stackup_connection.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 33. JLCPCB transmission line connection between FR4 stackup and flexible PCB&lt;/i>
 &lt;/div>
@@ -1522,7 +1522,7 @@ Transition from FR4 stackup to flexible PCB involves a vertical solder connectio
 &lt;/ul>
 &lt;h3>Tapered connection&lt;span class="hx-absolute -hx-mt-20" id="tapered-connection">&lt;/span>
 &lt;a href="#tapered-connection" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/flex_pcb_transmission_line_taper.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/flex_pcb_transmission_line_taper.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 37. Flexible PCB transmission line taper&lt;/i>
 &lt;/div>
