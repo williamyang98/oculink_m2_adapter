@@ -1,0 +1,421 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>M.2 Oculink Adapter – Design</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/</link><description>Recent content in Design on M.2 Oculink Adapter</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://williamyang98.github.io/oculink_m2_adapter/docs/design/index.xml" rel="self" type="application/rss+xml"/><item><title>Reference designs</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/reference_designs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/reference_designs/</guid><description>
+&lt;h2>Points to verify&lt;span class="hx-absolute -hx-mt-20" id="points-to-verify">&lt;/span>
+&lt;a href="#points-to-verify" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Do you wire from PERxy on the M.2 side to PERxy on the Oculink side, or PERxy to PETxy?&lt;/li>
+&lt;li>Do all of the control signals need to be connected?&lt;/li>
+&lt;li>Is SMB (system management bus) data and clock required or is it optional?&lt;/li>
+&lt;li>What about the MFG (manufacturer) data and clock on the M.2 card which is not present on the Oculink connector or PCIe standard?&lt;/li>
+&lt;li>Is lane reordering and polarity inversion okay to use for routing PCIe connections?&lt;/li>
+&lt;/ul>
+&lt;h2>AdtLink M.2 to PCIe extension&lt;span class="hx-absolute -hx-mt-20" id="adtlink-m2-to-pcie-extension">&lt;/span>
+&lt;a href="#adtlink-m2-to-pcie-extension" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/adtlink_m2_to_pcie4_adapter_schematic.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 4. Adtlink M.2 to PCIe 4.0 adapter&lt;/i>
+&lt;a href="https://www.adt.link/download/ADT-Cable-R42SF-specification.html">(source)&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;ul>
+&lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
+&lt;a class="hx-flex" href="https://williamyang98.github.io/oculink_m2_adapter/pdfs/adtlink_m2_pcie_x4_extension.pdf">
+&lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
+&lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
+&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;div style="margin-right: 0.25rem">Adtlink M.2 PCIe x4 extension cable schematic&lt;/div>
+&lt;/a>
+&lt;a href="https://www.adt.link/download/ADT-Cable-R42SF-specification.html">(source)&lt;/a>
+&lt;/div>
+&lt;/li>
+&lt;li>&lt;code>[CLKREQ, PERST]&lt;/code> are connected.&lt;/li>
+&lt;li>&lt;code>[PEWAKE, PEDET]&lt;/code> are &lt;strong>not&lt;/strong> connected.&lt;/li>
+&lt;li>&lt;code>[SMB_CLOCK, SMB_DATA]&lt;/code> are &lt;strong>not&lt;/strong> connected.&lt;/li>
+&lt;li>&lt;code>[MFG_CLOCK, MFG_DATA]&lt;/code> are &lt;strong>not&lt;/strong> connected.&lt;/li>
+&lt;li>&lt;code>3.3V&lt;/code> is connected.&lt;/li>
+&lt;li>&lt;code>REFCLK&lt;/code> is connected with same polarity.&lt;/li>
+&lt;li>&lt;code>[PERxy, PETxy]&lt;/code> lanes are connected with same polarity and same order.&lt;/li>
+&lt;/ul>
+&lt;h2>GPD Win v1 M.2 to Oculink card&lt;span class="hx-absolute -hx-mt-20" id="gpd-win-v1-m2-to-oculink-card">&lt;/span>
+&lt;a href="#gpd-win-v1-m2-to-oculink-card" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/gpdwin1_m2_to_oculink_adapter_schematic.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 5. GPD win 1 M.2 to Oculink adapter card&lt;/i>
+&lt;a href="https://gpd.hk/gpdg1firmwaredriver">(source)&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;ul>
+&lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
+&lt;a class="hx-flex" href="https://williamyang98.github.io/oculink_m2_adapter/pdfs/gpdwin1_schematic.pdf">
+&lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
+&lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
+&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;div style="margin-right: 0.25rem">Gpdwin1 M.2 to Oculink adapter schematic&lt;/div>
+&lt;/a>
+&lt;a href="https://gpd.hk/gpdg1firmwaredriver">(source)&lt;/a>
+&lt;/div>
+&lt;/li>
+&lt;li>&lt;code>[PERST, PEDET]&lt;/code> are connected.&lt;/li>
+&lt;li>&lt;code>CLKREQ&lt;/code> is connected but through a Schottky diode.&lt;/li>
+&lt;li>&lt;code>PEWAKE&lt;/code> is &lt;strong>not&lt;/strong> connected.&lt;/li>
+&lt;li>&lt;code>[SMB_CLOCK, SMB_DATA]&lt;/code> are &lt;strong>not&lt;/strong> connected.&lt;/li>
+&lt;li>&lt;code>[MFG_CLOCK, MFG_DATA]&lt;/code> are &lt;strong>not&lt;/strong> connected.&lt;/li>
+&lt;li>&lt;code>3.3V&lt;/code> is connected through a jumper.&lt;/li>
+&lt;li>&lt;code>REFCLK&lt;/code> is connected with same polarity.&lt;/li>
+&lt;li>&lt;code>[PERxy, PETxy]&lt;/code> lanes are connected with same polarity and same order.&lt;/li>
+&lt;/ul>
+&lt;h2>Adtlink M.2 to Oculink card&lt;span class="hx-absolute -hx-mt-20" id="adtlink-m2-to-oculink-card">&lt;/span>
+&lt;a href="#adtlink-m2-to-oculink-card" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/adtlink_f4c_m2_to_oculink_adapter.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 6. Adtlink F4C M.2 to Oculink adapter card&lt;/i>
+&lt;a href="https://www.adt.link/product/F9GV4.html">(source)&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/adtlink_f4c_m2_to_oculink_adapter_photo.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 7. Purchased Adtlink F4C M.2 to Oculink adapter card with modifications&lt;/i>
+&lt;/div>
+&lt;/div>
+&lt;/p>
+&lt;ul>
+&lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
+&lt;a href="https://www.adt.link/product/F9GV4.html" class="hx-inline-flex">
+&lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
+&lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
+&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;div>Adtlink PCIe 4.0 eGPU Oculink dock&lt;/div>
+&lt;/a>
+&lt;/div>
+&lt;/li>
+&lt;li>&lt;code>[PERST, CLKREQ]&lt;/code> are connected.&lt;/li>
+&lt;li>&lt;code>[PEWAKE, PEDET]&lt;/code> are &lt;strong>not&lt;/strong> connected.&lt;/li>
+&lt;li>&lt;code>[SMB_CLOCK, SMB_DATA]&lt;/code> are connected.&lt;/li>
+&lt;li>&lt;code>[MFG_CLOCK, MFG_DATA]&lt;/code> are &lt;strong>not&lt;/strong> connected.&lt;/li>
+&lt;li>&lt;code>3.3V&lt;/code> is connected.&lt;/li>
+&lt;li>&lt;code>REFCLK&lt;/code> is connected with same polarity.&lt;/li>
+&lt;li>&lt;code>[PERxy, PETxy]&lt;/code> lanes are connected with opposite polarity and opposite order.&lt;/li>
+&lt;/ul>
+&lt;h2>Summary&lt;span class="hx-absolute -hx-mt-20" id="summary">&lt;/span>
+&lt;a href="#summary" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>&lt;code>PERST&lt;/code> must be connected.&lt;/li>
+&lt;li>&lt;code>CLKREQ&lt;/code> must be connected, possibly through a diode, or shorted to ground on host side.&lt;/li>
+&lt;li>&lt;code>PERST&lt;/code> is optional.&lt;/li>
+&lt;li>&lt;code>PEWAKE&lt;/code> is not connected (might be optional?).&lt;/li>
+&lt;li>&lt;code>[SMB_CLOCK, SMB_DATA]&lt;/code> are optional.&lt;/li>
+&lt;li>&lt;code>[MFG_CLOCK, MFG_DATA]&lt;/code> are not connected.&lt;/li>
+&lt;li>&lt;code>3.3V&lt;/code> is connected.&lt;/li>
+&lt;li>&lt;code>REFCLK&lt;/code> must be connected with same polarity.&lt;/li>
+&lt;li>&lt;code>[PERxy, PETxy]&lt;/code> can be connected in opposite polarity and/or opposite order.&lt;/li>
+&lt;/ul></description></item><item><title>Laptop measurements</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/laptop_measurements/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/laptop_measurements/</guid><description>
+&lt;h2>Measurement and modelling&lt;span class="hx-absolute -hx-mt-20" id="measurement-and-modelling">&lt;/span>
+&lt;a href="#measurement-and-modelling" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/lenovo_16arp8_adapter_layout_prototype.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 8. Measurements and prototype layout for M.2 to Oculink adapter&lt;/i>
+&lt;/div>
+&lt;/div>
+&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/lenovo_16arp8_3d_model.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 9. 3D modelling of Lenovo 16arp8 based on measurements&lt;/i>
+&lt;/div>
+&lt;/div>
+&lt;/p>
+&lt;ul>
+&lt;li>Modelling was done from a sparse set of measurements.&lt;/li>
+&lt;li>After modelling was done arbitrary measurements of any feature could be done.&lt;/li>
+&lt;li>Easier than measuring every possible dimension when needed.&lt;/li>
+&lt;/ul>
+&lt;h2>Planning&lt;span class="hx-absolute -hx-mt-20" id="planning">&lt;/span>
+&lt;a href="#planning" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Longer M.2 2280 slot is used for high capacity SSD.&lt;/li>
+&lt;li>Shorter M.2 2242 slot is available but in a less convenient location.&lt;/li>
+&lt;li>Left speaker can be removed to make room for Oculink port.&lt;/li>
+&lt;li>M.2 2242 slot has 1mm of clearance for bottom side passive components.&lt;/li>
+&lt;li>&lt;strong>Option 1&lt;/strong>: Very narrow 12mm gap between M.2 2280 connector and internal display connector for single board design for side Oculink port.&lt;/li>
+&lt;li>&lt;strong>Option 2&lt;/strong>: Vertical space underneath M.2 2280 slot for routing with a flex pcb design that has a side Oculink port.&lt;/li>
+&lt;li>&lt;strong>Option 3&lt;/strong>: Use vertical Oculink adapter and have port on bottom instead of side of laptop.&lt;/li>
+&lt;/ul>
+&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 75%">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/nfhk_vertical_m2_to_oculink_adapter.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 10. NFHK vertical M.2 to Oculink adapter card&lt;/i>
+&lt;a href="https://www.aliexpress.com/item/1005007302462841.html">(source)&lt;/a>
+&lt;/div>
+&lt;/div></description></item><item><title>KiCAD &amp; JLCPCB</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/kicad_jlcpcb/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/kicad_jlcpcb/</guid><description>
+&lt;h2>Reasons to use KiCAD&lt;span class="hx-absolute -hx-mt-20" id="reasons-to-use-kicad">&lt;/span>
+&lt;a href="#reasons-to-use-kicad" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Free and open source. No license required for usage.&lt;/li>
+&lt;li>More than adequate for passive M.2 to Oculink adapter.&lt;/li>
+&lt;li>Transmission line calculators are limited but there are plenty of more capable free and public options.&lt;/li>
+&lt;li>Lacks high end simulation capabilities like Altium but open source substitutes are available.&lt;/li>
+&lt;/ul>
+&lt;h2>Reasons to use JLCPCB&lt;span class="hx-absolute -hx-mt-20" id="reasons-to-use-jlcpcb">&lt;/span>
+&lt;a href="#reasons-to-use-jlcpcb" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>The cheapest PCB manufacturer.&lt;/li>
+&lt;li>Offers plenty of discounts for extremely low prices.&lt;/li>
+&lt;li>If you stay under certain size requirements the cost will remain exceptionally low.&lt;/li>
+&lt;li>Inexpensive 0.8mm thick stackup which is required for M.2 edge connector.
+&lt;ul>
+&lt;li>Only requires lead free HASL to be the mandatory surface finish which costs $4.80USD.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Inexpensive board cost if certain size thresholds aren&amp;rsquo;t exceeded.
+&lt;ul>
+&lt;li>For boards less than 50mm x 50mm board cost is only $2.00USD.&lt;/li>
+&lt;li>For boards between 50mm x 50mm and 100mm x 100mm the board cost is $7.00USD.&lt;/li>
+&lt;li>For boards above 100mm x 100mm there is an aditional engineering fee which costs $24.00USD.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Inexpensive 4 layer boards which are important for maintaining solid ground plane if signal traces need to be routed on separate layers.&lt;/li>
+&lt;li>Controlled impedance stackup to meet transmission line design requirements.&lt;/li>
+&lt;li>Allows choosing denser more uniform fibre weaves to improve signal integrity in transmission lines.
+&lt;ul>
+&lt;li>A non-uniform weave could cause problems if a differential trace were routed over it.&lt;/li>
+&lt;li>Each side of the pair could be on a piece of the weave with different densities of fibres.&lt;/li>
+&lt;li>This would mean each trace in the pair experiences a different dielectric constant.&lt;/li>
+&lt;li>Since the speed of propagation is dependent on the dielectric constant, a skew in the time domain would be induced in the differential pair.&lt;/li>
+&lt;li>PCIe standard has relatively&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ENIG (gold plating) to prevent oxidation of M.2 edge connector and flatter profile for more reliable reflow soldering.&lt;/li>
+&lt;li>Flexible PCBs for designs that require large amounts of vertical routing.&lt;/li>
+&lt;li>Very generous constraints minimum via sizes and pad pitch which is important for high frequency design where physical dimensions of traces, vias, and connector pitch can get very small.&lt;/li>
+&lt;/ul>
+&lt;h2>Importing design constraints into KiCAD&lt;span class="hx-absolute -hx-mt-20" id="importing-design-constraints-into-kicad">&lt;/span>
+&lt;a href="#importing-design-constraints-into-kicad" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>JLCPCB specifies manufacturing capabilities.&lt;/li>
+&lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
+&lt;a href="https://jlcpcb.com/capabilities/pcb-capabilities" class="hx-inline-flex">
+&lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
+&lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
+&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;div>JLCPCB manufacturing capabilities&lt;/div>
+&lt;/a>
+&lt;/div>
+&lt;/li>
+&lt;li>The values for certain constraints will vary depending on options you select for the number of layers, minimum via size and stackup type.&lt;/li>
+&lt;li>KiCAD supports creating a design rules file to automatically check these manufacturing constraints to prevent submitting unmanufacturable designs to a fabricator.&lt;/li>
+&lt;li>The design rules checker (DRC) can be triggered manually or is run automatically before generating gerber and drill files.&lt;/li>
+&lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
+&lt;a href="https://github.com/williamyang98/oculink_m2_adapter/blob/895a01a6bca91c96aabc5325dedf5facfeb502c6/kicad/oculink_m2_single/oculink_m2.kicad_dru" class="hx-inline-flex">
+&lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
+&lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
+&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;div>Sample KiCAD design rules file&lt;/div>
+&lt;/a>
+&lt;/div>
+&lt;/li>
+&lt;/ul>
+&lt;h2>Generating gerber and drill files&lt;span class="hx-absolute -hx-mt-20" id="generating-gerber-and-drill-files">&lt;/span>
+&lt;a href="#generating-gerber-and-drill-files" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Gerber and drill files must match what the fabricator expects.&lt;/li>
+&lt;li>JLCPCB specifies instructions for KiCAD 7.0 as well as other versions.&lt;/li>
+&lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
+&lt;a class="hx-flex" href="https://williamyang98.github.io/oculink_m2_adapter/pdfs/jlcpcb_kicad_7_generate_gerber_and_drill_files.pdf">
+&lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
+&lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
+&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;div style="margin-right: 0.25rem">JLCPCB instructions to generate KiCAD 7 gerber and drill files&lt;/div>
+&lt;/a>
+&lt;a href="https://jlcpcb.com/help/article/how-to-generate-gerber-and-drill-files-in-kicad-7">(source)&lt;/a>
+&lt;/div>
+&lt;/li>
+&lt;li>Verify output through local gerber viewer program before submitting.&lt;/li>
+&lt;li>Final verification in JLCPCB online gerber viewer after uploading design.&lt;/li>
+&lt;/ul></description></item><item><title>Single board design</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/single_board/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/single_board/</guid><description>
+&lt;h2>Images&lt;span class="hx-absolute -hx-mt-20" id="images">&lt;/span>
+&lt;a href="#images" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/kicad_single_board_pcb.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 11. Custom single board M.2 to Oculink adapter PCB&lt;/i>
+&lt;/div>
+&lt;/div>
+&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/kicad_single_board_render.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 12. Custom single board M.2 to Oculink adapter 3D render&lt;/i>
+&lt;/div>
+&lt;/div>
+&lt;/p>
+&lt;h2>Advantages&lt;span class="hx-absolute -hx-mt-20" id="advantages">&lt;/span>
+&lt;a href="#advantages" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>Simpler design&lt;span class="hx-absolute -hx-mt-20" id="simpler-design">&lt;/span>
+&lt;a href="#simpler-design" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;ul>
+&lt;li>Easier manufacturing and testing since we only need to solder the Oculink port and passive components.&lt;/li>
+&lt;li>Single KiCAD schematic required allowing for easier design inside single project.&lt;/li>
+&lt;li>Requires only a single transmission line to be designed reducing design complexity.&lt;/li>
+&lt;/ul>
+&lt;h3>More reliable performance&lt;span class="hx-absolute -hx-mt-20" id="more-reliable-performance">&lt;/span>
+&lt;a href="#more-reliable-performance" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;ul>
+&lt;li>Having multiple boards connected over a flexible PCB adds additional potential impedance discontinuities.&lt;/li>
+&lt;li>Without equipment to verify performance at PCIe 3.0+ frequencies it is difficult to validate performance.&lt;/li>
+&lt;li>Introducing fewer design uncertainties will make final performance more likely to align with calculations.&lt;/li>
+&lt;/ul>
+&lt;h2>Disadvantages&lt;span class="hx-absolute -hx-mt-20" id="disadvantages">&lt;/span>
+&lt;a href="#disadvantages" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>Narrow routing resulting in layer transition&lt;span class="hx-absolute -hx-mt-20" id="narrow-routing-resulting-in-layer-transition">&lt;/span>
+&lt;a href="#narrow-routing-resulting-in-layer-transition" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>PCIe signal lanes have to fit through a very narrow region which requires routing differential pairs onto other layers.&lt;/p>
+&lt;ul>
+&lt;li>Requires careful design of via jumps to prevent impedance mismatch and signal reflection.&lt;/li>
+&lt;li>PCIe RX lanes have 1 via jump and PCIe TX lanes have 2 via jumps.&lt;/li>
+&lt;li>Each additional via jump will worsen signal integrity so having 2 is unideal.&lt;/li>
+&lt;/ul>
+&lt;h3>Port location and bending&lt;span class="hx-absolute -hx-mt-20" id="port-location-and-bending">&lt;/span>
+&lt;a href="#port-location-and-bending" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Board has to be slightly bent so that Oculink port is at the correct height with laptop chassis.&lt;/p>
+&lt;ul>
+&lt;li>Might result in damage to circuit if the board isn&amp;rsquo;t flexible enough.&lt;/li>
+&lt;li>Could result in degraded transmission line performance due to stretching of traces and introduction of inter-pair skew in differential pairs.&lt;/li>
+&lt;li>Could result in Oculink port pad connection breaking due to uneven mechanical stress.&lt;/li>
+&lt;/ul>
+&lt;h3>Long distance routing&lt;span class="hx-absolute -hx-mt-20" id="long-distance-routing">&lt;/span>
+&lt;a href="#long-distance-routing" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>PCIe lanes have to be routed over a moderately long distance (12cm).&lt;/p>
+&lt;ul>
+&lt;li>We are using FR4-TG135 which has a high dielectric loss at high frequencies.&lt;/li>
+&lt;li>If we are targetting PCIe 4.0 then we need to handle the 5th harmonic of the fundemental frequency which is 40GHz.&lt;/li>
+&lt;li>It is highly unlikely to maintain PCIe 4.0 over such a long distance with a high loss dielectric.&lt;/li>
+&lt;/ul>
+&lt;h3>Large size&lt;span class="hx-absolute -hx-mt-20" id="large-size">&lt;/span>
+&lt;a href="#large-size" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Single board design is relatively large.&lt;/p>
+&lt;ul>
+&lt;li>M.2 slot requires 0.8mm thickness which results in mandatory lead free HASL that costs $4.80USD.&lt;/li>
+&lt;li>Exceeds 50mm x 50mm threshold meaning board goes from $2.00USD to $7.00USD.&lt;/li>
+&lt;li>Exceeds 100mm x 100mm threshold meaning additional engineering fee of $24.00USD.&lt;/li>
+&lt;li>Overall cost of $35.80USD.&lt;/li>
+&lt;/ul></description></item><item><title>Flex connector design</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/flex_pcb/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/flex_pcb/</guid><description>
+&lt;h2>Images&lt;span class="hx-absolute -hx-mt-20" id="images">&lt;/span>
+&lt;a href="#images" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/kicad_flex_connector_pcb.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 13. Custom M.2 to Oculink adapter with flex connector PCBs&lt;/i>
+&lt;/div>
+&lt;/div>
+&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/kicad_flex_connector_render.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 14. Custom M.2 to Oculink adapter with flex connector 3D renders&lt;/i>
+&lt;/div>
+&lt;/div>
+&lt;/p>
+&lt;h2>Advantages&lt;span class="hx-absolute -hx-mt-20" id="advantages">&lt;/span>
+&lt;a href="#advantages" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>Benefits of vertical routing&lt;span class="hx-absolute -hx-mt-20" id="benefits-of-vertical-routing">&lt;/span>
+&lt;a href="#benefits-of-vertical-routing" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;ul>
+&lt;li>Vertical routing under M.2 2280 slot has a much wider room.&lt;/li>
+&lt;li>Removes requirement to move high frequency PCIe signal traces onto a different layer.
+&lt;ul>
+&lt;li>Avoiding additional via jumps which results in better signal integrity.&lt;/li>
+&lt;li>PCIe lanes for both RX and TX have 1 via jump.&lt;/li>
+&lt;li>This is an improvement for TX lanes over the single board design which have 2 via jumps.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Allows adjustment of height offset of Oculink port for ideal positioning against side of laptop chassis.&lt;/li>
+&lt;/ul>
+&lt;h3>Benefits of flexible PCB connection&lt;span class="hx-absolute -hx-mt-20" id="benefits-of-flexible-pcb-connection">&lt;/span>
+&lt;a href="#benefits-of-flexible-pcb-connection" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Flex PCB is designed to bend unlike a fibre glass core which prevents possible damage.&lt;/p>
+&lt;ul>
+&lt;li>Oculink port is on separate board which doesn&amp;rsquo;t have to bend avoiding any possible mechanical damage to the SMD pad connections.&lt;/li>
+&lt;li>Allows for more flexible positioning of the Oculink port if there is some error in the measurements.&lt;/li>
+&lt;/ul>
+&lt;h3>Polyimide dielectric&lt;span class="hx-absolute -hx-mt-20" id="polyimide-dielectric">&lt;/span>
+&lt;a href="#polyimide-dielectric" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Flex PCB uses a polyimide core which potentially could have a low dielectric loss.&lt;/p>
+&lt;ul>
+&lt;li>Overall length of PCIe lanes is the same but majority is over the lower dielectric loss polyimide.&lt;/li>
+&lt;li>Could improve signal integrity however this is difficult to verify without proper equipment.&lt;/li>
+&lt;/ul>
+&lt;h3>Flexibility of design&lt;span class="hx-absolute -hx-mt-20" id="flexibility-of-design">&lt;/span>
+&lt;a href="#flexibility-of-design" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Easier redesign if future changes need to be made.&lt;/p>
+&lt;ul>
+&lt;li>M.2 card board can be kept constant.&lt;/li>
+&lt;li>Flex connector can be easily redesigned and cheaply made.&lt;/li>
+&lt;li>Port board can be swapped if Oculink port is damaged.&lt;/li>
+&lt;li>Port board can be re-engineered to use a different PCIe compatible port like MCIO.&lt;/li>
+&lt;/ul>
+&lt;h3>Lower manufacturing cost.&lt;span class="hx-absolute -hx-mt-20" id="lower-manufacturing-cost">&lt;/span>
+&lt;a href="#lower-manufacturing-cost" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Cheaper overall manufacturing compared to single board design (using JLCPCB).&lt;/p>
+&lt;ul>
+&lt;li>M.2 card is only 22mm x 42mm which is under 50mm x 50mm threshold resulting in $2.00USD board cost.&lt;/li>
+&lt;li>M.2 card is 0.8mm which means mandatory lead free HASL that costs $4.80USD.&lt;/li>
+&lt;li>Oculink port board is only 21mm x 87mm which is under the 100mm x 100mm threshold meaning no additional engineering fee.&lt;/li>
+&lt;li>Oculink port board exceed 50mm x 50mm threshold which means board cost of $7.00USD.&lt;/li>
+&lt;li>Oculink port board can be manufactured on a stackup thicker than 0.8mm enabling HASL with lead which is free.&lt;/li>
+&lt;li>Flexible PCB connector can be manufactured at $2.00USD.&lt;/li>
+&lt;li>Overall cost of $15.80USD.&lt;/li>
+&lt;/ul>
+&lt;h2>Disadvantages&lt;span class="hx-absolute -hx-mt-20" id="disadvantages">&lt;/span>
+&lt;a href="#disadvantages" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>Variability in polyimide properties&lt;span class="hx-absolute -hx-mt-20" id="variability-in-polyimide-properties">&lt;/span>
+&lt;a href="#variability-in-polyimide-properties" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Flex PCB polyimide material comes in several varieties.&lt;/p>
+&lt;ul>
+&lt;li>No guarantee that the polyimide used is a low dielectric loss formulation.&lt;/li>
+&lt;li>JLCPCB datasheet for their polyimide supplier shows a dielectric loss which is still substantial.&lt;/li>
+&lt;li>Due to thinner stackup the electric field strength is significantly higher over a thicker stackup on FR4.&lt;/li>
+&lt;li>This high E-field magnitude can result in even greater dielectric losses.&lt;/li>
+&lt;li>If this isn&amp;rsquo;t offset by a low loss polyimide dielectric then the flex pcb may perform much worse than routing on FR4.&lt;/li>
+&lt;/ul>
+&lt;h3>Transitioning transmission line geometry&lt;span class="hx-absolute -hx-mt-20" id="transitioning-transmission-line-geometry">&lt;/span>
+&lt;a href="#transitioning-transmission-line-geometry" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Flex pcb requires handling transition of transmission line from FR4 stackup to flex PCB stackup.&lt;/p>
+&lt;ul>
+&lt;li>Requires careful design to avoid impedance discontinuities at flex PCB connection.&lt;/li>
+&lt;li>Involves designing transmission line tapers to maintain impedance target across connector transition.&lt;/li>
+&lt;li>&lt;a href="https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line" >Transmission line design&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3>Transmission line design on flex pcb&lt;span class="hx-absolute -hx-mt-20" id="transmission-line-design-on-flex-pcb">&lt;/span>
+&lt;a href="#transmission-line-design-on-flex-pcb" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Flex pcb has a very thin dielectric core for easy bending.&lt;/p>
+&lt;ul>
+&lt;li>Thin dielectric means transmission line needs to be designed with extremely thin traces.&lt;/li>
+&lt;li>Calculations with a solid ground plane puts trace width at &amp;lt; 0.05mm which is not manufacturable.&lt;/li>
+&lt;li>Requires using a hatched ground plane to achieve target impedance at manufacturable 0.1mm trace width.&lt;/li>
+&lt;li>Hatched ground plane needs very careful design considerations and is not trivial to design.&lt;/li>
+&lt;li>&lt;a href="https://williamyang98.github.io/oculink_m2_adapter/docs/design/hatched_ground_plane" >Hatched ground plane design&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3>Design and manufacturing complexity&lt;span class="hx-absolute -hx-mt-20" id="design-and-manufacturing-complexity">&lt;/span>
+&lt;a href="#design-and-manufacturing-complexity" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Additional complexity due to multiple boards.&lt;/p>
+&lt;ul>
+&lt;li>More difficult manufacturing and electrical testing due to additional soldering steps for flex connector.&lt;/li>
+&lt;li>More difficult design since KiCAD doesn&amp;rsquo;t support multi-board designs necessitating multiple projects.&lt;/li>
+&lt;li>Requires a more complicated project layout to support sharing of common resources like the flex connector footprint.&lt;/li>
+&lt;li>Requires careful design to make sure design changes are reflected across all 3 board designs (M.2 card, flex connector, Oculink port board) to avoid miswiring.&lt;/li>
+&lt;/ul>
+&lt;h3>Potential EMI issues&lt;span class="hx-absolute -hx-mt-20" id="potential-emi-issues">&lt;/span>
+&lt;a href="#potential-emi-issues" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;ul>
+&lt;li>Use of hatched ground plane instead of solid ground plane in flexible connector results in worse shielding at higher frequencies determined by hatch gap size.&lt;/li>
+&lt;li>Since flexible pcb is routed underneath a PCIe 4.0 x 4 SSD in the M.2 2280 slot it could mean the Oculink connection will interfere with the SSD.&lt;/li>
+&lt;li>Not that likely interference will be significant since the SSD also has it&amp;rsquo;s own internal solid ground plane which should shield EMI between SSD and Oculink connection.&lt;/li>
+&lt;/ul>
+&lt;h3>Potential safety issue&lt;span class="hx-absolute -hx-mt-20" id="potential-safety-issue">&lt;/span>
+&lt;a href="#potential-safety-issue" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;ul>
+&lt;li>Flexible PCB is routed over the battery pack. In the event of a short in the Oculink connection the battery pack could be damaged and possibly ignite.&lt;/li>
+&lt;li>Not that likely since PCIe connection carries low power signals and 3.3V rail isn&amp;rsquo;t used to deliver any signficant amount of power to the eGPU dock.&lt;/li>
+&lt;/ul></description></item><item><title>Transmission line</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/</guid><description>
+&lt;div class="hextra-cards hx-mt-4 hx-gap-4 hx-grid not-prose" style="--hextra-cards-grid-cols: 3;">
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="https://williamyang98.github.io/oculink_m2_adapter/oculink_m2_adapter/docs/design/transmission_line/structures/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/>&lt;/svg>Structures&lt;/span>&lt;/a>
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="https://williamyang98.github.io/oculink_m2_adapter/oculink_m2_adapter/docs/design/transmission_line/via_fence/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/>&lt;/svg>Via fence&lt;/span>&lt;/a>
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="https://williamyang98.github.io/oculink_m2_adapter/oculink_m2_adapter/docs/design/transmission_line/via_jumps/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/>&lt;/svg>Via jumps&lt;/span>&lt;/a>
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="https://williamyang98.github.io/oculink_m2_adapter/oculink_m2_adapter/docs/design/transmission_line/skin_effect/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/>&lt;/svg>Skin effect&lt;/span>&lt;/a>
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="https://williamyang98.github.io/oculink_m2_adapter/oculink_m2_adapter/docs/design/transmission_line/skew_requirements/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/>&lt;/svg>Skew requirements&lt;/span>&lt;/a>
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="https://williamyang98.github.io/oculink_m2_adapter/oculink_m2_adapter/docs/design/transmission_line/hatched_ground_plane/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"/>&lt;/svg>Hatched ground plane&lt;/span>&lt;/a>
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="https://williamyang98.github.io/oculink_m2_adapter/oculink_m2_adapter/docs/design/transmission_line/flex_connection/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"/>&lt;/svg>Flex connection&lt;/span>&lt;/a>
+&lt;/div></description></item><item><title>OpenEMS</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/openems/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/openems/</guid><description/></item></channel></rss>

@@ -1,0 +1,24 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>M.2 Oculink Adapter – Results</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/results/</link><description>Recent content in Results on M.2 Oculink Adapter</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://williamyang98.github.io/oculink_m2_adapter/docs/results/index.xml" rel="self" type="application/rss+xml"/><item><title>GPU bandwidth</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/results/gpu_bandwidth/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/results/gpu_bandwidth/</guid><description>
+&lt;h2>Custom adapter&lt;span class="hx-absolute -hx-mt-20" id="custom-adapter">&lt;/span>
+&lt;a href="#custom-adapter" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Flex pcb and single board adapters both achieved PCIe 3.0&lt;/li>
+&lt;li>Both failed to reach PCIe 4.0&lt;/li>
+&lt;li>Both connections were stable&lt;/li>
+&lt;li>Both connections got identical bandwidth measurements&lt;/li>
+&lt;/ul>
+&lt;h2>Comparison to Aliexpress PCIe 4.0 rated adapter&lt;span class="hx-absolute -hx-mt-20" id="comparison-to-aliexpress-pcie-40-rated-adapter">&lt;/span>
+&lt;a href="#comparison-to-aliexpress-pcie-40-rated-adapter" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Reached PCIe 4.0&lt;/li>
+&lt;li>Double the bandwidth&lt;/li>
+&lt;/ul></description></item><item><title>Synthetic benchmarks</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/results/synthetic_benchmarks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/results/synthetic_benchmarks/</guid><description>
+&lt;h2>Custom adapter compared to Aliexpress PCIe 4.0 rated adapter&lt;span class="hx-absolute -hx-mt-20" id="custom-adapter-compared-to-aliexpress-pcie-40-rated-adapter">&lt;/span>
+&lt;a href="#custom-adapter-compared-to-aliexpress-pcie-40-rated-adapter" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Half the PCIe bandwidth resulted in degraded performance&lt;/li>
+&lt;li>Usually occured on benchmarks with high FPS numbers where PCIe link would be used more&lt;/li>
+&lt;li>Aliexpress PCIe 4.0 adapter achieved higher scores on average&lt;/li>
+&lt;li>Performance penalty when monitor output has to go back through eGPU oculink connection and through iGPU to external display
+&lt;ul>
+&lt;li>Setup was CPU -&amp;gt; eGPU -&amp;gt; iGPU -&amp;gt; USB 4 dock -&amp;gt; Monitor&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>

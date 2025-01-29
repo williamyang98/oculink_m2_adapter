@@ -1,0 +1,1565 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>M.2 Oculink Adapter – Documentation</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/</link><description>Recent content in Documentation on M.2 Oculink Adapter</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://williamyang98.github.io/oculink_m2_adapter/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>GPU bandwidth</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/results/gpu_bandwidth/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/results/gpu_bandwidth/</guid><description>
+&lt;h2>Custom adapter&lt;span class="hx-absolute -hx-mt-20" id="custom-adapter">&lt;/span>
+&lt;a href="#custom-adapter" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Flex pcb and single board adapters both achieved PCIe 3.0&lt;/li>
+&lt;li>Both failed to reach PCIe 4.0&lt;/li>
+&lt;li>Both connections were stable&lt;/li>
+&lt;li>Both connections got identical bandwidth measurements&lt;/li>
+&lt;/ul>
+&lt;h2>Comparison to Aliexpress PCIe 4.0 rated adapter&lt;span class="hx-absolute -hx-mt-20" id="comparison-to-aliexpress-pcie-40-rated-adapter">&lt;/span>
+&lt;a href="#comparison-to-aliexpress-pcie-40-rated-adapter" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Reached PCIe 4.0&lt;/li>
+&lt;li>Double the bandwidth&lt;/li>
+&lt;/ul></description></item><item><title>JLCPCB</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/manufacturing/jlcpcb/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/manufacturing/jlcpcb/</guid><description>
+&lt;h2>Order cost&lt;span class="hx-absolute -hx-mt-20" id="order-cost">&lt;/span>
+&lt;a href="#order-cost" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>$$$&lt;/li>
+&lt;/ul>
+&lt;h2>Delivery&lt;span class="hx-absolute -hx-mt-20" id="delivery">&lt;/span>
+&lt;a href="#delivery" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h2>Components&lt;span class="hx-absolute -hx-mt-20" id="components">&lt;/span>
+&lt;a href="#components" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>SMD components ordered from Mouser&lt;/li>
+&lt;/ul></description></item><item><title>PCIe Specification</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/specifications/pcie_specification/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/specifications/pcie_specification/</guid><description>
+&lt;h2>PCIe pinout&lt;span class="hx-absolute -hx-mt-20" id="pcie-pinout">&lt;/span>
+&lt;a href="#pcie-pinout" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Differential signalling along receive (RX) and transmit (TX) lanes.
+&lt;ul>
+&lt;li>Polarity of lanes can be inverted.&lt;/li>
+&lt;li>Order of lanes can be reversed between host and device.&lt;/li>
+&lt;li>Number of RX and TX lanes must be the same (symmetrical).&lt;/li>
+&lt;li>Allows for more flexible routing in space constrained environment.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Reference clock is provided from host for timing and synchronisation (100MHz).
+&lt;ul>
+&lt;li>Polarity cannot be swapped.&lt;/li>
+&lt;li>Supposed to be optional but is actually mandatory for almost all devices.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;code>CLKREQ&lt;/code> is pull downed by device to request PCIe reference clock.&lt;/li>
+&lt;li>&lt;code>PERST&lt;/code> is used to reset the PCIe link.&lt;/li>
+&lt;li>&lt;code>PEWAKE&lt;/code> is used by device to signal to host to wake up (maybe for network cards?).&lt;/li>
+&lt;li>&lt;code>SMBCLK&lt;/code> and &lt;code>SMBDAT&lt;/code> is the system management bus and is an I2C interface (optional?)&lt;/li>
+&lt;/ul>
+&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/pcie_x4_pinout.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 1. PCIe x4 connector pinout&lt;/i>
+&lt;a href="https://www.adt.link/download/ADT-Cable-R42SF-specification.html">(source)&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;h2>PCIe generations&lt;span class="hx-absolute -hx-mt-20" id="pcie-generations">&lt;/span>
+&lt;a href="#pcie-generations" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>With differential signalling the fundemental frequency is half the transfer rate.&lt;/li>
+&lt;li>An encoding scheme of xb/yb means X bits out for Y bits in.
+&lt;ul>
+&lt;li>8b/10b: 1 start bit, 8 data bits, 1 end bit.&lt;/li>
+&lt;li>128b/130b: 1 start bit, 128 data bits, 1 end bit.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Gen&lt;/th>
+&lt;th>Freq (GHz)&lt;/th>
+&lt;th>Transfers (GT/s)&lt;/th>
+&lt;th>Encoding&lt;/th>
+&lt;th>Bitrate (Gb/s/lane)&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>1.0&lt;/td>
+&lt;td>1.25&lt;/td>
+&lt;td>2.5&lt;/td>
+&lt;td>8b/10b&lt;/td>
+&lt;td>2.0&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>2.0&lt;/td>
+&lt;td>2.5&lt;/td>
+&lt;td>5.0&lt;/td>
+&lt;td>8b/10b&lt;/td>
+&lt;td>4.0&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>3.0&lt;/td>
+&lt;td>4.0&lt;/td>
+&lt;td>8.0&lt;/td>
+&lt;td>128b/130b&lt;/td>
+&lt;td>7.88&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>4.0&lt;/td>
+&lt;td>8.0&lt;/td>
+&lt;td>16.0&lt;/td>
+&lt;td>128b/130b&lt;/td>
+&lt;td>15.75&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>5.0&lt;/td>
+&lt;td>16.0&lt;/td>
+&lt;td>32.0&lt;/td>
+&lt;td>128b/130b&lt;/td>
+&lt;td>31.51&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;ul>
+&lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
+&lt;a href="https://www.fibermall.com/blog/pci-e-8-things-need-to-know.htm?srsltid=AfmBOopgeGo-dXRX-pSEtWbIZLO_PH3ypMCtOfEtcSswcBTuCEQRbUBx#%E2%97%8F_PCI_Express_10" class="hx-inline-flex">
+&lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
+&lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
+&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;div>PCIe: 8 Things You Need to Know Early&lt;/div>
+&lt;/a>
+&lt;/div>
+&lt;/li>
+&lt;/ul>
+&lt;h2>Maximum design frequency&lt;span class="hx-absolute -hx-mt-20" id="maximum-design-frequency">&lt;/span>
+&lt;a href="#maximum-design-frequency" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>For a good eye opening the transmissions lines should be designed for 5x the fundemental frequency. For PCIe 4.0 the fundamental frequency is 8GHz which means an ideal maximum design frequency of 40GHz.&lt;/p>
+&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/altium_eye_diagram.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 16. Eye diagram&lt;/i>
+&lt;a href="https://resources.altium.com/p/what-eye-diagram">(source)&lt;/a>
+&lt;/div>
+&lt;/div></description></item><item><title>Reference designs</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/reference_designs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/reference_designs/</guid><description>
+&lt;h2>Points to verify&lt;span class="hx-absolute -hx-mt-20" id="points-to-verify">&lt;/span>
+&lt;a href="#points-to-verify" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Do you wire from PERxy on the M.2 side to PERxy on the Oculink side, or PERxy to PETxy?&lt;/li>
+&lt;li>Do all of the control signals need to be connected?&lt;/li>
+&lt;li>Is SMB (system management bus) data and clock required or is it optional?&lt;/li>
+&lt;li>What about the MFG (manufacturer) data and clock on the M.2 card which is not present on the Oculink connector or PCIe standard?&lt;/li>
+&lt;li>Is lane reordering and polarity inversion okay to use for routing PCIe connections?&lt;/li>
+&lt;/ul>
+&lt;h2>AdtLink M.2 to PCIe extension&lt;span class="hx-absolute -hx-mt-20" id="adtlink-m2-to-pcie-extension">&lt;/span>
+&lt;a href="#adtlink-m2-to-pcie-extension" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/adtlink_m2_to_pcie4_adapter_schematic.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 4. Adtlink M.2 to PCIe 4.0 adapter&lt;/i>
+&lt;a href="https://www.adt.link/download/ADT-Cable-R42SF-specification.html">(source)&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;ul>
+&lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
+&lt;a class="hx-flex" href="https://williamyang98.github.io/oculink_m2_adapter/pdfs/adtlink_m2_pcie_x4_extension.pdf">
+&lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
+&lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
+&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;div style="margin-right: 0.25rem">Adtlink M.2 PCIe x4 extension cable schematic&lt;/div>
+&lt;/a>
+&lt;a href="https://www.adt.link/download/ADT-Cable-R42SF-specification.html">(source)&lt;/a>
+&lt;/div>
+&lt;/li>
+&lt;li>&lt;code>[CLKREQ, PERST]&lt;/code> are connected.&lt;/li>
+&lt;li>&lt;code>[PEWAKE, PEDET]&lt;/code> are &lt;strong>not&lt;/strong> connected.&lt;/li>
+&lt;li>&lt;code>[SMB_CLOCK, SMB_DATA]&lt;/code> are &lt;strong>not&lt;/strong> connected.&lt;/li>
+&lt;li>&lt;code>[MFG_CLOCK, MFG_DATA]&lt;/code> are &lt;strong>not&lt;/strong> connected.&lt;/li>
+&lt;li>&lt;code>3.3V&lt;/code> is connected.&lt;/li>
+&lt;li>&lt;code>REFCLK&lt;/code> is connected with same polarity.&lt;/li>
+&lt;li>&lt;code>[PERxy, PETxy]&lt;/code> lanes are connected with same polarity and same order.&lt;/li>
+&lt;/ul>
+&lt;h2>GPD Win v1 M.2 to Oculink card&lt;span class="hx-absolute -hx-mt-20" id="gpd-win-v1-m2-to-oculink-card">&lt;/span>
+&lt;a href="#gpd-win-v1-m2-to-oculink-card" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/gpdwin1_m2_to_oculink_adapter_schematic.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 5. GPD win 1 M.2 to Oculink adapter card&lt;/i>
+&lt;a href="https://gpd.hk/gpdg1firmwaredriver">(source)&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;ul>
+&lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
+&lt;a class="hx-flex" href="https://williamyang98.github.io/oculink_m2_adapter/pdfs/gpdwin1_schematic.pdf">
+&lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
+&lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
+&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;div style="margin-right: 0.25rem">Gpdwin1 M.2 to Oculink adapter schematic&lt;/div>
+&lt;/a>
+&lt;a href="https://gpd.hk/gpdg1firmwaredriver">(source)&lt;/a>
+&lt;/div>
+&lt;/li>
+&lt;li>&lt;code>[PERST, PEDET]&lt;/code> are connected.&lt;/li>
+&lt;li>&lt;code>CLKREQ&lt;/code> is connected but through a Schottky diode.&lt;/li>
+&lt;li>&lt;code>PEWAKE&lt;/code> is &lt;strong>not&lt;/strong> connected.&lt;/li>
+&lt;li>&lt;code>[SMB_CLOCK, SMB_DATA]&lt;/code> are &lt;strong>not&lt;/strong> connected.&lt;/li>
+&lt;li>&lt;code>[MFG_CLOCK, MFG_DATA]&lt;/code> are &lt;strong>not&lt;/strong> connected.&lt;/li>
+&lt;li>&lt;code>3.3V&lt;/code> is connected through a jumper.&lt;/li>
+&lt;li>&lt;code>REFCLK&lt;/code> is connected with same polarity.&lt;/li>
+&lt;li>&lt;code>[PERxy, PETxy]&lt;/code> lanes are connected with same polarity and same order.&lt;/li>
+&lt;/ul>
+&lt;h2>Adtlink M.2 to Oculink card&lt;span class="hx-absolute -hx-mt-20" id="adtlink-m2-to-oculink-card">&lt;/span>
+&lt;a href="#adtlink-m2-to-oculink-card" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/adtlink_f4c_m2_to_oculink_adapter.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 6. Adtlink F4C M.2 to Oculink adapter card&lt;/i>
+&lt;a href="https://www.adt.link/product/F9GV4.html">(source)&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/adtlink_f4c_m2_to_oculink_adapter_photo.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 7. Purchased Adtlink F4C M.2 to Oculink adapter card with modifications&lt;/i>
+&lt;/div>
+&lt;/div>
+&lt;/p>
+&lt;ul>
+&lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
+&lt;a href="https://www.adt.link/product/F9GV4.html" class="hx-inline-flex">
+&lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
+&lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
+&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;div>Adtlink PCIe 4.0 eGPU Oculink dock&lt;/div>
+&lt;/a>
+&lt;/div>
+&lt;/li>
+&lt;li>&lt;code>[PERST, CLKREQ]&lt;/code> are connected.&lt;/li>
+&lt;li>&lt;code>[PEWAKE, PEDET]&lt;/code> are &lt;strong>not&lt;/strong> connected.&lt;/li>
+&lt;li>&lt;code>[SMB_CLOCK, SMB_DATA]&lt;/code> are connected.&lt;/li>
+&lt;li>&lt;code>[MFG_CLOCK, MFG_DATA]&lt;/code> are &lt;strong>not&lt;/strong> connected.&lt;/li>
+&lt;li>&lt;code>3.3V&lt;/code> is connected.&lt;/li>
+&lt;li>&lt;code>REFCLK&lt;/code> is connected with same polarity.&lt;/li>
+&lt;li>&lt;code>[PERxy, PETxy]&lt;/code> lanes are connected with opposite polarity and opposite order.&lt;/li>
+&lt;/ul>
+&lt;h2>Summary&lt;span class="hx-absolute -hx-mt-20" id="summary">&lt;/span>
+&lt;a href="#summary" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>&lt;code>PERST&lt;/code> must be connected.&lt;/li>
+&lt;li>&lt;code>CLKREQ&lt;/code> must be connected, possibly through a diode, or shorted to ground on host side.&lt;/li>
+&lt;li>&lt;code>PERST&lt;/code> is optional.&lt;/li>
+&lt;li>&lt;code>PEWAKE&lt;/code> is not connected (might be optional?).&lt;/li>
+&lt;li>&lt;code>[SMB_CLOCK, SMB_DATA]&lt;/code> are optional.&lt;/li>
+&lt;li>&lt;code>[MFG_CLOCK, MFG_DATA]&lt;/code> are not connected.&lt;/li>
+&lt;li>&lt;code>3.3V&lt;/code> is connected.&lt;/li>
+&lt;li>&lt;code>REFCLK&lt;/code> must be connected with same polarity.&lt;/li>
+&lt;li>&lt;code>[PERxy, PETxy]&lt;/code> can be connected in opposite polarity and/or opposite order.&lt;/li>
+&lt;/ul></description></item><item><title>Structures</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/structures/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/structures/</guid><description>
+&lt;p>PCIe receive and transmit lanes and reference clock are high frequency differential signals. There are many possible designs for a differential transmission line.&lt;/p>
+&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/sierra_express_differential_pair_topologies.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 15. Differential pair topologies&lt;/i>
+&lt;a href="https://impedance.app.protoexpress.com/">(source)&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;h2>Common mode noise&lt;span class="hx-absolute -hx-mt-20" id="common-mode-noise">&lt;/span>
+&lt;a href="#common-mode-noise" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>In theory a perfectly balanced differential pair would only need two conductors to handle the symmetrical current path however this should not be relied upon.&lt;/p>
+&lt;ul>
+&lt;li>Common mode noise can arise due to power supply differences between host and device. This is especially important because we have a laptop powered by a USB C dock and an eGPU powered by a separate power supply.&lt;/li>
+&lt;li>Without a ground plane or coplanar ground trace the return current for the common mode signal may be over a large loop area.
+&lt;ul>
+&lt;li>This can pickup interference from environmental sources and harm signal integrity.&lt;/li>
+&lt;li>Increases amount of EMI induced in signal traces within that loop area.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2>Crosstalk&lt;span class="hx-absolute -hx-mt-20" id="crosstalk">&lt;/span>
+&lt;a href="#crosstalk" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Given our tight routing requirements our PCIe lanes would be extremely close together by only a few multiples of the trace width. This means we need to be very careful about inter-lane crosstalk.&lt;/p>
+&lt;ul>
+&lt;li>Can be fixed by increasing separation between lanes which is not possible given our tight space requirements.&lt;/li>
+&lt;li>Adding a ground plane to confine the electric field generated by the differential pair (almost always helps).&lt;/li>
+&lt;li>Adding coplanar guard traces to separate adjacent lanes and add additional E-field confinement.
+&lt;ul>
+&lt;li>Sometimes can worsen crosstalk if guard trace is high impedance and functions closer to a resonant tank than a ground trace.&lt;/li>
+&lt;li>Can be improved by turning coplanar guard traces into a &lt;a href="https://williamyang98.github.io/oculink_m2_adapter/docs/design/via_fence" >via fence&lt;/a> by stitching them to a ground plane&lt;/li>
+&lt;li>This guarantees coplanar guard trace is low impedance.&lt;/li>
+&lt;li>Also adds additional grounding with vias which further improves E-field confinement and prevents inter-lane crosstalk.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2>Best design&lt;span class="hx-absolute -hx-mt-20" id="best-design">&lt;/span>
+&lt;a href="#best-design" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>The following should be used for an optimal differential pair transmission line:&lt;/p>
+&lt;ul>
+&lt;li>Solid ground plane&lt;/li>
+&lt;li>Coplanar guard traces&lt;/li>
+&lt;li>Via fence&lt;/li>
+&lt;/ul>
+&lt;p>Through this we should be able to reduce crosstalk, handle common mode noise, and reduce EMI emissions even with tightly packed PCIe lanes.&lt;/p>
+&lt;h2>Resources&lt;span class="hx-absolute -hx-mt-20" id="resources">&lt;/span>
+&lt;a href="#resources" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
+&lt;a class="hx-flex" href="https://williamyang98.github.io/oculink_m2_adapter/pdfs/texas_instrument_pcie4_layout_guidelines.pdf">
+&lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
+&lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
+&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;div style="margin-right: 0.25rem">Layout guidelines for PCIe Gen 4.0&lt;/div>
+&lt;/a>
+&lt;a href="https://www.ti.com/lit/an/slaae45/slaae45.pdf">(source)&lt;/a>
+&lt;/div>
+&lt;/li>
+&lt;/ul></description></item><item><title>Laptop measurements</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/laptop_measurements/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/laptop_measurements/</guid><description>
+&lt;h2>Measurement and modelling&lt;span class="hx-absolute -hx-mt-20" id="measurement-and-modelling">&lt;/span>
+&lt;a href="#measurement-and-modelling" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/lenovo_16arp8_adapter_layout_prototype.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 8. Measurements and prototype layout for M.2 to Oculink adapter&lt;/i>
+&lt;/div>
+&lt;/div>
+&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/lenovo_16arp8_3d_model.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 9. 3D modelling of Lenovo 16arp8 based on measurements&lt;/i>
+&lt;/div>
+&lt;/div>
+&lt;/p>
+&lt;ul>
+&lt;li>Modelling was done from a sparse set of measurements.&lt;/li>
+&lt;li>After modelling was done arbitrary measurements of any feature could be done.&lt;/li>
+&lt;li>Easier than measuring every possible dimension when needed.&lt;/li>
+&lt;/ul>
+&lt;h2>Planning&lt;span class="hx-absolute -hx-mt-20" id="planning">&lt;/span>
+&lt;a href="#planning" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Longer M.2 2280 slot is used for high capacity SSD.&lt;/li>
+&lt;li>Shorter M.2 2242 slot is available but in a less convenient location.&lt;/li>
+&lt;li>Left speaker can be removed to make room for Oculink port.&lt;/li>
+&lt;li>M.2 2242 slot has 1mm of clearance for bottom side passive components.&lt;/li>
+&lt;li>&lt;strong>Option 1&lt;/strong>: Very narrow 12mm gap between M.2 2280 connector and internal display connector for single board design for side Oculink port.&lt;/li>
+&lt;li>&lt;strong>Option 2&lt;/strong>: Vertical space underneath M.2 2280 slot for routing with a flex pcb design that has a side Oculink port.&lt;/li>
+&lt;li>&lt;strong>Option 3&lt;/strong>: Use vertical Oculink adapter and have port on bottom instead of side of laptop.&lt;/li>
+&lt;/ul>
+&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 75%">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/nfhk_vertical_m2_to_oculink_adapter.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 10. NFHK vertical M.2 to Oculink adapter card&lt;/i>
+&lt;a href="https://www.aliexpress.com/item/1005007302462841.html">(source)&lt;/a>
+&lt;/div>
+&lt;/div></description></item><item><title>M.2 to Oculink</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/specifications/components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/specifications/components/</guid><description>
+&lt;h2>M.2 card&lt;span class="hx-absolute -hx-mt-20" id="m2-card">&lt;/span>
+&lt;a href="#m2-card" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Usually used for M.2 SSDs in laptop or desktop motherboards.&lt;/li>
+&lt;li>Pins follow the PCIe specification for x4 lanes.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 75%">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/m2_card_size.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 2. M.2 card size standards&lt;/i>
+&lt;a href="https://www.unitek-products.com/products/usb3-1-gen2-type-c-to-m-2-ssd-pcie-nvme-enclosure">(source)&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 50%">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/m2_connector_pinout_table.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Table 1. M.2 connector pinout&lt;/i>
+&lt;a href="https://www.anandtech.com/show/13609/pcisig-warns-of-incompatibilities-between-m2-and-samsungs-ngsff">(source)&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;/p>
+&lt;h2>Oculink port&lt;span class="hx-absolute -hx-mt-20" id="oculink-port">&lt;/span>
+&lt;a href="#oculink-port" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Follows the SFF-9402 specification which is compatible with PCIe&lt;/li>
+&lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
+&lt;a class="hx-flex" href="https://williamyang98.github.io/oculink_m2_adapter/pdfs/sff_9402_specification.pdf">
+&lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
+&lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
+&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;div style="margin-right: 0.25rem">SFF-9402 specification&lt;/div>
+&lt;/a>
+&lt;a href="https://members.snia.org/document/dl/27380">(source)&lt;/a>
+&lt;/div>
+&lt;/li>
+&lt;li>Female port is rated for 10000 insertion cycles.&lt;/li>
+&lt;li>Male cable is rated at a minimum of 50.&lt;/li>
+&lt;li>Compatible with the PCIe specification for x4 or x8 lanes.&lt;/li>
+&lt;li>Wider x8 lane variant is not as useful since no M.2 slot as of yet supports PCIe x8 lanes.&lt;/li>
+&lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
+&lt;a class="hx-flex" href="https://williamyang98.github.io/oculink_m2_adapter/pdfs/amphenol_oculink_port_datasheet.pdf">
+&lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
+&lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
+&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;div style="margin-right: 0.25rem">Amphenol Oculink port datasheet&lt;/div>
+&lt;/a>
+&lt;a href="https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/ps-7545.pdf">(source)&lt;/a>
+&lt;/div>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 50%">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/amphenol_oculink_port.jpg" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 3. Amphenol oculink port&lt;/i>
+&lt;a href="https://www.amphenol-cs.com/product-series/oculink.html">(source)&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/amphenol_oculink_port_pinout_table.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Table 2. Amphenol Oculink connector pinout&lt;/i>
+&lt;a href="https://electronics.stackexchange.com/questions/675174/oculink-connector-pin-configuration-for-root-port-and-endpoint">(source)&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;/p></description></item><item><title>Reflow soldering</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/manufacturing/reflow_soldering/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/manufacturing/reflow_soldering/</guid><description>
+&lt;h2>Equipment&lt;span class="hx-absolute -hx-mt-20" id="equipment">&lt;/span>
+&lt;a href="#equipment" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Reflow plate&lt;/li>
+&lt;li>Soldering iron&lt;/li>
+&lt;li>Magnifying glass&lt;/li>
+&lt;li>Isopropyl alcohol&lt;/li>
+&lt;/ul>
+&lt;h2>Reflow oculink port&lt;span class="hx-absolute -hx-mt-20" id="reflow-oculink-port">&lt;/span>
+&lt;a href="#reflow-oculink-port" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Apply stencil for oculink connector, make sure there are no bridges&lt;/li>
+&lt;li>Place oculink port&lt;/li>
+&lt;li>Apply reflow&lt;/li>
+&lt;/ul>
+&lt;h2>SMD components&lt;span class="hx-absolute -hx-mt-20" id="smd-components">&lt;/span>
+&lt;a href="#smd-components" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Can apply stencil&lt;/li>
+&lt;li>Easier to solder by hand&lt;/li>
+&lt;/ul>
+&lt;h2>FFC connector for flex pcb&lt;span class="hx-absolute -hx-mt-20" id="ffc-connector-for-flex-pcb">&lt;/span>
+&lt;a href="#ffc-connector-for-flex-pcb" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Need to apply pressure to connector while reflow occurs for complete contact&lt;/li>
+&lt;li>There is not alot of tolerate for FFC connector when soldered since there is mechanical slack, it has to be as flat to the SMD pads as possible&lt;/li>
+&lt;li>When reflowing connector place weights to apply even pressure across FFC connector&lt;/li>
+&lt;/ul></description></item><item><title>Synthetic benchmarks</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/results/synthetic_benchmarks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/results/synthetic_benchmarks/</guid><description>
+&lt;h2>Custom adapter compared to Aliexpress PCIe 4.0 rated adapter&lt;span class="hx-absolute -hx-mt-20" id="custom-adapter-compared-to-aliexpress-pcie-40-rated-adapter">&lt;/span>
+&lt;a href="#custom-adapter-compared-to-aliexpress-pcie-40-rated-adapter" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Half the PCIe bandwidth resulted in degraded performance&lt;/li>
+&lt;li>Usually occured on benchmarks with high FPS numbers where PCIe link would be used more&lt;/li>
+&lt;li>Aliexpress PCIe 4.0 adapter achieved higher scores on average&lt;/li>
+&lt;li>Performance penalty when monitor output has to go back through eGPU oculink connection and through iGPU to external display
+&lt;ul>
+&lt;li>Setup was CPU -&amp;gt; eGPU -&amp;gt; iGPU -&amp;gt; USB 4 dock -&amp;gt; Monitor&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>Via fence</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/via_fence/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/via_fence/</guid><description>
+&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/via_fence_diagram.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 17. Via fence&lt;/i>
+&lt;/div>
+&lt;/div>
+&lt;h2>Crosstalk&lt;span class="hx-absolute -hx-mt-20" id="crosstalk">&lt;/span>
+&lt;a href="#crosstalk" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Improves impedance of coplanar ground guard trace by stitching it to a ground plane which improves E-field confinement.&lt;/li>
+&lt;li>Additional ground vias improve E-field confinement.&lt;/li>
+&lt;li>Both of these contribute to significantly reducing the inter-lane crosstalk.&lt;/li>
+&lt;/ul>
+&lt;h2>Spacing requirements&lt;span class="hx-absolute -hx-mt-20" id="spacing-requirements">&lt;/span>
+&lt;a href="#spacing-requirements" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>If spacing is incorrect it can result in worse crosstalk since fence can behave like a resonant tank.&lt;/li>
+&lt;li>For a given maximum frequency which needs to be blocked, the equation is given as follows.&lt;/li>
+&lt;/ul>
+&lt;p>\[
+\begin{align}
+d_{spacing} &amp;= \frac{\lambda_{min}}{8} \\
+d_{spacing} &amp;= \frac{c}{8 \sqrt{\epsilon_r} \times f_{max}}
+\end{align}
+\]&lt;/p>
+&lt;p>For the best eye opening we should set the maximum frequency as the 5th harmonic of the PCIe fundemental frequency. The following spacing values are calculated with
+\( \epsilon_r = 4.1 \)
+for FR4.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Gen&lt;/th>
+&lt;th>
+\( f_{0} \)
+(GHz)&lt;/th>
+&lt;th>
+\( f_{max} \)
+(GHz)&lt;/th>
+&lt;th>
+\( d_{spacing} \)
+(mm)&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>1.0&lt;/td>
+&lt;td>1.25&lt;/td>
+&lt;td>6.25&lt;/td>
+&lt;td>2.96&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>2.0&lt;/td>
+&lt;td>2.5&lt;/td>
+&lt;td>12.5&lt;/td>
+&lt;td>1.48&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>3.0&lt;/td>
+&lt;td>4.0&lt;/td>
+&lt;td>20&lt;/td>
+&lt;td>0.93&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>4.0&lt;/td>
+&lt;td>8.0&lt;/td>
+&lt;td>40&lt;/td>
+&lt;td>0.46&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>5.0&lt;/td>
+&lt;td>16.0&lt;/td>
+&lt;td>80&lt;/td>
+&lt;td>0.23&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2>Manufacturing limitations&lt;span class="hx-absolute -hx-mt-20" id="manufacturing-limitations">&lt;/span>
+&lt;a href="#manufacturing-limitations" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>JLCPCB has manufacturing constraints that limits the geometry of our via fence. The following values are chosen to minimise the manufacturing cost and therefore may not be the best values we can choose.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Parameter&lt;/th>
+&lt;th>Type&lt;/th>
+&lt;th>Value&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Via hole size&lt;/td>
+&lt;td>Minimum&lt;/td>
+&lt;td>0.3mm&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Via hole diameter&lt;/td>
+&lt;td>Minimum&lt;/td>
+&lt;td>0.4mm&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Via hole to different net distance&lt;/td>
+&lt;td>Minimum&lt;/td>
+&lt;td>0.2mm&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Via hole to hole spacing&lt;/td>
+&lt;td>Minimum&lt;/td>
+&lt;td>0.2mm&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;ul>
+&lt;li>Since we are targetting PCIe 4.0 our spacing requirement is 0.46mm and is within the manufacturing constraints.&lt;/li>
+&lt;li>Our coplanar guard traces are placed 0.1mm away from signal traces so we only need 0.1mm of copper between the via and edge of coplanar guard trace.&lt;/li>
+&lt;/ul>
+&lt;h2>Resources&lt;span class="hx-absolute -hx-mt-20" id="resources">&lt;/span>
+&lt;a href="#resources" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
+&lt;a class="hx-flex" href="https://williamyang98.github.io/oculink_m2_adapter/pdfs/north_dakota_university_via_fencing.pdf">
+&lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
+&lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
+&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;div style="margin-right: 0.25rem">Effectiveness of PCB perimeter via fencing&lt;/div>
+&lt;/a>
+&lt;a href="https://www.ndsu.edu/pubweb/~braaten/EMC_2016_1.pdf">(source)&lt;/a>
+&lt;/div>
+&lt;/li>
+&lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
+&lt;a href="https://www.altium.com/documentation/altium-designer/via-stitching-via-shielding-pcb" class="hx-inline-flex">
+&lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
+&lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
+&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;div>Altium: Adding via stitching &amp;amp; via shielding&lt;/div>
+&lt;/a>
+&lt;/div>
+&lt;/li>
+&lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
+&lt;a href="https://hackaday.io/project/161821-journey-sbc/log/155995-rf-via-stitchingfencing-pt-2" class="hx-inline-flex">
+&lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
+&lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
+&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;div>Hackaday: RF &amp;amp; Via Stitching/Fencing&lt;/div>
+&lt;/a>
+&lt;/div>
+&lt;/li>
+&lt;/ul></description></item><item><title>Electrical testing</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/manufacturing/electrical_testing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/manufacturing/electrical_testing/</guid><description>
+&lt;h2>Checking for shorts&lt;span class="hx-absolute -hx-mt-20" id="checking-for-shorts">&lt;/span>
+&lt;a href="#checking-for-shorts" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Oculink port after reflow can be shorted due to excess or smeared solder paste resulting in bridges between fine pitch pins
+&lt;ul>
+&lt;li>Can redo reflow as many times until short is gone&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>For flex pcb shorts can occur between fine pitch SMD pads of FFC connector
+&lt;ul>
+&lt;li>Visual inspection through transparent FFC can reveal where shorts are&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2>Checking flex pcb during assembly&lt;span class="hx-absolute -hx-mt-20" id="checking-flex-pcb-during-assembly">&lt;/span>
+&lt;a href="#checking-flex-pcb-during-assembly" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>For flex pcb bad connections can be checked partially through assembly&lt;/li>
+&lt;li>Begin by soldering FFC to M.2 card
+&lt;ul>
+&lt;li>Check for shorts and bad connections between M.2 edge connector and end of FFC cable&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Begin reflowing oculink port to separate PCB
+&lt;ul>
+&lt;li>Check for shorts on exposed connector pads&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Bad connection or short will likely be located at FFC to oculink board connection&lt;/li>
+&lt;/ul>
+&lt;h2>Checking assembled board&lt;span class="hx-absolute -hx-mt-20" id="checking-assembled-board">&lt;/span>
+&lt;a href="#checking-assembled-board" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Connect oculink adapter to eGPU board&lt;/li>
+&lt;li>The PCIe connector on the eGPU board can be used to check for continuity and shorts
+&lt;ul>
+&lt;li>Refer to following schematic for pin out of PCIe connector&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Use m.2 edge connector as other side of connection
+&lt;ul>
+&lt;li>Refer to pinout for m.2 connector&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>KiCAD &amp; JLCPCB</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/kicad_jlcpcb/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/kicad_jlcpcb/</guid><description>
+&lt;h2>Reasons to use KiCAD&lt;span class="hx-absolute -hx-mt-20" id="reasons-to-use-kicad">&lt;/span>
+&lt;a href="#reasons-to-use-kicad" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Free and open source. No license required for usage.&lt;/li>
+&lt;li>More than adequate for passive M.2 to Oculink adapter.&lt;/li>
+&lt;li>Transmission line calculators are limited but there are plenty of more capable free and public options.&lt;/li>
+&lt;li>Lacks high end simulation capabilities like Altium but open source substitutes are available.&lt;/li>
+&lt;/ul>
+&lt;h2>Reasons to use JLCPCB&lt;span class="hx-absolute -hx-mt-20" id="reasons-to-use-jlcpcb">&lt;/span>
+&lt;a href="#reasons-to-use-jlcpcb" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>The cheapest PCB manufacturer.&lt;/li>
+&lt;li>Offers plenty of discounts for extremely low prices.&lt;/li>
+&lt;li>If you stay under certain size requirements the cost will remain exceptionally low.&lt;/li>
+&lt;li>Inexpensive 0.8mm thick stackup which is required for M.2 edge connector.
+&lt;ul>
+&lt;li>Only requires lead free HASL to be the mandatory surface finish which costs $4.80USD.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Inexpensive board cost if certain size thresholds aren&amp;rsquo;t exceeded.
+&lt;ul>
+&lt;li>For boards less than 50mm x 50mm board cost is only $2.00USD.&lt;/li>
+&lt;li>For boards between 50mm x 50mm and 100mm x 100mm the board cost is $7.00USD.&lt;/li>
+&lt;li>For boards above 100mm x 100mm there is an aditional engineering fee which costs $24.00USD.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Inexpensive 4 layer boards which are important for maintaining solid ground plane if signal traces need to be routed on separate layers.&lt;/li>
+&lt;li>Controlled impedance stackup to meet transmission line design requirements.&lt;/li>
+&lt;li>Allows choosing denser more uniform fibre weaves to improve signal integrity in transmission lines.
+&lt;ul>
+&lt;li>A non-uniform weave could cause problems if a differential trace were routed over it.&lt;/li>
+&lt;li>Each side of the pair could be on a piece of the weave with different densities of fibres.&lt;/li>
+&lt;li>This would mean each trace in the pair experiences a different dielectric constant.&lt;/li>
+&lt;li>Since the speed of propagation is dependent on the dielectric constant, a skew in the time domain would be induced in the differential pair.&lt;/li>
+&lt;li>PCIe standard has relatively&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ENIG (gold plating) to prevent oxidation of M.2 edge connector and flatter profile for more reliable reflow soldering.&lt;/li>
+&lt;li>Flexible PCBs for designs that require large amounts of vertical routing.&lt;/li>
+&lt;li>Very generous constraints minimum via sizes and pad pitch which is important for high frequency design where physical dimensions of traces, vias, and connector pitch can get very small.&lt;/li>
+&lt;/ul>
+&lt;h2>Importing design constraints into KiCAD&lt;span class="hx-absolute -hx-mt-20" id="importing-design-constraints-into-kicad">&lt;/span>
+&lt;a href="#importing-design-constraints-into-kicad" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>JLCPCB specifies manufacturing capabilities.&lt;/li>
+&lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
+&lt;a href="https://jlcpcb.com/capabilities/pcb-capabilities" class="hx-inline-flex">
+&lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
+&lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
+&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;div>JLCPCB manufacturing capabilities&lt;/div>
+&lt;/a>
+&lt;/div>
+&lt;/li>
+&lt;li>The values for certain constraints will vary depending on options you select for the number of layers, minimum via size and stackup type.&lt;/li>
+&lt;li>KiCAD supports creating a design rules file to automatically check these manufacturing constraints to prevent submitting unmanufacturable designs to a fabricator.&lt;/li>
+&lt;li>The design rules checker (DRC) can be triggered manually or is run automatically before generating gerber and drill files.&lt;/li>
+&lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
+&lt;a href="https://github.com/williamyang98/oculink_m2_adapter/blob/895a01a6bca91c96aabc5325dedf5facfeb502c6/kicad/oculink_m2_single/oculink_m2.kicad_dru" class="hx-inline-flex">
+&lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
+&lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
+&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;div>Sample KiCAD design rules file&lt;/div>
+&lt;/a>
+&lt;/div>
+&lt;/li>
+&lt;/ul>
+&lt;h2>Generating gerber and drill files&lt;span class="hx-absolute -hx-mt-20" id="generating-gerber-and-drill-files">&lt;/span>
+&lt;a href="#generating-gerber-and-drill-files" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Gerber and drill files must match what the fabricator expects.&lt;/li>
+&lt;li>JLCPCB specifies instructions for KiCAD 7.0 as well as other versions.&lt;/li>
+&lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
+&lt;a class="hx-flex" href="https://williamyang98.github.io/oculink_m2_adapter/pdfs/jlcpcb_kicad_7_generate_gerber_and_drill_files.pdf">
+&lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
+&lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
+&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;div style="margin-right: 0.25rem">JLCPCB instructions to generate KiCAD 7 gerber and drill files&lt;/div>
+&lt;/a>
+&lt;a href="https://jlcpcb.com/help/article/how-to-generate-gerber-and-drill-files-in-kicad-7">(source)&lt;/a>
+&lt;/div>
+&lt;/li>
+&lt;li>Verify output through local gerber viewer program before submitting.&lt;/li>
+&lt;li>Final verification in JLCPCB online gerber viewer after uploading design.&lt;/li>
+&lt;/ul></description></item><item><title>Via jumps</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/via_jumps/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/via_jumps/</guid><description>
+&lt;ul>
+&lt;li>Via jumps are necessary if a transmission line needs to switch lanes.&lt;/li>
+&lt;li>In order to avoid signal reflections the characteristic impedance of the transmission line needs to remain constant when traversing from between layers through a via.&lt;/li>
+&lt;/ul>
+&lt;h2>Coaxial via&lt;span class="hx-absolute -hx-mt-20" id="coaxial-via">&lt;/span>
+&lt;a href="#coaxial-via" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/via_jump_diagram.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 18. Via jump with current path (red/blue) and E-field (yellow)&lt;/i>
+&lt;/div>
+&lt;/div>
+&lt;ul>
+&lt;li>If there are no nearby grounding vias then a distant current return path is used which results in a significant impedance mismatch.&lt;/li>
+&lt;li>Instead we add nearby grounding vias to provide a current return path.&lt;/li>
+&lt;li>This type of via structure is called a coaxial via.&lt;/li>
+&lt;li>The following parameters are important when trying to control the impedance of a coaxial via:
+&lt;ul>
+&lt;li>Distance of ground vias from signal via.&lt;/li>
+&lt;li>Number of ground vias around the signal via.&lt;/li>
+&lt;li>Hole size of the ground via and signal via.&lt;/li>
+&lt;li>Dielectric material used to fill the vias.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2>Teardrop taper&lt;span class="hx-absolute -hx-mt-20" id="teardrop-taper">&lt;/span>
+&lt;a href="#teardrop-taper" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/via_jump_pcb.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 19. Via jump design with teardrop taper&lt;/i>
+&lt;/div>
+&lt;/div>
+&lt;ul>
+&lt;li>When a signal trace goes through a via there is an impedance discontinuity especially if the trace width and via diameter are different.&lt;/li>
+&lt;li>Adjusting the following can reduce the impedance discontinuity:
+&lt;ul>
+&lt;li>Adding a teardrop taper to match trace width to via diameter.&lt;/li>
+&lt;li>Adjusting the via annular diameter.&lt;/li>
+&lt;li>Adjusting the via hole size.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2>Determining parameters&lt;span class="hx-absolute -hx-mt-20" id="determining-parameters">&lt;/span>
+&lt;a href="#determining-parameters" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>There is no closed form equation for the impedance of a coaxial via with a teardrop taper.&lt;/li>
+&lt;li>This means running a parametric search through a simulation to determine the optimal parameter values.&lt;/li>
+&lt;li>Very difficult to do given the number of parameters for the coaxial via and teardrop taper which all impact performance.&lt;/li>
+&lt;li>Refer to this section about simulating circuits with &lt;a href="https://williamyang98.github.io/oculink_m2_adapter/docs/design/openEMS" >openEMS&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;h2>Via stubs&lt;span class="hx-absolute -hx-mt-20" id="via-stubs">&lt;/span>
+&lt;a href="#via-stubs" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/sierra_express_via_stub_back_drilling.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 20. Via stub back drilling&lt;/i>
+&lt;a href="https://www.protoexpress.com/blog/back-drilling-pcb-design-and-manufacturing/">(source)&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;ul>
+&lt;li>If via jump isn&amp;rsquo;t between the top and bottom layers then there will be a stub segment in the via.&lt;/li>
+&lt;li>This will have the most signficant impact at the following frequency:&lt;/li>
+&lt;/ul>
+&lt;p>\[
+f_0 = \frac{c}{4 \sqrt{\epsilon_r} \times d_{stub}}
+\]&lt;/p>
+&lt;ul>
+&lt;li>Actual performance degradation happens well before this frequency.&lt;/li>
+&lt;li>By decreasing
+\( d_{stub} \)
+we can increase
+\( f_0 \)
+well past our maximum design frequency and avoid problems.&lt;/li>
+&lt;li>If the via stub is sufficiently short then it will not have a noticeable impact on signal integrity below our maximum design frequency.&lt;/li>
+&lt;/ul>
+&lt;h2>Buried, blind and through hole vias&lt;span class="hx-absolute -hx-mt-20" id="buried-blind-and-through-hole-vias">&lt;/span>
+&lt;a href="#buried-blind-and-through-hole-vias" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/jlcpcb_what_is_pcb_via.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 21. Buried, blind and through hole vias&lt;/i>
+&lt;a href="https://jlcpcb.com/blog/what-is-pcb-via">(source)&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;ul>
+&lt;li>Buried and blind vias can be used to avoid via stubs.&lt;/li>
+&lt;li>These types of vias can be manufactured using a technique called backdrilling.&lt;/li>
+&lt;li>However JLCPCB only supports through hole vias.&lt;/li>
+&lt;/ul>
+&lt;h2>Resources&lt;span class="hx-absolute -hx-mt-20" id="resources">&lt;/span>
+&lt;a href="#resources" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
+&lt;a href="https://www.protoexpress.com/blog/how-via-impedance-impacts-signal-integrity-in-pcbs/" class="hx-inline-flex">
+&lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
+&lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
+&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;div>Sierra Circuits: Coaxial via geometry&lt;/div>
+&lt;/a>
+&lt;/div>
+&lt;/li>
+&lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
+&lt;a href="https://blog.samtec.com/post/via-stubs-practical-strategies-to-mitigate-return-loss/" class="hx-inline-flex">
+&lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
+&lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
+&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;div>Samtec blog: Practical strategies to mitigate return loss from via stubs&lt;/div>
+&lt;/a>
+&lt;/div>
+&lt;/li>
+&lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
+&lt;a href="https://resources.altium.com/p/backdrill-it-baby-how-to-reduce-signal-distortions-on-your-pcb" class="hx-inline-flex">
+&lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
+&lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
+&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;div>Altium: Stubs and backdrilling in high speed design&lt;/div>
+&lt;/a>
+&lt;/div>
+&lt;/li>
+&lt;/ul></description></item><item><title>Single board design</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/single_board/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/single_board/</guid><description>
+&lt;h2>Images&lt;span class="hx-absolute -hx-mt-20" id="images">&lt;/span>
+&lt;a href="#images" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/kicad_single_board_pcb.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 11. Custom single board M.2 to Oculink adapter PCB&lt;/i>
+&lt;/div>
+&lt;/div>
+&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/kicad_single_board_render.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 12. Custom single board M.2 to Oculink adapter 3D render&lt;/i>
+&lt;/div>
+&lt;/div>
+&lt;/p>
+&lt;h2>Advantages&lt;span class="hx-absolute -hx-mt-20" id="advantages">&lt;/span>
+&lt;a href="#advantages" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>Simpler design&lt;span class="hx-absolute -hx-mt-20" id="simpler-design">&lt;/span>
+&lt;a href="#simpler-design" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;ul>
+&lt;li>Easier manufacturing and testing since we only need to solder the Oculink port and passive components.&lt;/li>
+&lt;li>Single KiCAD schematic required allowing for easier design inside single project.&lt;/li>
+&lt;li>Requires only a single transmission line to be designed reducing design complexity.&lt;/li>
+&lt;/ul>
+&lt;h3>More reliable performance&lt;span class="hx-absolute -hx-mt-20" id="more-reliable-performance">&lt;/span>
+&lt;a href="#more-reliable-performance" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;ul>
+&lt;li>Having multiple boards connected over a flexible PCB adds additional potential impedance discontinuities.&lt;/li>
+&lt;li>Without equipment to verify performance at PCIe 3.0+ frequencies it is difficult to validate performance.&lt;/li>
+&lt;li>Introducing fewer design uncertainties will make final performance more likely to align with calculations.&lt;/li>
+&lt;/ul>
+&lt;h2>Disadvantages&lt;span class="hx-absolute -hx-mt-20" id="disadvantages">&lt;/span>
+&lt;a href="#disadvantages" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>Narrow routing resulting in layer transition&lt;span class="hx-absolute -hx-mt-20" id="narrow-routing-resulting-in-layer-transition">&lt;/span>
+&lt;a href="#narrow-routing-resulting-in-layer-transition" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>PCIe signal lanes have to fit through a very narrow region which requires routing differential pairs onto other layers.&lt;/p>
+&lt;ul>
+&lt;li>Requires careful design of via jumps to prevent impedance mismatch and signal reflection.&lt;/li>
+&lt;li>PCIe RX lanes have 1 via jump and PCIe TX lanes have 2 via jumps.&lt;/li>
+&lt;li>Each additional via jump will worsen signal integrity so having 2 is unideal.&lt;/li>
+&lt;/ul>
+&lt;h3>Port location and bending&lt;span class="hx-absolute -hx-mt-20" id="port-location-and-bending">&lt;/span>
+&lt;a href="#port-location-and-bending" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Board has to be slightly bent so that Oculink port is at the correct height with laptop chassis.&lt;/p>
+&lt;ul>
+&lt;li>Might result in damage to circuit if the board isn&amp;rsquo;t flexible enough.&lt;/li>
+&lt;li>Could result in degraded transmission line performance due to stretching of traces and introduction of inter-pair skew in differential pairs.&lt;/li>
+&lt;li>Could result in Oculink port pad connection breaking due to uneven mechanical stress.&lt;/li>
+&lt;/ul>
+&lt;h3>Long distance routing&lt;span class="hx-absolute -hx-mt-20" id="long-distance-routing">&lt;/span>
+&lt;a href="#long-distance-routing" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>PCIe lanes have to be routed over a moderately long distance (12cm).&lt;/p>
+&lt;ul>
+&lt;li>We are using FR4-TG135 which has a high dielectric loss at high frequencies.&lt;/li>
+&lt;li>If we are targetting PCIe 4.0 then we need to handle the 5th harmonic of the fundemental frequency which is 40GHz.&lt;/li>
+&lt;li>It is highly unlikely to maintain PCIe 4.0 over such a long distance with a high loss dielectric.&lt;/li>
+&lt;/ul>
+&lt;h3>Large size&lt;span class="hx-absolute -hx-mt-20" id="large-size">&lt;/span>
+&lt;a href="#large-size" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Single board design is relatively large.&lt;/p>
+&lt;ul>
+&lt;li>M.2 slot requires 0.8mm thickness which results in mandatory lead free HASL that costs $4.80USD.&lt;/li>
+&lt;li>Exceeds 50mm x 50mm threshold meaning board goes from $2.00USD to $7.00USD.&lt;/li>
+&lt;li>Exceeds 100mm x 100mm threshold meaning additional engineering fee of $24.00USD.&lt;/li>
+&lt;li>Overall cost of $35.80USD.&lt;/li>
+&lt;/ul></description></item><item><title>Skin effect</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/skin_effect/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/skin_effect/</guid><description>
+&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/copper_roughness_skin_effect.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 22. Visualisation of skin effect on rough conductive surfaces&lt;/i>
+&lt;a href="https://industrial.evidentscientific.com.cn/en/applications/copper-foil-surface-roughness-for-5g-printed-circuit-boards/">(source)&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;ul>
+&lt;li>Skin effect is when the signal current is expelled to the surface of the conductor at high frequencies.&lt;/li>
+&lt;li>With a rough copper finish, skin effect can result in higher trace impedance which can result in:
+&lt;ul>
+&lt;li>Signal loss through resistive losses.&lt;/li>
+&lt;li>Impedance mismatch and signal reflections.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
+&lt;a href="https://industrial.evidentscientific.com.cn/en/applications/copper-foil-surface-roughness-for-5g-printed-circuit-boards/" class="hx-inline-flex">
+&lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
+&lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
+&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;div>Evident Scientific: Copper foil surface roughness for 5G PCBs&lt;/div>
+&lt;/a>
+&lt;/div>
+&lt;/li>
+&lt;/ul>
+&lt;h2>Increasing trace width&lt;span class="hx-absolute -hx-mt-20" id="increasing-trace-width">&lt;/span>
+&lt;a href="#increasing-trace-width" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Use wider tranmission line signal traces to improve impedance and therefore signal integrity at higher frequencies.&lt;/li>
+&lt;li>Comes at the cost of worse impedance matching at lower frequencies.&lt;/li>
+&lt;li>Signal losses generally occur at higher frequencies (via jumps, tapered transitions, skin effect, insertion loss, dielectric loss).&lt;/li>
+&lt;li>Therefore to achieve best performance over the entire bandwidth we should increase transmission line width to mitigate skin effect at higher frequencies.&lt;/li>
+&lt;/ul>
+&lt;h2>Copper finish&lt;span class="hx-absolute -hx-mt-20" id="copper-finish">&lt;/span>
+&lt;a href="#copper-finish" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>PCB manufacturers have a variety of copper foil types to use if you need a smoother surface to avoid skin effect.&lt;/li>
+&lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
+&lt;a href="https://resources.altium.com/p/types-pcb-copper-foil-high-frequency-design" class="hx-inline-flex">
+&lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
+&lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
+&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;div>Altium: Types of PCB copper foils for high frequency design&lt;/div>
+&lt;/a>
+&lt;/div>
+&lt;/li>
+&lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
+&lt;a href="https://resources.altium.com/p/copper-choice-and-copper-efficiency-high-frequency-pcb-design" class="hx-inline-flex">
+&lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
+&lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
+&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;div>Altium: Copper choice and efficiency for high frequency PCB design&lt;/div>
+&lt;/a>
+&lt;/div>
+&lt;/li>
+&lt;/ul>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Type of copper foil&lt;/th>
+&lt;th>Description&lt;/th>
+&lt;th>Roughness&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Electrodeposited&lt;/td>
+&lt;td>Has a rougher surface on one side of the copper foil&lt;/td>
+&lt;td>Highest (above 1 um)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Reverse treated&lt;/td>
+&lt;td>Uses a surface treatment to reduce roughness&lt;/td>
+&lt;td>Moderate (0.5 um to 1.5 um)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Rolled-annealed&lt;/td>
+&lt;td>Has a smoother, denser surface from a rolling process&lt;/td>
+&lt;td>Low (0.25 to 0.5 um)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Ultra-low profile&lt;/td>
+&lt;td>Additional treatments are used to reduce roughness&lt;/td>
+&lt;td>Lowest (comparable to rolled annealed, but can be less than 0.3 um)&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;ul>
+&lt;li>Unfortunately JLCPCB doesn&amp;rsquo;t allow you to select the type of copper foil.&lt;/li>
+&lt;/ul></description></item><item><title>Flex connector design</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/flex_pcb/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/flex_pcb/</guid><description>
+&lt;h2>Images&lt;span class="hx-absolute -hx-mt-20" id="images">&lt;/span>
+&lt;a href="#images" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/kicad_flex_connector_pcb.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 13. Custom M.2 to Oculink adapter with flex connector PCBs&lt;/i>
+&lt;/div>
+&lt;/div>
+&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/kicad_flex_connector_render.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 14. Custom M.2 to Oculink adapter with flex connector 3D renders&lt;/i>
+&lt;/div>
+&lt;/div>
+&lt;/p>
+&lt;h2>Advantages&lt;span class="hx-absolute -hx-mt-20" id="advantages">&lt;/span>
+&lt;a href="#advantages" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>Benefits of vertical routing&lt;span class="hx-absolute -hx-mt-20" id="benefits-of-vertical-routing">&lt;/span>
+&lt;a href="#benefits-of-vertical-routing" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;ul>
+&lt;li>Vertical routing under M.2 2280 slot has a much wider room.&lt;/li>
+&lt;li>Removes requirement to move high frequency PCIe signal traces onto a different layer.
+&lt;ul>
+&lt;li>Avoiding additional via jumps which results in better signal integrity.&lt;/li>
+&lt;li>PCIe lanes for both RX and TX have 1 via jump.&lt;/li>
+&lt;li>This is an improvement for TX lanes over the single board design which have 2 via jumps.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Allows adjustment of height offset of Oculink port for ideal positioning against side of laptop chassis.&lt;/li>
+&lt;/ul>
+&lt;h3>Benefits of flexible PCB connection&lt;span class="hx-absolute -hx-mt-20" id="benefits-of-flexible-pcb-connection">&lt;/span>
+&lt;a href="#benefits-of-flexible-pcb-connection" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Flex PCB is designed to bend unlike a fibre glass core which prevents possible damage.&lt;/p>
+&lt;ul>
+&lt;li>Oculink port is on separate board which doesn&amp;rsquo;t have to bend avoiding any possible mechanical damage to the SMD pad connections.&lt;/li>
+&lt;li>Allows for more flexible positioning of the Oculink port if there is some error in the measurements.&lt;/li>
+&lt;/ul>
+&lt;h3>Polyimide dielectric&lt;span class="hx-absolute -hx-mt-20" id="polyimide-dielectric">&lt;/span>
+&lt;a href="#polyimide-dielectric" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Flex PCB uses a polyimide core which potentially could have a low dielectric loss.&lt;/p>
+&lt;ul>
+&lt;li>Overall length of PCIe lanes is the same but majority is over the lower dielectric loss polyimide.&lt;/li>
+&lt;li>Could improve signal integrity however this is difficult to verify without proper equipment.&lt;/li>
+&lt;/ul>
+&lt;h3>Flexibility of design&lt;span class="hx-absolute -hx-mt-20" id="flexibility-of-design">&lt;/span>
+&lt;a href="#flexibility-of-design" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Easier redesign if future changes need to be made.&lt;/p>
+&lt;ul>
+&lt;li>M.2 card board can be kept constant.&lt;/li>
+&lt;li>Flex connector can be easily redesigned and cheaply made.&lt;/li>
+&lt;li>Port board can be swapped if Oculink port is damaged.&lt;/li>
+&lt;li>Port board can be re-engineered to use a different PCIe compatible port like MCIO.&lt;/li>
+&lt;/ul>
+&lt;h3>Lower manufacturing cost.&lt;span class="hx-absolute -hx-mt-20" id="lower-manufacturing-cost">&lt;/span>
+&lt;a href="#lower-manufacturing-cost" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Cheaper overall manufacturing compared to single board design (using JLCPCB).&lt;/p>
+&lt;ul>
+&lt;li>M.2 card is only 22mm x 42mm which is under 50mm x 50mm threshold resulting in $2.00USD board cost.&lt;/li>
+&lt;li>M.2 card is 0.8mm which means mandatory lead free HASL that costs $4.80USD.&lt;/li>
+&lt;li>Oculink port board is only 21mm x 87mm which is under the 100mm x 100mm threshold meaning no additional engineering fee.&lt;/li>
+&lt;li>Oculink port board exceed 50mm x 50mm threshold which means board cost of $7.00USD.&lt;/li>
+&lt;li>Oculink port board can be manufactured on a stackup thicker than 0.8mm enabling HASL with lead which is free.&lt;/li>
+&lt;li>Flexible PCB connector can be manufactured at $2.00USD.&lt;/li>
+&lt;li>Overall cost of $15.80USD.&lt;/li>
+&lt;/ul>
+&lt;h2>Disadvantages&lt;span class="hx-absolute -hx-mt-20" id="disadvantages">&lt;/span>
+&lt;a href="#disadvantages" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>Variability in polyimide properties&lt;span class="hx-absolute -hx-mt-20" id="variability-in-polyimide-properties">&lt;/span>
+&lt;a href="#variability-in-polyimide-properties" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Flex PCB polyimide material comes in several varieties.&lt;/p>
+&lt;ul>
+&lt;li>No guarantee that the polyimide used is a low dielectric loss formulation.&lt;/li>
+&lt;li>JLCPCB datasheet for their polyimide supplier shows a dielectric loss which is still substantial.&lt;/li>
+&lt;li>Due to thinner stackup the electric field strength is significantly higher over a thicker stackup on FR4.&lt;/li>
+&lt;li>This high E-field magnitude can result in even greater dielectric losses.&lt;/li>
+&lt;li>If this isn&amp;rsquo;t offset by a low loss polyimide dielectric then the flex pcb may perform much worse than routing on FR4.&lt;/li>
+&lt;/ul>
+&lt;h3>Transitioning transmission line geometry&lt;span class="hx-absolute -hx-mt-20" id="transitioning-transmission-line-geometry">&lt;/span>
+&lt;a href="#transitioning-transmission-line-geometry" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Flex pcb requires handling transition of transmission line from FR4 stackup to flex PCB stackup.&lt;/p>
+&lt;ul>
+&lt;li>Requires careful design to avoid impedance discontinuities at flex PCB connection.&lt;/li>
+&lt;li>Involves designing transmission line tapers to maintain impedance target across connector transition.&lt;/li>
+&lt;li>&lt;a href="https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line" >Transmission line design&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3>Transmission line design on flex pcb&lt;span class="hx-absolute -hx-mt-20" id="transmission-line-design-on-flex-pcb">&lt;/span>
+&lt;a href="#transmission-line-design-on-flex-pcb" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Flex pcb has a very thin dielectric core for easy bending.&lt;/p>
+&lt;ul>
+&lt;li>Thin dielectric means transmission line needs to be designed with extremely thin traces.&lt;/li>
+&lt;li>Calculations with a solid ground plane puts trace width at &amp;lt; 0.05mm which is not manufacturable.&lt;/li>
+&lt;li>Requires using a hatched ground plane to achieve target impedance at manufacturable 0.1mm trace width.&lt;/li>
+&lt;li>Hatched ground plane needs very careful design considerations and is not trivial to design.&lt;/li>
+&lt;li>&lt;a href="https://williamyang98.github.io/oculink_m2_adapter/docs/design/hatched_ground_plane" >Hatched ground plane design&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3>Design and manufacturing complexity&lt;span class="hx-absolute -hx-mt-20" id="design-and-manufacturing-complexity">&lt;/span>
+&lt;a href="#design-and-manufacturing-complexity" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Additional complexity due to multiple boards.&lt;/p>
+&lt;ul>
+&lt;li>More difficult manufacturing and electrical testing due to additional soldering steps for flex connector.&lt;/li>
+&lt;li>More difficult design since KiCAD doesn&amp;rsquo;t support multi-board designs necessitating multiple projects.&lt;/li>
+&lt;li>Requires a more complicated project layout to support sharing of common resources like the flex connector footprint.&lt;/li>
+&lt;li>Requires careful design to make sure design changes are reflected across all 3 board designs (M.2 card, flex connector, Oculink port board) to avoid miswiring.&lt;/li>
+&lt;/ul>
+&lt;h3>Potential EMI issues&lt;span class="hx-absolute -hx-mt-20" id="potential-emi-issues">&lt;/span>
+&lt;a href="#potential-emi-issues" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;ul>
+&lt;li>Use of hatched ground plane instead of solid ground plane in flexible connector results in worse shielding at higher frequencies determined by hatch gap size.&lt;/li>
+&lt;li>Since flexible pcb is routed underneath a PCIe 4.0 x 4 SSD in the M.2 2280 slot it could mean the Oculink connection will interfere with the SSD.&lt;/li>
+&lt;li>Not that likely interference will be significant since the SSD also has it&amp;rsquo;s own internal solid ground plane which should shield EMI between SSD and Oculink connection.&lt;/li>
+&lt;/ul>
+&lt;h3>Potential safety issue&lt;span class="hx-absolute -hx-mt-20" id="potential-safety-issue">&lt;/span>
+&lt;a href="#potential-safety-issue" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;ul>
+&lt;li>Flexible PCB is routed over the battery pack. In the event of a short in the Oculink connection the battery pack could be damaged and possibly ignite.&lt;/li>
+&lt;li>Not that likely since PCIe connection carries low power signals and 3.3V rail isn&amp;rsquo;t used to deliver any signficant amount of power to the eGPU dock.&lt;/li>
+&lt;/ul></description></item><item><title>Skew requirements</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/skew_requirements/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/skew_requirements/</guid><description>
+&lt;p>The PCIe standard specifies several requirements for differential pair skew.&lt;/p>
+&lt;h2>Inter-pair skew (between lanes)&lt;span class="hx-absolute -hx-mt-20" id="inter-pair-skew-between-lanes">&lt;/span>
+&lt;a href="#inter-pair-skew-between-lanes" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Inter-pair skew is usually not specified but has a lower bound of 1ns for PCIe 4.0.&lt;/p>
+&lt;ul>
+&lt;li>Assuming a propagation speed of 0.6c, the inter-pair skew is around 20cm.&lt;/li>
+&lt;li>Since this is such a large value the inter-pair skew requirement is difficult to violate.&lt;/li>
+&lt;li>The reason for this is because the PCIe standard states that transceivers have to do symbol synchronisation.&lt;/li>
+&lt;li>Usually done with a buffer which usually can store around 20 symbols for each lane.&lt;/li>
+&lt;li>For PCIe 4.0 at a transfer rate of 16GT/s, 20 symbols have a duration of 1.25ns.&lt;/li>
+&lt;/ul>
+&lt;h2>Intra-pair skew (within lane)&lt;span class="hx-absolute -hx-mt-20" id="intra-pair-skew-within-lane">&lt;/span>
+&lt;a href="#intra-pair-skew-within-lane" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Intra-pair skew must be less than 5 mils (0.127mm) which is rather small margin of error.
+The following are phenomena that can contribute to intra-pair skew and methods to mitigate them.&lt;/p>
+&lt;h3>Bends in transmission line&lt;span class="hx-absolute -hx-mt-20" id="bends-in-transmission-line">&lt;/span>
+&lt;a href="#bends-in-transmission-line" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/sierra_express_length_matching.jpg" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 23. Techniques to length match differential pair&lt;/i>
+&lt;a href="https://www.protoexpress.com/blog/signal-propagation-delay-pcb/">(source)&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;ul>
+&lt;li>Bending causes the lengths of differential traces to become shorter and longer resulting in skew.&lt;/li>
+&lt;li>Can be avoided by keeping bends short so local skew error is below 5 mils.&lt;/li>
+&lt;li>If skew error is too large than it should be immediately corrected near the bend by adding serpentine bends for the shorter side of the differential pair.&lt;/li>
+&lt;li>KiCAD can automatically do this using their skew correction tool.&lt;/li>
+&lt;/ul>
+&lt;h3>Fibre weave effect&lt;span class="hx-absolute -hx-mt-20" id="fibre-weave-effect">&lt;/span>
+&lt;a href="#fibre-weave-effect" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/fibre_weave_skew_time_domain.jpg" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 24. Asymmetric routing over fibre-weave can produce intra-pair skew&lt;/i>
+&lt;a href="https://www.signalintegrityjournal.com/articles/2459-beware-of-the-skew-budget-how-fiber-weave-effect-can-affect-your-high-speed-design">(source)&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/fibre_weave_skew_eye_diagram.jpg" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 25. Asymmetric routing over fibre-weave will degrade eye opening&lt;/i>
+&lt;a href="https://www.signalintegrityjournal.com/articles/2459-beware-of-the-skew-budget-how-fiber-weave-effect-can-affect-your-high-speed-design">(source)&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;/p>
+&lt;ul>
+&lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
+&lt;a href="https://www.signalintegrityjournal.com/articles/2459-beware-of-the-skew-budget-how-fiber-weave-effect-can-affect-your-high-speed-design" class="hx-inline-flex">
+&lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
+&lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
+&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;div>Signal integrity: Beware of the skew budget with fibre weave effect&lt;/div>
+&lt;/a>
+&lt;/div>
+&lt;/li>
+&lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
+&lt;a href="https://resources.pcb.cadence.com/blog/2019-the-fiber-weave-effect-skew-losses-and-resonance" class="hx-inline-flex">
+&lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
+&lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
+&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;div>Cadence: The fibre weave effect, skew, losses and resonance&lt;/div>
+&lt;/a>
+&lt;/div>
+&lt;/li>
+&lt;li>A poor choice of a dielectric with a non-uniform fibre weave pattern can result in large intra-pair skews.&lt;/li>
+&lt;li>There is also no method of designing the circuit around a bad fibre weave since the manufacturer cannot position the weave at a specific offset.&lt;/li>
+&lt;/ul>
+&lt;h4>Better fibre weave patterns&lt;span class="hx-absolute -hx-mt-20" id="better-fibre-weave-patterns">&lt;/span>
+&lt;a href="#better-fibre-weave-patterns" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/fibre_weave_patterns.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 26. Fibre weave patterns that are available from manufacturers&lt;/i>
+&lt;a href="https://resources.pcb.cadence.com/blog/2019-the-fiber-weave-effect-skew-losses-and-resonance">(source)&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/altium_fibre_weave_flattened.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 27. Mechnically compressed fibre glass with flattened weave pattern&lt;/i>
+&lt;a href="https://resources.altium.com/p/how-the-fiber-weave-effect-influences-high-frequency-signal-integrity">(source)&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;/p>
+&lt;ul>
+&lt;li>There should be careful selection of an appropriate fibre weave pattern for maximum uniformity.&lt;/li>
+&lt;li>Additionally there is also mechanically compressed fibre glass which flattens the weave and fills in any gaps to produce a uniform weave pattern.&lt;/li>
+&lt;li>Here is a pdf from Isola group who are a copper clad laminate and prepreg materials manufacturer.
+&lt;ul>
+&lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
+&lt;a class="hx-flex" href="https://williamyang98.github.io/oculink_m2_adapter/pdfs/isola_group_fibre_weave_patterns.pdf">
+&lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
+&lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
+&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;div style="margin-right: 0.25rem">Isola group: Fibre weave patterns&lt;/div>
+&lt;/a>
+&lt;a href="https://www.isola-group.com/wp-content/uploads/Understanding-Laminate-Prepreg-Manufacturing.pdf">(source)&lt;/a>
+&lt;/div>
+&lt;/li>
+&lt;li>It contains various high quality images of fibre weave patterns and their fill factor measurements.&lt;/li>
+&lt;li>They also include treatment processes for bonding the prepreg and core to copper layers and how that effects the copper smoothness which is relevant for &lt;a href="https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/skin_effect" >skin effect&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h4>JLCPCB controlled impedance stackup&lt;span class="hx-absolute -hx-mt-20" id="jlcpcb-controlled-impedance-stackup">&lt;/span>
+&lt;a href="#jlcpcb-controlled-impedance-stackup" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/jlcpcb_controlled_impedance_stackup_weave_patterns.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 28. JLCPCB fibre glass weave patterns for controlled impedance stackups&lt;/i>
+&lt;a href="https://jlcpcb.com/impedance">(source)&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;ul>
+&lt;li>JLCPCB offers a variety of fibre weave patterns when a multilayer controlled impedance stackup is requested (this is also free).&lt;/li>
+&lt;li>It is also possible to stack two or more fibre weaves vertically to increase overall density and improve uniformity.&lt;/li>
+&lt;/ul>
+&lt;h3>Hatched ground plane&lt;span class="hx-absolute -hx-mt-20" id="hatched-ground-plane">&lt;/span>
+&lt;a href="#hatched-ground-plane" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/hatched_ground_plane_unbalanced.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 29. Balanced and unbalanced routing of differential pair over hatched ground plane&lt;/i>
+&lt;/div>
+&lt;/div>
+&lt;ul>
+&lt;li>For hatched ground planes in a flexible pcb design asymmetric routing can produce large intra-pair skews.&lt;/li>
+&lt;li>For straight transmission line routes it is trivial to route the differential pair symmetrically.&lt;/li>
+&lt;li>However if the transmission line needs to bend then the hatched ground plane needs to warp to avoid introducing skew.&lt;/li>
+&lt;li>This is exceptionally difficult to do with KiCAD&amp;rsquo;s built in hatched ground fill tool.&lt;/li>
+&lt;li>Requires manual layout and distortion of hatched ground plane to accomodate bends in a differential pair.&lt;/li>
+&lt;/ul>
+&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/hatched_ground_plane_manual_differential_bend.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 30. Manually warped hatched ground plane with differential pair bend&lt;/i>
+&lt;/div>
+&lt;/div>
+&lt;ul>
+&lt;li>Unfortunately KiCAD&amp;rsquo;s built in skew correction tools cannot measure skew for hatched ground planes generated manually or automatically by their ground fill tool.&lt;/li>
+&lt;li>This makes verification of the intra-lane skew extremely difficult at the design stage.&lt;/li>
+&lt;/ul></description></item><item><title>Conclusion</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/conclusion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/conclusion/</guid><description>
+&lt;h2>Custom adapter&lt;span class="hx-absolute -hx-mt-20" id="custom-adapter">&lt;/span>
+&lt;a href="#custom-adapter" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Can be designed and achieve PCIe 3.0 speeds reliably&lt;/li>
+&lt;li>Unlikely to achieve PCIe 4.0 due to aformentioned issues&lt;/li>
+&lt;li>Time consuming to construct&lt;/li>
+&lt;li>Difficult to manufacture requiring multiple attempts&lt;/li>
+&lt;li>Potential risk of shorting if assembly was done poorly&lt;/li>
+&lt;li>If form factor is extremely unusual or limited this might be an option you should consider&lt;/li>
+&lt;/ul>
+&lt;h2>Aliexpress adapter&lt;span class="hx-absolute -hx-mt-20" id="aliexpress-adapter">&lt;/span>
+&lt;a href="#aliexpress-adapter" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Otherwise purchasing a PCIe 4.0 adapter from aliexpress with bendable cables is a better option&lt;/li>
+&lt;li>More performance&lt;/li>
+&lt;li>Cheaper overall when considering parts and equipment&lt;/li>
+&lt;li>Sourcing oculink port and SMD components has a hefty shipping fee from most electronic suppliers&lt;/li>
+&lt;li>Aliexpress has very low to non existent shipping fees&lt;/li>
+&lt;li>Adapter has controlled impedance cables in many lengths which are bendable and thus can be adapted to a variety of enclosures&lt;/li>
+&lt;/ul>
+&lt;h2>Lessons learnt&lt;span class="hx-absolute -hx-mt-20" id="lessons-learnt">&lt;/span>
+&lt;a href="#lessons-learnt" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Interesting exercise in practical high frequency transmission line design&lt;/li>
+&lt;li>Research was relatively straight forward due to public schematics from AdtLink and datasheets&lt;/li>
+&lt;li>Design was time consuming especially for the flex pcb which required a manually routed hatched ground plane due to KiCAD limitations
+&lt;ul>
+&lt;li>Altium or more mature software might have better hatched ground plane design tools&lt;/li>
+&lt;li>In order to route bends in hatched ground plane it was easier to make the entire hatch manually with trace segments&lt;/li>
+&lt;li>Distort the hatch at bend to maintain as much symmetry&lt;/li>
+&lt;li>Using default hatched ground plane implementation would have resulted in extreme inter-pair skew and terrible performance&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Manufacturing was time consuming due to microsoldering, improper reflow, and hand testing of adapter
+&lt;ul>
+&lt;li>Unless stencil application is ideal there will be dry joints or bridges&lt;/li>
+&lt;li>Difficult or impossible to visually inspect since half of the oculink pads are underneath the port&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Due to use of passive components, the most informative part of this project was high frequency transmission line design
+&lt;ul>
+&lt;li>PCIe redriver ICs are not cheap and are not usually sold in low quantities&lt;/li>
+&lt;li>Optimised passive adapter is the most cost effective option&lt;/li>
+&lt;li>Microsoldering of flex pcb could achieve near zero pitch error with aid of magnifying glass but is limited to dexterity and patience&lt;/li>
+&lt;li>Aliexpress adapter uses special micro coaxial cables which will perform better than flex pcb with hatched ground plane or direct routing over lossy FR4 over distances longer than 10cm&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Design of hatch ground plane is not solvable using equations
+&lt;ul>
+&lt;li>Requires simulation tools&lt;/li>
+&lt;li>openEMS is a free option but is uses the CPU only and only leverages SSE extensions which are a decade old&lt;/li>
+&lt;li>Open source github repo that handles preprocessing of gerber files, setup of openEMS simulation, and analysis of results to produce impedance graphs over frequency&lt;/li>
+&lt;li>Ansys does not have a easy (or at least not something that is easy to look up) way of importing gerber files for simulation&lt;/li>
+&lt;li>Ansys is GPU accelerated but only with CUDA, which is okay if you have an Nvidia gpu but not if you have an Intel or AMD gpu&lt;/li>
+&lt;li>Ansys will sometimes give an error without an explanation&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2>Requirements to reach PCIe 4.0&lt;span class="hx-absolute -hx-mt-20" id="requirements-to-reach-pcie-40">&lt;/span>
+&lt;a href="#requirements-to-reach-pcie-40" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Final performance of adapter reached minimum target of PCIe 3.0 but failed the more ambitious PCIe 4.0&lt;/li>
+&lt;/ul>
+&lt;p>To reach PCIe 4.0 it would probably require:&lt;/p>
+&lt;ul>
+&lt;li>Lower loss dielectric materials&lt;/li>
+&lt;li>Better simulation of via jumps in transmission line to match impedance and prevent reflections&lt;/li>
+&lt;li>Better design of flex pcb hatched ground plane to hit impedance target or avoid it altogether with single board design&lt;/li>
+&lt;li>Increase transmission line trace width to mitigate impact of skin effect at higher frequencies (most effective)&lt;/li>
+&lt;li>Use thicker copper layers (only effective at lower frequencies)&lt;/li>
+&lt;li>Use smoother copper finish since surface roughness results in higher impedance due to skin effect (very effective)
+&lt;ul>
+&lt;li>Unknown if this can be done cheaply without moving to a more expensive HDI stackup&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Replace flex pcb with micro coax (doesn&amp;rsquo;t seem easy to do since it would require alot of microsoldering of extremely fine traces)&lt;/li>
+&lt;/ul>
+&lt;h2>Future plans&lt;span class="hx-absolute -hx-mt-20" id="future-plans">&lt;/span>
+&lt;a href="#future-plans" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>In flex pcb design the oculink port board can be swapped out with another type of connector&lt;/li>
+&lt;li>Potential candidates are
+&lt;ul>
+&lt;li>Mini cool edge IO (MCIO) - Better official number of insertion cycles&lt;/li>
+&lt;li>Far far future there may be electrical to optical solution for PCIe like with PCIe 7.0 (unlikely to be available at consumer prices)&lt;/li>
+&lt;li>Improved oculink connector that is rated for higher insertion cycles&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Wait for Thunderbolt 5 with 128Gbp/s of bandwidth
+&lt;ul>
+&lt;li>Thunderbolt 4 with 64Gbp/s of bandwidth should be comparable to PCIe 4.0 x 4 but there is overhead somewhere which results in much worse performance&lt;/li>
+&lt;li>Requires a very recent CPU to have support for Thunderbolt 4&lt;/li>
+&lt;li>Thunderbolt eGPU docks are very expensive&lt;/li>
+&lt;li>Oculink solution has cheaper cables and eGPU docks compared to thunderbolt 3 and 4 solutions&lt;/li>
+&lt;li>USB 4 64Gbp/s has similar overhead problems to thunderbolt&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>Hatched ground plane</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/hatched_ground_plane/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/hatched_ground_plane/</guid><description>
+&lt;h2>Problems with thin flexible PCB&lt;span class="hx-absolute -hx-mt-20" id="problems-with-thin-flexible-pcb">&lt;/span>
+&lt;a href="#problems-with-thin-flexible-pcb" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>The base polyimide dielectric core has a thickness of 25um.&lt;/li>
+&lt;li>This means that we need extremely thin traces with a solid ground plane if we want to reach our PCIe impedance target.&lt;/li>
+&lt;li>Thicker dielectric cores are provided but they increase cost substantially and trace width barely increases.&lt;/li>
+&lt;li>Even worse the calculated transmission line trace width is calculated as 0.05mm which is below JLCPCB&amp;rsquo;s manufacturing minimums.&lt;/li>
+&lt;/ul>
+&lt;h2>Hatched ground plane&lt;span class="hx-absolute -hx-mt-20" id="hatched-ground-plane">&lt;/span>
+&lt;a href="#hatched-ground-plane" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Hatched ground plane can allow for wider traces while matching impedance.&lt;/li>
+&lt;li>No easy equation to get impedance measurement (fill factor approximation does not model this adequately).&lt;/li>
+&lt;li>Design of hatched ground plane must meet manufacturing capabilities of JLCPCB.&lt;/li>
+&lt;li>Requires parametric search with simulation software.&lt;/li>
+&lt;li>Refer to this section about simulating circuits with &lt;a href="https://williamyang98.github.io/oculink_m2_adapter/docs/design/openEMS" >openEMS&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;h2>Determining parameters&lt;span class="hx-absolute -hx-mt-20" id="determining-parameters">&lt;/span>
+&lt;a href="#determining-parameters" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>There are three major parameters to consider:&lt;/p>
+&lt;ol>
+&lt;li>Trace width.&lt;/li>
+&lt;li>Hatch width.&lt;/li>
+&lt;li>Hatch gap.&lt;/li>
+&lt;/ol>
+&lt;p>Since we need to be above the minimum trace width for JLCPCB to manufacture it, we should select a fixed trace width of 0.1mm.&lt;/p>
+&lt;ul>
+&lt;li>This is similar the trace width of 0.13mm for our transmission line on the FR4 substrate for both the M.2 cad and Oculink port board.&lt;/li>
+&lt;li>This means we will have an easier time designing a taper geometry when connecting the flex connector to our boards (discussed &lt;a href="https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/flex_connection" >here&lt;/a>).&lt;/li>
+&lt;li>Means we only need to perform a parametric search with two variables (the hatch width and gap) which is less time consuming.&lt;/li>
+&lt;/ul>
+&lt;h2>Additional design considerations&lt;span class="hx-absolute -hx-mt-20" id="additional-design-considerations">&lt;/span>
+&lt;a href="#additional-design-considerations" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Refer to minimising &lt;a href="https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/skew_requirements#hatched-ground-plane" >intra-pair skew&lt;/a> for hatched ground planes and differential pairs.&lt;/p></description></item><item><title>Flex connection</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/flex_connection/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/flex_connection/</guid><description>
+&lt;h2>Type of connection&lt;span class="hx-absolute -hx-mt-20" id="type-of-connection">&lt;/span>
+&lt;a href="#type-of-connection" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>Flexible flat/printed cable connector&lt;span class="hx-absolute -hx-mt-20" id="flexible-flatprinted-cable-connector">&lt;/span>
+&lt;a href="#flexible-flatprinted-cable-connector" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/molex_ffc_fpc_connector.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 36. Molex FFC/FPC connector&lt;/i>
+&lt;a href="https://www.molex.com/en-us/products/connectors/ffc-fpc-connectors">(source)&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="width: 50%">Advantages&lt;/th>
+&lt;th style="width: 50%">Disadvantages&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody style="vertical-align: top">
+&lt;tr>
+&lt;td>
+&lt;ul>
+&lt;li>Flexible connector can be replaced without resoldering the connector.&lt;/li>
+&lt;li>Allows for easier installation and removal without danger of damaging flexible connector.&lt;/li>
+&lt;/ul>
+&lt;/td>
+&lt;td>
+&lt;ul>
+&lt;li>Requires designing transmission line to gracefully transition to the connector without a large impedance discontinuity.&lt;/li>
+&lt;li>Higher insertion loss compared to soldered connection since contact surface isn't perfect and there will be stubs from the internal connectors. This could hamper high frequency performance.&lt;/li>
+&lt;li>Maximum usable frequency before insertion loss is more than 3dB is usually below 20GHz. This is the recommended design frequency for a good eye opening for PCIe 3.0 which has a fundemental frequency of 4GHz.&lt;/li>
+&lt;li>Requires reflow soldering the connector which is extremely difficult for a fine pitch connector (0.2mm) without risk of bridging.&lt;/li>
+&lt;li>Connectors add a few extra dollars of cost to the bill of materials&lt;/li>
+&lt;/ul>
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;ul>
+&lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
+&lt;a class="hx-flex" href="https://williamyang98.github.io/oculink_m2_adapter/pdfs/molex_ffc_fpc_datasheet.pdf">
+&lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
+&lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
+&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;div style="margin-right: 0.25rem">Molex: FFC/FPC connector maximum usable frequency and compatability with high speed USB&lt;/div>
+&lt;/a>
+&lt;a href="https://www.content.molex.com/dxdam/2f/2f35250f-5aa9-4ce8-a8be-a251f68293e0/987652-0193.pdf">(source)&lt;/a>
+&lt;/div>
+&lt;/li>
+&lt;/ul>
+&lt;h3>Soldered connection&lt;span class="hx-absolute -hx-mt-20" id="soldered-connection">&lt;/span>
+&lt;a href="#soldered-connection" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="width: 50%">Advantages&lt;/th>
+&lt;th style="width: 50%">Disadvantages&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody style="vertical-align: top">
+&lt;tr>
+&lt;td>
+&lt;ul>
+&lt;li>Allows for more control over the design of the transmission line structure&lt;/li>
+&lt;li>Lower insertion loss since connection is soldered. This means no stubs caused by extra internal connector pins or non-ideal/non-uniform contact surface.&lt;/li>
+&lt;li>Connector SMD pads can be designed specifically to avoid discontinuities in impedance caused by trace length mismatch, loss of coplanar ground traces or ground plane.&lt;/li>
+&lt;/ul>
+&lt;/td>
+&lt;td>
+&lt;ul>
+&lt;li>Low tolerance for z-height error on pad connections requires soldering the connector very flat to the SMD pads. This may require pressure during the reflow process&lt;/li>
+&lt;li>Requires hand positioning of flexible connector onto pads which is extremely difficult since the traces are only 0.1mm. Any pitch error will result in possible bridging or degraded signal integrity&lt;/li>
+&lt;li>Flexible pcb is not removable and is permanently connected to the boards. This might make installation or removal more difficult if connector is in a suboptimal location.&lt;/li>
+&lt;/ul>
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3>Final choice&lt;span class="hx-absolute -hx-mt-20" id="final-choice">&lt;/span>
+&lt;a href="#final-choice" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>The &lt;strong>soldered connection&lt;/strong> allows closer control over the design of the tranmission line and avoids the downsides of a FFC connector. This should allow us to avoid or mitigate the signal integrity issues that will arise from the use of a FFC connector.&lt;/p>
+&lt;h2>Structure of transmission line&lt;span class="hx-absolute -hx-mt-20" id="structure-of-transmission-line">&lt;/span>
+&lt;a href="#structure-of-transmission-line" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/sierra_express_coplanar_ground_plane_via_fence_transmission_line.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 31. Differential pair with coplanar ground plane stitched with via fence&lt;/i>
+&lt;/div>
+&lt;/div>
+&lt;p>The following are useful equations to describe the impedance of the transmission line in relation to it&amp;rsquo;s geometry. These will be useful in determining which parameters to adjust if we want to meet our PCIe impedance target. This comes at the cost of lower modularity but is this is an acceptable compromise for higher guarantees of high frequency signal performance.&lt;/p>
+&lt;h3>Characteristic impedance&lt;span class="hx-absolute -hx-mt-20" id="characteristic-impedance">&lt;/span>
+&lt;a href="#characteristic-impedance" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Rough equation for a simple transmission line is given by:&lt;/p>
+&lt;p>\[
+Z_0 = \sqrt{\frac{L}{C}}
+\]&lt;/p>
+&lt;p>This is still useful when discussing changes in impedance for a variety of transmission line structures if we discuss them in terms of differing trace inductances and capacitances.&lt;/p>
+&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
+&lt;a href="https://home.sandiego.edu/~ekim/e194rfs01/tlsmthek.pdf" class="hx-inline-flex">
+&lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
+&lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
+&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;div>University of San Diego: Waves and impedances on transmission_lines&lt;/div>
+&lt;/a>
+&lt;/div>
+&lt;h3>Parallel plate capacitors&lt;span class="hx-absolute -hx-mt-20" id="parallel-plate-capacitors">&lt;/span>
+&lt;a href="#parallel-plate-capacitors" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>The capacitance between a simple two plate system is given by:
+&lt;p>\[ C = \frac{\epsilon_0 A}{d} \]&lt;/p>
+&lt;/p>
+&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/parallel_plate_capacitor.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 35. Parallel plate capacitor&lt;/i>
+&lt;a href="https://byjus.com/physics/parallel-plate-capacitor/">(source)&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;h3>Wire over plane&lt;span class="hx-absolute -hx-mt-20" id="wire-over-plane">&lt;/span>
+&lt;a href="#wire-over-plane" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>The inductance of a wire over a plane can be approximated as:
+&lt;p>\[ L = \frac{\mu_0 \mu_r d}{2 \pi} cosh^{-1}{\frac{h}{2r}} \]&lt;/p>
+&lt;/p>
+&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/wire_over_plane.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 34. Solid wire over ground plane&lt;/i>
+&lt;a href="https://www.allaboutcircuits.com/tools/wire-over-plane-inductance-calculator/">(source)&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;h2>Stackup height differences&lt;span class="hx-absolute -hx-mt-20" id="stackup-height-differences">&lt;/span>
+&lt;a href="#stackup-height-differences" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/jlcpcb_stackup_diagram.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 32. JLCPCB FR4 stackup vs flexible PCB stackup&lt;/i>
+&lt;a href="https://jlcpcb.com/impedance">(source)&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;p>Transitioning our transmission line from an FR4 stackup to a flexible PCB stackup causes the height of the dielectric in the transmission line to significantly decrease.&lt;/p>
+&lt;ul>
+&lt;li>Therefore signal trace to ground plane capacitance increases which causes impedance to decrease.&lt;/li>
+&lt;li>Mismatch in impedance causes signal reflections and reduced integrity.&lt;/li>
+&lt;/ul>
+&lt;h3>Hatched ground plane&lt;span class="hx-absolute -hx-mt-20" id="hatched-ground-plane">&lt;/span>
+&lt;a href="#hatched-ground-plane" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>If the transmission line signal traces have the same width, using a suitably designed hatched ground plane will increase the impedance to meet our impedance target.&lt;/p>
+&lt;ul>
+&lt;li>See &lt;a href="https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/hatched_ground_plane" >designing hatched ground plane&lt;/a> for more details.&lt;/li>
+&lt;/ul>
+&lt;h2>Vertical transmission line connection&lt;span class="hx-absolute -hx-mt-20" id="vertical-transmission-line-connection">&lt;/span>
+&lt;a href="#vertical-transmission-line-connection" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/jlcpcb_stackup_connection.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 33. JLCPCB transmission line connection between FR4 stackup and flexible PCB&lt;/i>
+&lt;/div>
+&lt;/div>
+Transition from FR4 stackup to flexible PCB involves a vertical solder connection which produces an impedance discontinuity.&lt;/p>
+&lt;ul>
+&lt;li>The coplanar ground traces experience some discontinuity when it meets the solder connection due to an increase in the conductor height.
+&lt;ul>
+&lt;li>Results in an increase in edge coupling area.&lt;/li>
+&lt;li>This increases capacitance and decreases impedance.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>The E-fields between the signal traces and ground planes have to switch layers.
+&lt;ul>
+&lt;li>Broadside coupling means stronger E-fields and more energy being carried compared to the coplanar ground traces which use edge coupling.&lt;/li>
+&lt;li>Capacitive coupling is greater through a broadside connection since the traces are 0.1mm wide, compared to the edge side coupling which occurs over a 0.012mm or 0.035mm&lt;/li>
+&lt;li>This was verified through an &lt;a href="https://williamyang98.github.io/oculink_m2_adapter/docs/design/openEMS" >open EMS simulation&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3>Tapered connection&lt;span class="hx-absolute -hx-mt-20" id="tapered-connection">&lt;/span>
+&lt;a href="#tapered-connection" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/flex_pcb_transmission_line_taper.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Image 37. Flexible PCB transmission line taper&lt;/i>
+&lt;/div>
+&lt;/div>
+&lt;p>A taper is a gradual change in the geometry of a transmission line that attempts to maintain consistent impedance value across a geometric transition.&lt;/p>
+&lt;ul>
+&lt;li>We use a linear taper to transition the E-field broadside coupling from the ground plane on the M.2 card to the ground plane on the flexible PCB.&lt;/li>
+&lt;li>A linear taper is not necessarily the best however it is very simple to design.
+&lt;ul>
+&lt;li>&lt;div class="hx-rounded hx-border hx-inline-flex hx-flex-row hx-px-2 hx-py-1 hx-align-middle hx-shadow">
+&lt;a href="https://resources.altium.com/p/rf-trace-taper" class="hx-inline-flex">
+&lt;div style="width: 1.5rem; height: 1.5rem; margin-right: 0.25rem">
+&lt;span class="hx-font-semibold hx-gap-2 hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
+&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;div>Altium: How to design an RF taper for impedance matching&lt;/div>
+&lt;/a>
+&lt;/div>
+&lt;/li>
+&lt;li>Other taper designs have complex non-linear equations describing their shape which is difficult to import/design using KiCAD.&lt;/li>
+&lt;li>Linear taper just requires the polyline tool in KiCAD.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3>Parametric optimisation of taper&lt;span class="hx-absolute -hx-mt-20" id="parametric-optimisation-of-taper">&lt;/span>
+&lt;a href="#parametric-optimisation-of-taper" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>To verify the performance of the taper &lt;a href="https://williamyang98.github.io/oculink_m2_adapter/docs/design/openEMS" >openEMS&lt;/a> was used.&lt;/p>
+&lt;ul>
+&lt;li>Simulated stackup with flex PCB connected to FR4 transmission line as a 3 layer board.
+&lt;ul>
+&lt;li>Layers were: &lt;code>[FR4 ground, signal traces, flex PCB ground]&lt;/code>.&lt;/li>
+&lt;li>The soldered signal traces were approximated as an ideal single trace on a single layer.&lt;/li>
+&lt;li>This was done so that only the E-field transition between the ground planes was relevant for our parametric search.&lt;/li>
+&lt;li>Might not be ideal from a simulation accuracy standpoint as the geometry of the solder connection might impact the impedance match. However representing the solder connection in our simulation setup was difficult so this approximation/assumption was used.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Parametric search was done on the length and width of the linear taper.&lt;/li>
+&lt;li>Shape of taper was modified separately on the FR4 stack up and flexible PCB stackup.&lt;/li>
+&lt;li>Possible that simulation was not accurate since mesh size is limited and linear taper requires very small simulation grid size to accurately capture the pointy part.&lt;/li>
+&lt;/ul></description></item><item><title>OpenEMS</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/openems/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/openems/</guid><description/></item></channel></rss>

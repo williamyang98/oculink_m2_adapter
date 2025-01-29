@@ -1,0 +1,76 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>M.2 Oculink Adapter – Manufacturing</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/manufacturing/</link><description>Recent content in Manufacturing on M.2 Oculink Adapter</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://williamyang98.github.io/oculink_m2_adapter/docs/manufacturing/index.xml" rel="self" type="application/rss+xml"/><item><title>JLCPCB</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/manufacturing/jlcpcb/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/manufacturing/jlcpcb/</guid><description>
+&lt;h2>Order cost&lt;span class="hx-absolute -hx-mt-20" id="order-cost">&lt;/span>
+&lt;a href="#order-cost" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>$$$&lt;/li>
+&lt;/ul>
+&lt;h2>Delivery&lt;span class="hx-absolute -hx-mt-20" id="delivery">&lt;/span>
+&lt;a href="#delivery" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h2>Components&lt;span class="hx-absolute -hx-mt-20" id="components">&lt;/span>
+&lt;a href="#components" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>SMD components ordered from Mouser&lt;/li>
+&lt;/ul></description></item><item><title>Reflow soldering</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/manufacturing/reflow_soldering/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/manufacturing/reflow_soldering/</guid><description>
+&lt;h2>Equipment&lt;span class="hx-absolute -hx-mt-20" id="equipment">&lt;/span>
+&lt;a href="#equipment" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Reflow plate&lt;/li>
+&lt;li>Soldering iron&lt;/li>
+&lt;li>Magnifying glass&lt;/li>
+&lt;li>Isopropyl alcohol&lt;/li>
+&lt;/ul>
+&lt;h2>Reflow oculink port&lt;span class="hx-absolute -hx-mt-20" id="reflow-oculink-port">&lt;/span>
+&lt;a href="#reflow-oculink-port" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Apply stencil for oculink connector, make sure there are no bridges&lt;/li>
+&lt;li>Place oculink port&lt;/li>
+&lt;li>Apply reflow&lt;/li>
+&lt;/ul>
+&lt;h2>SMD components&lt;span class="hx-absolute -hx-mt-20" id="smd-components">&lt;/span>
+&lt;a href="#smd-components" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Can apply stencil&lt;/li>
+&lt;li>Easier to solder by hand&lt;/li>
+&lt;/ul>
+&lt;h2>FFC connector for flex pcb&lt;span class="hx-absolute -hx-mt-20" id="ffc-connector-for-flex-pcb">&lt;/span>
+&lt;a href="#ffc-connector-for-flex-pcb" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Need to apply pressure to connector while reflow occurs for complete contact&lt;/li>
+&lt;li>There is not alot of tolerate for FFC connector when soldered since there is mechanical slack, it has to be as flat to the SMD pads as possible&lt;/li>
+&lt;li>When reflowing connector place weights to apply even pressure across FFC connector&lt;/li>
+&lt;/ul></description></item><item><title>Electrical testing</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/manufacturing/electrical_testing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/manufacturing/electrical_testing/</guid><description>
+&lt;h2>Checking for shorts&lt;span class="hx-absolute -hx-mt-20" id="checking-for-shorts">&lt;/span>
+&lt;a href="#checking-for-shorts" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Oculink port after reflow can be shorted due to excess or smeared solder paste resulting in bridges between fine pitch pins
+&lt;ul>
+&lt;li>Can redo reflow as many times until short is gone&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>For flex pcb shorts can occur between fine pitch SMD pads of FFC connector
+&lt;ul>
+&lt;li>Visual inspection through transparent FFC can reveal where shorts are&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2>Checking flex pcb during assembly&lt;span class="hx-absolute -hx-mt-20" id="checking-flex-pcb-during-assembly">&lt;/span>
+&lt;a href="#checking-flex-pcb-during-assembly" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>For flex pcb bad connections can be checked partially through assembly&lt;/li>
+&lt;li>Begin by soldering FFC to M.2 card
+&lt;ul>
+&lt;li>Check for shorts and bad connections between M.2 edge connector and end of FFC cable&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Begin reflowing oculink port to separate PCB
+&lt;ul>
+&lt;li>Check for shorts on exposed connector pads&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Bad connection or short will likely be located at FFC to oculink board connection&lt;/li>
+&lt;/ul>
+&lt;h2>Checking assembled board&lt;span class="hx-absolute -hx-mt-20" id="checking-assembled-board">&lt;/span>
+&lt;a href="#checking-assembled-board" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Connect oculink adapter to eGPU board&lt;/li>
+&lt;li>The PCIe connector on the eGPU board can be used to check for continuity and shorts
+&lt;ul>
+&lt;li>Refer to following schematic for pin out of PCIe connector&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Use m.2 edge connector as other side of connection
+&lt;ul>
+&lt;li>Refer to pinout for m.2 connector&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>
