@@ -36,7 +36,7 @@ params:
     displayPoweredBy: false
   editURL:
     enable: true
-    base: https://github.com/williamyang98/oculink_m2_adapter/docs/content
+    base: https://github.com/williamyang98/oculink_m2_adapter/blob/main/docs/content
   search:
     enable: true
     type: flexsearch
