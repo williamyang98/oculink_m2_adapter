@@ -984,6 +984,99 @@ well past our maximum design frequency and avoid problems.&lt;/li>
 &lt;/table>
 &lt;ul>
 &lt;li>Unfortunately JLCPCB doesn&amp;rsquo;t allow you to select the type of copper foil.&lt;/li>
+&lt;/ul></description></item><item><title>Conclusion</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/conclusion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/conclusion/</guid><description>
+&lt;h2>Custom adapter&lt;span class="hx-absolute -hx-mt-20" id="custom-adapter">&lt;/span>
+&lt;a href="#custom-adapter" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Can be designed and achieve PCIe 3.0 speeds reliably&lt;/li>
+&lt;li>Unlikely to achieve PCIe 4.0 due to aformentioned issues&lt;/li>
+&lt;li>Time consuming to construct&lt;/li>
+&lt;li>Difficult to manufacture requiring multiple attempts&lt;/li>
+&lt;li>Potential risk of shorting if assembly was done poorly&lt;/li>
+&lt;li>If form factor is extremely unusual or limited this might be an option you should consider&lt;/li>
+&lt;/ul>
+&lt;h2>Aliexpress adapter&lt;span class="hx-absolute -hx-mt-20" id="aliexpress-adapter">&lt;/span>
+&lt;a href="#aliexpress-adapter" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Otherwise purchasing a PCIe 4.0 adapter from aliexpress with bendable cables is a better option&lt;/li>
+&lt;li>More performance&lt;/li>
+&lt;li>Cheaper overall when considering parts and equipment&lt;/li>
+&lt;li>Sourcing oculink port and SMD components has a hefty shipping fee from most electronic suppliers&lt;/li>
+&lt;li>Aliexpress has very low to non existent shipping fees&lt;/li>
+&lt;li>Adapter has controlled impedance cables in many lengths which are bendable and thus can be adapted to a variety of enclosures&lt;/li>
+&lt;/ul>
+&lt;h2>Lessons learnt&lt;span class="hx-absolute -hx-mt-20" id="lessons-learnt">&lt;/span>
+&lt;a href="#lessons-learnt" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Interesting exercise in practical high frequency transmission line design&lt;/li>
+&lt;li>Research was relatively straight forward due to public schematics from AdtLink and datasheets&lt;/li>
+&lt;li>Design was time consuming especially for the flex pcb which required a manually routed hatched ground plane due to KiCAD limitations
+&lt;ul>
+&lt;li>Altium or more mature software might have better hatched ground plane design tools&lt;/li>
+&lt;li>In order to route bends in hatched ground plane it was easier to make the entire hatch manually with trace segments&lt;/li>
+&lt;li>Distort the hatch at bend to maintain as much symmetry&lt;/li>
+&lt;li>Using default hatched ground plane implementation would have resulted in extreme inter-pair skew and terrible performance&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Manufacturing was time consuming due to microsoldering, improper reflow, and hand testing of adapter
+&lt;ul>
+&lt;li>Unless stencil application is ideal there will be dry joints or bridges&lt;/li>
+&lt;li>Difficult or impossible to visually inspect since half of the oculink pads are underneath the port&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Due to use of passive components, the most informative part of this project was high frequency transmission line design
+&lt;ul>
+&lt;li>PCIe redriver ICs are not cheap and are not usually sold in low quantities&lt;/li>
+&lt;li>Optimised passive adapter is the most cost effective option&lt;/li>
+&lt;li>Microsoldering of flex pcb could achieve near zero pitch error with aid of magnifying glass but is limited to dexterity and patience&lt;/li>
+&lt;li>Aliexpress adapter uses special micro coaxial cables which will perform better than flex pcb with hatched ground plane or direct routing over lossy FR4 over distances longer than 10cm&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Design of hatch ground plane is not solvable using equations
+&lt;ul>
+&lt;li>Requires simulation tools&lt;/li>
+&lt;li>openEMS is a free option but is uses the CPU only and only leverages SSE extensions which are a decade old&lt;/li>
+&lt;li>Open source github repo that handles preprocessing of gerber files, setup of openEMS simulation, and analysis of results to produce impedance graphs over frequency&lt;/li>
+&lt;li>Ansys does not have a easy (or at least not something that is easy to look up) way of importing gerber files for simulation&lt;/li>
+&lt;li>Ansys is GPU accelerated but only with CUDA, which is okay if you have an Nvidia gpu but not if you have an Intel or AMD gpu&lt;/li>
+&lt;li>Ansys will sometimes give an error without an explanation&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2>Requirements to reach PCIe 4.0&lt;span class="hx-absolute -hx-mt-20" id="requirements-to-reach-pcie-40">&lt;/span>
+&lt;a href="#requirements-to-reach-pcie-40" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Final performance of adapter reached minimum target of PCIe 3.0 but failed the more ambitious PCIe 4.0&lt;/li>
+&lt;/ul>
+&lt;p>To reach PCIe 4.0 it would probably require:&lt;/p>
+&lt;ul>
+&lt;li>Lower loss dielectric materials&lt;/li>
+&lt;li>Better simulation of via jumps in transmission line to match impedance and prevent reflections&lt;/li>
+&lt;li>Better design of flex pcb hatched ground plane to hit impedance target or avoid it altogether with single board design&lt;/li>
+&lt;li>Increase transmission line trace width to mitigate impact of skin effect at higher frequencies (most effective)&lt;/li>
+&lt;li>Use thicker copper layers (only effective at lower frequencies)&lt;/li>
+&lt;li>Use smoother copper finish since surface roughness results in higher impedance due to skin effect (very effective)
+&lt;ul>
+&lt;li>Unknown if this can be done cheaply without moving to a more expensive HDI stackup&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Replace flex pcb with micro coax (doesn&amp;rsquo;t seem easy to do since it would require alot of microsoldering of extremely fine traces)&lt;/li>
+&lt;/ul>
+&lt;h2>Future plans&lt;span class="hx-absolute -hx-mt-20" id="future-plans">&lt;/span>
+&lt;a href="#future-plans" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>In flex pcb design the oculink port board can be swapped out with another type of connector&lt;/li>
+&lt;li>Potential candidates are
+&lt;ul>
+&lt;li>Mini cool edge IO (MCIO) - Better official number of insertion cycles&lt;/li>
+&lt;li>Far far future there may be electrical to optical solution for PCIe like with PCIe 7.0 (unlikely to be available at consumer prices)&lt;/li>
+&lt;li>Improved oculink connector that is rated for higher insertion cycles&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Wait for Thunderbolt 5 with 128Gbp/s of bandwidth
+&lt;ul>
+&lt;li>Thunderbolt 4 with 64Gbp/s of bandwidth should be comparable to PCIe 4.0 x 4 but there is overhead somewhere which results in much worse performance&lt;/li>
+&lt;li>Requires a very recent CPU to have support for Thunderbolt 4&lt;/li>
+&lt;li>Thunderbolt eGPU docks are very expensive&lt;/li>
+&lt;li>Oculink solution has cheaper cables and eGPU docks compared to thunderbolt 3 and 4 solutions&lt;/li>
+&lt;li>USB 4 64Gbp/s has similar overhead problems to thunderbolt&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;/ul></description></item><item><title>Flex connector design</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/flex_pcb/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/flex_pcb/</guid><description>
 &lt;h2>Images&lt;span class="hx-absolute -hx-mt-20" id="images">&lt;/span>
 &lt;a href="#images" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
@@ -1230,99 +1323,6 @@ The following are phenomena that can contribute to intra-pair skew and methods t
 &lt;ul>
 &lt;li>Unfortunately KiCAD&amp;rsquo;s built in skew correction tools cannot measure skew for hatched ground planes generated manually or automatically by their ground fill tool.&lt;/li>
 &lt;li>This makes verification of the intra-lane skew extremely difficult at the design stage.&lt;/li>
-&lt;/ul></description></item><item><title>Conclusion</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/conclusion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/conclusion/</guid><description>
-&lt;h2>Custom adapter&lt;span class="hx-absolute -hx-mt-20" id="custom-adapter">&lt;/span>
-&lt;a href="#custom-adapter" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
-&lt;li>Can be designed and achieve PCIe 3.0 speeds reliably&lt;/li>
-&lt;li>Unlikely to achieve PCIe 4.0 due to aformentioned issues&lt;/li>
-&lt;li>Time consuming to construct&lt;/li>
-&lt;li>Difficult to manufacture requiring multiple attempts&lt;/li>
-&lt;li>Potential risk of shorting if assembly was done poorly&lt;/li>
-&lt;li>If form factor is extremely unusual or limited this might be an option you should consider&lt;/li>
-&lt;/ul>
-&lt;h2>Aliexpress adapter&lt;span class="hx-absolute -hx-mt-20" id="aliexpress-adapter">&lt;/span>
-&lt;a href="#aliexpress-adapter" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
-&lt;li>Otherwise purchasing a PCIe 4.0 adapter from aliexpress with bendable cables is a better option&lt;/li>
-&lt;li>More performance&lt;/li>
-&lt;li>Cheaper overall when considering parts and equipment&lt;/li>
-&lt;li>Sourcing oculink port and SMD components has a hefty shipping fee from most electronic suppliers&lt;/li>
-&lt;li>Aliexpress has very low to non existent shipping fees&lt;/li>
-&lt;li>Adapter has controlled impedance cables in many lengths which are bendable and thus can be adapted to a variety of enclosures&lt;/li>
-&lt;/ul>
-&lt;h2>Lessons learnt&lt;span class="hx-absolute -hx-mt-20" id="lessons-learnt">&lt;/span>
-&lt;a href="#lessons-learnt" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
-&lt;li>Interesting exercise in practical high frequency transmission line design&lt;/li>
-&lt;li>Research was relatively straight forward due to public schematics from AdtLink and datasheets&lt;/li>
-&lt;li>Design was time consuming especially for the flex pcb which required a manually routed hatched ground plane due to KiCAD limitations
-&lt;ul>
-&lt;li>Altium or more mature software might have better hatched ground plane design tools&lt;/li>
-&lt;li>In order to route bends in hatched ground plane it was easier to make the entire hatch manually with trace segments&lt;/li>
-&lt;li>Distort the hatch at bend to maintain as much symmetry&lt;/li>
-&lt;li>Using default hatched ground plane implementation would have resulted in extreme inter-pair skew and terrible performance&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Manufacturing was time consuming due to microsoldering, improper reflow, and hand testing of adapter
-&lt;ul>
-&lt;li>Unless stencil application is ideal there will be dry joints or bridges&lt;/li>
-&lt;li>Difficult or impossible to visually inspect since half of the oculink pads are underneath the port&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Due to use of passive components, the most informative part of this project was high frequency transmission line design
-&lt;ul>
-&lt;li>PCIe redriver ICs are not cheap and are not usually sold in low quantities&lt;/li>
-&lt;li>Optimised passive adapter is the most cost effective option&lt;/li>
-&lt;li>Microsoldering of flex pcb could achieve near zero pitch error with aid of magnifying glass but is limited to dexterity and patience&lt;/li>
-&lt;li>Aliexpress adapter uses special micro coaxial cables which will perform better than flex pcb with hatched ground plane or direct routing over lossy FR4 over distances longer than 10cm&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Design of hatch ground plane is not solvable using equations
-&lt;ul>
-&lt;li>Requires simulation tools&lt;/li>
-&lt;li>openEMS is a free option but is uses the CPU only and only leverages SSE extensions which are a decade old&lt;/li>
-&lt;li>Open source github repo that handles preprocessing of gerber files, setup of openEMS simulation, and analysis of results to produce impedance graphs over frequency&lt;/li>
-&lt;li>Ansys does not have a easy (or at least not something that is easy to look up) way of importing gerber files for simulation&lt;/li>
-&lt;li>Ansys is GPU accelerated but only with CUDA, which is okay if you have an Nvidia gpu but not if you have an Intel or AMD gpu&lt;/li>
-&lt;li>Ansys will sometimes give an error without an explanation&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2>Requirements to reach PCIe 4.0&lt;span class="hx-absolute -hx-mt-20" id="requirements-to-reach-pcie-40">&lt;/span>
-&lt;a href="#requirements-to-reach-pcie-40" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
-&lt;li>Final performance of adapter reached minimum target of PCIe 3.0 but failed the more ambitious PCIe 4.0&lt;/li>
-&lt;/ul>
-&lt;p>To reach PCIe 4.0 it would probably require:&lt;/p>
-&lt;ul>
-&lt;li>Lower loss dielectric materials&lt;/li>
-&lt;li>Better simulation of via jumps in transmission line to match impedance and prevent reflections&lt;/li>
-&lt;li>Better design of flex pcb hatched ground plane to hit impedance target or avoid it altogether with single board design&lt;/li>
-&lt;li>Increase transmission line trace width to mitigate impact of skin effect at higher frequencies (most effective)&lt;/li>
-&lt;li>Use thicker copper layers (only effective at lower frequencies)&lt;/li>
-&lt;li>Use smoother copper finish since surface roughness results in higher impedance due to skin effect (very effective)
-&lt;ul>
-&lt;li>Unknown if this can be done cheaply without moving to a more expensive HDI stackup&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Replace flex pcb with micro coax (doesn&amp;rsquo;t seem easy to do since it would require alot of microsoldering of extremely fine traces)&lt;/li>
-&lt;/ul>
-&lt;h2>Future plans&lt;span class="hx-absolute -hx-mt-20" id="future-plans">&lt;/span>
-&lt;a href="#future-plans" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
-&lt;li>In flex pcb design the oculink port board can be swapped out with another type of connector&lt;/li>
-&lt;li>Potential candidates are
-&lt;ul>
-&lt;li>Mini cool edge IO (MCIO) - Better official number of insertion cycles&lt;/li>
-&lt;li>Far far future there may be electrical to optical solution for PCIe like with PCIe 7.0 (unlikely to be available at consumer prices)&lt;/li>
-&lt;li>Improved oculink connector that is rated for higher insertion cycles&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Wait for Thunderbolt 5 with 128Gbp/s of bandwidth
-&lt;ul>
-&lt;li>Thunderbolt 4 with 64Gbp/s of bandwidth should be comparable to PCIe 4.0 x 4 but there is overhead somewhere which results in much worse performance&lt;/li>
-&lt;li>Requires a very recent CPU to have support for Thunderbolt 4&lt;/li>
-&lt;li>Thunderbolt eGPU docks are very expensive&lt;/li>
-&lt;li>Oculink solution has cheaper cables and eGPU docks compared to thunderbolt 3 and 4 solutions&lt;/li>
-&lt;li>USB 4 64Gbp/s has similar overhead problems to thunderbolt&lt;/li>
-&lt;/ul>
-&lt;/li>
 &lt;/ul></description></item><item><title>Hatched ground plane</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/hatched_ground_plane/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/hatched_ground_plane/</guid><description>
 &lt;h2>Problems with thin flexible PCB&lt;span class="hx-absolute -hx-mt-20" id="problems-with-thin-flexible-pcb">&lt;/span>
 &lt;a href="#problems-with-thin-flexible-pcb" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
