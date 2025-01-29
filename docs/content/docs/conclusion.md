@@ -2,7 +2,7 @@
 title: Conclusion
 prev: /docs/results/synthetic_benchmarks
 next: /gallery
-weight: 6
+weight: 5
 ---
 
 ## Custom adapter
