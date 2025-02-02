@@ -1,3 +1,6 @@
 [submodule "docs/themes/hextra"]
 	path = docs/themes/hextra
 	url = https://github.com/imfing/hextra.git
+[submodule "simulations/gerber2ems"]
+	path = simulations/gerber2ems
+	url = https://github.com/williamyang98/gerber2ems.git
