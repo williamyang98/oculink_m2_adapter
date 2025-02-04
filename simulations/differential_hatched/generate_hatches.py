@@ -76,10 +76,11 @@ def main():
     pair = config.diff_pairs[0]
     validate_diff_pair(pair)
 
-    reference_layer = get_reference_layer(pair)
+    signal_layer, reference_layer = get_port_layers(pair)
     im_ref = get_layer_image(reference_layer.file)
-    # NOTE: Remove some of these if it takes too long and select those near our calculate optimum
-    #       Do this if you just want to confirm the chosen result
+    im_signal = get_layer_image(signal_layer.file)
+    # NOTE: Remove some of these if it takes too long and select those near our calculated optimum from ../find_optimum_diffpair.py
+    #       Do this if you just want to validate the chosen result is optimal
     hatch_configs = [
         # width (um), gap (um)
         (50, 25),
@@ -147,8 +148,10 @@ def main():
         hatch_config_obj = HatchConfig(width_um, gap_um, COPLANAR_GAP_UM)
         im_hatch = create_hatched_plane(hatch_config_obj, pair, im_ref.size)
         im_ref_hatched = add_hatch_to_ref_plane(im_ref, im_hatch)
+        im_debug = create_debug_image(im_signal, im_ref, im_hatch)
         # NOTE: flip to correct for flipping when loading it in
         im_ref_hatched = im_ref_hatched.transpose(PIL.Image.FLIP_TOP_BOTTOM)
+        im_debug = im_debug.transpose(PIL.Image.FLIP_TOP_BOTTOM)
         # save to folder
         variant_name = get_variant_name(hatch_config)
         variant_path = os.path.join(VARIANTS_DIR, variant_name)
@@ -161,8 +164,8 @@ def main():
         else:
             logger.info(f"Skipping init of variant={variant_name}")
         variant_images_path = os.path.join(variant_path, "images")
-        dst_path = os.path.join(variant_path, "images", f"{reference_layer.file}.png")
-        im_ref_hatched.save(dst_path)
+        im_ref_hatched.save(os.path.join(variant_images_path, f"{reference_layer.file}.png"))
+        im_debug.save(os.path.join(variant_images_path, f"{reference_layer.file}_hatch_debug.png"))
 
 def create_dir(path, cleanup=False):
     directory_path = path
@@ -189,15 +192,18 @@ def validate_diff_pair(pair):
     assert(is_same_width)
     assert(is_same_length)
 
-def get_reference_layer(pair):
+def get_port_layers(pair):
     config = Config.get()
     ports = config.ports
     port = ports[pair.start_p]
     reference_layer_index = port.plane
+    signal_layer_index = port.layer
     metal_layers = config.get_metals()
     reference_layer = metal_layers[reference_layer_index]
+    signal_layer = metal_layers[signal_layer_index]
     assert(reference_layer.file != None)
-    return reference_layer
+    assert(signal_layer.file != None)
+    return (signal_layer, reference_layer)
 
 def get_layer_image(name):
     config = Config.get()
@@ -349,6 +355,31 @@ def add_hatch_to_ref_plane(im_ref, im_hatch):
     im_inv = PIL.ImageChops.add(im_ref_inv, im_hatch_inv)
     # im = PIL.ImageOps.invert(im_inv)
     return im_inv
+
+def create_debug_image(im_signal, im_ref, im_hatch):
+    def convert_to_alpha(im, colour):
+        im_mask = 255 - np.array(im, dtype=np.uint16)
+        im_mask = im_mask.reshape(im_mask.shape + (1,))
+        total_channels = 4
+        shape = im_mask.shape[:2] + (total_channels,)
+        im_fill = np.full(shape, colour, dtype=np.uint16)
+        im_out = im_fill*im_mask
+        im_out = np.clip(im_out, a_min=0, a_max=255)
+        opacity = colour[3]
+        im_out[:,:,3:4] = np.clip(im_mask, a_min=0, a_max=1)*opacity
+        im_out = im_out.astype(np.uint8)
+        im_out = PIL.Image.fromarray(im_out, mode="RGBA")
+        return im_out
+
+    im_ref = convert_to_alpha(im_ref, (0,255,0,255))
+    im_hatch = convert_to_alpha(im_hatch, (0,0,255,128))
+    im_signal = convert_to_alpha(im_signal, (255,0,0,80))
+
+    im_out = PIL.Image.new("RGBA", im_ref.size, (255,255,255,255))
+    im_out = PIL.Image.alpha_composite(im_out, im_ref)
+    im_out = PIL.Image.alpha_composite(im_out, im_hatch)
+    im_out = PIL.Image.alpha_composite(im_out, im_signal)
+    return im_out
 
 def setup_logging(args):
     level = logging.INFO
