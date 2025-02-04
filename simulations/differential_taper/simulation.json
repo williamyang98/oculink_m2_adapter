@@ -4,13 +4,13 @@
         "start": 0.5e9,
         "stop": 40e9
     },
-    "max_steps": 60e3,
+    "max_steps": 25e3,
     "via": {
         "filling_epsilon": 1,
         "plating_thickness": 10
     },
     "mesh": {
-        "xy": 12,
+        "xy": 25,
         "inter_layers": 4,
         "margin": {
             "xy": 100,

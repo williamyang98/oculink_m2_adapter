@@ -145,8 +145,10 @@ def main():
             output_name = "_".join(output_name)
             fig, best_result = plot_reflectance_values(search_results, x_ticks, x_label, title)
             fig.savefig(os.path.join(output_folder, f"reflectance_{output_name}.png"))
+            plt.close()
             fig = plot_s_parameters(search_results, x_ticks, x_label, title)
             fig.savefig(os.path.join(output_folder, f"s_params_{output_name}.png"), bbox_inches="tight")
+            plt.close()
 
             logger.info(f"Found best result with search=[{','.join(map(str, best_result.variant.params[i:]))}]")
             next_results.append(best_result)
@@ -162,8 +164,10 @@ def main():
     output_name = "_".join([f"{name}_{value}" for name, value in zip(param_names, best_result.variant.params)])
     fig, _ = plot_reflectance_values([best_result], x_ticks, x_label, title)
     fig.savefig(os.path.join(OUTPUT_DIR, f"best_reflectance_{output_name}.png"))
+    plt.close()
     fig = plot_s_parameters([best_result], x_ticks, x_label, title)
     fig.savefig(os.path.join(OUTPUT_DIR, f"best_s_params_{output_name}.png"), bbox_inches="tight")
+    plt.close()
 
 # this is the transformation used in Smith charts
 def get_reflection_coefficient(Z, Z0):

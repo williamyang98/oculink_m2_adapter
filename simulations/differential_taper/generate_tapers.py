@@ -88,8 +88,12 @@ def main():
         # width (um), length (um), overlap (um)
     ]
     for width in (100, 150, 200, 250):
-        for length in (300, 400, 500):
-            for overlap in (200, 300, 400, 500, 600):
+        for length in (300, 400, 500, 600):
+            # NOTE: Adjust overlap as an offset to the taper length
+            #       Early simulation data shows overlap must be equal or greater to length for good match
+            # for overlap in (200, 300, 400, 500, 600):
+            for delta in (-100, 0, 100, 200, 300, 400):
+                overlap = length + delta
                 taper_configs.append((width, length, overlap))
 
     get_variant_name = lambda taper_config: "_".join(map(str, taper_config))
