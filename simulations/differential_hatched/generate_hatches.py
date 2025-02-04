@@ -33,7 +33,7 @@ def create_arg_parser():
     )
     parser.add_argument("--config", dest="config", type=str, default="./simulation.json")
     parser.add_argument("-i", "--input", dest="input", type=str, default="./fab")
-    parser.add_argument("-o", "--output", dest="output", type=str, default="./output")
+    parser.add_argument("-o", "--output", dest="output", type=str, default="./variants_simulation")
     group = parser.add_mutually_exclusive_group()
     group.add_argument("-d", "--debug", action="store_true", dest="debug")
     group.add_argument("-l", "--log", choices=["DEBUG", "INFO", "WARNING", "ERROR"], dest="log_level")
@@ -78,19 +78,52 @@ def main():
 
     reference_layer = get_reference_layer(pair)
     im_ref = get_layer_image(reference_layer.file)
+    # NOTE: Remove some of these if it takes too long and select those near our calculate optimum
+    #       Do this if you just want to confirm the chosen result
     hatch_configs = [
         # width (um), gap (um)
+        (50, 25),
         (50, 50),
+        (50, 75),
+        (50, 100),
+        (50, 125),
         (50, 150),
+        (50, 200),
         (50, 250),
         (50, 350),
         (50, 450),
         (50, 550),
+        (75, 25),
+        (75, 50),
+        (75, 75),
+        (75, 100),
+        (75, 150),
+        (75, 200),
+        (75, 250),
+        (100, 25),
+        (100, 50),
+        (100, 75),
         (100, 100),
+        (100, 150),
         (100, 200),
+        (100, 250),
         (100, 300),
         (100, 400),
         (100, 500),
+        (125, 25),
+        (125, 50),
+        (125, 75),
+        (125, 100),
+        (125, 150),
+        (125, 200),
+        (125, 250),
+        (125, 300),
+        (150, 50),
+        (150, 100),
+        (150, 150),
+        (150, 200),
+        (150, 250),
+        (150, 300),
         (200, 100),
         (200, 200),
         (200, 300),
