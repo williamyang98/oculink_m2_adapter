@@ -1,0 +1,104 @@
+{
+    "format_version": "1.1",
+    "frequency": {
+        "start": 0.5e9,
+        "stop": 40e9
+    },
+    "max_steps": 60e3,
+    "via": {
+        "filling_epsilon": 1,
+        "plating_thickness": 10
+    },
+    "mesh": {
+        "xy": 12,
+        "inter_layers": 4,
+        "margin": {
+            "xy": 100,
+            "z": 100
+        },
+        "smoothing_ratio": 2
+    },
+    "margin": {
+        "xy": 500,
+        "z": 500
+    },
+    "offset": {
+        "x": -0.055,
+        "y": -0.050
+    },
+    "ports": [
+        {
+            "width": 150,
+            "length": 150,
+            "impedance": 42.5,
+            "layer": 1,
+            "plane": 0,
+            "excite": true
+        },
+        {
+            "width": 150,
+            "length": 150,
+            "impedance": 42.5,
+            "layer": 1,
+            "plane": 2,
+            "excite": false
+        },
+        {
+            "width": 150,
+            "length": 150,
+            "impedance": 42.5,
+            "layer": 1,
+            "plane": 0,
+            "excite": true
+        },
+        {
+            "width": 150,
+            "length": 150,
+            "impedance": 42.5,
+            "layer": 1,
+            "plane": 2,
+            "excite": false
+        }
+    ],
+    "differential_pairs": [
+        {
+            "start_p": 0,
+            "stop_p": 1,
+            "start_n": 2,
+            "stop_n": 3,
+            "name": "A"
+        }
+    ],
+    "layers": [
+        {
+            "name": "F_Cu",
+            "file": "F_Cu",
+            "type": "copper"
+        },
+        {
+            "name": "Dielectric inner 1",
+            "type": "core",
+            "thickness": 0.100,
+            "epsilon": 4.1,
+            "export_field": true
+        },
+        {
+            "name": "In1_Cu",
+            "file": "In1_Cu",
+            "type": "copper",
+            "export_field": true
+        },
+        {
+            "name": "Dielectric inner 2",
+            "type": "core",
+            "thickness": 0.100,
+            "epsilon": 4.1,
+            "export_field": true
+        },
+        {
+            "name": "B_Cu",
+            "file": "B_Cu",
+            "type": "copper"
+        }
+    ]
+}

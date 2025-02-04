@@ -20,12 +20,13 @@ def create_argument_parser():
     parser.add_argument("-p", "--postprocess", dest="postprocess", action="store_true", help="Run postprocessing pass")
     parser.add_argument("-a", "--all", dest="all", action="store_true", help="Run all steps")
     parser.add_argument("-i", "--input", dest="input", type=str, default="./fab")
-    parser.add_argument("-o", "--output", dest="output", type=str, default="./output")
+    parser.add_argument("-o", "--output", dest="output", type=str, default="./variants_simulation")
     group = parser.add_mutually_exclusive_group()
     group.add_argument("-d", "--debug", action="store_true", dest="debug")
     group.add_argument("-l", "--log", choices=["DEBUG", "INFO", "WARNING", "ERROR"], dest="log_level")
     parser.add_argument("-t", "--threads", dest="threads", type=int, default=None, help="Total threads to use for openEMS simulation")
     parser.add_argument("-r", "--restart", dest="restart", action="store_true", help="Restart all variant simulations")
+    parser.add_argument("--ef", "--export-field", dest="export_field", action="store_true", help="Export E-field data from simulation")
     return parser
 
 """
@@ -75,6 +76,8 @@ def main():
         base_command_args.append("--debug")
     if args.threads:
         base_command_args.extend(["--threads", str(args.threads)])
+    if args.export_field:
+        base_command_args.append("--export-field")
 
     def create_command_args(variant_dir, flags):
         command_args = []
@@ -108,6 +111,7 @@ def main():
                     logger.info(f"Cached variant={variant}, step={name}")
 
 def retry_run(args, max_retries=5):
+    logger.info(f"Running command={' '.join(args)}, max_retries={max_retries}")
     for i in range(max_retries):
         result = subprocess.run(args, capture_output=False)
         if result.returncode == 0:

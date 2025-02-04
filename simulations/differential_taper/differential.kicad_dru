@@ -1,0 +1,39 @@
+(version 1)
+(rule "Pad clearance"
+	(condition "A.type == 'pad'")
+	(constraint clearance (min 0.01mm))
+)
+
+(rule "Track clearance"
+	(condition "A.type == 'track' && B.type == 'track'")
+	(constraint clearance (min 0.01mm))
+)
+
+(rule "Track clearance"
+	(condition "A.type == 'track' && B.type == 'Via'")
+	(constraint clearance (min 0.01mm))
+)
+
+(rule "Track clearance"
+	(condition "A.type == 'Zone' && B.type == 'Via'")
+	(constraint clearance (min 0.01mm))
+)
+
+(rule "Zone Min Width Rule"
+	(condition "A.Type == 'Zone' && A.NetClass != B.NetClass")	
+	(constraint physical_clearance (min 0.01mm))
+	(constraint track_width (min 0.01mm))
+)
+
+(rule "Annular via width"
+	(condition "A.NetClass != B.NetClass")	
+	(constraint annular_width (min 0.01mm))
+	(constraint hole_clearance (min 0.01mm))
+	(constraint hole_to_hole (min 0.01mm))
+	(constraint physical_hole_clearance (min 0.01mm))
+)
+
+(rule "Prevent Via to Ground Plane"
+    (constraint zone_connection none)
+    (condition "A.Type == 'Via' && B.Type == 'Zone'")
+)
