@@ -18,7 +18,7 @@ import shutil
 
 logger = logging.getLogger(__name__)
 
-COPLANAR_GAP_UM = 150
+COPLANAR_GAP_UM = 200
 
 class HatchConfig:
     def __init__(self, width, gap, coplanar):
@@ -83,53 +83,12 @@ def main():
     #       Do this if you just want to validate the chosen result is optimal
     hatch_configs = [
         # width (um), gap (um)
-        (50, 25),
-        (50, 50),
-        (50, 75),
-        (50, 100),
-        (50, 125),
-        (50, 150),
-        (50, 200),
-        (50, 250),
-        (50, 350),
-        (50, 450),
-        (50, 550),
-        (75, 25),
-        (75, 50),
-        (75, 75),
-        (75, 100),
-        (75, 150),
-        (75, 200),
-        (75, 250),
-        (100, 25),
-        (100, 50),
-        (100, 75),
-        (100, 100),
-        (100, 150),
-        (100, 200),
-        (100, 250),
-        (100, 300),
-        (100, 400),
-        (100, 500),
-        (125, 25),
-        (125, 50),
-        (125, 75),
-        (125, 100),
-        (125, 150),
-        (125, 200),
-        (125, 250),
-        (125, 300),
-        (150, 50),
-        (150, 100),
-        (150, 150),
-        (150, 200),
-        (150, 250),
-        (150, 300),
-        (200, 100),
-        (200, 200),
-        (200, 300),
-        (200, 400),
     ]
+    for width in (50, 100, 150, 200):
+        for ratio in (0.5, 1.0, 1.5, 2.0):
+            gap = int(width*ratio)
+            hatch_configs.append((width, gap))
+
     get_variant_name = lambda hatch_config: "_".join(map(str, hatch_config))
     logger.info("Output variant parameters to csv file")
     with open(os.path.join(OUTPUT_PATH, "variants.csv"), "w+") as fp:

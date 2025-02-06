@@ -16,7 +16,7 @@
             "xy": 100,
             "z": 100
         },
-		"smoothing_ratio": 2
+        "smoothing_ratio": 2
     },
     "margin": {
         "xy": 500,
@@ -28,32 +28,32 @@
     },
     "ports": [
         {
-            "width": 100,
-            "length": 100,
+            "width": 150,
+            "length": 150,
             "impedance": 42.5,
             "layer": 0,
             "plane": 1,
             "excite": true
         },
         {
-            "width": 100,
-            "length": 100,
+            "width": 150,
+            "length": 150,
             "impedance": 42.5,
             "layer": 0,
             "plane": 1,
             "excite": false
         },
         {
-            "width": 100,
-            "length": 100,
+            "width": 150,
+            "length": 150,
             "impedance": 42.5,
             "layer": 0,
             "plane": 1,
             "excite": true
         },
         {
-            "width": 100,
-            "length": 100,
+            "width": 150,
+            "length": 150,
             "impedance": 42.5,
             "layer": 0,
             "plane": 1,
@@ -69,8 +69,8 @@
             "name": "A"
         }
     ],
-	"layers": [
-		{
+    "layers": [
+        {
             "name": "Dielectric top",
             "type": "core",
             "thickness": 0.024,
@@ -78,24 +78,24 @@
         },
         {
             "name": "F_Cu",
-			"file": "F_Cu",
+            "file": "F_Cu",
             "type": "copper",
-			"export_field": true
+            "export_field": true
         },
         {
             "name": "Core",
             "type": "core",
             "thickness": 0.024,
             "epsilon": 3.3,
-			"export_field": true
+            "export_field": true
         },
         {
             "name": "B_Cu",
-			"file": "B_Cu",
+            "file": "B_Cu",
             "type": "copper",
-			"export_field": true
+            "export_field": true
         },
-		{
+        {
             "name": "Dielectric bottom",
             "type": "core",
             "thickness": 0.024,
