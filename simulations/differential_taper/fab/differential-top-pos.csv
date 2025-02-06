@@ -1,4 +1,4 @@
 Ref,Val,Package,PosX,PosY,Rot,Side
-"GND1","Ground","pad_0.1mm",0.400000,1.882500,0.000000,top
-"SP0","Simulation_Port","pad_0.15mm",0.530000,1.525001,180.000000,top
-"SP2","Simulation_Port","pad_0.15mm",0.830000,1.525001,180.000000,top
+"GND1","Ground","pad_0.1mm",0.397500,3.954999,0.000000,top
+"SP0","Simulation_Port","pad_0.15mm",0.530000,3.677500,180.000000,top
+"SP2","Simulation_Port","pad_0.15mm",0.830000,3.677500,180.000000,top

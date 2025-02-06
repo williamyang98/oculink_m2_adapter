@@ -87,13 +87,10 @@ def main():
     taper_configs = [
         # width (um), length (um), overlap (um)
     ]
-    for width in (100, 150, 200, 250):
-        for length in (300, 400, 500, 600):
-            # NOTE: Adjust overlap as an offset to the taper length
-            #       Early simulation data shows overlap must be equal or greater to length for good match
-            # for overlap in (200, 300, 400, 500, 600):
-            for delta in (-100, 0, 100, 200, 300, 400):
-                overlap = length + delta
+    for width in (150, 200, 250):
+        for length in (100, 250, 500, 1000, 1500, 2000):
+            for delta in (0.5, 0.75, 1.0, 1.25, 1.5):
+                overlap = int(delta*length)
                 taper_configs.append((width, length, overlap))
 
     get_variant_name = lambda taper_config: "_".join(map(str, taper_config))
@@ -237,15 +234,15 @@ def create_taper(taper_config: TaperConfig, pair, im_size):
     drawer_0.rectangle(tuple(map(to_px, ((x_left_um, y_start_um), (x_right_um, y_taper_top_um)))), fill=0)
     draw_triangle(drawer_0, (x_pos_um, y_taper_top_um), taper_width_um, taper_length_um)
     draw_triangle(drawer_0, (x_neg_um, y_taper_top_um), taper_width_um, taper_length_um)
-    draw_triangle(drawer_0, (x_left_um+coplanar_width_um/2, y_taper_top_um), coplanar_width_um, taper_length_um)
-    draw_triangle(drawer_0, (x_right_um-coplanar_width_um/2, y_taper_top_um), coplanar_width_um, taper_length_um)
+    # draw_triangle(drawer_0, (x_left_um+coplanar_width_um/2, y_taper_top_um), coplanar_width_um, taper_length_um)
+    # draw_triangle(drawer_0, (x_right_um-coplanar_width_um/2, y_taper_top_um), coplanar_width_um, taper_length_um)
 
     fill = (0,128,128,128)
     drawer_1.rectangle(tuple(map(to_px, ((x_left_um, y_taper_bottom_um), (x_right_um, y_end_um)))), fill=0)
     draw_triangle(drawer_1, (x_pos_um, y_taper_bottom_um), taper_width_um, -taper_length_um)
     draw_triangle(drawer_1, (x_neg_um, y_taper_bottom_um), taper_width_um, -taper_length_um)
-    draw_triangle(drawer_1, (x_left_um+coplanar_width_um/2, y_taper_bottom_um), coplanar_width_um, -taper_length_um)
-    draw_triangle(drawer_1, (x_right_um-coplanar_width_um/2, y_taper_bottom_um), coplanar_width_um, -taper_length_um)
+    # draw_triangle(drawer_1, (x_left_um+coplanar_width_um/2, y_taper_bottom_um), coplanar_width_um, -taper_length_um)
+    # draw_triangle(drawer_1, (x_right_um-coplanar_width_um/2, y_taper_bottom_um), coplanar_width_um, -taper_length_um)
 
     if ports[0].position[1] < ports[1].position[1]:
         return (im_taper_0, im_taper_1)

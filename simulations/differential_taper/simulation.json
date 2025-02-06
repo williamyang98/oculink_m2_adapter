@@ -4,7 +4,7 @@
         "start": 0.5e9,
         "stop": 40e9
     },
-    "max_steps": 25e3,
+    "max_steps": 125e3,
     "via": {
         "filling_epsilon": 1,
         "plating_thickness": 10
