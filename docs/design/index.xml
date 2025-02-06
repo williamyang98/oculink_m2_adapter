@@ -366,7 +366,8 @@
 &lt;ul>
 &lt;li>Requires careful design to avoid impedance discontinuities at flex PCB connection.&lt;/li>
 &lt;li>Involves designing transmission line tapers to maintain impedance target across connector transition.&lt;/li>
-&lt;li>&lt;a href="https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line" >Transmission line design&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://williamyang98.github.io/oculink_m2_adapter//docs/design/transmission_line
+" >Transmission line design&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h3>Transmission line design on flex pcb&lt;span class="hx-absolute -hx-mt-20" id="transmission-line-design-on-flex-pcb">&lt;/span>
 &lt;a href="#transmission-line-design-on-flex-pcb" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Flex pcb has a very thin dielectric core for easy bending.&lt;/p>
@@ -375,7 +376,8 @@
 &lt;li>Calculations with a solid ground plane puts trace width at &amp;lt; 0.05mm which is not manufacturable.&lt;/li>
 &lt;li>Requires using a hatched ground plane to achieve target impedance at manufacturable 0.1mm trace width.&lt;/li>
 &lt;li>Hatched ground plane needs very careful design considerations and is not trivial to design.&lt;/li>
-&lt;li>&lt;a href="https://williamyang98.github.io/oculink_m2_adapter/docs/design/hatched_ground_plane" >Hatched ground plane design&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://williamyang98.github.io/oculink_m2_adapter//docs/design/hatched_ground_plane
+" >Hatched ground plane design&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h3>Design and manufacturing complexity&lt;span class="hx-absolute -hx-mt-20" id="design-and-manufacturing-complexity">&lt;/span>
 &lt;a href="#design-and-manufacturing-complexity" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Additional complexity due to multiple boards.&lt;/p>
@@ -418,4 +420,16 @@ class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hid
 &lt;a
 class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="https://williamyang98.github.io/oculink_m2_adapter/oculink_m2_adapter/docs/design/transmission_line/flex_connection/"
 >&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"/>&lt;/svg>Flex connection&lt;/span>&lt;/a>
-&lt;/div></description></item><item><title>OpenEMS</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/openems/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/openems/</guid><description/></item></channel></rss>
+&lt;/div></description></item><item><title>OpenEMS</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/open_ems/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/open_ems/</guid><description>
+&lt;div class="hextra-cards hx-mt-4 hx-gap-4 hx-grid not-prose" style="--hextra-cards-grid-cols: 3;">
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="https://williamyang98.github.io/oculink_m2_adapter/oculink_m2_adapter/docs/design/open_ems/hatched_ground/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/>&lt;/svg>Hatched ground&lt;/span>&lt;/a>
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="https://williamyang98.github.io/oculink_m2_adapter/oculink_m2_adapter/docs/design/open_ems/taper/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/>&lt;/svg>Taper&lt;/span>&lt;/a>
+&lt;/div>
+&lt;ul>
+&lt;li>For an explanation of how to run the parameter search refer to &lt;a href="https://github.com/williamyang98/oculink_m2_adapter/blob/main/simulations/README.md" target="_blank" rel="noopener">simulations/README.md&lt;/a>.&lt;/li>
+&lt;li>To understand how to use gerber2ems refer to &lt;a href="https://github.com/williamyang98/gerber2ems" target="_blank" rel="noopener">williamyang98/gerber2ems&lt;/a>.&lt;/li>
+&lt;/ul></description></item></channel></rss>

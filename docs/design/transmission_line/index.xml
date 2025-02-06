@@ -26,7 +26,8 @@
 &lt;li>Adding coplanar guard traces to separate adjacent lanes and add additional E-field confinement.
 &lt;ul>
 &lt;li>Sometimes can worsen crosstalk if guard trace is high impedance and functions closer to a resonant tank than a ground trace.&lt;/li>
-&lt;li>Can be improved by turning coplanar guard traces into a &lt;a href="https://williamyang98.github.io/oculink_m2_adapter/docs/design/via_fence" >via fence&lt;/a> by stitching them to a ground plane&lt;/li>
+&lt;li>Can be improved by turning coplanar guard traces into a &lt;a href="https://williamyang98.github.io/oculink_m2_adapter//docs/design/via_fence
+" >via fence&lt;/a> by stitching them to a ground plane&lt;/li>
 &lt;li>This guarantees coplanar guard trace is low impedance.&lt;/li>
 &lt;li>Also adds additional grounding with vias which further improves E-field confinement and prevents inter-lane crosstalk.&lt;/li>
 &lt;/ul>
@@ -249,7 +250,8 @@ for FR4.&lt;/p>
 &lt;li>There is no closed form equation for the impedance of a coaxial via with a teardrop taper.&lt;/li>
 &lt;li>This means running a parametric search through a simulation to determine the optimal parameter values.&lt;/li>
 &lt;li>Very difficult to do given the number of parameters for the coaxial via and teardrop taper which all impact performance.&lt;/li>
-&lt;li>Refer to this section about simulating circuits with &lt;a href="https://williamyang98.github.io/oculink_m2_adapter/docs/design/openEMS" >openEMS&lt;/a>.&lt;/li>
+&lt;li>Refer to this section about simulating circuits with &lt;a href="https://williamyang98.github.io/oculink_m2_adapter//docs/design/openEMS
+" >openEMS&lt;/a>.&lt;/li>
 &lt;/ul>
 &lt;h2>Via stubs&lt;span class="hx-absolute -hx-mt-20" id="via-stubs">&lt;/span>
 &lt;a href="#via-stubs" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
@@ -521,7 +523,8 @@ The following are phenomena that can contribute to intra-pair skew and methods t
 &lt;/div>
 &lt;/li>
 &lt;li>It contains various high quality images of fibre weave patterns and their fill factor measurements.&lt;/li>
-&lt;li>They also include treatment processes for bonding the prepreg and core to copper layers and how that effects the copper smoothness which is relevant for &lt;a href="https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/skin_effect" >skin effect&lt;/a>.&lt;/li>
+&lt;li>They also include treatment processes for bonding the prepreg and core to copper layers and how that effects the copper smoothness which is relevant for &lt;a href="https://williamyang98.github.io/oculink_m2_adapter//docs/design/transmission_line/skin_effect
+" >skin effect&lt;/a>.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
@@ -574,7 +577,8 @@ The following are phenomena that can contribute to intra-pair skew and methods t
 &lt;li>No easy equation to get impedance measurement (fill factor approximation does not model this adequately).&lt;/li>
 &lt;li>Design of hatched ground plane must meet manufacturing capabilities of JLCPCB.&lt;/li>
 &lt;li>Requires parametric search with simulation software.&lt;/li>
-&lt;li>Refer to this section about simulating circuits with &lt;a href="https://williamyang98.github.io/oculink_m2_adapter/docs/design/openEMS" >openEMS&lt;/a>.&lt;/li>
+&lt;li>Refer to this section about simulating circuits with &lt;a href="https://williamyang98.github.io/oculink_m2_adapter//docs/design/open_ems/
+" >openEMS&lt;/a>.&lt;/li>
 &lt;/ul>
 &lt;h2>Determining parameters&lt;span class="hx-absolute -hx-mt-20" id="determining-parameters">&lt;/span>
 &lt;a href="#determining-parameters" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>There are three major parameters to consider:&lt;/p>
@@ -590,7 +594,8 @@ The following are phenomena that can contribute to intra-pair skew and methods t
 &lt;li>Means we only need to perform a parametric search with two variables (the hatch width and gap) which is less time consuming.&lt;/li>
 &lt;/ul>
 &lt;h2>Additional design considerations&lt;span class="hx-absolute -hx-mt-20" id="additional-design-considerations">&lt;/span>
-&lt;a href="#additional-design-considerations" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Refer to minimising &lt;a href="https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/skew_requirements#hatched-ground-plane" >intra-pair skew&lt;/a> for hatched ground planes and differential pairs.&lt;/p></description></item><item><title>Flex connection</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/flex_connection/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/flex_connection/</guid><description>
+&lt;a href="#additional-design-considerations" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Refer to minimising &lt;a href="https://williamyang98.github.io/oculink_m2_adapter//docs/design/transmission_line/skew_requirements#hatched-ground-plane
+" >intra-pair skew&lt;/a> for hatched ground planes and differential pairs.&lt;/p></description></item><item><title>Flex connection</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/flex_connection/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/flex_connection/</guid><description>
 &lt;h2>Type of connection&lt;span class="hx-absolute -hx-mt-20" id="type-of-connection">&lt;/span>
 &lt;a href="#type-of-connection" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>Flexible flat/printed cable connector&lt;span class="hx-absolute -hx-mt-20" id="flexible-flatprinted-cable-connector">&lt;/span>
 &lt;a href="#flexible-flatprinted-cable-connector" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
@@ -753,7 +758,8 @@ Transition from FR4 stackup to flexible PCB involves a vertical solder connectio
 &lt;ul>
 &lt;li>Broadside coupling means stronger E-fields and more energy being carried compared to the coplanar ground traces which use edge coupling.&lt;/li>
 &lt;li>Capacitive coupling is greater through a broadside connection since the traces are 0.1mm wide, compared to the edge side coupling which occurs over a 0.012mm or 0.035mm&lt;/li>
-&lt;li>This was verified through an &lt;a href="https://williamyang98.github.io/oculink_m2_adapter/docs/design/openEMS" >open EMS simulation&lt;/a>.&lt;/li>
+&lt;li>This was verified through an &lt;a href="https://williamyang98.github.io/oculink_m2_adapter//docs/design/open_ems/
+" >open EMS simulation&lt;/a>.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
@@ -786,7 +792,8 @@ Transition from FR4 stackup to flexible PCB involves a vertical solder connectio
 &lt;/li>
 &lt;/ul>
 &lt;h3>Parametric optimisation of taper&lt;span class="hx-absolute -hx-mt-20" id="parametric-optimisation-of-taper">&lt;/span>
-&lt;a href="#parametric-optimisation-of-taper" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>To verify the performance of the taper &lt;a href="https://williamyang98.github.io/oculink_m2_adapter/docs/design/openEMS" >openEMS&lt;/a> was used.&lt;/p>
+&lt;a href="#parametric-optimisation-of-taper" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>To verify the performance of the taper &lt;a href="https://williamyang98.github.io/oculink_m2_adapter//docs/design/open_ems/
+" >openEMS&lt;/a> was used.&lt;/p>
 &lt;ul>
 &lt;li>Simulated stackup with flex PCB connected to FR4 transmission line as a 3 layer board.
 &lt;ul>
@@ -796,7 +803,7 @@ Transition from FR4 stackup to flexible PCB involves a vertical solder connectio
 &lt;li>Might not be ideal from a simulation accuracy standpoint as the geometry of the solder connection might impact the impedance match. However representing the solder connection in our simulation setup was difficult so this approximation/assumption was used.&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>Parametric search was done on the length and width of the linear taper.&lt;/li>
+&lt;li>Parametric search was done on the length, width, and amount of overlap of the linear taper.&lt;/li>
 &lt;li>Shape of taper was modified separately on the FR4 stack up and flexible PCB stackup.&lt;/li>
 &lt;li>Possible that simulation was not accurate since mesh size is limited and linear taper requires very small simulation grid size to accurately capture the pointy part.&lt;/li>
 &lt;/ul></description></item></channel></rss>
