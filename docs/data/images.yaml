@@ -175,3 +175,13 @@ openems_taper_reflectance_overall:
 openems_taper_s_params_overall:
   description: "S-parameter results of parameterised search of taper ground plane across all parameters"
   path: "/images/diagrams/openems_taper_s_params_overall.png"
+mechanic_ix5_reflow:
+  description: "Mechanic IX5 reflow heating plate"
+  path: "/images/diagrams/mechanic_ix5_reflow.png"
+ts100_soldering_iron:
+  description: "TS-100 soldering iron"
+  path: "/images/diagrams/ts100_soldering_iron.png"
+reflow_profile:
+  description: "Reflow profile"
+  path: "/images/diagrams/reflow_profile.png"
+  source: "https://www.7pcb.com/blog/lead-free-reflow-profile"
