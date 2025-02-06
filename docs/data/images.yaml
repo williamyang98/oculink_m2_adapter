@@ -139,3 +139,39 @@ molex_ffc_fpc_connector:
 flex_pcb_transmission_line_taper:
   description: "Image 37. Flexible PCB transmission line taper"
   path: "/images/diagrams/flex_pcb_transmission_line_taper.png"
+openems_hatched_debug:
+  description: "Automatically generated hatched ground plane for openEMS simulation"
+  path: "/images/diagrams/openems_hatched_debug.png"
+openems_hatched_3d:
+  description: "Automatically generated hatched ground plane 3D model"
+  path: "/images/diagrams/openems_hatched_3d.png"
+openems_hatched_reflectance:
+  description: "Reflectance results of parameterised search of hatched ground plane with a hatch width of 150um"
+  path: "/images/diagrams/openems_hatched_reflectance.png"
+openems_hatched_s_params:
+  description: "S-parameter results of parameterised search of hatched ground plane with a hatch width of 150um"
+  path: "/images/diagrams/openems_hatched_s_params.png"
+openems_hatched_reflectance_overall:
+  description: "Reflectance results of parameterised search of hatched ground plane across all parameters"
+  path: "/images/diagrams/openems_hatched_reflectance_overall.png"
+openems_hatched_s_params_overall:
+  description: "S-parameter results of parameterised search of hatched ground plane across all parameters"
+  path: "/images/diagrams/openems_hatched_s_params_overall.png"
+openems_taper_debug:
+  description: "Automatically generated taper ground plane for openEMS simulation"
+  path: "/images/diagrams/openems_taper_debug.png"
+openems_taper_3d:
+  description: "Automatically generated taper ground plane 3D model"
+  path: "/images/diagrams/openems_taper_3d.png"
+openems_taper_reflectance:
+  description: "Reflectance results of parameterised search of taper ground plane with a hatch width of 150um"
+  path: "/images/diagrams/openems_taper_reflectance.png"
+openems_taper_s_params:
+  description: "S-parameter results of parameterised search of taper ground plane with a hatch width of 150um"
+  path: "/images/diagrams/openems_taper_s_params.png"
+openems_taper_reflectance_overall:
+  description: "Reflectance results of parameterised search of taper ground plane across all parameters"
+  path: "/images/diagrams/openems_taper_reflectance_overall.png"
+openems_taper_s_params_overall:
+  description: "S-parameter results of parameterised search of taper ground plane across all parameters"
+  path: "/images/diagrams/openems_taper_s_params_overall.png"

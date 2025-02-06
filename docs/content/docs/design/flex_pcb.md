@@ -60,7 +60,7 @@ Flex PCB polyimide material comes in several varieties.
 Flex pcb requires handling transition of transmission line from FR4 stackup to flex PCB stackup.
 - Requires careful design to avoid impedance discontinuities at flex PCB connection.
 - Involves designing transmission line tapers to maintain impedance target across connector transition.
-- [Transmission line design](/docs/design/transmission_line)
+- [Transmission line design]({{< abs_url link="/docs/design/transmission_line" >}})
 
 ### Transmission line design on flex pcb
 Flex pcb has a very thin dielectric core for easy bending.
@@ -68,7 +68,7 @@ Flex pcb has a very thin dielectric core for easy bending.
 - Calculations with a solid ground plane puts trace width at < 0.05mm which is not manufacturable.
 - Requires using a hatched ground plane to achieve target impedance at manufacturable 0.1mm trace width.
 - Hatched ground plane needs very careful design considerations and is not trivial to design.
-- [Hatched ground plane design](/docs/design/hatched_ground_plane)
+- [Hatched ground plane design]({{< abs_url link="/docs/design/hatched_ground_plane" >}})
 
 ### Design and manufacturing complexity
 Additional complexity due to multiple boards.

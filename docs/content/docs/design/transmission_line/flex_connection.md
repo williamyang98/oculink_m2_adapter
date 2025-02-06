@@ -1,7 +1,7 @@
 ---
 title: Flex connection
 prev: /docs/design/transmission_line/hatched_ground_plane
-next: /docs/design/openEMS
+next: /docs/design/open_ems/
 weight: 7
 params:
   icon: hashtag
@@ -120,7 +120,7 @@ Transition from FR4 stackup to flexible PCB involves a vertical solder connectio
 - The E-fields between the signal traces and ground planes have to switch layers.
     - Broadside coupling means stronger E-fields and more energy being carried compared to the coplanar ground traces which use edge coupling.
     - Capacitive coupling is greater through a broadside connection since the traces are 0.1mm wide, compared to the edge side coupling which occurs over a 0.012mm or 0.035mm
-    - This was verified through an [open EMS simulation](/docs/design/openEMS).
+    - This was verified through an [open EMS simulation]({{< abs_url link="/docs/design/open_ems/" >}}).
 
 ### Tapered connection
 {{< responsive_image key="flex_pcb_transmission_line_taper" >}}
@@ -133,13 +133,13 @@ A taper is a gradual change in the geometry of a transmission line that attempts
     - Linear taper just requires the polyline tool in KiCAD.
 
 ### Parametric optimisation of taper
-To verify the performance of the taper [openEMS](/docs/design/openEMS) was used.
+To verify the performance of the taper [openEMS]({{< abs_url link="/docs/design/open_ems/" >}}) was used.
 - Simulated stackup with flex PCB connected to FR4 transmission line as a 3 layer board.
     - Layers were: ```[FR4 ground, signal traces, flex PCB ground]```.
     - The soldered signal traces were approximated as an ideal single trace on a single layer.
     - This was done so that only the E-field transition between the ground planes was relevant for our parametric search.
     - Might not be ideal from a simulation accuracy standpoint as the geometry of the solder connection might impact the impedance match. However representing the solder connection in our simulation setup was difficult so this approximation/assumption was used.
-- Parametric search was done on the length and width of the linear taper.
+- Parametric search was done on the length, width, and amount of overlap of the linear taper.
 - Shape of taper was modified separately on the FR4 stack up and flexible PCB stackup.
 - Possible that simulation was not accurate since mesh size is limited and linear taper requires very small simulation grid size to accurately capture the pointy part.
 

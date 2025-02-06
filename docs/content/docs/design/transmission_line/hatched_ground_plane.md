@@ -18,7 +18,7 @@ params:
 - No easy equation to get impedance measurement (fill factor approximation does not model this adequately).
 - Design of hatched ground plane must meet manufacturing capabilities of JLCPCB.
 - Requires parametric search with simulation software.
-- Refer to this section about simulating circuits with [openEMS](/docs/design/openEMS).
+- Refer to this section about simulating circuits with [openEMS]({{< abs_url link="/docs/design/open_ems/" >}}).
 
 ## Determining parameters
 There are three major parameters to consider:
@@ -32,4 +32,4 @@ Since we need to be above the minimum trace width for JLCPCB to manufacture it, 
 - Means we only need to perform a parametric search with two variables (the hatch width and gap) which is less time consuming.
 
 ## Additional design considerations
-Refer to minimising [intra-pair skew](/docs/design/transmission_line/skew_requirements#hatched-ground-plane) for hatched ground planes and differential pairs.
+Refer to minimising [intra-pair skew]({{< abs_url link="/docs/design/transmission_line/skew_requirements#hatched-ground-plane" >}}) for hatched ground planes and differential pairs.
