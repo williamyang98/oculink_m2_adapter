@@ -1,15 +1,26 @@
 ---
 title: Synthetic benchmarks
-prev: /docs/results/gpu_bandwidth
-next: /docs/conclusion
+prev: /docs/results/installation
+next: /docs/results/discussion
 weight: 2
 params:
   icon: calculator
 ---
 
-## Custom adapter compared to Aliexpress PCIe 4.0 rated adapter
-- Half the PCIe bandwidth resulted in degraded performance
-- Usually occured on benchmarks with high FPS numbers where PCIe link would be used more
-- Aliexpress PCIe 4.0 adapter achieved higher scores on average
-- Performance penalty when monitor output has to go back through eGPU oculink connection and through iGPU to external display
-    - Setup was CPU -> eGPU -> iGPU -> USB 4 dock -> Monitor
+## Aida64
+{{< aida64_table >}}
+
+## 3DMark
+{{< benchmark_table key="3d_mark" >}}
+{{< benchmark_carousel key="3d_mark" >}}
+
+## Unigine
+{{< benchmark_table key="unigine" >}}
+{{< benchmark_carousel key="unigine" >}}
+
+## Furmark 2
+{{< benchmark_table key="furmark2" >}}
+{{< benchmark_carousel key="furmark2" >}}
+
+## GPU-Z
+{{< gpuz_images >}}

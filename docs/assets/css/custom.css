@@ -38,3 +38,64 @@ ul li li li {
   max-width: 90%;
   max-height: 90%;
 }
+
+table.benchmark-table tbody tr {
+  cursor: pointer;
+}
+
+table.benchmark-table tbody tr.selected {
+  background-color: #ccccee88 !important;
+}
+
+.carousel {
+  position: relative;
+  border: 1px solid #aaaaaa;
+  margin-top: 0.5rem;
+  border-radius: 0.2rem;
+  user-select: none;
+}
+
+.carousel-item {
+  display: block;
+  justify-content: center;
+}
+
+.carousel-item.inactive {
+  display: none;
+}
+
+.carousel-item img {
+  margin: 0 !important;
+  border-radius: 0 !important;
+  border: 1px solid #cccccc;
+}
+
+.carousel-controls {
+
+}
+
+.carousel-controls .carousel-button {
+  position: absolute;
+  top: calc(50% - 16px);
+  cursor: pointer;
+  font-size: 20px !important;
+  color: #000000;
+  border-radius: 50%;
+  background: #ffffffbb;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.carousel-controls .carousel-button:hover {
+  color: #888888;
+}
+
+.carousel-controls .carousel-left {
+  left: 1rem;
+}
+
+.carousel-controls .carousel-right {
+  right: 1rem;
+}

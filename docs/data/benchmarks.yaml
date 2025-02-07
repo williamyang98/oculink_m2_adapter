@@ -1,0 +1,202 @@
+3d_mark:
+  - name: PCIe Bandwidth (GB/s)
+    amd_680m:
+      score: 11.20
+      path: 3dmark_pcie_bandwidth_amd_680m.png
+    amd_5700xt_pcie4:
+      score: 6.39
+      path: 3dmark_pcie_bandwidth_amd_5700xt.png
+    amd_5700xt_pcie3:
+      score: 3.53
+      path: 3dmark_pcie_bandwidth_flex_pcb.png
+  - name: Fire Strike
+    amd_680m:
+      score: 6155
+      path: 3dmark_fire_strike_amd_680m.png
+    amd_5700xt_pcie4:
+      score: 23577
+      path: 3dmark_fire_strike_amd_5700xt.png
+    amd_5700xt_pcie3:
+      score: 19512
+      path: 3dmark_fire_strike_flex_pcb.png
+  - name: Night Raid
+    amd_680m:
+      score: 23554
+      path: 3dmark_night_raid_amd_680m.png
+    amd_5700xt_pcie4:
+      score: 52358
+      path: 3dmark_night_raid_amd_5700xt.png
+    amd_5700xt_pcie3:
+      score: 35831
+      path: 3dmark_night_raid_flex_pcb.png
+  - name: Steel Nomad
+    amd_680m:
+      score: 444 
+      path: 3dmark_steel_nomad_amd_680m.png
+    amd_5700xt_pcie4:
+      score: 2030
+      path: 3dmark_steel_nomad_amd_5700xt.png
+    amd_5700xt_pcie3:
+      score: 1950
+      path: 3dmark_steel_nomad_flex_pcb.png
+  - name: Steel Nomad Light
+    amd_680m:
+      score: 2308
+      path: 3dmark_steel_nomad_light_amd_680m.png
+    amd_5700xt_pcie4:
+      score: 8218
+      path: 3dmark_steel_nomad_light_amd_5700xt.png
+    amd_5700xt_pcie3:
+      score: 7299
+      path: 3dmark_steel_nomad_light_flex_pcb.png
+  - name: Time Spy
+    amd_680m:
+      score: 2762
+      path: 3dmark_time_spy_amd_680m.png
+    amd_5700xt_pcie4:
+      score: 9051
+      path: 3dmark_time_spy_amd_5700xt.png
+    amd_5700xt_pcie3:
+      score: 8093
+      path: 3dmark_time_spy_flex_pcb.png
+  - name: Wild Life
+    amd_680m:
+      score: 15622
+      path: 3dmark_wild_life_amd_680m.png
+    amd_5700xt_pcie4:
+      score: 54329
+      path: 3dmark_wild_life_amd_5700xt.png
+    amd_5700xt_pcie3:
+      score: 35637
+      path: 3dmark_wild_life_flex_pcb.png
+  - name: Wild Life Extreme
+    amd_680m:
+      score: 4523
+      path: 3dmark_wild_life_extreme_amd_680m.png
+    amd_5700xt_pcie4:
+      score: 18682
+      path: 3dmark_wild_life_extreme_amd_5700xt.png
+    amd_5700xt_pcie3:
+      score: 15497
+      path: 3dmark_wild_life_extreme_flex_pcb.png
+aida64:
+  amd_680m:
+    read_pinned: 34.1
+    write_pinned: 35.2
+    read_pageable: 11.7
+    write_pageable: 13.1
+    path: aida64_detailed_amd_680m.png
+  amd_5700xt_pcie4:
+    read_pinned: 6.70
+    write_pinned: 4.74
+    read_pageable: 6.71
+    write_pageable: 4.74
+    path: aida64_detailed_amd_5700xt.png
+  amd_5700xt_pcie3:
+    read_pinned: 3.38
+    write_pinned: 2.78
+    read_pageable: 3.37
+    write_pageable: 2.71
+    path: aida64_detailed_flex_pcb.png
+furmark2:
+  - name: Donut OpenGL
+    amd_680m:
+      score: 1797
+      path: furmark2_donut_gl_amd_680m.png
+    amd_5700xt_pcie4:
+      score: 8015
+      path: furmark2_donut_gl_amd_5700xt.png
+    amd_5700xt_pcie3:
+      score: 6513
+      path: furmark2_donut_gl_flex_pcb.png
+  - name: Donut Vulkan
+    amd_680m:
+      score: 1370
+      path: furmark2_donut_vk_amd_680m.png
+    amd_5700xt_pcie4:
+      score: 7453
+      path: furmark2_donut_vk_amd_5700xt.png
+    amd_5700xt_pcie3:
+      score: 6037
+      path: furmark2_donut_vk_flex_pcb.png
+  - name: Knot OpenGL
+    amd_680m:
+      score: 618
+      path: furmark2_knot_gl_amd_680m.png
+    amd_5700xt_pcie4:
+      score: 2226
+      path: furmark2_knot_gl_amd_5700xt.png
+    amd_5700xt_pcie3:
+      score: 2208
+      path: furmark2_knot_gl_flex_pcb.png
+  - name: Knot Vulkan
+    amd_680m:
+      score: 641
+      path: furmark2_knot_vk_amd_680m.png
+    amd_5700xt_pcie4:
+      score: 3393
+      path: furmark2_knot_vk_amd_5700xt.png
+    amd_5700xt_pcie3:
+      score: 3063
+      path: furmark2_knot_vk_flex_pcb.png
+gpuz:
+  amd_680m:
+    pcie: Gen 4.0 x 16
+    path: gpuz_amd_680m.png
+  amd_5700xt_pcie4:
+    pcie: Gen 4.0 x 4
+    path: gpuz_amd_5700xt.png
+  amd_5700xt_pcie3:
+    pcie: Gen 3.0 x 4
+    path: gpuz_flex_pcb.png
+unigine:
+  - name: Valley Extreme
+    amd_680m:
+      score: 914
+      path: unigine_valley_extreme_amd_680m.png
+    amd_5700xt_pcie4:
+      score: 4684
+      path: unigine_valley_extreme_amd_5700xt.png
+    amd_5700xt_pcie3:
+      score: 4611
+      path: unigine_valley_extreme_flex_pcb.png
+  - name: Heaven Extreme
+    amd_680m:
+      score: 747
+      path: unigine_heaven_extreme_amd_680m.png
+    amd_5700xt_pcie4:
+      score: 3342
+      path: unigine_heaven_extreme_amd_5700xt.png
+    amd_5700xt_pcie3:
+      score: 2845
+      path: unigine_heaven_extreme_flex_pcb.png
+  - name: Superposition Medium
+    amd_680m:
+      score: 4214
+      path: unigine_superposition_medium_amd_680m.png
+    amd_5700xt_pcie4:
+      score: 16527
+      path: unigine_superposition_medium_amd_5700xt.png
+    amd_5700xt_pcie3:
+      score: 13345
+      path: unigine_superposition_medium_flex_pcb.png
+  - name: Superposition High
+    amd_680m:
+      score: 3172
+      path: unigine_superposition_high_amd_680m.png
+    amd_5700xt_pcie4:
+      score: 12130
+      path: unigine_superposition_high_amd_5700xt.png
+    amd_5700xt_pcie3:
+      score: 10532
+      path: unigine_superposition_high_flex_pcb.png
+  - name: Superposition Extreme
+    amd_680m:
+      score: 1425
+      path: unigine_superposition_extreme_amd_680m.png
+    amd_5700xt_pcie4:
+      score: 5027
+      path: unigine_superposition_extreme_amd_5700xt.png
+    amd_5700xt_pcie3:
+      score: 4659
+      path: unigine_superposition_extreme_flex_pcb.png

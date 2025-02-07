@@ -1,0 +1,27 @@
+{{- $key := .Get "key" -}}
+{{- $benchmarks := .Site.Data.benchmarks -}}
+{{- $rows := index $benchmarks $key }}
+{{- $baseurl := print .Page.Site.BaseURL "/images/benchmarks" -}}
+
+<div class="carousel" key="{{ $key }}">
+  {{ range $rows }}
+  <div class="carousel-item inactive">
+    <div class="hx-flex">
+      <div class="responsive-image" style="width: 33%">
+        <img src="{{ $baseurl }}/{{ .amd_680m.path }}">
+      </div>
+      <div class="responsive-image" style="width: 33%">
+        <img src="{{ $baseurl }}/{{ .amd_5700xt_pcie3.path }}">
+      </div>
+      <div class="responsive-image" style="width: 33%">
+        <img src="{{ $baseurl }}/{{ .amd_5700xt_pcie4.path }}">
+      </div>
+    </div>
+  </div>
+  {{ end }}
+  <div class="carousel-controls">
+    <div class="carousel-button carousel-left hx-shadow">❮</div>
+    <div class="carousel-button carousel-right hx-shadow">❯</div>
+  </div>
+</div>
+

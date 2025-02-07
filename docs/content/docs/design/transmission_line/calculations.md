@@ -1,5 +1,14 @@
-# JLCPCB data
-## Soldermask
+---
+title: Calculations
+prev: /docs/design/transmission_line/flex_connection
+next: /docs/design/open_ems/
+weight: 8
+params:
+  icon: calculator
+---
+
+## JLCPCB data
+### Soldermask
 | Location    | Thickness (mil)    | Thickness (mm) |
 | ---         | ---                |    ---         |
 | Laminate    | 1.2                | 0.03048        |
@@ -7,14 +16,14 @@
 
 Dielectric constant = 3.8
 
-## Core dielectric
+### Core dielectric
 Dielectric constant = 4.6
 
 - [JLCPCB impedance control stackup information](https://jlcpcb.com/impedance?_t=1727251667361)
 - [JLCPCB impedance calculator guide](https://jlcpcb.com/help/article/User-Guide-to-the-JLCPCB-Impedance-Calculator)
 
-## JLC04081H-3313 Stackup
-### Name breakdown
+### JLC04081H-3313 Stackup
+#### Name breakdown
 | Part  | Meaning                   |
 | ---   | ---                       |
 | 04    | 4 layer                   |
@@ -23,7 +32,7 @@ Dielectric constant = 4.6
 | H     | half (0.5oz) inner copper |
 | 3313  | 3133 prepreg              |
 
-### Stackup information
+#### Stackup information
 | Layer          | Material Type | Thickness (mm) |
 | ---            | ---           | ---            |
 | Trace          | Copper        | 0.035          |
@@ -34,7 +43,7 @@ Dielectric constant = 4.6
 | Prepreg        | 3313x1        | 0.0994         |
 | Trace          | Copper        | 0.035          |
 
-## Core material properties
+### Core material properties
 Nan Ya Plastics NP-155F (4 to 8 layers)
 
 | Core Thickness (mm)   | εr   |
@@ -56,8 +65,8 @@ Nan Ya Plastics NP-155F (4 to 8 layers)
 | 0.70                  | 4.53 |
 | > 0.70                | 4.43 |
 
-## Prepreg
-### Source 1
+### Prepreg
+#### Source 1
 | Prepreg Type  |  Resin Content |  Nominal Thickness (mil) | εr   |
 | ---           | ---            | ---                      | ---  |
 | 7628          | 49%            | 8.6                      | 4.4  |
@@ -65,7 +74,7 @@ Nan Ya Plastics NP-155F (4 to 8 layers)
 | 1080          | 67%            | 3.3                      | 3.91 |
 | 2116          | 54%            | 4.9                      | 4.16 |
 
-### Source 2
+#### Source 2
 | Prepreg type  | Dielectric constant   |
 | ---           | --------------------- |
 | 7628          | 4.6                   |
@@ -73,7 +82,7 @@ Nan Ya Plastics NP-155F (4 to 8 layers)
 | 2116          | 4.25                  |
 
 
-## Impedance calculator results
+### Impedance calculator results
 [JLCPCB impedance calculator](https://jlcpcb.com/pcb-impedance-calculator)
 
 | Parameter             | Value |
@@ -86,7 +95,7 @@ Nan Ya Plastics NP-155F (4 to 8 layers)
 
 **NOTE**: Core is 0.5mm instead of expected 0.45mm which might reduce accuracy of calculations.
 
-### Trace thicknesses
+#### Trace thicknesses
 | Impedance (Ω) | Type                                      | Config    | Trace width (mm)  | Trace spacing (mm)    | Distance coplanar (mm)    |
 | ---           | ---                                       | ---       | ---               | ---                   | ---                       |
 | 85            | Coplanar differential pair with ground    | L1-L2     | 0.1549            | 0.15                  | 0.15                      |
@@ -94,10 +103,10 @@ Nan Ya Plastics NP-155F (4 to 8 layers)
 | 42.5          | Coplanar single ended with ground         | L1-L2     | 0.1971            | N/A                   | 0.15                      |
 | 42.5          | Coplanar single ended with ground         | L2-L3-L4  | 0.1679            | N/A                   | 0.15                      |
 
-# Sierra circuits calculations
+## Sierra circuits calculations
 [Sierra circuits impedance calculator](https://impedance.app.protoexpress.com/)
 
-## Prepreg dielectric material property
+### Prepreg dielectric material property
 Rigid - FR408HR - Prepreg
 | Parameter | Value |
 | --- | --- |
@@ -113,7 +122,7 @@ Rigid - FR408HR - Prepreg
 | 10              | 3.54                | 0.010              |
 | 20              | 3.54                | 0.010              |
 
-## Coplanar stripline differential pair with ground plane
+### Coplanar stripline differential pair with ground plane
 [Impedance calculator](https://impedance.app.protoexpress.com/?appid=CPSLDPIMPCAL)
 
 | Parameter                     | Value     |
@@ -134,7 +143,7 @@ Rigid - FR408HR - Prepreg
 | Zdiff (Ω)         | 85            | Trace width (mm)  | 0.1372        |
 | Trace width (mm)  | 0.1334        | Zdiff (Ω)         | 85.88         |
 
-## Coplanar soldermask coated microstrip differential pair with ground plane
+### Coplanar soldermask coated microstrip differential pair with ground plane
 [Impedance calculator](https://impedance.app.protoexpress.com/?appid=CPCTDPIMPCAL)
 
 | Parameter                         | Value     |
@@ -155,7 +164,7 @@ Rigid - FR408HR - Prepreg
 | Zdiff (Ω)         | 85            | Trace width (mm)  | 0.1676        |
 | Trace width (mm)  | 0.1549        | Zdiff (Ω)         | 88.18         |
 
-## Coplanar stripline single ended with ground plane
+### Coplanar stripline single ended with ground plane
 [Impedance calculator](https://impedance.app.protoexpress.com/?appid=CPSLSEIMPCAL)
 
 | Parameter                     | Value     |
@@ -175,7 +184,7 @@ Rigid - FR408HR - Prepreg
 | Zdiff (Ω)         | 42.5          | Trace width (mm)  | 0.174         |
 | Trace width (mm)  | 0.1679        | Zdiff (Ω)         | 43.27         |
 
-## Coplanar soldermask coated microstrip singled ended with ground plane
+### Coplanar soldermask coated microstrip singled ended with ground plane
 [Impedance calculator](https://impedance.app.protoexpress.com/?appid=CPCTSEIMPCAL)
 
 | Parameter                         | Value     |

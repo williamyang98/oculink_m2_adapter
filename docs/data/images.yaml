@@ -34,7 +34,7 @@ adtlink_f4c_m2_to_oculink_adapter_photo:
   path: "/images/diagrams/adtlink_f4c_m2_to_oculink_adapter_photo.png"
   description: "Image 7. Purchased Adtlink F4C M.2 to Oculink adapter card with modifications"
 lenovo_16arp8_dimensions:
-  path: "/images/diagrams/lenovo_16arp8_adapter_layout_prototype.png"
+  path: "/images/pictures/lenovo_16arp8_adapter_layout_prototype.png"
   description: "Image 8. Measurements and prototype layout for M.2 to Oculink adapter"
 lenovo_16arp8_3d_model:
   path: "/images/diagrams/lenovo_16arp8_3d_model.png"
@@ -177,7 +177,7 @@ openems_taper_s_params_overall:
   path: "/images/diagrams/openems_taper_s_params_overall.png"
 mechanic_ix5_reflow:
   description: "Mechanic IX5 reflow heating plate"
-  path: "/images/diagrams/mechanic_ix5_reflow.png"
+  path: "/images/pictures/mechanic_ix5_reflow.png"
 ts100_soldering_iron:
   description: "TS-100 soldering iron"
   path: "/images/diagrams/ts100_soldering_iron.png"
@@ -185,3 +185,22 @@ reflow_profile:
   description: "Reflow profile"
   path: "/images/diagrams/reflow_profile.png"
   source: "https://www.7pcb.com/blog/lead-free-reflow-profile"
+aliexpress_m2_oculink_pcie4_extension:
+  description: "Aliexpress M.2 Oculink PCIe 4.0 silver plated extension cable"
+  path: "/images/diagrams/aliexpress_m2_oculink_pcie4_extension.png"
+  source: "https://www.aliexpress.com/item/1005007486714630.html"
+laptop_photo_flex_pcb:
+  description: "Flexible PCB multi-board Oculink adapter installed in laptop"
+  path: "/images/pictures/laptop_photo_flex_pcb.jpg"
+laptop_photo_flex_pcb_with_m2:
+  description: "Flexible PCB multi-board Oculink adapter and M.2 SSD installed in laptop"
+  path: "/images/pictures/laptop_photo_flex_pcb_with_m2.jpg"
+laptop_photo_single_board:
+  description: "Single board Oculink adapter installed in laptop"
+  path: "/images/pictures/laptop_photo_single_board.jpg"
+laptop_photo_side_port:
+  description: "Oculink port exposed on laptop"
+  path: "/images/pictures/laptop_photo_side_port.jpg"
+laptop_photo_aliexpress:
+  description: "Aliexpress PCIe 4.0 Oculink adapter installed in laptop"
+  path: "/images/pictures/laptop_photo_aliexpress.jpg"

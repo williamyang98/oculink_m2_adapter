@@ -1,6 +1,8 @@
 ---
 title: Taper
 weight: 2
+prev: /docs/design/open_ems/hatched_ground
+next: /docs/manufacturing
 ---
 
 ## Simulation setup

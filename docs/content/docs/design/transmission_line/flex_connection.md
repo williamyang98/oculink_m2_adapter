@@ -1,7 +1,7 @@
 ---
 title: Flex connection
 prev: /docs/design/transmission_line/hatched_ground_plane
-next: /docs/design/open_ems/
+next: /docs/design/transmission_line/calculations
 weight: 7
 params:
   icon: hashtag
@@ -109,6 +109,7 @@ Transitioning our transmission line from an FR4 stackup to a flexible PCB stacku
 ### Hatched ground plane
 If the transmission line signal traces have the same width, using a suitably designed hatched ground plane will increase the impedance to meet our impedance target. 
 - See [designing hatched ground plane](/docs/design/transmission_line/hatched_ground_plane) for more details.
+- See [simulating hatched ground plane](/docs/design/open_ems/hatched_ground) for more details.
 
 ## Vertical transmission line connection
 {{< responsive_image key="jlcpcb_stackup_connection" >}}
@@ -133,7 +134,7 @@ A taper is a gradual change in the geometry of a transmission line that attempts
     - Linear taper just requires the polyline tool in KiCAD.
 
 ### Parametric optimisation of taper
-To verify the performance of the taper [openEMS]({{< abs_url link="/docs/design/open_ems/" >}}) was used.
+To verify the performance of the taper [openEMS]({{< abs_url link="/docs/design/open_ems/taper" >}}) was used.
 - Simulated stackup with flex PCB connected to FR4 transmission line as a 3 layer board.
     - Layers were: ```[FR4 ground, signal traces, flex PCB ground]```.
     - The soldered signal traces were approximated as an ideal single trace on a single layer.

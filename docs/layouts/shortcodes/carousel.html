@@ -1,0 +1,9 @@
+{{- $key := .Get "key" -}}
+
+<div class="carousel" key="{{ $key }}">
+  {{ .Inner }}
+  <div class="carousel-controls">
+    <div class="carousel-button carousel-left hx-shadow">❮</div>
+    <div class="carousel-button carousel-right hx-shadow">❯</div>
+  </div>
+</div>

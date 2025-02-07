@@ -1,11 +1,23 @@
-<div class="popup" id="popup-images">
+<div class="popup inactive" id="popup-images">
   <div class="popup-background">
     <img src="">
   </div>
 </div>
 <script type="module">
-  import { Popups, ResponsiveImages } from "{{ .Page.Site.BaseURL }}/js/custom.js";
+  import { Popups, ResponsiveImages, Carousels, Benchmarks } from "{{ .Page.Site.BaseURL }}/js/custom.js";
   let popups = new Popups();
   let responsive_images = new ResponsiveImages(popups);
-  window.custom = { popups, responsive_images };
+  let carousels = new Carousels();
+  let benchmarks = new Benchmarks();
+
+  for (let key in benchmarks.tables) {
+    carousels.add_carousel_change_listener(key, (key, index) => {
+      benchmarks.select_row(key, index, false);
+    });
+    benchmarks.add_row_change_listener(key, (key, index) => {
+      carousels.select_carousel(key, index, false);
+    });
+  }
+
+  window.custom = { popups, responsive_images, benchmarks };
 </script>

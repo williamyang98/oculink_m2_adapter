@@ -1,7 +1,7 @@
 ---
 title: OpenEMS
-prev: /docs/design/transmission_line/flex_connection
-next: /docs/design/manufacturing
+prev: /docs/design/transmission_line/calculations
+next: /docs/design/open_ems/hatched_ground
 weight: 7
 params:
   icon: switch-horizontal

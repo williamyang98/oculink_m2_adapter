@@ -1,6 +1,8 @@
 ---
 title: Hatched ground
 weight: 1
+prev: /docs/design/open_ems/
+next: /docs/design/open_ems/taper
 ---
 
 ## Simulation setup

@@ -1,0 +1,28 @@
+{{- $benchmarks := .Site.Data.benchmarks -}}
+{{- $rows := index $benchmarks "gpuz" }}
+{{- $baseurl := print .Page.Site.BaseURL "/images/benchmarks" -}}
+
+<table>
+  <thead>
+    <tr>
+      <th style="width: 14rem">Name</th>
+      <th style="width: 8rem">AMD 680M</th>
+      <th style="width: 9rem">AMD 5700XT PCIe3</th>
+      <th style="width: 9rem">AMD 5700XT PCIe4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PCIe Interface</td>
+      <td>{{ $rows.amd_680m.pcie }}</td>
+      <td>{{ $rows.amd_5700xt_pcie3.pcie }}</td>
+      <td>{{ $rows.amd_5700xt_pcie4.pcie }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="hx-flex">
+  <div class="responsive-image"><img src="{{ $baseurl }}/{{ $rows.amd_680m.path }}"></div>
+  <div class="responsive-image"><img src="{{ $baseurl }}/{{ $rows.amd_5700xt_pcie3.path }}"></div>
+  <div class="responsive-image"><img src="{{ $baseurl }}/{{ $rows.amd_5700xt_pcie4.path }}"></div>
+</div>
