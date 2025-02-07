@@ -35,7 +35,7 @@ params:
 - There is no closed form equation for the impedance of a coaxial via with a teardrop taper.
 - This means running a parametric search through a simulation to determine the optimal parameter values.
 - Very difficult to do given the number of parameters for the coaxial via and teardrop taper which all impact performance.
-- Refer to this section about simulating circuits with [openEMS]({{< abs_url link="/docs/design/openEMS" >}}).
+- Refer to this section about simulating circuits with [openEMS]({{< abs_url link="docs/design/openEMS" >}}).
 
 ## Via stubs
 {{< responsive_image key="sierra_express_via_stub_back_drilling" >}}

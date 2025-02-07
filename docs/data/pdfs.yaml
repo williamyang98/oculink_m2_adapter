@@ -1,44 +1,44 @@
 texas_instrument_pcie4_layout_guidelines:
-  path: "/pdfs/texas_instrument_pcie4_layout_guidelines.pdf"
+  path: "pdfs/texas_instrument_pcie4_layout_guidelines.pdf"
   title: "Layout guidelines for PCIe Gen 4.0"
   source: "https://www.ti.com/lit/an/slaae45/slaae45.pdf"
 adtlink_m2_pcie_x4_extension:
-  path: "/pdfs/adtlink_m2_pcie_x4_extension.pdf"
+  path: "pdfs/adtlink_m2_pcie_x4_extension.pdf"
   title: "Adtlink M.2 PCIe x4 extension cable schematic"
   source: "https://www.adt.link/download/ADT-Cable-R42SF-specification.html"
 amphenol_oculink_port_datasheet:
-  path: "/pdfs/amphenol_oculink_port_datasheet.pdf"
+  path: "pdfs/amphenol_oculink_port_datasheet.pdf"
   title: "Amphenol Oculink port datasheet"
   source: "https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/ps-7545.pdf"
 sff_9402_specification:
-  path: "/pdfs/sff_9402_specification.pdf"
+  path: "pdfs/sff_9402_specification.pdf"
   title: "SFF-9402 specification"
   source: "https://members.snia.org/document/dl/27380"
 gpdwin1_schematic:
-  path: "/pdfs/gpdwin1_schematic.pdf"
+  path: "pdfs/gpdwin1_schematic.pdf"
   title: "Gpdwin1 M.2 to Oculink adapter schematic"
   source: "https://gpd.hk/gpdg1firmwaredriver"
 jlcpcb_flex_pcb_datasheet:
-  path: "/pdfs/jlcpcb_flex_pcb_datasheet.pdf"
+  path: "pdfs/jlcpcb_flex_pcb_datasheet.pdf"
   title: "JLCPCB flex pcb materials datasheet"
   source: "https://jlcpcb.com/resources/flexible-pcb"
 jlcpcb_kicad_7_generate_gerber_and_drill_files:
-  path: "/pdfs/jlcpcb_kicad_7_generate_gerber_and_drill_files.pdf"
+  path: "pdfs/jlcpcb_kicad_7_generate_gerber_and_drill_files.pdf"
   title: "JLCPCB instructions to generate KiCAD 7 gerber and drill files"
   source: "https://jlcpcb.com/help/article/how-to-generate-gerber-and-drill-files-in-kicad-7"
 lenovo_ideapad_pro_5_16arp8_specification:
-  path: "/pdfs/lenovo_ideapad_pro_5_16arp8_specification.pdf"
+  path: "pdfs/lenovo_ideapad_pro_5_16arp8_specification.pdf"
   title: "Lenovo IdeaPad Pro 5 16arp8 specifications"
   source: "https://psref.lenovo.com/WDProduct/IdeaPad/IdeaPad_Pro_5_16ARP8?tab=spec"
 north_dakota_university_via_fencing:
-  path: "/pdfs/north_dakota_university_via_fencing.pdf"
+  path: "pdfs/north_dakota_university_via_fencing.pdf"
   title: "Effectiveness of PCB perimeter via fencing"
   source: "https://www.ndsu.edu/pubweb/~braaten/EMC_2016_1.pdf"
 isola_group_fibre_weave_patterns:
-  path: "/pdfs/isola_group_fibre_weave_patterns.pdf"
+  path: "pdfs/isola_group_fibre_weave_patterns.pdf"
   title: "Isola group: Fibre weave patterns"
   source: "https://www.isola-group.com/wp-content/uploads/Understanding-Laminate-Prepreg-Manufacturing.pdf"
 molex_ffc_fpc_datasheet:
-  path: "/pdfs/molex_ffc_fpc_datasheet.pdf"
+  path: "pdfs/molex_ffc_fpc_datasheet.pdf"
   title: "Molex: FFC/FPC connector maximum usable frequency and compatability with high speed USB"
   source: "https://www.content.molex.com/dxdam/2f/2f35250f-5aa9-4ce8-a8be-a251f68293e0/987652-0193.pdf"

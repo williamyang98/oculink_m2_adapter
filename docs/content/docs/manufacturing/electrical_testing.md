@@ -10,7 +10,7 @@ params:
 ## Single board validation
 - Oculink port has a small pitch of 0.2mm which can easily create solder bridges.
 - Validate this by connecting the Oculink port to the unpowered PCIe eGPU board.
-- Refer to [M.2 pinout]({{< abs_url link="/docs/specifications/components/" >}}) and [PCIe pinout]({{< abs_url link="/docs/specifications/pcie_specification/" >}}) for the electrical connections to test for.
+- Refer to [M.2 pinout]({{< abs_url link="docs/specifications/components/" >}}) and [PCIe pinout]({{< abs_url link="docs/specifications/pcie_specification/" >}}) for the electrical connections to test for.
 - Depending on the design the PCIe lanes may be connected in opposite polarity and/or in opposite orders.
 - Check for short circuits and bad connections.
 - Use a magnifying glass to position multimeter probes onto the exposed electrical contacts.

@@ -108,8 +108,8 @@ Transitioning our transmission line from an FR4 stackup to a flexible PCB stacku
 
 ### Hatched ground plane
 If the transmission line signal traces have the same width, using a suitably designed hatched ground plane will increase the impedance to meet our impedance target. 
-- See [designing hatched ground plane](/docs/design/transmission_line/hatched_ground_plane) for more details.
-- See [simulating hatched ground plane](/docs/design/open_ems/hatched_ground) for more details.
+- See [designing hatched ground plane]({{< abs_url link=docs/design/transmission_line/hatched_ground_plane >}}) for more details.
+- See [simulating hatched ground plane]({{< abs_url link=docs/design/open_ems/hatched_ground >}}) for more details.
 
 ## Vertical transmission line connection
 {{< responsive_image key="jlcpcb_stackup_connection" >}}
@@ -121,7 +121,7 @@ Transition from FR4 stackup to flexible PCB involves a vertical solder connectio
 - The E-fields between the signal traces and ground planes have to switch layers.
     - Broadside coupling means stronger E-fields and more energy being carried compared to the coplanar ground traces which use edge coupling.
     - Capacitive coupling is greater through a broadside connection since the traces are 0.1mm wide, compared to the edge side coupling which occurs over a 0.012mm or 0.035mm
-    - This was verified through an [open EMS simulation]({{< abs_url link="/docs/design/open_ems/" >}}).
+    - This was verified through an [open EMS simulation]({{< abs_url link="docs/design/open_ems/" >}}).
 
 ### Tapered connection
 {{< responsive_image key="flex_pcb_transmission_line_taper" >}}
@@ -134,7 +134,7 @@ A taper is a gradual change in the geometry of a transmission line that attempts
     - Linear taper just requires the polyline tool in KiCAD.
 
 ### Parametric optimisation of taper
-To verify the performance of the taper [openEMS]({{< abs_url link="/docs/design/open_ems/taper" >}}) was used.
+To verify the performance of the taper [openEMS]({{< abs_url link="docs/design/open_ems/taper" >}}) was used.
 - Simulated stackup with flex PCB connected to FR4 transmission line as a 3 layer board.
     - Layers were: ```[FR4 ground, signal traces, flex PCB ground]```.
     - The soldered signal traces were approximated as an ideal single trace on a single layer.

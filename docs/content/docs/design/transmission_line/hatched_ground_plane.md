@@ -18,7 +18,7 @@ params:
 - No easy equation to get impedance measurement (fill factor approximation does not model this adequately).
 - Design of hatched ground plane must meet manufacturing capabilities of JLCPCB.
 - Requires parametric search with simulation software.
-- Refer to this section about simulating circuits with [openEMS]({{< abs_url link="/docs/design/open_ems/hatched_ground" >}}).
+- Refer to this section about simulating circuits with [openEMS]({{< abs_url link="docs/design/open_ems/hatched_ground" >}}).
 
 ## Determining parameters
 There are three major parameters to consider:
@@ -28,8 +28,8 @@ There are three major parameters to consider:
 
 Since we need to be above the minimum trace width for JLCPCB to manufacture it, we should select a fixed trace width of 0.1mm.
 - This is similar the trace width of 0.13mm for our transmission line on the FR4 substrate for both the M.2 cad and Oculink port board.
-- This means we will have an easier time designing a taper geometry when connecting the flex connector to our boards (discussed [here]({{< abs_url link="/docs/design/transmission_line/flex_connection" >}})).
+- This means we will have an easier time designing a taper geometry when connecting the flex connector to our boards (discussed [here]({{< abs_url link="docs/design/transmission_line/flex_connection" >}})).
 - Means we only need to perform a parametric search with two variables (the hatch width and gap) which is less time consuming.
 
 ## Additional design considerations
-Refer to minimising [intra-pair skew]({{< abs_url link="/docs/design/transmission_line/skew_requirements#hatched-ground-plane" >}}) for hatched ground planes and differential pairs.
+Refer to minimising [intra-pair skew]({{< abs_url link="docs/design/transmission_line/skew_requirements#hatched-ground-plane" >}}) for hatched ground planes and differential pairs.

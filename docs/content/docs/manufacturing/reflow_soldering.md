@@ -34,7 +34,7 @@ The Mechanic IX5 can be used to follow an arbitrary reflow profile (including th
 3. Place oculink port carefully onto SMD pads as to align them correctly.
 4. Follow reflow profile with a target temperature of 220°C and keep it there for 60 seconds before ramping it down.
 5. Visually confirm that there are no solder bridges on visible connections.
-6. Validate that there are no shorts or bad connections following [electrical testing]({{< abs_url link="/docs/manufacturing/electrical_testing" >}}).
+6. Validate that there are no shorts or bad connections following [electrical testing]({{< abs_url link="docs/manufacturing/electrical_testing" >}}).
     - Due to simple design of circuit the complications should only occur with the Oculink port itself.
     - Here excessive or insufficient solder paste can result in short circuits or a missing electrical connection.
     - Repeat steps 1 to 5 until the Oculink port is soldered correctly.
@@ -71,7 +71,7 @@ This process is only required for the two part board which is connected over the
     - Since there are no spring contacts, the z-height tolerance of the connection is very low.
     - To guarantee a good electrical connection the reflow process has to occur while the pads are under compressive pressure.
     - Be careful not to disturb the existing connections such as the Oculink port and capacitors.
-10. Perform electrical tests as described in [electrical testing]({{< abs_url link="/docs/manufacturing/electrical_testing" >}}).
+10. Perform electrical tests as described in [electrical testing]({{< abs_url link="docs/manufacturing/electrical_testing" >}}).
     - This is done to make sure shorts don't occur due at the flexible PCB connection with the Oculink port board.
     - If shorts do occur at this step repeat steps 1 to 10 with less solder on the pads.
     - If these is a missing electrical connection make sure that sufficient pressure has been applied during reflow.

@@ -26,12 +26,12 @@ sequenceDiagram;
 {{< carousel key="custom_adapters" >}}
 <div class="carousel-item">
   <div class="responsive-image">
-    <img src="{{< abs_url link=/images/diagrams/kicad_single_board_render.png >}}" style="max-height: 200px">
+    <img src="{{< abs_url link=images/diagrams/kicad_single_board_render.png >}}" style="max-height: 200px">
   </div>
 </div>
 <div class="carousel-item">
   <div class="responsive-image">
-    <img src="{{< abs_url link=/images/diagrams/kicad_flex_connector_render.png >}}" style="max-height: 220px">
+    <img src="{{< abs_url link=images/diagrams/kicad_flex_connector_render.png >}}" style="max-height: 220px">
   </div>
 </div>
 {{< /carousel >}}
@@ -45,12 +45,12 @@ sequenceDiagram;
 {{< carousel key="aliexpress_adapters" >}}
 <div class="carousel-item">
   <div class="responsive-image">
-    <img src="{{< abs_url link=/images/diagrams/adtlink_f4c_m2_to_oculink_adapter_photo.png >}}">
+    <img src="{{< abs_url link=images/diagrams/adtlink_f4c_m2_to_oculink_adapter_photo.png >}}">
   </div>
 </div>
 <div class="carousel-item">
   <div class="responsive-image">
-    <img src="{{< abs_url link=/images/diagrams/aliexpress_m2_oculink_pcie4_extension.png >}}" style="max-height: 220px">
+    <img src="{{< abs_url link=images/diagrams/aliexpress_m2_oculink_pcie4_extension.png >}}" style="max-height: 220px">
   </div>
 </div>
 {{< /carousel >}}

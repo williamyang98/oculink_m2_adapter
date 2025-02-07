@@ -47,7 +47,7 @@ The following are phenomena that can contribute to intra-pair skew and methods t
 - Here is a pdf from Isola group who are a copper clad laminate and prepreg materials manufacturer.
     - {{< pdf_link key="isola_group_fibre_weave_patterns" >}}
     - It contains various high quality images of fibre weave patterns and their fill factor measurements.
-    - They also include treatment processes for bonding the prepreg and core to copper layers and how that effects the copper smoothness which is relevant for [skin effect]({{< abs_url link="/docs/design/transmission_line/skin_effect" >}}).
+    - They also include treatment processes for bonding the prepreg and core to copper layers and how that effects the copper smoothness which is relevant for [skin effect]({{< abs_url link="docs/design/transmission_line/skin_effect" >}}).
 
 
 #### JLCPCB controlled impedance stackup
