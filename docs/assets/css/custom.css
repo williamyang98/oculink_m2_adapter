@@ -8,6 +8,14 @@ ul li li li {
 
 .responsive-image {
   cursor: zoom-in;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto 0;
+}
+
+.responsive-image img {
+  display: block;
 }
 
 .popup {
@@ -65,7 +73,7 @@ table.benchmark-table tbody tr.selected {
 }
 
 .carousel-item img {
-  margin: 0 !important;
+  margin: auto !important;
   border-radius: 0 !important;
   border: 1px solid #cccccc;
 }

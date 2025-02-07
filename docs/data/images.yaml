@@ -1,6 +1,6 @@
 pcie_x4_pinout:
   path: "/images/diagrams/pcie_x4_pinout.png"
-  description: "Image 1. PCIe x4 connector pinout"
+  description: "Diagram 1. PCIe x4 connector pinout"
   source: "https://www.adt.link/download/ADT-Cable-R42SF-specification.html"
 m2_connector_pinout_table:
   path: "/images/diagrams/m2_connector_pinout_table.png"
@@ -8,7 +8,7 @@ m2_connector_pinout_table:
   source: "https://www.anandtech.com/show/13609/pcisig-warns-of-incompatibilities-between-m2-and-samsungs-ngsff"
 m2_card_size:
   path: "/images/diagrams/m2_card_size.png"
-  description: "Image 2. M.2 card size standards"
+  description: "Diagram 2. M.2 card size standards"
   source: "https://www.unitek-products.com/products/usb3-1-gen2-type-c-to-m-2-ssd-pcie-nvme-enclosure"
 amphenol_oculink_port_pinout_table:
   path: "/images/diagrams/amphenol_oculink_port_pinout_table.png"
@@ -16,191 +16,191 @@ amphenol_oculink_port_pinout_table:
   source: "https://electronics.stackexchange.com/questions/675174/oculink-connector-pin-configuration-for-root-port-and-endpoint"
 amphenol_oculink_port:
   path: "/images/diagrams/amphenol_oculink_port.jpg"
-  description: "Image 3. Amphenol oculink port"
+  description: "Image 1. Amphenol oculink port"
   source: "https://www.amphenol-cs.com/product-series/oculink.html"
 adtlink_m2_to_pcie4_adapter_schematic:
   path: "/images/diagrams/adtlink_m2_to_pcie4_adapter_schematic.png"
-  description: "Image 4. Adtlink M.2 to PCIe 4.0 adapter"
+  description: "Image 2. Adtlink M.2 to PCIe 4.0 adapter"
   source: "https://www.adt.link/download/ADT-Cable-R42SF-specification.html"
 gpdwin1_m2_to_oculink_adapter_schematic:
   path: "/images/diagrams/gpdwin1_m2_to_oculink_adapter_schematic.png"
-  description: "Image 5. GPD win 1 M.2 to Oculink adapter card"
+  description: "Image 3. GPD win 1 M.2 to Oculink adapter card"
   source: "https://gpd.hk/gpdg1firmwaredriver"
 adtlink_f4c_m2_to_oculink_adapter:
   path: "/images/diagrams/adtlink_f4c_m2_to_oculink_adapter.png"
-  description: "Image 6. Adtlink F4C M.2 to Oculink adapter card"
+  description: "Image 4. Adtlink F4C M.2 to Oculink adapter card"
   source: "https://www.adt.link/product/F9GV4.html"
 adtlink_f4c_m2_to_oculink_adapter_photo:
   path: "/images/diagrams/adtlink_f4c_m2_to_oculink_adapter_photo.png"
-  description: "Image 7. Purchased Adtlink F4C M.2 to Oculink adapter card with modifications"
+  description: "Image 5. Purchased Adtlink F4C M.2 to Oculink adapter card with modifications"
 lenovo_16arp8_dimensions:
   path: "/images/pictures/lenovo_16arp8_adapter_layout_prototype.png"
-  description: "Image 8. Measurements and prototype layout for M.2 to Oculink adapter"
+  description: "Image 6. Measurements and prototype layout for M.2 to Oculink adapter"
 lenovo_16arp8_3d_model:
   path: "/images/diagrams/lenovo_16arp8_3d_model.png"
-  description: "Image 9. 3D modelling of Lenovo 16arp8 based on measurements"
+  description: "Image 7. 3D modelling of Lenovo 16arp8 based on measurements"
 nfhk_vertical_m2_to_oculink_adapter:
   path: "/images/diagrams/nfhk_vertical_m2_to_oculink_adapter.png"
-  description: "Image 10. NFHK vertical M.2 to Oculink adapter card"
+  description: "Image 8. NFHK vertical M.2 to Oculink adapter card"
   source: "https://www.aliexpress.com/item/1005007302462841.html"
 kicad_single_board_pcb:
   path: "/images/diagrams/kicad_single_board_pcb.png"
-  description: "Image 11. Custom single board M.2 to Oculink adapter PCB"
+  description: "Image 9. Custom single board M.2 to Oculink adapter PCB"
 kicad_single_board_render:
   path: "/images/diagrams/kicad_single_board_render.png"
-  description: "Image 12. Custom single board M.2 to Oculink adapter 3D render"
+  description: "Image 10. Custom single board M.2 to Oculink adapter 3D render"
 kicad_flex_connector_pcb:
   path: "/images/diagrams/kicad_flex_connector_pcb.png"
-  description: "Image 13. Custom M.2 to Oculink adapter with flex connector PCBs"
+  description: "Image 11. Custom M.2 to Oculink adapter with flex connector PCBs"
 kicad_flex_connector_render:
   path: "/images/diagrams/kicad_flex_connector_render.png"
-  description: "Image 14. Custom M.2 to Oculink adapter with flex connector 3D renders"
+  description: "Image 12. Custom M.2 to Oculink adapter with flex connector 3D renders"
 sierra_express_differential_pair_topologies:
   path: "/images/diagrams/sierra_express_differential_pair_topologies.png"
-  description: "Image 15. Differential pair topologies"
+  description: "Diagram 3. Differential pair topologies"
   source: "https://impedance.app.protoexpress.com/"
 altium_eye_diagram:
   path: "/images/diagrams/altium_eye_diagram.png"
-  description: "Image 16. Eye diagram"
+  description: "Diagram 4. Eye diagram"
   source: "https://resources.altium.com/p/what-eye-diagram"
 via_fence_diagram:
   path: "/images/diagrams/via_fence_diagram.png"
-  description: "Image 17. Via fence"
+  description: "Diagram 5. Via fence"
 via_jump_diagram:
   path: "/images/diagrams/via_jump_diagram.png"
-  description: "Image 18. Via jump with current path (red/blue) and E-field (yellow)"
+  description: "Diagram 6. Via jump with current path (red/blue) and E-field (yellow)"
 via_jump_pcb:
   path: "/images/diagrams/via_jump_pcb.png"
-  description: "Image 19. Via jump design with teardrop taper"
+  description: "Diagram 7. Via jump design with teardrop taper"
 sierra_express_via_stub_back_drilling:
   path: "/images/diagrams/sierra_express_via_stub_back_drilling.png"
-  description: "Image 20. Via stub back drilling"
+  description: "Diagram 8. Via stub back drilling"
   source: "https://www.protoexpress.com/blog/back-drilling-pcb-design-and-manufacturing/"
 jlcpcb_what_is_pcb_via:
   path: "/images/diagrams/jlcpcb_what_is_pcb_via.png"
-  description: "Image 21. Buried, blind and through hole vias"
+  description: "Diagram 9. Buried, blind and through hole vias"
   source: "https://jlcpcb.com/blog/what-is-pcb-via"
 copper_roughness_skin_effect:
   path: "/images/diagrams/copper_roughness_skin_effect.png"
-  description: "Image 22. Visualisation of skin effect on rough conductive surfaces"
+  description: "Diagram 10. Visualisation of skin effect on rough conductive surfaces"
   source: "https://industrial.evidentscientific.com.cn/en/applications/copper-foil-surface-roughness-for-5g-printed-circuit-boards/"
 sierra_express_length_matching:
   path: "/images/diagrams/sierra_express_length_matching.jpg"
-  description: "Image 23. Techniques to length match differential pair"
+  description: "Diagram 11. Techniques to length match differential pair"
   source: "https://www.protoexpress.com/blog/signal-propagation-delay-pcb/"
 fibre_weave_skew_time_domain:
-  description: "Image 24. Asymmetric routing over fibre-weave can produce intra-pair skew"
+  description: "Diagram 12. Asymmetric routing over fibre-weave can produce intra-pair skew"
   path: "/images/diagrams/fibre_weave_skew_time_domain.jpg"
   source: "https://www.signalintegrityjournal.com/articles/2459-beware-of-the-skew-budget-how-fiber-weave-effect-can-affect-your-high-speed-design"
 fibre_weave_skew_eye_opening:
-  description: "Image 25. Asymmetric routing over fibre-weave will degrade eye opening"
+  description: "Diagram 13. Asymmetric routing over fibre-weave will degrade eye opening"
   path: "/images/diagrams/fibre_weave_skew_eye_diagram.jpg"
   source: "https://www.signalintegrityjournal.com/articles/2459-beware-of-the-skew-budget-how-fiber-weave-effect-can-affect-your-high-speed-design"
 fibre_weave_patterns:
-  description: "Image 26. Fibre weave patterns that are available from manufacturers"
+  description: "Image 13. Fibre weave patterns that are available from manufacturers"
   path: "/images/diagrams/fibre_weave_patterns.png"
   source: "https://resources.pcb.cadence.com/blog/2019-the-fiber-weave-effect-skew-losses-and-resonance"
 altium_fibre_weave_flattened:
-  description: "Image 27. Mechnically compressed fibre glass with flattened weave pattern"
+  description: "Image 14. Mechnically compressed fibre glass with flattened weave pattern"
   path: "/images/diagrams/altium_fibre_weave_flattened.png"
   source: "https://resources.altium.com/p/how-the-fiber-weave-effect-influences-high-frequency-signal-integrity"
 jlcpcb_controlled_impedance_stackup_weave_patterns:
-  description: "Image 28. JLCPCB fibre glass weave patterns for controlled impedance stackups"
+  description: "Image 15. JLCPCB fibre glass weave patterns for controlled impedance stackups"
   path: "/images/diagrams/jlcpcb_controlled_impedance_stackup_weave_patterns.png"
   source: "https://jlcpcb.com/impedance"
 hatched_ground_plane_unbalanced:
-  description: "Image 29. Balanced and unbalanced routing of differential pair over hatched ground plane"
+  description: "Diagram 14. Balanced and unbalanced routing of differential pair over hatched ground plane"
   path: "/images/diagrams/hatched_ground_plane_unbalanced.png"
 hatched_ground_plane_manual_differential_bend:
-  description: "Image 30. Manually warped hatched ground plane with differential pair bend"
+  description: "Image 16. Manually warped hatched ground plane with differential pair bend"
   path: "/images/diagrams/hatched_ground_plane_manual_differential_bend.png"
+molex_ffc_fpc_connector:
+  description: "Image 17. Molex FFC/FPC connector"
+  path: "/images/diagrams/molex_ffc_fpc_connector.png"
+  source: "https://www.molex.com/en-us/products/connectors/ffc-fpc-connectors"
 sierra_express_coplanar_ground_plane_via_fence_transmission_line:
-  description: "Image 31. Differential pair with coplanar ground plane stitched with via fence"
+  description: "Diagram 15. Differential pair with coplanar ground plane stitched with via fence"
   path: "/images/diagrams/sierra_express_coplanar_ground_plane_via_fence_transmission_line.png"
+parallel_plate_capacitor:
+  description: "Diagram 16. Parallel plate capacitor"
+  path: "/images/diagrams/parallel_plate_capacitor.png"
+  source: "https://byjus.com/physics/parallel-plate-capacitor/"
+wire_plane_inductance:
+  description: "Diagram 17. Solid wire over ground plane"
+  path: "/images/diagrams/wire_over_plane.png"
+  source: "https://www.allaboutcircuits.com/tools/wire-over-plane-inductance-calculator/"
 jlcpcb_stackup_diagram:
-  description: "Image 32. JLCPCB FR4 stackup vs flexible PCB stackup"
+  description: "Diagram 18. JLCPCB FR4 stackup vs flexible PCB stackup"
   path: "/images/diagrams/jlcpcb_stackup_diagram.png"
   source: "https://jlcpcb.com/impedance"
 jlcpcb_stackup_connection:
-  description: "Image 33. JLCPCB transmission line connection between FR4 stackup and flexible PCB"
+  description: "Diagram 19. JLCPCB transmission line connection between FR4 stackup and flexible PCB"
   path: "/images/diagrams/jlcpcb_stackup_connection.png"
-wire_plane_inductance:
-  description: "Image 34. Solid wire over ground plane"
-  path: "/images/diagrams/wire_over_plane.png"
-  source: "https://www.allaboutcircuits.com/tools/wire-over-plane-inductance-calculator/"
-parallel_plate_capacitor:
-  description: "Image 35. Parallel plate capacitor"
-  path: "/images/diagrams/parallel_plate_capacitor.png"
-  source: "https://byjus.com/physics/parallel-plate-capacitor/"
-molex_ffc_fpc_connector:
-  description: "Image 36. Molex FFC/FPC connector"
-  path: "/images/diagrams/molex_ffc_fpc_connector.png"
-  source: "https://www.molex.com/en-us/products/connectors/ffc-fpc-connectors"
 flex_pcb_transmission_line_taper:
-  description: "Image 37. Flexible PCB transmission line taper"
+  description: "Image 18. Flexible PCB transmission line taper"
   path: "/images/diagrams/flex_pcb_transmission_line_taper.png"
 openems_hatched_debug:
-  description: "Automatically generated hatched ground plane for openEMS simulation"
+  description: "Image 19. Automatically generated hatched ground plane for openEMS simulation"
   path: "/images/diagrams/openems_hatched_debug.png"
 openems_hatched_3d:
-  description: "Automatically generated hatched ground plane 3D model"
+  description: "Image 20. Automatically generated hatched ground plane 3D model"
   path: "/images/diagrams/openems_hatched_3d.png"
-openems_hatched_reflectance:
-  description: "Reflectance results of parameterised search of hatched ground plane with a hatch width of 150um"
-  path: "/images/diagrams/openems_hatched_reflectance.png"
 openems_hatched_s_params:
-  description: "S-parameter results of parameterised search of hatched ground plane with a hatch width of 150um"
+  description: "Figure 1. S-parameter results of parameterised search of hatched ground plane with a hatch width of 150um"
   path: "/images/diagrams/openems_hatched_s_params.png"
+openems_hatched_reflectance:
+  description: "Figure 2. Reflectance results of parameterised search of hatched ground plane with a hatch width of 150um"
+  path: "/images/diagrams/openems_hatched_reflectance.png"
 openems_hatched_reflectance_overall:
-  description: "Reflectance results of parameterised search of hatched ground plane across all parameters"
+  description: "Figure 3. Reflectance results of parameterised search of hatched ground plane across all parameters"
   path: "/images/diagrams/openems_hatched_reflectance_overall.png"
 openems_hatched_s_params_overall:
-  description: "S-parameter results of parameterised search of hatched ground plane across all parameters"
+  description: "Figure 4. S-parameter results of parameterised search of hatched ground plane across all parameters"
   path: "/images/diagrams/openems_hatched_s_params_overall.png"
 openems_taper_debug:
-  description: "Automatically generated taper ground plane for openEMS simulation"
+  description: "Image 21. Automatically generated taper ground plane for openEMS simulation"
   path: "/images/diagrams/openems_taper_debug.png"
 openems_taper_3d:
-  description: "Automatically generated taper ground plane 3D model"
+  description: "Image 22. Automatically generated taper ground plane 3D model"
   path: "/images/diagrams/openems_taper_3d.png"
 openems_taper_reflectance:
-  description: "Reflectance results of parameterised search of taper ground plane with a hatch width of 150um"
+  description: "Figure 5. Reflectance results of parameterised search of taper ground plane with a hatch width of 150um"
   path: "/images/diagrams/openems_taper_reflectance.png"
 openems_taper_s_params:
-  description: "S-parameter results of parameterised search of taper ground plane with a hatch width of 150um"
+  description: "Figure 6. S-parameter results of parameterised search of taper ground plane with a hatch width of 150um"
   path: "/images/diagrams/openems_taper_s_params.png"
 openems_taper_reflectance_overall:
-  description: "Reflectance results of parameterised search of taper ground plane across all parameters"
+  description: "Figure 7. Reflectance results of parameterised search of taper ground plane across all parameters"
   path: "/images/diagrams/openems_taper_reflectance_overall.png"
 openems_taper_s_params_overall:
-  description: "S-parameter results of parameterised search of taper ground plane across all parameters"
+  description: "Figure 8. S-parameter results of parameterised search of taper ground plane across all parameters"
   path: "/images/diagrams/openems_taper_s_params_overall.png"
 mechanic_ix5_reflow:
-  description: "Mechanic IX5 reflow heating plate"
+  description: "Image 23. Mechanic IX5 reflow heating plate"
   path: "/images/pictures/mechanic_ix5_reflow.png"
 ts100_soldering_iron:
-  description: "TS-100 soldering iron"
+  description: "Image 24. TS-100 soldering iron"
   path: "/images/diagrams/ts100_soldering_iron.png"
 reflow_profile:
-  description: "Reflow profile"
+  description: "Figure 9. Different reflow profiles for lead free solder"
   path: "/images/diagrams/reflow_profile.png"
   source: "https://www.7pcb.com/blog/lead-free-reflow-profile"
 aliexpress_m2_oculink_pcie4_extension:
-  description: "Aliexpress M.2 Oculink PCIe 4.0 silver plated extension cable"
+  description: "Image 25. Aliexpress M.2 Oculink PCIe 4.0 silver plated extension cable"
   path: "/images/diagrams/aliexpress_m2_oculink_pcie4_extension.png"
   source: "https://www.aliexpress.com/item/1005007486714630.html"
 laptop_photo_flex_pcb:
-  description: "Flexible PCB multi-board Oculink adapter installed in laptop"
+  description: "Image 26. Flexible PCB multi-board Oculink adapter installed in laptop"
   path: "/images/pictures/laptop_photo_flex_pcb.jpg"
 laptop_photo_flex_pcb_with_m2:
-  description: "Flexible PCB multi-board Oculink adapter and M.2 SSD installed in laptop"
+  description: "Image 27. Flexible PCB multi-board Oculink adapter and M.2 SSD installed in laptop"
   path: "/images/pictures/laptop_photo_flex_pcb_with_m2.jpg"
 laptop_photo_single_board:
-  description: "Single board Oculink adapter installed in laptop"
+  description: "Image 28. Single board Oculink adapter installed in laptop"
   path: "/images/pictures/laptop_photo_single_board.jpg"
 laptop_photo_side_port:
-  description: "Oculink port exposed on laptop"
+  description: "Image 29. Oculink port exposed on laptop"
   path: "/images/pictures/laptop_photo_side_port.jpg"
 laptop_photo_aliexpress:
-  description: "Aliexpress PCIe 4.0 Oculink adapter installed in laptop"
+  description: "Image 30. Aliexpress PCIe 4.0 Oculink adapter installed in laptop"
   path: "/images/pictures/laptop_photo_aliexpress.jpg"
