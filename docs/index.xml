@@ -846,9 +846,9 @@
 &lt;/tbody>
 &lt;/table>
 &lt;div class="hx-flex">
-&lt;div class="responsive-image">&lt;img src="https://williamyang98.github.io/images/benchmarks/aida64_detailed_amd_680m.png">&lt;/div>
-&lt;div class="responsive-image">&lt;img src="https://williamyang98.github.io/images/benchmarks/aida64_detailed_flex_pcb.png">&lt;/div>
-&lt;div class="responsive-image">&lt;img src="https://williamyang98.github.io/images/benchmarks/aida64_detailed_amd_5700xt.png">&lt;/div>
+&lt;div class="responsive-image">&lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/aida64_detailed_amd_680m.png">&lt;/div>
+&lt;div class="responsive-image">&lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/aida64_detailed_flex_pcb.png">&lt;/div>
+&lt;div class="responsive-image">&lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/aida64_detailed_amd_5700xt.png">&lt;/div>
 &lt;/div>
 &lt;h2>3DMark&lt;span class="hx-absolute -hx-mt-20" id="3dmark">&lt;/span>
 &lt;a href="#3dmark" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>
