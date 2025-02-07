@@ -8,7 +8,7 @@
 &lt;li>Is lane reordering and polarity inversion okay to use for routing PCIe connections?&lt;/li>
 &lt;/ul>
 &lt;h2>AdtLink M.2 to PCIe extension&lt;span class="hx-absolute -hx-mt-20" id="adtlink-m2-to-pcie-extension">&lt;/span>
-&lt;a href="#adtlink-m2-to-pcie-extension" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;a href="#adtlink-m2-to-pcie-extension" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/adtlink_m2_to_pcie4_adapter_schematic.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 4. Adtlink M.2 to PCIe 4.0 adapter&lt;/i>
@@ -37,7 +37,7 @@
 &lt;li>&lt;code>[PERxy, PETxy]&lt;/code> lanes are connected with same polarity and same order.&lt;/li>
 &lt;/ul>
 &lt;h2>GPD Win v1 M.2 to Oculink card&lt;span class="hx-absolute -hx-mt-20" id="gpd-win-v1-m2-to-oculink-card">&lt;/span>
-&lt;a href="#gpd-win-v1-m2-to-oculink-card" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;a href="#gpd-win-v1-m2-to-oculink-card" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/gpdwin1_m2_to_oculink_adapter_schematic.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 5. GPD win 1 M.2 to Oculink adapter card&lt;/i>
@@ -67,14 +67,14 @@
 &lt;li>&lt;code>[PERxy, PETxy]&lt;/code> lanes are connected with same polarity and same order.&lt;/li>
 &lt;/ul>
 &lt;h2>Adtlink M.2 to Oculink card&lt;span class="hx-absolute -hx-mt-20" id="adtlink-m2-to-oculink-card">&lt;/span>
-&lt;a href="#adtlink-m2-to-oculink-card" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;a href="#adtlink-m2-to-oculink-card" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/adtlink_f4c_m2_to_oculink_adapter.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 6. Adtlink F4C M.2 to Oculink adapter card&lt;/i>
 &lt;a href="https://www.adt.link/product/F9GV4.html">(source)&lt;/a>
 &lt;/div>
 &lt;/div>
-&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/adtlink_f4c_m2_to_oculink_adapter_photo.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 7. Purchased Adtlink F4C M.2 to Oculink adapter card with modifications&lt;/i>
@@ -114,13 +114,13 @@
 &lt;li>&lt;code>[PERxy, PETxy]&lt;/code> can be connected in opposite polarity and/or opposite order.&lt;/li>
 &lt;/ul></description></item><item><title>Laptop measurements</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/laptop_measurements/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/laptop_measurements/</guid><description>
 &lt;h2>Measurement and modelling&lt;span class="hx-absolute -hx-mt-20" id="measurement-and-modelling">&lt;/span>
-&lt;a href="#measurement-and-modelling" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;a href="#measurement-and-modelling" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/lenovo_16arp8_adapter_layout_prototype.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 8. Measurements and prototype layout for M.2 to Oculink adapter&lt;/i>
 &lt;/div>
 &lt;/div>
-&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/lenovo_16arp8_3d_model.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 9. 3D modelling of Lenovo 16arp8 based on measurements&lt;/i>
@@ -142,7 +142,7 @@
 &lt;li>&lt;strong>Option 2&lt;/strong>: Vertical space underneath M.2 2280 slot for routing with a flex pcb design that has a side Oculink port.&lt;/li>
 &lt;li>&lt;strong>Option 3&lt;/strong>: Use vertical Oculink adapter and have port on bottom instead of side of laptop.&lt;/li>
 &lt;/ul>
-&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 75%">
+&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 75%">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/nfhk_vertical_m2_to_oculink_adapter.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 10. NFHK vertical M.2 to Oculink adapter card&lt;/i>
@@ -237,13 +237,13 @@
 &lt;li>Final verification in JLCPCB online gerber viewer after uploading design.&lt;/li>
 &lt;/ul></description></item><item><title>Single board design</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/single_board/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/single_board/</guid><description>
 &lt;h2>Images&lt;span class="hx-absolute -hx-mt-20" id="images">&lt;/span>
-&lt;a href="#images" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;a href="#images" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/kicad_single_board_pcb.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 11. Custom single board M.2 to Oculink adapter PCB&lt;/i>
 &lt;/div>
 &lt;/div>
-&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/kicad_single_board_render.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 12. Custom single board M.2 to Oculink adapter 3D render&lt;/i>
@@ -294,13 +294,13 @@
 &lt;li>Overall cost of $35.80USD.&lt;/li>
 &lt;/ul></description></item><item><title>Flex connector design</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/flex_pcb/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/flex_pcb/</guid><description>
 &lt;h2>Images&lt;span class="hx-absolute -hx-mt-20" id="images">&lt;/span>
-&lt;a href="#images" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;a href="#images" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/kicad_flex_connector_pcb.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 13. Custom M.2 to Oculink adapter with flex connector PCBs&lt;/i>
 &lt;/div>
 &lt;/div>
-&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/kicad_flex_connector_render.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 14. Custom M.2 to Oculink adapter with flex connector 3D renders&lt;/i>

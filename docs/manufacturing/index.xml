@@ -201,13 +201,13 @@
 &lt;li>Isopropyl alcohol.&lt;/li>
 &lt;li>Metal tweezers.&lt;/li>
 &lt;/ul>
-&lt;p>&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 50%">
+&lt;p>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 50%">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/mechanic_ix5_reflow.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Mechanic IX5 reflow heating plate&lt;/i>
 &lt;/div>
 &lt;/div>
-&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 50%">
+&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 50%">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/ts100_soldering_iron.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>TS-100 soldering iron&lt;/i>
@@ -221,7 +221,7 @@
 &lt;li>Once the reflow temperature is reached let it remain at this temperature until reflow has finished.&lt;/li>
 &lt;li>Allow the PCB to cool which decrease temperature by 1°C each second until it is cool enough to handle.&lt;/li>
 &lt;/ol>
-&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/reflow_profile.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Reflow profile&lt;/i>
@@ -317,7 +317,7 @@
 &lt;/ul>
 &lt;h2>Flexible PCB multi board design&lt;span class="hx-absolute -hx-mt-20" id="flexible-pcb-multi-board-design">&lt;/span>
 &lt;a href="#flexible-pcb-multi-board-design" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Validation of flexible PCB design will be done in three passes.&lt;/p>
-&lt;div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="">
+&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/kicad_flex_connector_render.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 14. Custom M.2 to Oculink adapter with flex connector 3D renders&lt;/i>
