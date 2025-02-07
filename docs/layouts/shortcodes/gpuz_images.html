@@ -1,6 +1,6 @@
 {{- $benchmarks := .Site.Data.benchmarks -}}
 {{- $rows := index $benchmarks "gpuz" }}
-{{- $baseurl := print .Page.Site.BaseURL "/images/benchmarks" -}}
+{{- $baseurl := absURL "/images/benchmarks" -}}
 
 <table>
   <thead>

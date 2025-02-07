@@ -3,8 +3,8 @@
     <img src="">
   </div>
 </div>
-<script type="module">
-  import { Popups, ResponsiveImages, Carousels, Benchmarks } from "{{ .Page.Site.BaseURL }}/js/custom.js";
+<script type="module" async>
+  import { Popups, ResponsiveImages, Carousels, Benchmarks } from "{{ absURL "js/custom.js" }}";
   let popups = new Popups();
   let responsive_images = new ResponsiveImages(popups);
   let carousels = new Carousels();

@@ -1,7 +1,7 @@
 {{- $key := .Get "key" -}}
 {{- $benchmarks := .Site.Data.benchmarks -}}
 {{- $rows := index $benchmarks $key }}
-{{- $baseurl := print .Page.Site.BaseURL "/images/benchmarks" -}}
+{{- $baseurl := absURL "/images/benchmarks" -}}
 
 <div class="carousel" key="{{ $key }}">
   {{ range $rows }}
