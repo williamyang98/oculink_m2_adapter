@@ -1,24 +1,541 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>M.2 Oculink Adapter – Results</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/results/</link><description>Recent content in Results on M.2 Oculink Adapter</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://williamyang98.github.io/oculink_m2_adapter/docs/results/index.xml" rel="self" type="application/rss+xml"/><item><title>GPU bandwidth</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/results/gpu_bandwidth/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/results/gpu_bandwidth/</guid><description>
-&lt;h2>Custom adapter&lt;span class="hx-absolute -hx-mt-20" id="custom-adapter">&lt;/span>
-&lt;a href="#custom-adapter" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
-&lt;li>Flex pcb and single board adapters both achieved PCIe 3.0&lt;/li>
-&lt;li>Both failed to reach PCIe 4.0&lt;/li>
-&lt;li>Both connections were stable&lt;/li>
-&lt;li>Both connections got identical bandwidth measurements&lt;/li>
-&lt;/ul>
-&lt;h2>Comparison to Aliexpress PCIe 4.0 rated adapter&lt;span class="hx-absolute -hx-mt-20" id="comparison-to-aliexpress-pcie-40-rated-adapter">&lt;/span>
-&lt;a href="#comparison-to-aliexpress-pcie-40-rated-adapter" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
-&lt;li>Reached PCIe 4.0&lt;/li>
-&lt;li>Double the bandwidth&lt;/li>
-&lt;/ul></description></item><item><title>Synthetic benchmarks</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/results/synthetic_benchmarks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/results/synthetic_benchmarks/</guid><description>
-&lt;h2>Custom adapter compared to Aliexpress PCIe 4.0 rated adapter&lt;span class="hx-absolute -hx-mt-20" id="custom-adapter-compared-to-aliexpress-pcie-40-rated-adapter">&lt;/span>
-&lt;a href="#custom-adapter-compared-to-aliexpress-pcie-40-rated-adapter" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
-&lt;li>Half the PCIe bandwidth resulted in degraded performance&lt;/li>
-&lt;li>Usually occured on benchmarks with high FPS numbers where PCIe link would be used more&lt;/li>
-&lt;li>Aliexpress PCIe 4.0 adapter achieved higher scores on average&lt;/li>
-&lt;li>Performance penalty when monitor output has to go back through eGPU oculink connection and through iGPU to external display
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>M.2 Oculink Adapter – Results</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/results/</link><description>Recent content in Results on M.2 Oculink Adapter</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://williamyang98.github.io/oculink_m2_adapter/docs/results/index.xml" rel="self" type="application/rss+xml"/><item><title>Installation</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/results/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/results/installation/</guid><description>
+&lt;h2>Single board adapter&lt;span class="hx-absolute -hx-mt-20" id="single-board-adapter">&lt;/span>
+&lt;a href="#single-board-adapter" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 50%">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/pictures/laptop_photo_single_board.jpg" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Single board Oculink adapter installed in laptop&lt;/i>
+&lt;/div>
+&lt;/div>
 &lt;ul>
-&lt;li>Setup was CPU -&amp;gt; eGPU -&amp;gt; iGPU -&amp;gt; USB 4 dock -&amp;gt; Monitor&lt;/li>
+&lt;li>Doesn&amp;rsquo;t require routing of cables under M.2 slot.&lt;/li>
+&lt;li>Port was positioned differently in later designs, but Oculink connection can still be made by bending the board slightly.&lt;/li>
 &lt;/ul>
-&lt;/li>
+&lt;h2>Flexible PCB multi board adapter&lt;span class="hx-absolute -hx-mt-20" id="flexible-pcb-multi-board-adapter">&lt;/span>
+&lt;a href="#flexible-pcb-multi-board-adapter" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 50%">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/pictures/laptop_photo_flex_pcb.jpg" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Flexible PCB multi-board Oculink adapter installed in laptop&lt;/i>
+&lt;/div>
+&lt;/div>
+&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 50%">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/pictures/laptop_photo_flex_pcb_with_m2.jpg" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Flexible PCB multi-board Oculink adapter and M.2 SSD installed in laptop&lt;/i>
+&lt;/div>
+&lt;/div>
+&lt;/p>
+&lt;ul>
+&lt;li>M.2 2280 SSD is removed so flexible PCB can be routed under it.&lt;/li>
+&lt;li>M.2 card and Oculink port board are screwed.&lt;/li>
+&lt;li>Oculink port board can be positioned to perfectly match the routed Oculink port hole in the laptop chassis.&lt;/li>
+&lt;li>M.2 2280 SSD is installed ontop of the flexible PCB.&lt;/li>
+&lt;/ul>
+&lt;h2>Aliexpress PCIe 4.0 adapter&lt;span class="hx-absolute -hx-mt-20" id="aliexpress-pcie-40-adapter">&lt;/span>
+&lt;a href="#aliexpress-pcie-40-adapter" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 50%">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/aliexpress_m2_oculink_pcie4_extension.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Aliexpress M.2 Oculink PCIe 4.0 silver plated extension cable&lt;/i>
+&lt;a href="https://www.aliexpress.com/item/1005007486714630.html">(source)&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 50%">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/pictures/laptop_photo_aliexpress.jpg" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Aliexpress PCIe 4.0 Oculink adapter installed in laptop&lt;/i>
+&lt;/div>
+&lt;/div>
+&lt;/p>
+&lt;ul>
+&lt;li>Aliexpress adapter extension is made of micro-coaxial cable.&lt;/li>
+&lt;li>These can be bent to fit inside the laptop chassis and routed underneath the M.2 2280 SSD.&lt;/li>
+&lt;/ul>
+&lt;h2>Oculink port&lt;span class="hx-absolute -hx-mt-20" id="oculink-port">&lt;/span>
+&lt;a href="#oculink-port" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 50%">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/pictures/laptop_photo_side_port.jpg" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Oculink port exposed on laptop&lt;/i>
+&lt;/div>
+&lt;/div>
+&lt;ul>
+&lt;li>Oculink port hole was created by drilling with tungsten drill bits.&lt;/li>
+&lt;li>Multiple drill holes were used to create a rough opening and then sanded down into the correct shape.&lt;/li>
+&lt;/ul></description></item><item><title>Synthetic benchmarks</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/results/synthetic_benchmarks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/results/synthetic_benchmarks/</guid><description>
+&lt;h2>Aida64&lt;span class="hx-absolute -hx-mt-20" id="aida64">&lt;/span>
+&lt;a href="#aida64" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="width: 14rem">Name&lt;/th>
+&lt;th style="width: 8rem">AMD 680M&lt;/th>
+&lt;th style="width: 9rem">AMD 5700XT PCIe3&lt;/th>
+&lt;th style="width: 9rem">AMD 5700XT PCIe4&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Read Pinned (GB/s)&lt;/td>
+&lt;td>34.1&lt;/td>
+&lt;td>3.38&lt;/td>
+&lt;td>6.7&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Read Pageable (GB/s)&lt;/td>
+&lt;td>11.7&lt;/td>
+&lt;td>3.37&lt;/td>
+&lt;td>6.71&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Write Pinned (GB/s)&lt;/td>
+&lt;td>34.1&lt;/td>
+&lt;td>3.38&lt;/td>
+&lt;td>6.7&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Write Pageable (GB/s)&lt;/td>
+&lt;td>11.7&lt;/td>
+&lt;td>3.37&lt;/td>
+&lt;td>6.71&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;div class="hx-flex">
+&lt;div class="responsive-image">&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/aida64_detailed_amd_680m.png">&lt;/div>
+&lt;div class="responsive-image">&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/aida64_detailed_flex_pcb.png">&lt;/div>
+&lt;div class="responsive-image">&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/aida64_detailed_amd_5700xt.png">&lt;/div>
+&lt;/div>
+&lt;h2>3DMark&lt;span class="hx-absolute -hx-mt-20" id="3dmark">&lt;/span>
+&lt;a href="#3dmark" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>
+&lt;table class="benchmark-table" key="3d_mark" style="width: 100%">
+&lt;thead>
+&lt;tr>
+&lt;th style="width: 14rem">Name&lt;/th>
+&lt;th style="width: 8rem">AMD 680M&lt;/th>
+&lt;th style="width: 9rem">AMD 5700XT PCIe3&lt;/th>
+&lt;th style="width: 9rem">AMD 5700XT PCIe4&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>PCIe Bandwidth (GB/s)&lt;/td>
+&lt;td>11.2&lt;/td>
+&lt;td>3.53&lt;/td>
+&lt;td>6.39&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Fire Strike&lt;/td>
+&lt;td>6155&lt;/td>
+&lt;td>19512&lt;/td>
+&lt;td>23577&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Night Raid&lt;/td>
+&lt;td>23554&lt;/td>
+&lt;td>35831&lt;/td>
+&lt;td>52358&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Steel Nomad&lt;/td>
+&lt;td>444&lt;/td>
+&lt;td>1950&lt;/td>
+&lt;td>2030&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Steel Nomad Light&lt;/td>
+&lt;td>2308&lt;/td>
+&lt;td>7299&lt;/td>
+&lt;td>8218&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Time Spy&lt;/td>
+&lt;td>2762&lt;/td>
+&lt;td>8093&lt;/td>
+&lt;td>9051&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Wild Life&lt;/td>
+&lt;td>15622&lt;/td>
+&lt;td>35637&lt;/td>
+&lt;td>54329&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Wild Life Extreme&lt;/td>
+&lt;td>4523&lt;/td>
+&lt;td>15497&lt;/td>
+&lt;td>18682&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;div class="carousel" key="3d_mark">
+&lt;div class="carousel-item inactive">
+&lt;div class="hx-flex">
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_pcie_bandwidth_amd_680m.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_pcie_bandwidth_flex_pcb.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_pcie_bandwidth_amd_5700xt.png">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-item inactive">
+&lt;div class="hx-flex">
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_fire_strike_amd_680m.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_fire_strike_flex_pcb.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_fire_strike_amd_5700xt.png">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-item inactive">
+&lt;div class="hx-flex">
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_night_raid_amd_680m.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_night_raid_flex_pcb.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_night_raid_amd_5700xt.png">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-item inactive">
+&lt;div class="hx-flex">
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_steel_nomad_amd_680m.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_steel_nomad_flex_pcb.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_steel_nomad_amd_5700xt.png">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-item inactive">
+&lt;div class="hx-flex">
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_steel_nomad_light_amd_680m.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_steel_nomad_light_flex_pcb.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_steel_nomad_light_amd_5700xt.png">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-item inactive">
+&lt;div class="hx-flex">
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_time_spy_amd_680m.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_time_spy_flex_pcb.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_time_spy_amd_5700xt.png">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-item inactive">
+&lt;div class="hx-flex">
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_wild_life_amd_680m.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_wild_life_flex_pcb.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_wild_life_amd_5700xt.png">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-item inactive">
+&lt;div class="hx-flex">
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_wild_life_extreme_amd_680m.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_wild_life_extreme_flex_pcb.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_wild_life_extreme_amd_5700xt.png">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-controls">
+&lt;div class="carousel-button carousel-left hx-shadow">❮&lt;/div>
+&lt;div class="carousel-button carousel-right hx-shadow">❯&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/p>
+&lt;h2>Unigine&lt;span class="hx-absolute -hx-mt-20" id="unigine">&lt;/span>
+&lt;a href="#unigine" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>
+&lt;table class="benchmark-table" key="unigine" style="width: 100%">
+&lt;thead>
+&lt;tr>
+&lt;th style="width: 14rem">Name&lt;/th>
+&lt;th style="width: 8rem">AMD 680M&lt;/th>
+&lt;th style="width: 9rem">AMD 5700XT PCIe3&lt;/th>
+&lt;th style="width: 9rem">AMD 5700XT PCIe4&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Valley Extreme&lt;/td>
+&lt;td>914&lt;/td>
+&lt;td>4611&lt;/td>
+&lt;td>4684&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Heaven Extreme&lt;/td>
+&lt;td>747&lt;/td>
+&lt;td>2845&lt;/td>
+&lt;td>3342&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Superposition Medium&lt;/td>
+&lt;td>4214&lt;/td>
+&lt;td>13345&lt;/td>
+&lt;td>16527&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Superposition High&lt;/td>
+&lt;td>3172&lt;/td>
+&lt;td>10532&lt;/td>
+&lt;td>12130&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Superposition Extreme&lt;/td>
+&lt;td>1425&lt;/td>
+&lt;td>4659&lt;/td>
+&lt;td>5027&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;div class="carousel" key="unigine">
+&lt;div class="carousel-item inactive">
+&lt;div class="hx-flex">
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/unigine_valley_extreme_amd_680m.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/unigine_valley_extreme_flex_pcb.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/unigine_valley_extreme_amd_5700xt.png">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-item inactive">
+&lt;div class="hx-flex">
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/unigine_heaven_extreme_amd_680m.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/unigine_heaven_extreme_flex_pcb.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/unigine_heaven_extreme_amd_5700xt.png">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-item inactive">
+&lt;div class="hx-flex">
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/unigine_superposition_medium_amd_680m.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/unigine_superposition_medium_flex_pcb.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/unigine_superposition_medium_amd_5700xt.png">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-item inactive">
+&lt;div class="hx-flex">
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/unigine_superposition_high_amd_680m.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/unigine_superposition_high_flex_pcb.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/unigine_superposition_high_amd_5700xt.png">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-item inactive">
+&lt;div class="hx-flex">
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/unigine_superposition_extreme_amd_680m.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/unigine_superposition_extreme_flex_pcb.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/unigine_superposition_extreme_amd_5700xt.png">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-controls">
+&lt;div class="carousel-button carousel-left hx-shadow">❮&lt;/div>
+&lt;div class="carousel-button carousel-right hx-shadow">❯&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/p>
+&lt;h2>Furmark 2&lt;span class="hx-absolute -hx-mt-20" id="furmark-2">&lt;/span>
+&lt;a href="#furmark-2" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>
+&lt;table class="benchmark-table" key="furmark2" style="width: 100%">
+&lt;thead>
+&lt;tr>
+&lt;th style="width: 14rem">Name&lt;/th>
+&lt;th style="width: 8rem">AMD 680M&lt;/th>
+&lt;th style="width: 9rem">AMD 5700XT PCIe3&lt;/th>
+&lt;th style="width: 9rem">AMD 5700XT PCIe4&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Donut OpenGL&lt;/td>
+&lt;td>1797&lt;/td>
+&lt;td>6513&lt;/td>
+&lt;td>8015&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Donut Vulkan&lt;/td>
+&lt;td>1370&lt;/td>
+&lt;td>6037&lt;/td>
+&lt;td>7453&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Knot OpenGL&lt;/td>
+&lt;td>618&lt;/td>
+&lt;td>2208&lt;/td>
+&lt;td>2226&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Knot Vulkan&lt;/td>
+&lt;td>641&lt;/td>
+&lt;td>3063&lt;/td>
+&lt;td>3393&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;div class="carousel" key="furmark2">
+&lt;div class="carousel-item inactive">
+&lt;div class="hx-flex">
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/furmark2_donut_gl_amd_680m.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/furmark2_donut_gl_flex_pcb.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/furmark2_donut_gl_amd_5700xt.png">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-item inactive">
+&lt;div class="hx-flex">
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/furmark2_donut_vk_amd_680m.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/furmark2_donut_vk_flex_pcb.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/furmark2_donut_vk_amd_5700xt.png">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-item inactive">
+&lt;div class="hx-flex">
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/furmark2_knot_gl_amd_680m.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/furmark2_knot_gl_flex_pcb.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/furmark2_knot_gl_amd_5700xt.png">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-item inactive">
+&lt;div class="hx-flex">
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/furmark2_knot_vk_amd_680m.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/furmark2_knot_vk_flex_pcb.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/furmark2_knot_vk_amd_5700xt.png">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-controls">
+&lt;div class="carousel-button carousel-left hx-shadow">❮&lt;/div>
+&lt;div class="carousel-button carousel-right hx-shadow">❯&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/p>
+&lt;h2>GPU-Z&lt;span class="hx-absolute -hx-mt-20" id="gpu-z">&lt;/span>
+&lt;a href="#gpu-z" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="width: 14rem">Name&lt;/th>
+&lt;th style="width: 8rem">AMD 680M&lt;/th>
+&lt;th style="width: 9rem">AMD 5700XT PCIe3&lt;/th>
+&lt;th style="width: 9rem">AMD 5700XT PCIe4&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>PCIe Interface&lt;/td>
+&lt;td>Gen 4.0 x 16&lt;/td>
+&lt;td>Gen 3.0 x 4&lt;/td>
+&lt;td>Gen 4.0 x 4&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;div class="hx-flex">
+&lt;div class="responsive-image">&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/gpuz_amd_680m.png">&lt;/div>
+&lt;div class="responsive-image">&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/gpuz_flex_pcb.png">&lt;/div>
+&lt;div class="responsive-image">&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/gpuz_amd_5700xt.png">&lt;/div>
+&lt;/div></description></item><item><title>Discussion</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/results/discussion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/results/discussion/</guid><description>
+&lt;h2>Display setup&lt;span class="hx-absolute -hx-mt-20" id="display-setup">&lt;/span>
+&lt;a href="#display-setup" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;pre class="mermaid hx-mt-6">sequenceDiagram;
+participant eGPU
+participant CPU
+participant USB 4 dock
+participant 1080p monitor
+CPU->>eGPU: Oculink PCIe TX
+eGPU->>CPU: Oculink PCIe RX
+CPU->>USB 4 dock: 40Gb/s USB 4 cable
+USB 4 dock->>1080p monitor: HDMI cable&lt;/pre>&lt;ul>
+&lt;li>Benchmark output display is connected to a USB 4 dock (40Gb/s) and has a resolution of 1080p.&lt;/li>
+&lt;li>This means Oculink PCIe connection has to be stable in both the transmit and receive direction.&lt;/li>
+&lt;li>When eGPU data comes back to CPU it actually goes through the integrated AMD 680m based on copy activity in task manager.&lt;/li>
+&lt;/ul>
+&lt;h2>Flexible PCB and single board design&lt;span class="hx-absolute -hx-mt-20" id="flexible-pcb-and-single-board-design">&lt;/span>
+&lt;a href="#flexible-pcb-and-single-board-design" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Both the flexible PCB multi-board design and single board design achieved PCIe 3.0 speeds.&lt;/li>
+&lt;li>Their results across all synthetic benchmarks were identical.&lt;/li>
+&lt;li>PCIe 3.0 connection was stable and bandwidth reached theoretical values.&lt;/li>
+&lt;li>PCIe 4.0 could not be achieved at all.&lt;/li>
+&lt;/ul>
+&lt;h2>Aliexpress PCIe 4.0 adapter&lt;span class="hx-absolute -hx-mt-20" id="aliexpress-pcie-40-adapter">&lt;/span>
+&lt;a href="#aliexpress-pcie-40-adapter" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>PCIe 4.0 connection was stable and bandwidth reached theoretical values.&lt;/li>
+&lt;li>Performance uplift from PCIe 3.0 to PCIe 4.0 in this setup is significant.&lt;/li>
+&lt;li>Bandwidth limit from eGPU to CPU limits the number of frames that can be sent to display.&lt;/li>
 &lt;/ul></description></item></channel></rss>

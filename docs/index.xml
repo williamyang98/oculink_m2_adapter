@@ -1,16 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>M.2 Oculink Adapter – Documentation</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/</link><description>Recent content in Documentation on M.2 Oculink Adapter</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://williamyang98.github.io/oculink_m2_adapter/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>GPU bandwidth</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/results/gpu_bandwidth/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/results/gpu_bandwidth/</guid><description>
-&lt;h2>Custom adapter&lt;span class="hx-absolute -hx-mt-20" id="custom-adapter">&lt;/span>
-&lt;a href="#custom-adapter" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
-&lt;li>Flex pcb and single board adapters both achieved PCIe 3.0&lt;/li>
-&lt;li>Both failed to reach PCIe 4.0&lt;/li>
-&lt;li>Both connections were stable&lt;/li>
-&lt;li>Both connections got identical bandwidth measurements&lt;/li>
-&lt;/ul>
-&lt;h2>Comparison to Aliexpress PCIe 4.0 rated adapter&lt;span class="hx-absolute -hx-mt-20" id="comparison-to-aliexpress-pcie-40-rated-adapter">&lt;/span>
-&lt;a href="#comparison-to-aliexpress-pcie-40-rated-adapter" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
-&lt;li>Reached PCIe 4.0&lt;/li>
-&lt;li>Double the bandwidth&lt;/li>
-&lt;/ul></description></item><item><title>Hatched ground</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/open_ems/hatched_ground/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/open_ems/hatched_ground/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>M.2 Oculink Adapter – Documentation</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/</link><description>Recent content in Documentation on M.2 Oculink Adapter</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://williamyang98.github.io/oculink_m2_adapter/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Hatched ground</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/open_ems/hatched_ground/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/open_ems/hatched_ground/</guid><description>
 &lt;h2>Simulation setup&lt;span class="hx-absolute -hx-mt-20" id="simulation-setup">&lt;/span>
 &lt;a href="#simulation-setup" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/openems_hatched_debug.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
@@ -71,6 +59,67 @@
 &lt;li>Both dielectric loss and skin effect losses increase at higher frequencies however conductivity is flat across all frequencies, which makes it unsuitable for simulating these lossy effects.&lt;/li>
 &lt;/ul>
 &lt;/li>
+&lt;/ul></description></item><item><title>Installation</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/results/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/results/installation/</guid><description>
+&lt;h2>Single board adapter&lt;span class="hx-absolute -hx-mt-20" id="single-board-adapter">&lt;/span>
+&lt;a href="#single-board-adapter" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 50%">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/pictures/laptop_photo_single_board.jpg" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Single board Oculink adapter installed in laptop&lt;/i>
+&lt;/div>
+&lt;/div>
+&lt;ul>
+&lt;li>Doesn&amp;rsquo;t require routing of cables under M.2 slot.&lt;/li>
+&lt;li>Port was positioned differently in later designs, but Oculink connection can still be made by bending the board slightly.&lt;/li>
+&lt;/ul>
+&lt;h2>Flexible PCB multi board adapter&lt;span class="hx-absolute -hx-mt-20" id="flexible-pcb-multi-board-adapter">&lt;/span>
+&lt;a href="#flexible-pcb-multi-board-adapter" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 50%">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/pictures/laptop_photo_flex_pcb.jpg" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Flexible PCB multi-board Oculink adapter installed in laptop&lt;/i>
+&lt;/div>
+&lt;/div>
+&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 50%">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/pictures/laptop_photo_flex_pcb_with_m2.jpg" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Flexible PCB multi-board Oculink adapter and M.2 SSD installed in laptop&lt;/i>
+&lt;/div>
+&lt;/div>
+&lt;/p>
+&lt;ul>
+&lt;li>M.2 2280 SSD is removed so flexible PCB can be routed under it.&lt;/li>
+&lt;li>M.2 card and Oculink port board are screwed.&lt;/li>
+&lt;li>Oculink port board can be positioned to perfectly match the routed Oculink port hole in the laptop chassis.&lt;/li>
+&lt;li>M.2 2280 SSD is installed ontop of the flexible PCB.&lt;/li>
+&lt;/ul>
+&lt;h2>Aliexpress PCIe 4.0 adapter&lt;span class="hx-absolute -hx-mt-20" id="aliexpress-pcie-40-adapter">&lt;/span>
+&lt;a href="#aliexpress-pcie-40-adapter" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 50%">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/aliexpress_m2_oculink_pcie4_extension.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Aliexpress M.2 Oculink PCIe 4.0 silver plated extension cable&lt;/i>
+&lt;a href="https://www.aliexpress.com/item/1005007486714630.html">(source)&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 50%">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/pictures/laptop_photo_aliexpress.jpg" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Aliexpress PCIe 4.0 Oculink adapter installed in laptop&lt;/i>
+&lt;/div>
+&lt;/div>
+&lt;/p>
+&lt;ul>
+&lt;li>Aliexpress adapter extension is made of micro-coaxial cable.&lt;/li>
+&lt;li>These can be bent to fit inside the laptop chassis and routed underneath the M.2 2280 SSD.&lt;/li>
+&lt;/ul>
+&lt;h2>Oculink port&lt;span class="hx-absolute -hx-mt-20" id="oculink-port">&lt;/span>
+&lt;a href="#oculink-port" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 50%">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/pictures/laptop_photo_side_port.jpg" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Oculink port exposed on laptop&lt;/i>
+&lt;/div>
+&lt;/div>
+&lt;ul>
+&lt;li>Oculink port hole was created by drilling with tungsten drill bits.&lt;/li>
+&lt;li>Multiple drill holes were used to create a rough opening and then sanded down into the correct shape.&lt;/li>
 &lt;/ul></description></item><item><title>Ordering</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/manufacturing/ordering/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/manufacturing/ordering/</guid><description>
 &lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-flex-col hx-rounded-lg hx-border hx-py-4 hx-px-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
 &lt;p class="hx-flex hx-items-center hx-font-medium">&lt;svg height=16px class="hx-inline-block hx-align-middle hx-mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>&lt;/svg>Note&lt;/p>
@@ -547,7 +596,7 @@
 &lt;/ul></description></item><item><title>Laptop measurements</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/laptop_measurements/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/laptop_measurements/</guid><description>
 &lt;h2>Measurement and modelling&lt;span class="hx-absolute -hx-mt-20" id="measurement-and-modelling">&lt;/span>
 &lt;a href="#measurement-and-modelling" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/lenovo_16arp8_adapter_layout_prototype.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/pictures/lenovo_16arp8_adapter_layout_prototype.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 8. Measurements and prototype layout for M.2 to Oculink adapter&lt;/i>
 &lt;/div>
@@ -657,7 +706,7 @@
 &lt;li>Metal tweezers.&lt;/li>
 &lt;/ul>
 &lt;p>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 50%">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/mechanic_ix5_reflow.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/pictures/mechanic_ix5_reflow.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Mechanic IX5 reflow heating plate&lt;/i>
 &lt;/div>
@@ -759,17 +808,458 @@
 &lt;/li>
 &lt;li>Repeat setps 1 to 10 for the M.2 card.&lt;/li>
 &lt;/ol></description></item><item><title>Synthetic benchmarks</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/results/synthetic_benchmarks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/results/synthetic_benchmarks/</guid><description>
-&lt;h2>Custom adapter compared to Aliexpress PCIe 4.0 rated adapter&lt;span class="hx-absolute -hx-mt-20" id="custom-adapter-compared-to-aliexpress-pcie-40-rated-adapter">&lt;/span>
-&lt;a href="#custom-adapter-compared-to-aliexpress-pcie-40-rated-adapter" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
-&lt;li>Half the PCIe bandwidth resulted in degraded performance&lt;/li>
-&lt;li>Usually occured on benchmarks with high FPS numbers where PCIe link would be used more&lt;/li>
-&lt;li>Aliexpress PCIe 4.0 adapter achieved higher scores on average&lt;/li>
-&lt;li>Performance penalty when monitor output has to go back through eGPU oculink connection and through iGPU to external display
-&lt;ul>
-&lt;li>Setup was CPU -&amp;gt; eGPU -&amp;gt; iGPU -&amp;gt; USB 4 dock -&amp;gt; Monitor&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul></description></item><item><title>Taper</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/open_ems/taper/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/open_ems/taper/</guid><description>
+&lt;h2>Aida64&lt;span class="hx-absolute -hx-mt-20" id="aida64">&lt;/span>
+&lt;a href="#aida64" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="width: 14rem">Name&lt;/th>
+&lt;th style="width: 8rem">AMD 680M&lt;/th>
+&lt;th style="width: 9rem">AMD 5700XT PCIe3&lt;/th>
+&lt;th style="width: 9rem">AMD 5700XT PCIe4&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Read Pinned (GB/s)&lt;/td>
+&lt;td>34.1&lt;/td>
+&lt;td>3.38&lt;/td>
+&lt;td>6.7&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Read Pageable (GB/s)&lt;/td>
+&lt;td>11.7&lt;/td>
+&lt;td>3.37&lt;/td>
+&lt;td>6.71&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Write Pinned (GB/s)&lt;/td>
+&lt;td>34.1&lt;/td>
+&lt;td>3.38&lt;/td>
+&lt;td>6.7&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Write Pageable (GB/s)&lt;/td>
+&lt;td>11.7&lt;/td>
+&lt;td>3.37&lt;/td>
+&lt;td>6.71&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;div class="hx-flex">
+&lt;div class="responsive-image">&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/aida64_detailed_amd_680m.png">&lt;/div>
+&lt;div class="responsive-image">&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/aida64_detailed_flex_pcb.png">&lt;/div>
+&lt;div class="responsive-image">&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/aida64_detailed_amd_5700xt.png">&lt;/div>
+&lt;/div>
+&lt;h2>3DMark&lt;span class="hx-absolute -hx-mt-20" id="3dmark">&lt;/span>
+&lt;a href="#3dmark" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>
+&lt;table class="benchmark-table" key="3d_mark" style="width: 100%">
+&lt;thead>
+&lt;tr>
+&lt;th style="width: 14rem">Name&lt;/th>
+&lt;th style="width: 8rem">AMD 680M&lt;/th>
+&lt;th style="width: 9rem">AMD 5700XT PCIe3&lt;/th>
+&lt;th style="width: 9rem">AMD 5700XT PCIe4&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>PCIe Bandwidth (GB/s)&lt;/td>
+&lt;td>11.2&lt;/td>
+&lt;td>3.53&lt;/td>
+&lt;td>6.39&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Fire Strike&lt;/td>
+&lt;td>6155&lt;/td>
+&lt;td>19512&lt;/td>
+&lt;td>23577&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Night Raid&lt;/td>
+&lt;td>23554&lt;/td>
+&lt;td>35831&lt;/td>
+&lt;td>52358&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Steel Nomad&lt;/td>
+&lt;td>444&lt;/td>
+&lt;td>1950&lt;/td>
+&lt;td>2030&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Steel Nomad Light&lt;/td>
+&lt;td>2308&lt;/td>
+&lt;td>7299&lt;/td>
+&lt;td>8218&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Time Spy&lt;/td>
+&lt;td>2762&lt;/td>
+&lt;td>8093&lt;/td>
+&lt;td>9051&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Wild Life&lt;/td>
+&lt;td>15622&lt;/td>
+&lt;td>35637&lt;/td>
+&lt;td>54329&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Wild Life Extreme&lt;/td>
+&lt;td>4523&lt;/td>
+&lt;td>15497&lt;/td>
+&lt;td>18682&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;div class="carousel" key="3d_mark">
+&lt;div class="carousel-item inactive">
+&lt;div class="hx-flex">
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_pcie_bandwidth_amd_680m.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_pcie_bandwidth_flex_pcb.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_pcie_bandwidth_amd_5700xt.png">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-item inactive">
+&lt;div class="hx-flex">
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_fire_strike_amd_680m.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_fire_strike_flex_pcb.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_fire_strike_amd_5700xt.png">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-item inactive">
+&lt;div class="hx-flex">
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_night_raid_amd_680m.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_night_raid_flex_pcb.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_night_raid_amd_5700xt.png">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-item inactive">
+&lt;div class="hx-flex">
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_steel_nomad_amd_680m.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_steel_nomad_flex_pcb.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_steel_nomad_amd_5700xt.png">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-item inactive">
+&lt;div class="hx-flex">
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_steel_nomad_light_amd_680m.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_steel_nomad_light_flex_pcb.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_steel_nomad_light_amd_5700xt.png">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-item inactive">
+&lt;div class="hx-flex">
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_time_spy_amd_680m.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_time_spy_flex_pcb.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_time_spy_amd_5700xt.png">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-item inactive">
+&lt;div class="hx-flex">
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_wild_life_amd_680m.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_wild_life_flex_pcb.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_wild_life_amd_5700xt.png">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-item inactive">
+&lt;div class="hx-flex">
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_wild_life_extreme_amd_680m.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_wild_life_extreme_flex_pcb.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/3dmark_wild_life_extreme_amd_5700xt.png">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-controls">
+&lt;div class="carousel-button carousel-left hx-shadow">❮&lt;/div>
+&lt;div class="carousel-button carousel-right hx-shadow">❯&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/p>
+&lt;h2>Unigine&lt;span class="hx-absolute -hx-mt-20" id="unigine">&lt;/span>
+&lt;a href="#unigine" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>
+&lt;table class="benchmark-table" key="unigine" style="width: 100%">
+&lt;thead>
+&lt;tr>
+&lt;th style="width: 14rem">Name&lt;/th>
+&lt;th style="width: 8rem">AMD 680M&lt;/th>
+&lt;th style="width: 9rem">AMD 5700XT PCIe3&lt;/th>
+&lt;th style="width: 9rem">AMD 5700XT PCIe4&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Valley Extreme&lt;/td>
+&lt;td>914&lt;/td>
+&lt;td>4611&lt;/td>
+&lt;td>4684&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Heaven Extreme&lt;/td>
+&lt;td>747&lt;/td>
+&lt;td>2845&lt;/td>
+&lt;td>3342&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Superposition Medium&lt;/td>
+&lt;td>4214&lt;/td>
+&lt;td>13345&lt;/td>
+&lt;td>16527&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Superposition High&lt;/td>
+&lt;td>3172&lt;/td>
+&lt;td>10532&lt;/td>
+&lt;td>12130&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Superposition Extreme&lt;/td>
+&lt;td>1425&lt;/td>
+&lt;td>4659&lt;/td>
+&lt;td>5027&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;div class="carousel" key="unigine">
+&lt;div class="carousel-item inactive">
+&lt;div class="hx-flex">
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/unigine_valley_extreme_amd_680m.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/unigine_valley_extreme_flex_pcb.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/unigine_valley_extreme_amd_5700xt.png">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-item inactive">
+&lt;div class="hx-flex">
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/unigine_heaven_extreme_amd_680m.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/unigine_heaven_extreme_flex_pcb.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/unigine_heaven_extreme_amd_5700xt.png">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-item inactive">
+&lt;div class="hx-flex">
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/unigine_superposition_medium_amd_680m.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/unigine_superposition_medium_flex_pcb.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/unigine_superposition_medium_amd_5700xt.png">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-item inactive">
+&lt;div class="hx-flex">
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/unigine_superposition_high_amd_680m.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/unigine_superposition_high_flex_pcb.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/unigine_superposition_high_amd_5700xt.png">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-item inactive">
+&lt;div class="hx-flex">
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/unigine_superposition_extreme_amd_680m.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/unigine_superposition_extreme_flex_pcb.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/unigine_superposition_extreme_amd_5700xt.png">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-controls">
+&lt;div class="carousel-button carousel-left hx-shadow">❮&lt;/div>
+&lt;div class="carousel-button carousel-right hx-shadow">❯&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/p>
+&lt;h2>Furmark 2&lt;span class="hx-absolute -hx-mt-20" id="furmark-2">&lt;/span>
+&lt;a href="#furmark-2" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>
+&lt;table class="benchmark-table" key="furmark2" style="width: 100%">
+&lt;thead>
+&lt;tr>
+&lt;th style="width: 14rem">Name&lt;/th>
+&lt;th style="width: 8rem">AMD 680M&lt;/th>
+&lt;th style="width: 9rem">AMD 5700XT PCIe3&lt;/th>
+&lt;th style="width: 9rem">AMD 5700XT PCIe4&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Donut OpenGL&lt;/td>
+&lt;td>1797&lt;/td>
+&lt;td>6513&lt;/td>
+&lt;td>8015&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Donut Vulkan&lt;/td>
+&lt;td>1370&lt;/td>
+&lt;td>6037&lt;/td>
+&lt;td>7453&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Knot OpenGL&lt;/td>
+&lt;td>618&lt;/td>
+&lt;td>2208&lt;/td>
+&lt;td>2226&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Knot Vulkan&lt;/td>
+&lt;td>641&lt;/td>
+&lt;td>3063&lt;/td>
+&lt;td>3393&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;div class="carousel" key="furmark2">
+&lt;div class="carousel-item inactive">
+&lt;div class="hx-flex">
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/furmark2_donut_gl_amd_680m.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/furmark2_donut_gl_flex_pcb.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/furmark2_donut_gl_amd_5700xt.png">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-item inactive">
+&lt;div class="hx-flex">
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/furmark2_donut_vk_amd_680m.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/furmark2_donut_vk_flex_pcb.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/furmark2_donut_vk_amd_5700xt.png">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-item inactive">
+&lt;div class="hx-flex">
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/furmark2_knot_gl_amd_680m.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/furmark2_knot_gl_flex_pcb.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/furmark2_knot_gl_amd_5700xt.png">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-item inactive">
+&lt;div class="hx-flex">
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/furmark2_knot_vk_amd_680m.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/furmark2_knot_vk_flex_pcb.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 33%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/furmark2_knot_vk_amd_5700xt.png">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-controls">
+&lt;div class="carousel-button carousel-left hx-shadow">❮&lt;/div>
+&lt;div class="carousel-button carousel-right hx-shadow">❯&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/p>
+&lt;h2>GPU-Z&lt;span class="hx-absolute -hx-mt-20" id="gpu-z">&lt;/span>
+&lt;a href="#gpu-z" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="width: 14rem">Name&lt;/th>
+&lt;th style="width: 8rem">AMD 680M&lt;/th>
+&lt;th style="width: 9rem">AMD 5700XT PCIe3&lt;/th>
+&lt;th style="width: 9rem">AMD 5700XT PCIe4&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>PCIe Interface&lt;/td>
+&lt;td>Gen 4.0 x 16&lt;/td>
+&lt;td>Gen 3.0 x 4&lt;/td>
+&lt;td>Gen 4.0 x 4&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;div class="hx-flex">
+&lt;div class="responsive-image">&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/gpuz_amd_680m.png">&lt;/div>
+&lt;div class="responsive-image">&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/gpuz_flex_pcb.png">&lt;/div>
+&lt;div class="responsive-image">&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/benchmarks/gpuz_amd_5700xt.png">&lt;/div>
+&lt;/div></description></item><item><title>Taper</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/open_ems/taper/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/open_ems/taper/</guid><description>
 &lt;h2>Simulation setup&lt;span class="hx-absolute -hx-mt-20" id="simulation-setup">&lt;/span>
 &lt;a href="#simulation-setup" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/openems_taper_debug.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
@@ -981,6 +1471,33 @@ for FR4.&lt;/p>
 &lt;/a>
 &lt;/div>
 &lt;/li>
+&lt;/ul></description></item><item><title>Discussion</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/results/discussion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/results/discussion/</guid><description>
+&lt;h2>Display setup&lt;span class="hx-absolute -hx-mt-20" id="display-setup">&lt;/span>
+&lt;a href="#display-setup" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;pre class="mermaid hx-mt-6">sequenceDiagram;
+participant eGPU
+participant CPU
+participant USB 4 dock
+participant 1080p monitor
+CPU->>eGPU: Oculink PCIe TX
+eGPU->>CPU: Oculink PCIe RX
+CPU->>USB 4 dock: 40Gb/s USB 4 cable
+USB 4 dock->>1080p monitor: HDMI cable&lt;/pre>&lt;ul>
+&lt;li>Benchmark output display is connected to a USB 4 dock (40Gb/s) and has a resolution of 1080p.&lt;/li>
+&lt;li>This means Oculink PCIe connection has to be stable in both the transmit and receive direction.&lt;/li>
+&lt;li>When eGPU data comes back to CPU it actually goes through the integrated AMD 680m based on copy activity in task manager.&lt;/li>
+&lt;/ul>
+&lt;h2>Flexible PCB and single board design&lt;span class="hx-absolute -hx-mt-20" id="flexible-pcb-and-single-board-design">&lt;/span>
+&lt;a href="#flexible-pcb-and-single-board-design" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>Both the flexible PCB multi-board design and single board design achieved PCIe 3.0 speeds.&lt;/li>
+&lt;li>Their results across all synthetic benchmarks were identical.&lt;/li>
+&lt;li>PCIe 3.0 connection was stable and bandwidth reached theoretical values.&lt;/li>
+&lt;li>PCIe 4.0 could not be achieved at all.&lt;/li>
+&lt;/ul>
+&lt;h2>Aliexpress PCIe 4.0 adapter&lt;span class="hx-absolute -hx-mt-20" id="aliexpress-pcie-40-adapter">&lt;/span>
+&lt;a href="#aliexpress-pcie-40-adapter" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>PCIe 4.0 connection was stable and bandwidth reached theoretical values.&lt;/li>
+&lt;li>Performance uplift from PCIe 3.0 to PCIe 4.0 in this setup is significant.&lt;/li>
+&lt;li>Bandwidth limit from eGPU to CPU limits the number of frames that can be sent to display.&lt;/li>
 &lt;/ul></description></item><item><title>Electrical testing</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/manufacturing/electrical_testing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/manufacturing/electrical_testing/</guid><description>
 &lt;h2>Single board validation&lt;span class="hx-absolute -hx-mt-20" id="single-board-validation">&lt;/span>
 &lt;a href="#single-board-validation" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
@@ -1379,96 +1896,95 @@ well past our maximum design frequency and avoid problems.&lt;/li>
 &lt;ul>
 &lt;li>Unfortunately JLCPCB doesn&amp;rsquo;t allow you to select the type of copper foil.&lt;/li>
 &lt;/ul></description></item><item><title>Conclusion</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/conclusion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/conclusion/</guid><description>
-&lt;h2>Custom adapter&lt;span class="hx-absolute -hx-mt-20" id="custom-adapter">&lt;/span>
-&lt;a href="#custom-adapter" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
-&lt;li>Can be designed and achieve PCIe 3.0 speeds reliably&lt;/li>
-&lt;li>Unlikely to achieve PCIe 4.0 due to aformentioned issues&lt;/li>
-&lt;li>Time consuming to construct&lt;/li>
-&lt;li>Difficult to manufacture requiring multiple attempts&lt;/li>
-&lt;li>Potential risk of shorting if assembly was done poorly&lt;/li>
-&lt;li>If form factor is extremely unusual or limited this might be an option you should consider&lt;/li>
-&lt;/ul>
-&lt;h2>Aliexpress adapter&lt;span class="hx-absolute -hx-mt-20" id="aliexpress-adapter">&lt;/span>
-&lt;a href="#aliexpress-adapter" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
-&lt;li>Otherwise purchasing a PCIe 4.0 adapter from aliexpress with bendable cables is a better option&lt;/li>
-&lt;li>More performance&lt;/li>
-&lt;li>Cheaper overall when considering parts and equipment&lt;/li>
-&lt;li>Sourcing oculink port and SMD components has a hefty shipping fee from most electronic suppliers&lt;/li>
-&lt;li>Aliexpress has very low to non existent shipping fees&lt;/li>
-&lt;li>Adapter has controlled impedance cables in many lengths which are bendable and thus can be adapted to a variety of enclosures&lt;/li>
-&lt;/ul>
-&lt;h2>Lessons learnt&lt;span class="hx-absolute -hx-mt-20" id="lessons-learnt">&lt;/span>
-&lt;a href="#lessons-learnt" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
-&lt;li>Interesting exercise in practical high frequency transmission line design&lt;/li>
-&lt;li>Research was relatively straight forward due to public schematics from AdtLink and datasheets&lt;/li>
-&lt;li>Design was time consuming especially for the flex pcb which required a manually routed hatched ground plane due to KiCAD limitations
+&lt;h2>DIY or Buy?&lt;span class="hx-absolute -hx-mt-20" id="diy-or-buy">&lt;/span>
+&lt;a href="#diy-or-buy" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>DIY&lt;span class="hx-absolute -hx-mt-20" id="diy">&lt;/span>
+&lt;a href="#diy" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="width: 50%">Advantages&lt;/th>
+&lt;th style="width: 50%">Disadvantages&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="vertical-align: text-top">
 &lt;ul>
-&lt;li>Altium or more mature software might have better hatched ground plane design tools&lt;/li>
-&lt;li>In order to route bends in hatched ground plane it was easier to make the entire hatch manually with trace segments&lt;/li>
-&lt;li>Distort the hatch at bend to maintain as much symmetry&lt;/li>
-&lt;li>Using default hatched ground plane implementation would have resulted in extreme inter-pair skew and terrible performance&lt;/li>
+&lt;li>Can reach PCIe 3.0 speeds&lt;/li>
+&lt;li>Can be designed to fit in any enclosure&lt;/li>
+&lt;li>Cheaper per-unit cost&lt;/li>
+&lt;li>Can be modified with different connector (MCIO)&lt;/li>
 &lt;/ul>
-&lt;/li>
-&lt;li>Manufacturing was time consuming due to microsoldering, improper reflow, and hand testing of adapter
+&lt;/td>
+&lt;td style="vertical-align: text-top">
 &lt;ul>
-&lt;li>Unless stencil application is ideal there will be dry joints or bridges&lt;/li>
-&lt;li>Difficult or impossible to visually inspect since half of the oculink pads are underneath the port&lt;/li>
+&lt;li>Cannot reach PCIe 4.0 speeds&lt;/li>
+&lt;li>Significant performance loss in synthetic benchmarks&lt;/li>
+&lt;li>Expensive to manufacture when considering minimum order quantity of PCBs and components and soldering equipment&lt;/li>
+&lt;li>Time consuming to manufacture especially including electrical testing&lt;/li>
+&lt;li>Unclear if design needs overhaul to reach PCIe 4.0 without having equipment to test circuit at PCIe 4.0 speeds&lt;/li>
 &lt;/ul>
-&lt;/li>
-&lt;li>Due to use of passive components, the most informative part of this project was high frequency transmission line design
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3>Buy&lt;span class="hx-absolute -hx-mt-20" id="buy">&lt;/span>
+&lt;a href="#buy" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="width: 50%">Advantages&lt;/th>
+&lt;th style="width: 50%">Disadvantages&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="vertical-align: text-top">
 &lt;ul>
-&lt;li>PCIe redriver ICs are not cheap and are not usually sold in low quantities&lt;/li>
-&lt;li>Optimised passive adapter is the most cost effective option&lt;/li>
-&lt;li>Microsoldering of flex pcb could achieve near zero pitch error with aid of magnifying glass but is limited to dexterity and patience&lt;/li>
-&lt;li>Aliexpress adapter uses special micro coaxial cables which will perform better than flex pcb with hatched ground plane or direct routing over lossy FR4 over distances longer than 10cm&lt;/li>
+&lt;li>Can reach PCIe 4.0 speeds&lt;/li>
+&lt;li>Beats PCIe 3.0 adapters in synthetic benchmarks&lt;/li>
+&lt;li>Flexible micro-coax can be bent to fit most scenarios&lt;/li>
+&lt;li>Cost is low considering performance and quality of adapter&lt;/li>
 &lt;/ul>
-&lt;/li>
-&lt;li>Design of hatch ground plane is not solvable using equations
+&lt;/td>
+&lt;td style="vertical-align: text-top">
 &lt;ul>
-&lt;li>Requires simulation tools&lt;/li>
-&lt;li>openEMS is a free option but is uses the CPU only and only leverages SSE extensions which are a decade old&lt;/li>
-&lt;li>Open source github repo that handles preprocessing of gerber files, setup of openEMS simulation, and analysis of results to produce impedance graphs over frequency&lt;/li>
-&lt;li>Ansys does not have a easy (or at least not something that is easy to look up) way of importing gerber files for simulation&lt;/li>
-&lt;li>Ansys is GPU accelerated but only with CUDA, which is okay if you have an Nvidia gpu but not if you have an Intel or AMD gpu&lt;/li>
-&lt;li>Ansys will sometimes give an error without an explanation&lt;/li>
+&lt;li>Minimum length of adapter is 12cm which might make it too long even with bending&lt;/li>
 &lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2>Requirements to reach PCIe 4.0&lt;span class="hx-absolute -hx-mt-20" id="requirements-to-reach-pcie-40">&lt;/span>
-&lt;a href="#requirements-to-reach-pcie-40" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
-&lt;li>Final performance of adapter reached minimum target of PCIe 3.0 but failed the more ambitious PCIe 4.0&lt;/li>
-&lt;/ul>
-&lt;p>To reach PCIe 4.0 it would probably require:&lt;/p>
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3>Conclusion&lt;span class="hx-absolute -hx-mt-20" id="conclusion">&lt;/span>
+&lt;a href="#conclusion" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 50%">
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/aliexpress_m2_oculink_pcie4_extension.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;div class="hx-text-center hx-my-2">
+&lt;i>Aliexpress M.2 Oculink PCIe 4.0 silver plated extension cable&lt;/i>
+&lt;a href="https://www.aliexpress.com/item/1005007486714630.html">(source)&lt;/a>
+&lt;/div>
+&lt;/div>
 &lt;ul>
-&lt;li>Lower loss dielectric materials&lt;/li>
-&lt;li>Better simulation of via jumps in transmission line to match impedance and prevent reflections&lt;/li>
-&lt;li>Better design of flex pcb hatched ground plane to hit impedance target or avoid it altogether with single board design&lt;/li>
-&lt;li>Increase transmission line trace width to mitigate impact of skin effect at higher frequencies (most effective)&lt;/li>
-&lt;li>Use thicker copper layers (only effective at lower frequencies)&lt;/li>
-&lt;li>Use smoother copper finish since surface roughness results in higher impedance due to skin effect (very effective)
-&lt;ul>
-&lt;li>Unknown if this can be done cheaply without moving to a more expensive HDI stackup&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Replace flex pcb with micro coax (doesn&amp;rsquo;t seem easy to do since it would require alot of microsoldering of extremely fine traces)&lt;/li>
+&lt;li>&lt;strong>Buying&lt;/strong> the Aliexpress M.2 Oculink PCIe 4.0 adapter is the much more sensible option.&lt;/li>
+&lt;li>It works out of the box and requires minimal bending to fit into your enclosure.&lt;/li>
+&lt;li>Also comes in a variety of lengths: &lt;code>[15cm, 20cm, 25cm, 30cm, 40cm]&lt;/code>.&lt;/li>
 &lt;/ul>
 &lt;h2>Future plans&lt;span class="hx-absolute -hx-mt-20" id="future-plans">&lt;/span>
 &lt;a href="#future-plans" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
-&lt;li>In flex pcb design the oculink port board can be swapped out with another type of connector&lt;/li>
-&lt;li>Potential candidates are
+&lt;li>Check mini cool edge IO (MCIO) connector:
 &lt;ul>
-&lt;li>Mini cool edge IO (MCIO) - Better official number of insertion cycles&lt;/li>
-&lt;li>Far far future there may be electrical to optical solution for PCIe like with PCIe 7.0 (unlikely to be available at consumer prices)&lt;/li>
-&lt;li>Improved oculink connector that is rated for higher insertion cycles&lt;/li>
+&lt;li>Has a better official number of insertion cycles.&lt;/li>
+&lt;li>Cables are designed officially for PCIe 4.0 speeds.&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>Wait for Thunderbolt 5 with 128Gbp/s of bandwidth
+&lt;li>Fix performance problems and see if PCIe 4.0 speeds can be reached.
 &lt;ul>
-&lt;li>Thunderbolt 4 with 64Gbp/s of bandwidth should be comparable to PCIe 4.0 x 4 but there is overhead somewhere which results in much worse performance&lt;/li>
-&lt;li>Requires a very recent CPU to have support for Thunderbolt 4&lt;/li>
-&lt;li>Thunderbolt eGPU docks are very expensive&lt;/li>
-&lt;li>Oculink solution has cheaper cables and eGPU docks compared to thunderbolt 3 and 4 solutions&lt;/li>
-&lt;li>USB 4 64Gbp/s has similar overhead problems to thunderbolt&lt;/li>
+&lt;li>Redesign hatch plane and taper in flexible PCB design.&lt;/li>
+&lt;li>Use a low loss dielectric to reduce dielectric losses at PCIe 4.0 speeds.&lt;/li>
+&lt;li>Use smooth copper foil to reduce skin effect losses.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Determine if there is a method to cheaply verify performance at PCIe 4.0 speeds.
+&lt;ul>
+&lt;li>High frequency oscilloscopes (&amp;gt;20GHz) required for PCIe testing are extremely expensive.&lt;/li>
+&lt;li>Most low cost (&amp;lt;$1000) and low frequency (&amp;lt;200MHz) oscilloscopes are not useful for validating PCIe peformance.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul></description></item><item><title>Flex connector design</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/flex_pcb/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/flex_pcb/</guid><description>
@@ -1734,7 +2250,7 @@ The following are phenomena that can contribute to intra-pair skew and methods t
 &lt;li>No easy equation to get impedance measurement (fill factor approximation does not model this adequately).&lt;/li>
 &lt;li>Design of hatched ground plane must meet manufacturing capabilities of JLCPCB.&lt;/li>
 &lt;li>Requires parametric search with simulation software.&lt;/li>
-&lt;li>Refer to this section about simulating circuits with &lt;a href="https://williamyang98.github.io/oculink_m2_adapter//docs/design/open_ems/
+&lt;li>Refer to this section about simulating circuits with &lt;a href="https://williamyang98.github.io/oculink_m2_adapter//docs/design/open_ems/hatched_ground
 " >openEMS&lt;/a>.&lt;/li>
 &lt;/ul>
 &lt;h2>Determining parameters&lt;span class="hx-absolute -hx-mt-20" id="determining-parameters">&lt;/span>
@@ -1747,7 +2263,8 @@ The following are phenomena that can contribute to intra-pair skew and methods t
 &lt;p>Since we need to be above the minimum trace width for JLCPCB to manufacture it, we should select a fixed trace width of 0.1mm.&lt;/p>
 &lt;ul>
 &lt;li>This is similar the trace width of 0.13mm for our transmission line on the FR4 substrate for both the M.2 cad and Oculink port board.&lt;/li>
-&lt;li>This means we will have an easier time designing a taper geometry when connecting the flex connector to our boards (discussed &lt;a href="https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/flex_connection" >here&lt;/a>).&lt;/li>
+&lt;li>This means we will have an easier time designing a taper geometry when connecting the flex connector to our boards (discussed &lt;a href="https://williamyang98.github.io/oculink_m2_adapter//docs/design/transmission_line/flex_connection
+" >here&lt;/a>).&lt;/li>
 &lt;li>Means we only need to perform a parametric search with two variables (the hatch width and gap) which is less time consuming.&lt;/li>
 &lt;/ul>
 &lt;h2>Additional design considerations&lt;span class="hx-absolute -hx-mt-20" id="additional-design-considerations">&lt;/span>
@@ -1895,6 +2412,7 @@ Z_0 = \sqrt{\frac{L}{C}}
 &lt;a href="#hatched-ground-plane" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>If the transmission line signal traces have the same width, using a suitably designed hatched ground plane will increase the impedance to meet our impedance target.&lt;/p>
 &lt;ul>
 &lt;li>See &lt;a href="https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/hatched_ground_plane" >designing hatched ground plane&lt;/a> for more details.&lt;/li>
+&lt;li>See &lt;a href="https://williamyang98.github.io/oculink_m2_adapter/docs/design/open_ems/hatched_ground" >simulating hatched ground plane&lt;/a> for more details.&lt;/li>
 &lt;/ul>
 &lt;h2>Vertical transmission line connection&lt;span class="hx-absolute -hx-mt-20" id="vertical-transmission-line-connection">&lt;/span>
 &lt;a href="#vertical-transmission-line-connection" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
@@ -1949,7 +2467,7 @@ Transition from FR4 stackup to flexible PCB involves a vertical solder connectio
 &lt;/li>
 &lt;/ul>
 &lt;h3>Parametric optimisation of taper&lt;span class="hx-absolute -hx-mt-20" id="parametric-optimisation-of-taper">&lt;/span>
-&lt;a href="#parametric-optimisation-of-taper" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>To verify the performance of the taper &lt;a href="https://williamyang98.github.io/oculink_m2_adapter//docs/design/open_ems/
+&lt;a href="#parametric-optimisation-of-taper" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>To verify the performance of the taper &lt;a href="https://williamyang98.github.io/oculink_m2_adapter//docs/design/open_ems/taper
 " >openEMS&lt;/a> was used.&lt;/p>
 &lt;ul>
 &lt;li>Simulated stackup with flex PCB connected to FR4 transmission line as a 3 layer board.
@@ -1963,4 +2481,688 @@ Transition from FR4 stackup to flexible PCB involves a vertical solder connectio
 &lt;li>Parametric search was done on the length, width, and amount of overlap of the linear taper.&lt;/li>
 &lt;li>Shape of taper was modified separately on the FR4 stack up and flexible PCB stackup.&lt;/li>
 &lt;li>Possible that simulation was not accurate since mesh size is limited and linear taper requires very small simulation grid size to accurately capture the pointy part.&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;/ul></description></item><item><title>Calculations</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/calculations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/transmission_line/calculations/</guid><description>
+&lt;h2>JLCPCB data&lt;span class="hx-absolute -hx-mt-20" id="jlcpcb-data">&lt;/span>
+&lt;a href="#jlcpcb-data" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>Soldermask&lt;span class="hx-absolute -hx-mt-20" id="soldermask">&lt;/span>
+&lt;a href="#soldermask" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Location&lt;/th>
+&lt;th>Thickness (mil)&lt;/th>
+&lt;th>Thickness (mm)&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Laminate&lt;/td>
+&lt;td>1.2&lt;/td>
+&lt;td>0.03048&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Traces&lt;/td>
+&lt;td>0.6&lt;/td>
+&lt;td>0.01524&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>Dielectric constant = 3.8&lt;/p>
+&lt;h3>Core dielectric&lt;span class="hx-absolute -hx-mt-20" id="core-dielectric">&lt;/span>
+&lt;a href="#core-dielectric" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Dielectric constant = 4.6&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://jlcpcb.com/impedance?_t=1727251667361" target="_blank" rel="noopener">JLCPCB impedance control stackup information&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jlcpcb.com/help/article/User-Guide-to-the-JLCPCB-Impedance-Calculator" target="_blank" rel="noopener">JLCPCB impedance calculator guide&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3>JLC04081H-3313 Stackup&lt;span class="hx-absolute -hx-mt-20" id="jlc04081h-3313-stackup">&lt;/span>
+&lt;a href="#jlc04081h-3313-stackup" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;h4>Name breakdown&lt;span class="hx-absolute -hx-mt-20" id="name-breakdown">&lt;/span>
+&lt;a href="#name-breakdown" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Part&lt;/th>
+&lt;th>Meaning&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>04&lt;/td>
+&lt;td>4 layer&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>08&lt;/td>
+&lt;td>8mm thickness&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>1&lt;/td>
+&lt;td>1oz outer copper&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>H&lt;/td>
+&lt;td>half (0.5oz) inner copper&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>3313&lt;/td>
+&lt;td>3133 prepreg&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h4>Stackup information&lt;span class="hx-absolute -hx-mt-20" id="stackup-information">&lt;/span>
+&lt;a href="#stackup-information" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Layer&lt;/th>
+&lt;th>Material Type&lt;/th>
+&lt;th>Thickness (mm)&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Trace&lt;/td>
+&lt;td>Copper&lt;/td>
+&lt;td>0.035&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Prepreg&lt;/td>
+&lt;td>3313x1&lt;/td>
+&lt;td>0.0994&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Inner Layer&lt;/td>
+&lt;td>Copper&lt;/td>
+&lt;td>0.0152&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Core&lt;/td>
+&lt;td>Core&lt;/td>
+&lt;td>0.45&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Inner Layer&lt;/td>
+&lt;td>Copper&lt;/td>
+&lt;td>0.0152&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Prepreg&lt;/td>
+&lt;td>3313x1&lt;/td>
+&lt;td>0.0994&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Trace&lt;/td>
+&lt;td>Copper&lt;/td>
+&lt;td>0.035&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3>Core material properties&lt;span class="hx-absolute -hx-mt-20" id="core-material-properties">&lt;/span>
+&lt;a href="#core-material-properties" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Nan Ya Plastics NP-155F (4 to 8 layers)&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Core Thickness (mm)&lt;/th>
+&lt;th>εr&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>0.08&lt;/td>
+&lt;td>3.99&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>0.10&lt;/td>
+&lt;td>4.36&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>0.13&lt;/td>
+&lt;td>4.17&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>0.15&lt;/td>
+&lt;td>4.36&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>0.20&lt;/td>
+&lt;td>4.36&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>0.25&lt;/td>
+&lt;td>4.23&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>0.30&lt;/td>
+&lt;td>4.41&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>0.35&lt;/td>
+&lt;td>4.36&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>0.40&lt;/td>
+&lt;td>4.36&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>0.45&lt;/td>
+&lt;td>4.36&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>0.50&lt;/td>
+&lt;td>4.48&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>0.55&lt;/td>
+&lt;td>4.41&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>0.60&lt;/td>
+&lt;td>4.36&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>0.65&lt;/td>
+&lt;td>4.36&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>0.70&lt;/td>
+&lt;td>4.53&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&amp;gt; 0.70&lt;/td>
+&lt;td>4.43&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3>Prepreg&lt;span class="hx-absolute -hx-mt-20" id="prepreg">&lt;/span>
+&lt;a href="#prepreg" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;h4>Source 1&lt;span class="hx-absolute -hx-mt-20" id="source-1">&lt;/span>
+&lt;a href="#source-1" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Prepreg Type&lt;/th>
+&lt;th>Resin Content&lt;/th>
+&lt;th>Nominal Thickness (mil)&lt;/th>
+&lt;th>εr&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>7628&lt;/td>
+&lt;td>49%&lt;/td>
+&lt;td>8.6&lt;/td>
+&lt;td>4.4&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>3313 (2313)&lt;/td>
+&lt;td>57%&lt;/td>
+&lt;td>4.2&lt;/td>
+&lt;td>4.1&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>1080&lt;/td>
+&lt;td>67%&lt;/td>
+&lt;td>3.3&lt;/td>
+&lt;td>3.91&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>2116&lt;/td>
+&lt;td>54%&lt;/td>
+&lt;td>4.9&lt;/td>
+&lt;td>4.16&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h4>Source 2&lt;span class="hx-absolute -hx-mt-20" id="source-2">&lt;/span>
+&lt;a href="#source-2" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Prepreg type&lt;/th>
+&lt;th>Dielectric constant&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>7628&lt;/td>
+&lt;td>4.6&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>3313&lt;/td>
+&lt;td>4.05&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>2116&lt;/td>
+&lt;td>4.25&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3>Impedance calculator results&lt;span class="hx-absolute -hx-mt-20" id="impedance-calculator-results">&lt;/span>
+&lt;a href="#impedance-calculator-results" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>&lt;a href="https://jlcpcb.com/pcb-impedance-calculator" target="_blank" rel="noopener">JLCPCB impedance calculator&lt;/a>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Parameter&lt;/th>
+&lt;th>Value&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Layers&lt;/td>
+&lt;td>4&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Thickness&lt;/td>
+&lt;td>0.8mm&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Inner copper weight&lt;/td>
+&lt;td>0.5oz&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Outer copper weight&lt;/td>
+&lt;td>1.0oz&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Stackup&lt;/td>
+&lt;td>JLC04081H-3313&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>NOTE&lt;/strong>: Core is 0.5mm instead of expected 0.45mm which might reduce accuracy of calculations.&lt;/p>
+&lt;h4>Trace thicknesses&lt;span class="hx-absolute -hx-mt-20" id="trace-thicknesses">&lt;/span>
+&lt;a href="#trace-thicknesses" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Impedance (Ω)&lt;/th>
+&lt;th>Type&lt;/th>
+&lt;th>Config&lt;/th>
+&lt;th>Trace width (mm)&lt;/th>
+&lt;th>Trace spacing (mm)&lt;/th>
+&lt;th>Distance coplanar (mm)&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>85&lt;/td>
+&lt;td>Coplanar differential pair with ground&lt;/td>
+&lt;td>L1-L2&lt;/td>
+&lt;td>0.1549&lt;/td>
+&lt;td>0.15&lt;/td>
+&lt;td>0.15&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>85&lt;/td>
+&lt;td>Coplanar differential pair with ground&lt;/td>
+&lt;td>L2-L3-L4&lt;/td>
+&lt;td>0.1334&lt;/td>
+&lt;td>0.15&lt;/td>
+&lt;td>0.15&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>42.5&lt;/td>
+&lt;td>Coplanar single ended with ground&lt;/td>
+&lt;td>L1-L2&lt;/td>
+&lt;td>0.1971&lt;/td>
+&lt;td>N/A&lt;/td>
+&lt;td>0.15&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>42.5&lt;/td>
+&lt;td>Coplanar single ended with ground&lt;/td>
+&lt;td>L2-L3-L4&lt;/td>
+&lt;td>0.1679&lt;/td>
+&lt;td>N/A&lt;/td>
+&lt;td>0.15&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2>Sierra circuits calculations&lt;span class="hx-absolute -hx-mt-20" id="sierra-circuits-calculations">&lt;/span>
+&lt;a href="#sierra-circuits-calculations" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;a href="https://impedance.app.protoexpress.com/" target="_blank" rel="noopener">Sierra circuits impedance calculator&lt;/a>&lt;/p>
+&lt;h3>Prepreg dielectric material property&lt;span class="hx-absolute -hx-mt-20" id="prepreg-dielectric-material-property">&lt;/span>
+&lt;a href="#prepreg-dielectric-material-property" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Rigid - FR408HR - Prepreg&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Parameter&lt;/th>
+&lt;th>Value&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Dielectric thickness&lt;/td>
+&lt;td>4.2?&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Construction&lt;/td>
+&lt;td>1x3313-59%&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Resin content&lt;/td>
+&lt;td>59%&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Frequency (GHz)&lt;/th>
+&lt;th>Dielectric constant&lt;/th>
+&lt;th>Dissipation factor&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>1&lt;/td>
+&lt;td>3.58&lt;/td>
+&lt;td>0.009&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>2&lt;/td>
+&lt;td>3.57&lt;/td>
+&lt;td>0.009&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>5&lt;/td>
+&lt;td>3.55&lt;/td>
+&lt;td>0.010&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>10&lt;/td>
+&lt;td>3.54&lt;/td>
+&lt;td>0.010&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>20&lt;/td>
+&lt;td>3.54&lt;/td>
+&lt;td>0.010&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3>Coplanar stripline differential pair with ground plane&lt;span class="hx-absolute -hx-mt-20" id="coplanar-stripline-differential-pair-with-ground-plane">&lt;/span>
+&lt;a href="#coplanar-stripline-differential-pair-with-ground-plane" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>&lt;a href="https://impedance.app.protoexpress.com/?appid=CPSLDPIMPCAL" target="_blank" rel="noopener">Impedance calculator&lt;/a>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Parameter&lt;/th>
+&lt;th>Value&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Configuration&lt;/td>
+&lt;td>L2-L3-L4&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>L2-L3 dielectric height (mm)&lt;/td>
+&lt;td>0.0994&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>L2-L3 dielectric constant&lt;/td>
+&lt;td>3.55&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>L3-L4 dielectric height (mm)&lt;/td>
+&lt;td>0.45&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>L3-L4 dielectric constant&lt;/td>
+&lt;td>4.4&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>L3 Trace thickness (mm)&lt;/td>
+&lt;td>0.01524&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>L3 Trace separation (mm)&lt;/td>
+&lt;td>0.15&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Conductor spacing (mm)&lt;/td>
+&lt;td>0.15&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Conductor width (mm)&lt;/td>
+&lt;td>0.6&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Dielectric covering tracks&lt;/td>
+&lt;td>L2-L3&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Input parameter&lt;/th>
+&lt;th>Input value&lt;/th>
+&lt;th>Output parameter&lt;/th>
+&lt;th>Output value&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Zdiff (Ω)&lt;/td>
+&lt;td>85&lt;/td>
+&lt;td>Trace width (mm)&lt;/td>
+&lt;td>0.1372&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Trace width (mm)&lt;/td>
+&lt;td>0.1334&lt;/td>
+&lt;td>Zdiff (Ω)&lt;/td>
+&lt;td>85.88&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3>Coplanar soldermask coated microstrip differential pair with ground plane&lt;span class="hx-absolute -hx-mt-20" id="coplanar-soldermask-coated-microstrip-differential-pair-with-ground-plane">&lt;/span>
+&lt;a href="#coplanar-soldermask-coated-microstrip-differential-pair-with-ground-plane" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>&lt;a href="https://impedance.app.protoexpress.com/?appid=CPCTDPIMPCAL" target="_blank" rel="noopener">Impedance calculator&lt;/a>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Parameter&lt;/th>
+&lt;th>Value&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Configuration&lt;/td>
+&lt;td>L1-L2&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>L1-L2 dielectric height (mm)&lt;/td>
+&lt;td>0.0994&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>L1-L2 dielectric constant&lt;/td>
+&lt;td>3.55&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Soldermask substrate height (mm)&lt;/td>
+&lt;td>0.03048&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Soldermask trace height (mm)&lt;/td>
+&lt;td>0.01524&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Soldermask dielectric constant&lt;/td>
+&lt;td>3.8&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Trace thickness (mm)&lt;/td>
+&lt;td>0.035&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Trace separation (mm)&lt;/td>
+&lt;td>0.15&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Conductor spacing (mm)&lt;/td>
+&lt;td>0.15&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Conductor width (mm)&lt;/td>
+&lt;td>0.6&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Input parameter&lt;/th>
+&lt;th>Input value&lt;/th>
+&lt;th>Output parameter&lt;/th>
+&lt;th>Output value&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Zdiff (Ω)&lt;/td>
+&lt;td>85&lt;/td>
+&lt;td>Trace width (mm)&lt;/td>
+&lt;td>0.1676&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Trace width (mm)&lt;/td>
+&lt;td>0.1549&lt;/td>
+&lt;td>Zdiff (Ω)&lt;/td>
+&lt;td>88.18&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3>Coplanar stripline single ended with ground plane&lt;span class="hx-absolute -hx-mt-20" id="coplanar-stripline-single-ended-with-ground-plane">&lt;/span>
+&lt;a href="#coplanar-stripline-single-ended-with-ground-plane" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>&lt;a href="https://impedance.app.protoexpress.com/?appid=CPSLSEIMPCAL" target="_blank" rel="noopener">Impedance calculator&lt;/a>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Parameter&lt;/th>
+&lt;th>Value&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Configuration&lt;/td>
+&lt;td>L2-L3-L4&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>L2-L3 dielectric height (mm)&lt;/td>
+&lt;td>0.0994&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>L2-L3 dielectric constant&lt;/td>
+&lt;td>3.55&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>L3-L4 dielectric height (mm)&lt;/td>
+&lt;td>0.45&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>L3-L4 dielectric constant&lt;/td>
+&lt;td>4.4&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>L3 Trace thickness (mm)&lt;/td>
+&lt;td>0.01524&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Conductor spacing (mm)&lt;/td>
+&lt;td>0.15&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Conductor width (mm)&lt;/td>
+&lt;td>0.6&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Dielectric covering tracks&lt;/td>
+&lt;td>L2-L3&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Input parameter&lt;/th>
+&lt;th>Input value&lt;/th>
+&lt;th>Output parameter&lt;/th>
+&lt;th>Output value&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Zdiff (Ω)&lt;/td>
+&lt;td>42.5&lt;/td>
+&lt;td>Trace width (mm)&lt;/td>
+&lt;td>0.174&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Trace width (mm)&lt;/td>
+&lt;td>0.1679&lt;/td>
+&lt;td>Zdiff (Ω)&lt;/td>
+&lt;td>43.27&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3>Coplanar soldermask coated microstrip singled ended with ground plane&lt;span class="hx-absolute -hx-mt-20" id="coplanar-soldermask-coated-microstrip-singled-ended-with-ground-plane">&lt;/span>
+&lt;a href="#coplanar-soldermask-coated-microstrip-singled-ended-with-ground-plane" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>&lt;a href="https://impedance.app.protoexpress.com/?appid=CPCTSEIMPCAL" target="_blank" rel="noopener">Impedance calculator&lt;/a>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Parameter&lt;/th>
+&lt;th>Value&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Configuration&lt;/td>
+&lt;td>L1-L2&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>L1-L2 dielectric height (mm)&lt;/td>
+&lt;td>0.0994&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>L1-L2 dielectric constant&lt;/td>
+&lt;td>3.55&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Soldermask substrate height (mm)&lt;/td>
+&lt;td>0.03048&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Soldermask trace height (mm)&lt;/td>
+&lt;td>0.01524&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Soldermask dielectric constant&lt;/td>
+&lt;td>3.8&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Trace thickness (mm)&lt;/td>
+&lt;td>0.035&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Conductor spacing (mm)&lt;/td>
+&lt;td>0.15&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Conductor width (mm)&lt;/td>
+&lt;td>0.6&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Input parameter&lt;/th>
+&lt;th>Input value&lt;/th>
+&lt;th>Output parameter&lt;/th>
+&lt;th>Output value&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Zdiff (Ω)&lt;/td>
+&lt;td>42.5&lt;/td>
+&lt;td>Trace width (mm)&lt;/td>
+&lt;td>0.2&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Trace width (mm)&lt;/td>
+&lt;td>0.1971&lt;/td>
+&lt;td>Zdiff (Ω)&lt;/td>
+&lt;td>44.5&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item></channel></rss>
