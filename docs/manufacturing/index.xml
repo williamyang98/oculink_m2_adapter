@@ -202,13 +202,13 @@
 &lt;li>Metal tweezers.&lt;/li>
 &lt;/ul>
 &lt;p>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 50%">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/images/pictures/mechanic_ix5_reflow.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/pictures/mechanic_ix5_reflow.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 23. Mechanic IX5 reflow heating plate&lt;/i>
 &lt;/div>
 &lt;/div>
 &lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 50%">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/images/diagrams/ts100_soldering_iron.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/ts100_soldering_iron.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 24. TS-100 soldering iron&lt;/i>
 &lt;/div>
@@ -222,7 +222,7 @@
 &lt;li>Allow the PCB to cool which decrease temperature by 1°C each second until it is cool enough to handle.&lt;/li>
 &lt;/ol>
 &lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/images/diagrams/reflow_profile.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/reflow_profile.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Figure 9. Different reflow profiles for lead free solder&lt;/i>
 &lt;a href="https://www.7pcb.com/blog/lead-free-reflow-profile">(source)&lt;/a>
@@ -237,7 +237,7 @@
 &lt;li>Place oculink port carefully onto SMD pads as to align them correctly.&lt;/li>
 &lt;li>Follow reflow profile with a target temperature of 220°C and keep it there for 60 seconds before ramping it down.&lt;/li>
 &lt;li>Visually confirm that there are no solder bridges on visible connections.&lt;/li>
-&lt;li>Validate that there are no shorts or bad connections following &lt;a href="https://williamyang98.github.io/docs/manufacturing/electrical_testing
+&lt;li>Validate that there are no shorts or bad connections following &lt;a href="https://williamyang98.github.io/oculink_m2_adapter/docs/manufacturing/electrical_testing
 " >electrical testing&lt;/a>.
 &lt;ul>
 &lt;li>Due to simple design of circuit the complications should only occur with the Oculink port itself.&lt;/li>
@@ -294,7 +294,7 @@
 &lt;li>Be careful not to disturb the existing connections such as the Oculink port and capacitors.&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>Perform electrical tests as described in &lt;a href="https://williamyang98.github.io/docs/manufacturing/electrical_testing
+&lt;li>Perform electrical tests as described in &lt;a href="https://williamyang98.github.io/oculink_m2_adapter/docs/manufacturing/electrical_testing
 " >electrical testing&lt;/a>.
 &lt;ul>
 &lt;li>This is done to make sure shorts don&amp;rsquo;t occur due at the flexible PCB connection with the Oculink port board.&lt;/li>
@@ -308,8 +308,8 @@
 &lt;a href="#single-board-validation" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
 &lt;li>Oculink port has a small pitch of 0.2mm which can easily create solder bridges.&lt;/li>
 &lt;li>Validate this by connecting the Oculink port to the unpowered PCIe eGPU board.&lt;/li>
-&lt;li>Refer to &lt;a href="https://williamyang98.github.io/docs/specifications/components/
-" >M.2 pinout&lt;/a> and &lt;a href="https://williamyang98.github.io/docs/specifications/pcie_specification/
+&lt;li>Refer to &lt;a href="https://williamyang98.github.io/oculink_m2_adapter/docs/specifications/components/
+" >M.2 pinout&lt;/a> and &lt;a href="https://williamyang98.github.io/oculink_m2_adapter/docs/specifications/pcie_specification/
 " >PCIe pinout&lt;/a> for the electrical connections to test for.&lt;/li>
 &lt;li>Depending on the design the PCIe lanes may be connected in opposite polarity and/or in opposite orders.&lt;/li>
 &lt;li>Check for short circuits and bad connections.&lt;/li>
@@ -318,7 +318,7 @@
 &lt;h2>Flexible PCB multi board design&lt;span class="hx-absolute -hx-mt-20" id="flexible-pcb-multi-board-design">&lt;/span>
 &lt;a href="#flexible-pcb-multi-board-design" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Validation of flexible PCB design will be done in three passes.&lt;/p>
 &lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/images/diagrams/kicad_flex_connector_render.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/kicad_flex_connector_render.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 12. Custom M.2 to Oculink adapter with flex connector 3D renders&lt;/i>
 &lt;/div>

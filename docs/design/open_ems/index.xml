@@ -1,13 +1,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>M.2 Oculink Adapter – OpenEMS</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/open_ems/</link><description>Recent content in OpenEMS on M.2 Oculink Adapter</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://williamyang98.github.io/oculink_m2_adapter/docs/design/open_ems/index.xml" rel="self" type="application/rss+xml"/><item><title>Hatched ground</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/open_ems/hatched_ground/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/open_ems/hatched_ground/</guid><description>
 &lt;h2>Simulation setup&lt;span class="hx-absolute -hx-mt-20" id="simulation-setup">&lt;/span>
 &lt;a href="#simulation-setup" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/images/diagrams/openems_hatched_debug.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/openems_hatched_debug.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 19. Automatically generated hatched ground plane for openEMS simulation&lt;/i>
 &lt;/div>
 &lt;/div>
 &lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/images/diagrams/openems_hatched_3d.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/openems_hatched_3d.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 20. Automatically generated hatched ground plane 3D model&lt;/i>
 &lt;/div>
@@ -20,13 +20,13 @@
 &lt;/ul>
 &lt;h2>Parameter search&lt;span class="hx-absolute -hx-mt-20" id="parameter-search">&lt;/span>
 &lt;a href="#parameter-search" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/images/diagrams/openems_hatched_s_params.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/openems_hatched_s_params.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Figure 1. S-parameter results of parameterised search of hatched ground plane with a hatch width of 150um&lt;/i>
 &lt;/div>
 &lt;/div>
 &lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/images/diagrams/openems_hatched_reflectance.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/openems_hatched_reflectance.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Figure 2. Reflectance results of parameterised search of hatched ground plane with a hatch width of 150um&lt;/i>
 &lt;/div>
@@ -37,13 +37,13 @@
 &lt;li>This was repeated for a range of different hatch widths, and the optimum out of these was then chosen.&lt;/li>
 &lt;/ul>
 &lt;p>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/images/diagrams/openems_hatched_s_params_overall.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/openems_hatched_s_params_overall.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Figure 4. S-parameter results of parameterised search of hatched ground plane across all parameters&lt;/i>
 &lt;/div>
 &lt;/div>
 &lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/images/diagrams/openems_hatched_reflectance_overall.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/openems_hatched_reflectance_overall.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Figure 3. Reflectance results of parameterised search of hatched ground plane across all parameters&lt;/i>
 &lt;/div>
@@ -62,13 +62,13 @@
 &lt;/ul></description></item><item><title>Taper</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/design/open_ems/taper/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/design/open_ems/taper/</guid><description>
 &lt;h2>Simulation setup&lt;span class="hx-absolute -hx-mt-20" id="simulation-setup">&lt;/span>
 &lt;a href="#simulation-setup" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/images/diagrams/openems_taper_debug.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/openems_taper_debug.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 21. Automatically generated taper ground plane for openEMS simulation&lt;/i>
 &lt;/div>
 &lt;/div>
 &lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/images/diagrams/openems_taper_3d.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/openems_taper_3d.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Image 22. Automatically generated taper ground plane 3D model&lt;/i>
 &lt;/div>
@@ -82,13 +82,13 @@
 &lt;/ul>
 &lt;h2>Parameter search&lt;span class="hx-absolute -hx-mt-20" id="parameter-search">&lt;/span>
 &lt;a href="#parameter-search" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/images/diagrams/openems_taper_s_params.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/openems_taper_s_params.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Figure 6. S-parameter results of parameterised search of taper ground plane with a hatch width of 150um&lt;/i>
 &lt;/div>
 &lt;/div>
 &lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/images/diagrams/openems_taper_reflectance.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/openems_taper_reflectance.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Figure 5. Reflectance results of parameterised search of taper ground plane with a hatch width of 150um&lt;/i>
 &lt;/div>
@@ -99,13 +99,13 @@
 &lt;li>This was repeated for fixed width and length parameters, then for fixed width paramters, after which the optimum was then chosen.&lt;/li>
 &lt;/ul>
 &lt;p>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/images/diagrams/openems_taper_s_params_overall.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/openems_taper_s_params_overall.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Figure 8. S-parameter results of parameterised search of taper ground plane across all parameters&lt;/i>
 &lt;/div>
 &lt;/div>
 &lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
-&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/images/diagrams/openems_taper_reflectance_overall.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
+&lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter/images/diagrams/openems_taper_reflectance_overall.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
 &lt;i>Figure 7. Reflectance results of parameterised search of taper ground plane across all parameters&lt;/i>
 &lt;/div>
