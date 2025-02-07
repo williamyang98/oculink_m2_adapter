@@ -3,13 +3,13 @@
 &lt;a href="#simulation-setup" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/openems_hatched_debug.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
-&lt;i>Automatically generated hatched ground plane for openEMS simulation&lt;/i>
+&lt;i>Image 19. Automatically generated hatched ground plane for openEMS simulation&lt;/i>
 &lt;/div>
 &lt;/div>
 &lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/openems_hatched_3d.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
-&lt;i>Automatically generated hatched ground plane 3D model&lt;/i>
+&lt;i>Image 20. Automatically generated hatched ground plane 3D model&lt;/i>
 &lt;/div>
 &lt;/div>
 &lt;/p>
@@ -22,13 +22,13 @@
 &lt;a href="#parameter-search" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/openems_hatched_s_params.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
-&lt;i>S-parameter results of parameterised search of hatched ground plane with a hatch width of 150um&lt;/i>
+&lt;i>Figure 1. S-parameter results of parameterised search of hatched ground plane with a hatch width of 150um&lt;/i>
 &lt;/div>
 &lt;/div>
 &lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/openems_hatched_reflectance.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
-&lt;i>Reflectance results of parameterised search of hatched ground plane with a hatch width of 150um&lt;/i>
+&lt;i>Figure 2. Reflectance results of parameterised search of hatched ground plane with a hatch width of 150um&lt;/i>
 &lt;/div>
 &lt;/div>
 &lt;/p>
@@ -39,13 +39,13 @@
 &lt;p>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/openems_hatched_s_params_overall.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
-&lt;i>S-parameter results of parameterised search of hatched ground plane across all parameters&lt;/i>
+&lt;i>Figure 4. S-parameter results of parameterised search of hatched ground plane across all parameters&lt;/i>
 &lt;/div>
 &lt;/div>
 &lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/openems_hatched_reflectance_overall.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
-&lt;i>Reflectance results of parameterised search of hatched ground plane across all parameters&lt;/i>
+&lt;i>Figure 3. Reflectance results of parameterised search of hatched ground plane across all parameters&lt;/i>
 &lt;/div>
 &lt;/div>
 &lt;/p>
@@ -64,13 +64,13 @@
 &lt;a href="#simulation-setup" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/openems_taper_debug.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
-&lt;i>Automatically generated taper ground plane for openEMS simulation&lt;/i>
+&lt;i>Image 21. Automatically generated taper ground plane for openEMS simulation&lt;/i>
 &lt;/div>
 &lt;/div>
 &lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/openems_taper_3d.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
-&lt;i>Automatically generated taper ground plane 3D model&lt;/i>
+&lt;i>Image 22. Automatically generated taper ground plane 3D model&lt;/i>
 &lt;/div>
 &lt;/div>
 &lt;/p>
@@ -84,13 +84,13 @@
 &lt;a href="#parameter-search" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/openems_taper_s_params.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
-&lt;i>S-parameter results of parameterised search of taper ground plane with a hatch width of 150um&lt;/i>
+&lt;i>Figure 6. S-parameter results of parameterised search of taper ground plane with a hatch width of 150um&lt;/i>
 &lt;/div>
 &lt;/div>
 &lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/openems_taper_reflectance.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
-&lt;i>Reflectance results of parameterised search of taper ground plane with a hatch width of 150um&lt;/i>
+&lt;i>Figure 5. Reflectance results of parameterised search of taper ground plane with a hatch width of 150um&lt;/i>
 &lt;/div>
 &lt;/div>
 &lt;/p>
@@ -101,13 +101,13 @@
 &lt;p>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/openems_taper_s_params_overall.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
-&lt;i>S-parameter results of parameterised search of taper ground plane across all parameters&lt;/i>
+&lt;i>Figure 8. S-parameter results of parameterised search of taper ground plane across all parameters&lt;/i>
 &lt;/div>
 &lt;/div>
 &lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/openems_taper_reflectance_overall.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
-&lt;i>Reflectance results of parameterised search of taper ground plane across all parameters&lt;/i>
+&lt;i>Figure 7. Reflectance results of parameterised search of taper ground plane across all parameters&lt;/i>
 &lt;/div>
 &lt;/div>
 &lt;/p>

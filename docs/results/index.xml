@@ -3,7 +3,7 @@
 &lt;a href="#single-board-adapter" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 50%">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/pictures/laptop_photo_single_board.jpg" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
-&lt;i>Single board Oculink adapter installed in laptop&lt;/i>
+&lt;i>Image 28. Single board Oculink adapter installed in laptop&lt;/i>
 &lt;/div>
 &lt;/div>
 &lt;ul>
@@ -14,13 +14,13 @@
 &lt;a href="#flexible-pcb-multi-board-adapter" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 50%">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/pictures/laptop_photo_flex_pcb.jpg" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
-&lt;i>Flexible PCB multi-board Oculink adapter installed in laptop&lt;/i>
+&lt;i>Image 26. Flexible PCB multi-board Oculink adapter installed in laptop&lt;/i>
 &lt;/div>
 &lt;/div>
 &lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 50%">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/pictures/laptop_photo_flex_pcb_with_m2.jpg" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
-&lt;i>Flexible PCB multi-board Oculink adapter and M.2 SSD installed in laptop&lt;/i>
+&lt;i>Image 27. Flexible PCB multi-board Oculink adapter and M.2 SSD installed in laptop&lt;/i>
 &lt;/div>
 &lt;/div>
 &lt;/p>
@@ -34,14 +34,14 @@
 &lt;a href="#aliexpress-pcie-40-adapter" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 50%">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/aliexpress_m2_oculink_pcie4_extension.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
-&lt;i>Aliexpress M.2 Oculink PCIe 4.0 silver plated extension cable&lt;/i>
+&lt;i>Image 25. Aliexpress M.2 Oculink PCIe 4.0 silver plated extension cable&lt;/i>
 &lt;a href="https://www.aliexpress.com/item/1005007486714630.html">(source)&lt;/a>
 &lt;/div>
 &lt;/div>
 &lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 50%">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/pictures/laptop_photo_aliexpress.jpg" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
-&lt;i>Aliexpress PCIe 4.0 Oculink adapter installed in laptop&lt;/i>
+&lt;i>Image 30. Aliexpress PCIe 4.0 Oculink adapter installed in laptop&lt;/i>
 &lt;/div>
 &lt;/div>
 &lt;/p>
@@ -53,7 +53,7 @@
 &lt;a href="#oculink-port" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 50%">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/pictures/laptop_photo_side_port.jpg" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
-&lt;i>Oculink port exposed on laptop&lt;/i>
+&lt;i>Image 29. Oculink port exposed on laptop&lt;/i>
 &lt;/div>
 &lt;/div>
 &lt;ul>
@@ -527,14 +527,51 @@ USB 4 dock->>1080p monitor: HDMI cable&lt;/pre>&lt;ul>
 &lt;li>When eGPU data comes back to CPU it actually goes through the integrated AMD 680m based on copy activity in task manager.&lt;/li>
 &lt;/ul>
 &lt;h2>Flexible PCB and single board design&lt;span class="hx-absolute -hx-mt-20" id="flexible-pcb-and-single-board-design">&lt;/span>
-&lt;a href="#flexible-pcb-and-single-board-design" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;a href="#flexible-pcb-and-single-board-design" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="carousel" key="custom_adapters">
+&lt;div class="carousel-item">
+&lt;div class="responsive-image">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/kicad_single_board_render.png
+" style="max-height: 200px">
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-item">
+&lt;div class="responsive-image">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/kicad_flex_connector_render.png
+" style="max-height: 220px">
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-controls">
+&lt;div class="carousel-button carousel-left hx-shadow">❮&lt;/div>
+&lt;div class="carousel-button carousel-right hx-shadow">❯&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;ul>
 &lt;li>Both the flexible PCB multi-board design and single board design achieved PCIe 3.0 speeds.&lt;/li>
 &lt;li>Their results across all synthetic benchmarks were identical.&lt;/li>
 &lt;li>PCIe 3.0 connection was stable and bandwidth reached theoretical values.&lt;/li>
 &lt;li>PCIe 4.0 could not be achieved at all.&lt;/li>
 &lt;/ul>
-&lt;h2>Aliexpress PCIe 4.0 adapter&lt;span class="hx-absolute -hx-mt-20" id="aliexpress-pcie-40-adapter">&lt;/span>
-&lt;a href="#aliexpress-pcie-40-adapter" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;h2>Aliexpress PCIe 4.0 adapters&lt;span class="hx-absolute -hx-mt-20" id="aliexpress-pcie-40-adapters">&lt;/span>
+&lt;a href="#aliexpress-pcie-40-adapters" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="carousel" key="aliexpress_adapters">
+&lt;div class="carousel-item">
+&lt;div class="responsive-image">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/adtlink_f4c_m2_to_oculink_adapter_photo.png
+">
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-item">
+&lt;div class="responsive-image">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/aliexpress_m2_oculink_pcie4_extension.png
+" style="max-height: 220px">
+&lt;/div>
+&lt;/div>
+&lt;div class="carousel-controls">
+&lt;div class="carousel-button carousel-left hx-shadow">❮&lt;/div>
+&lt;div class="carousel-button carousel-right hx-shadow">❯&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;ul>
+&lt;li>Both the adapters that came with the Adtlink eGPU and the silver plated 12cm adapter reached PCIe 4.0 speeds.&lt;/li>
 &lt;li>PCIe 4.0 connection was stable and bandwidth reached theoretical values.&lt;/li>
 &lt;li>Performance uplift from PCIe 3.0 to PCIe 4.0 in this setup is significant.&lt;/li>
 &lt;li>Bandwidth limit from eGPU to CPU limits the number of frames that can be sent to display.&lt;/li>

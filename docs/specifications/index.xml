@@ -23,7 +23,7 @@
 &lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/pcie_x4_pinout.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
-&lt;i>Image 1. PCIe x4 connector pinout&lt;/i>
+&lt;i>Diagram 1. PCIe x4 connector pinout&lt;/i>
 &lt;a href="https://www.adt.link/download/ADT-Cable-R42SF-specification.html">(source)&lt;/a>
 &lt;/div>
 &lt;/div>
@@ -103,7 +103,7 @@
 &lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/altium_eye_diagram.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
-&lt;i>Image 16. Eye diagram&lt;/i>
+&lt;i>Diagram 4. Eye diagram&lt;/i>
 &lt;a href="https://resources.altium.com/p/what-eye-diagram">(source)&lt;/a>
 &lt;/div>
 &lt;/div></description></item><item><title>M.2 to Oculink</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/specifications/components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/specifications/components/</guid><description>
@@ -115,7 +115,7 @@
 &lt;p>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 75%">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/m2_card_size.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
-&lt;i>Image 2. M.2 card size standards&lt;/i>
+&lt;i>Diagram 2. M.2 card size standards&lt;/i>
 &lt;a href="https://www.unitek-products.com/products/usb3-1-gen2-type-c-to-m-2-ssd-pcie-nvme-enclosure">(source)&lt;/a>
 &lt;/div>
 &lt;/div>
@@ -162,7 +162,7 @@
 &lt;p>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 50%">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/amphenol_oculink_port.jpg" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
-&lt;i>Image 3. Amphenol oculink port&lt;/i>
+&lt;i>Image 1. Amphenol oculink port&lt;/i>
 &lt;a href="https://www.amphenol-cs.com/product-series/oculink.html">(source)&lt;/a>
 &lt;/div>
 &lt;/div>

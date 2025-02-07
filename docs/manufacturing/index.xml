@@ -204,13 +204,13 @@
 &lt;p>&lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 50%">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/pictures/mechanic_ix5_reflow.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
-&lt;i>Mechanic IX5 reflow heating plate&lt;/i>
+&lt;i>Image 23. Mechanic IX5 reflow heating plate&lt;/i>
 &lt;/div>
 &lt;/div>
 &lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="width: 50%">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/ts100_soldering_iron.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
-&lt;i>TS-100 soldering iron&lt;/i>
+&lt;i>Image 24. TS-100 soldering iron&lt;/i>
 &lt;/div>
 &lt;/div>
 &lt;/p>
@@ -224,7 +224,7 @@
 &lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/reflow_profile.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
-&lt;i>Reflow profile&lt;/i>
+&lt;i>Figure 9. Different reflow profiles for lead free solder&lt;/i>
 &lt;a href="https://www.7pcb.com/blog/lead-free-reflow-profile">(source)&lt;/a>
 &lt;/div>
 &lt;/div>
@@ -320,7 +320,7 @@
 &lt;div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="">
 &lt;img loading="lazy" decoding="async" src="https://williamyang98.github.io/oculink_m2_adapter//images/diagrams/kicad_flex_connector_render.png" style="margin-top: 0rem; margin-bottom: 0rem"/>
 &lt;div class="hx-text-center hx-my-2">
-&lt;i>Image 14. Custom M.2 to Oculink adapter with flex connector 3D renders&lt;/i>
+&lt;i>Image 12. Custom M.2 to Oculink adapter with flex connector 3D renders&lt;/i>
 &lt;/div>
 &lt;/div>
 &lt;h3>1. Oculink port board&lt;span class="hx-absolute -hx-mt-20" id="1-oculink-port-board">&lt;/span>
