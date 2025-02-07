@@ -4,7 +4,7 @@
 {{- $images := .Site.Data.images -}}
 {{- $image := index $images $key -}}
 
-<div class="hx-rounded hx-border hx-mb-4 hx-shadow" style="{{ $style | safeCSS }}">
+<div class="responsive-image hx-rounded hx-border hx-mb-4 hx-shadow" style="{{ $style | safeCSS }}">
   <img loading="lazy" decoding="async" src="{{ .Page.Site.BaseURL }}{{ $image.path }}" style="margin-top: 0rem; margin-bottom: 0rem"/>
   <div class="hx-text-center hx-my-2">
     <i>{{ $image.description }}</i>

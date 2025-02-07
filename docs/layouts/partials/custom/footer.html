@@ -1,0 +1,11 @@
+<div class="popup" id="popup-images">
+  <div class="popup-background">
+    <img src="">
+  </div>
+</div>
+<script type="module">
+  import { Popups, ResponsiveImages } from "{{ .Page.Site.BaseURL }}/js/custom.js";
+  let popups = new Popups();
+  let responsive_images = new ResponsiveImages(popups);
+  window.custom = { popups, responsive_images };
+</script>
