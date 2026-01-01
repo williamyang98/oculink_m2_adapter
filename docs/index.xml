@@ -830,15 +830,15 @@
 &lt;tr>
 &lt;td>Read Pageable (GB/s)&lt;/td>
 &lt;td>11.7&lt;/td>
-&lt;td>3.37&lt;/td>
-&lt;td>6.71&lt;/td>
+&lt;td>2.78&lt;/td>
+&lt;td>4.74&lt;/td>
 &lt;td>5.53&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Write Pinned (GB/s)&lt;/td>
 &lt;td>35.2&lt;/td>
-&lt;td>2.78&lt;/td>
-&lt;td>4.74&lt;/td>
+&lt;td>3.37&lt;/td>
+&lt;td>6.71&lt;/td>
 &lt;td>6.84&lt;/td>
 &lt;/tr>
 &lt;tr>
