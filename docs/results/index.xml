@@ -68,6 +68,7 @@
 &lt;th style="width: 8rem">AMD 680M&lt;/th>
 &lt;th style="width: 9rem">AMD 5700XT PCIe3&lt;/th>
 &lt;th style="width: 9rem">AMD 5700XT PCIe4&lt;/th>
+&lt;th style="width: 9rem">Nvidia 5060Ti PCIe4&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
@@ -76,24 +77,28 @@
 &lt;td>34.1&lt;/td>
 &lt;td>3.38&lt;/td>
 &lt;td>6.7&lt;/td>
+&lt;td>6.78&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Read Pageable (GB/s)&lt;/td>
 &lt;td>11.7&lt;/td>
 &lt;td>3.37&lt;/td>
 &lt;td>6.71&lt;/td>
+&lt;td>5.53&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Write Pinned (GB/s)&lt;/td>
-&lt;td>34.1&lt;/td>
-&lt;td>3.38&lt;/td>
-&lt;td>6.7&lt;/td>
+&lt;td>35.2&lt;/td>
+&lt;td>2.78&lt;/td>
+&lt;td>4.74&lt;/td>
+&lt;td>6.84&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Write Pageable (GB/s)&lt;/td>
-&lt;td>11.7&lt;/td>
-&lt;td>3.37&lt;/td>
-&lt;td>6.71&lt;/td>
+&lt;td>13.1&lt;/td>
+&lt;td>2.71&lt;/td>
+&lt;td>4.74&lt;/td>
+&lt;td>6.67&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -101,6 +106,7 @@
 &lt;div class="responsive-image">&lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/aida64_detailed_amd_680m.png">&lt;/div>
 &lt;div class="responsive-image">&lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/aida64_detailed_flex_pcb.png">&lt;/div>
 &lt;div class="responsive-image">&lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/aida64_detailed_amd_5700xt.png">&lt;/div>
+&lt;div class="responsive-image">&lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/aida64_detailed_nvidia_5060ti.png">&lt;/div>
 &lt;/div>
 &lt;h2>3DMark&lt;span class="hx-absolute -hx-mt-20" id="3dmark">&lt;/span>
 &lt;a href="#3dmark" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>
@@ -108,9 +114,10 @@
 &lt;thead>
 &lt;tr>
 &lt;th style="width: 14rem">Name&lt;/th>
-&lt;th style="width: 8rem">AMD 680M&lt;/th>
+&lt;th style="width: 9rem">AMD 680M&lt;/th>
 &lt;th style="width: 9rem">AMD 5700XT PCIe3&lt;/th>
 &lt;th style="width: 9rem">AMD 5700XT PCIe4&lt;/th>
+&lt;th style="width: 9rem">Nvidia 5060Ti PCIe4&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
@@ -119,153 +126,185 @@
 &lt;td>11.2&lt;/td>
 &lt;td>3.53&lt;/td>
 &lt;td>6.39&lt;/td>
+&lt;td>7.22&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Fire Strike&lt;/td>
 &lt;td>6155&lt;/td>
 &lt;td>19512&lt;/td>
 &lt;td>23577&lt;/td>
+&lt;td>29857&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Night Raid&lt;/td>
 &lt;td>23554&lt;/td>
 &lt;td>35831&lt;/td>
 &lt;td>52358&lt;/td>
+&lt;td>51534&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Steel Nomad&lt;/td>
 &lt;td>444&lt;/td>
 &lt;td>1950&lt;/td>
 &lt;td>2030&lt;/td>
+&lt;td>3539&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Steel Nomad Light&lt;/td>
 &lt;td>2308&lt;/td>
 &lt;td>7299&lt;/td>
 &lt;td>8218&lt;/td>
+&lt;td>16101&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Time Spy&lt;/td>
 &lt;td>2762&lt;/td>
 &lt;td>8093&lt;/td>
 &lt;td>9051&lt;/td>
+&lt;td>12884&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Wild Life&lt;/td>
 &lt;td>15622&lt;/td>
 &lt;td>35637&lt;/td>
 &lt;td>54329&lt;/td>
+&lt;td>82375&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Wild Life Extreme&lt;/td>
 &lt;td>4523&lt;/td>
 &lt;td>15497&lt;/td>
 &lt;td>18682&lt;/td>
+&lt;td>30230&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
 &lt;div class="carousel" key="3d_mark">
 &lt;div class="carousel-item inactive">
 &lt;div class="hx-flex">
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/3dmark_pcie_bandwidth_amd_680m.png">
 &lt;/div>
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/3dmark_pcie_bandwidth_flex_pcb.png">
 &lt;/div>
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/3dmark_pcie_bandwidth_amd_5700xt.png">
 &lt;/div>
+&lt;div class="responsive-image" style="width: 25%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/3dmark_pcie_bandwidth_nvidia_5060ti.png">
+&lt;/div>
 &lt;/div>
 &lt;/div>
 &lt;div class="carousel-item inactive">
 &lt;div class="hx-flex">
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/3dmark_fire_strike_amd_680m.png">
 &lt;/div>
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/3dmark_fire_strike_flex_pcb.png">
 &lt;/div>
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/3dmark_fire_strike_amd_5700xt.png">
 &lt;/div>
+&lt;div class="responsive-image" style="width: 25%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/3dmark_fire_strike_nvidia_5060ti.png">
+&lt;/div>
 &lt;/div>
 &lt;/div>
 &lt;div class="carousel-item inactive">
 &lt;div class="hx-flex">
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/3dmark_night_raid_amd_680m.png">
 &lt;/div>
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/3dmark_night_raid_flex_pcb.png">
 &lt;/div>
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/3dmark_night_raid_amd_5700xt.png">
 &lt;/div>
+&lt;div class="responsive-image" style="width: 25%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/3dmark_night_raid_nvidia_5060ti.png">
+&lt;/div>
 &lt;/div>
 &lt;/div>
 &lt;div class="carousel-item inactive">
 &lt;div class="hx-flex">
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/3dmark_steel_nomad_amd_680m.png">
 &lt;/div>
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/3dmark_steel_nomad_flex_pcb.png">
 &lt;/div>
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/3dmark_steel_nomad_amd_5700xt.png">
 &lt;/div>
+&lt;div class="responsive-image" style="width: 25%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/3dmark_steel_nomad_nvidia_5060ti.png">
+&lt;/div>
 &lt;/div>
 &lt;/div>
 &lt;div class="carousel-item inactive">
 &lt;div class="hx-flex">
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/3dmark_steel_nomad_light_amd_680m.png">
 &lt;/div>
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/3dmark_steel_nomad_light_flex_pcb.png">
 &lt;/div>
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/3dmark_steel_nomad_light_amd_5700xt.png">
 &lt;/div>
+&lt;div class="responsive-image" style="width: 25%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/3dmark_steel_nomad_light_nvidia_5060ti.png">
+&lt;/div>
 &lt;/div>
 &lt;/div>
 &lt;div class="carousel-item inactive">
 &lt;div class="hx-flex">
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/3dmark_time_spy_amd_680m.png">
 &lt;/div>
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/3dmark_time_spy_flex_pcb.png">
 &lt;/div>
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/3dmark_time_spy_amd_5700xt.png">
 &lt;/div>
+&lt;div class="responsive-image" style="width: 25%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/3dmark_time_spy_nvidia_5060ti.png">
+&lt;/div>
 &lt;/div>
 &lt;/div>
 &lt;div class="carousel-item inactive">
 &lt;div class="hx-flex">
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/3dmark_wild_life_amd_680m.png">
 &lt;/div>
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/3dmark_wild_life_flex_pcb.png">
 &lt;/div>
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/3dmark_wild_life_amd_5700xt.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 25%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/3dmark_wild_life_nvidia_5060ti.png">
 &lt;/div>
 &lt;/div>
 &lt;/div>
 &lt;div class="carousel-item inactive">
 &lt;div class="hx-flex">
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/3dmark_wild_life_extreme_amd_680m.png">
 &lt;/div>
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/3dmark_wild_life_extreme_flex_pcb.png">
 &lt;/div>
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/3dmark_wild_life_extreme_amd_5700xt.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 25%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/3dmark_wild_life_extreme_nvidia_5060ti.png">
 &lt;/div>
 &lt;/div>
 &lt;/div>
@@ -281,9 +320,10 @@
 &lt;thead>
 &lt;tr>
 &lt;th style="width: 14rem">Name&lt;/th>
-&lt;th style="width: 8rem">AMD 680M&lt;/th>
+&lt;th style="width: 9rem">AMD 680M&lt;/th>
 &lt;th style="width: 9rem">AMD 5700XT PCIe3&lt;/th>
 &lt;th style="width: 9rem">AMD 5700XT PCIe4&lt;/th>
+&lt;th style="width: 9rem">Nvidia 5060Ti PCIe4&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
@@ -292,96 +332,116 @@
 &lt;td>914&lt;/td>
 &lt;td>4611&lt;/td>
 &lt;td>4684&lt;/td>
+&lt;td>5764&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Heaven Extreme&lt;/td>
 &lt;td>747&lt;/td>
 &lt;td>2845&lt;/td>
 &lt;td>3342&lt;/td>
+&lt;td>5088&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Superposition Medium&lt;/td>
 &lt;td>4214&lt;/td>
 &lt;td>13345&lt;/td>
 &lt;td>16527&lt;/td>
+&lt;td>21661&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Superposition High&lt;/td>
 &lt;td>3172&lt;/td>
 &lt;td>10532&lt;/td>
 &lt;td>12130&lt;/td>
+&lt;td>18896&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Superposition Extreme&lt;/td>
 &lt;td>1425&lt;/td>
 &lt;td>4659&lt;/td>
 &lt;td>5027&lt;/td>
+&lt;td>8697&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
 &lt;div class="carousel" key="unigine">
 &lt;div class="carousel-item inactive">
 &lt;div class="hx-flex">
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/unigine_valley_extreme_amd_680m.png">
 &lt;/div>
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/unigine_valley_extreme_flex_pcb.png">
 &lt;/div>
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/unigine_valley_extreme_amd_5700xt.png">
 &lt;/div>
+&lt;div class="responsive-image" style="width: 25%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/unigine_valley_extreme_nvidia_5060ti.png">
+&lt;/div>
 &lt;/div>
 &lt;/div>
 &lt;div class="carousel-item inactive">
 &lt;div class="hx-flex">
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/unigine_heaven_extreme_amd_680m.png">
 &lt;/div>
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/unigine_heaven_extreme_flex_pcb.png">
 &lt;/div>
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/unigine_heaven_extreme_amd_5700xt.png">
 &lt;/div>
+&lt;div class="responsive-image" style="width: 25%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/unigine_heaven_extreme_nvidia_5060ti.png">
+&lt;/div>
 &lt;/div>
 &lt;/div>
 &lt;div class="carousel-item inactive">
 &lt;div class="hx-flex">
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/unigine_superposition_medium_amd_680m.png">
 &lt;/div>
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/unigine_superposition_medium_flex_pcb.png">
 &lt;/div>
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/unigine_superposition_medium_amd_5700xt.png">
 &lt;/div>
+&lt;div class="responsive-image" style="width: 25%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/unigine_superposition_medium_nvidia_5060ti.png">
+&lt;/div>
 &lt;/div>
 &lt;/div>
 &lt;div class="carousel-item inactive">
 &lt;div class="hx-flex">
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/unigine_superposition_high_amd_680m.png">
 &lt;/div>
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/unigine_superposition_high_flex_pcb.png">
 &lt;/div>
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/unigine_superposition_high_amd_5700xt.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 25%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/unigine_superposition_high_nvidia_5060ti.png">
 &lt;/div>
 &lt;/div>
 &lt;/div>
 &lt;div class="carousel-item inactive">
 &lt;div class="hx-flex">
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/unigine_superposition_extreme_amd_680m.png">
 &lt;/div>
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/unigine_superposition_extreme_flex_pcb.png">
 &lt;/div>
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/unigine_superposition_extreme_amd_5700xt.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 25%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/unigine_superposition_extreme_nvidia_5060ti.png">
 &lt;/div>
 &lt;/div>
 &lt;/div>
@@ -397,9 +457,10 @@
 &lt;thead>
 &lt;tr>
 &lt;th style="width: 14rem">Name&lt;/th>
-&lt;th style="width: 8rem">AMD 680M&lt;/th>
+&lt;th style="width: 9rem">AMD 680M&lt;/th>
 &lt;th style="width: 9rem">AMD 5700XT PCIe3&lt;/th>
 &lt;th style="width: 9rem">AMD 5700XT PCIe4&lt;/th>
+&lt;th style="width: 9rem">Nvidia 5060Ti PCIe4&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
@@ -408,77 +469,93 @@
 &lt;td>1797&lt;/td>
 &lt;td>6513&lt;/td>
 &lt;td>8015&lt;/td>
+&lt;td>11428&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Donut Vulkan&lt;/td>
 &lt;td>1370&lt;/td>
 &lt;td>6037&lt;/td>
 &lt;td>7453&lt;/td>
+&lt;td>11959&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Knot OpenGL&lt;/td>
 &lt;td>618&lt;/td>
 &lt;td>2208&lt;/td>
 &lt;td>2226&lt;/td>
+&lt;td>4151&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Knot Vulkan&lt;/td>
 &lt;td>641&lt;/td>
 &lt;td>3063&lt;/td>
 &lt;td>3393&lt;/td>
+&lt;td>6118&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
 &lt;div class="carousel" key="furmark2">
 &lt;div class="carousel-item inactive">
 &lt;div class="hx-flex">
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/furmark2_donut_gl_amd_680m.png">
 &lt;/div>
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/furmark2_donut_gl_flex_pcb.png">
 &lt;/div>
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/furmark2_donut_gl_amd_5700xt.png">
 &lt;/div>
+&lt;div class="responsive-image" style="width: 25%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/furmark2_donut_gl_nvidia_5060ti.png">
+&lt;/div>
 &lt;/div>
 &lt;/div>
 &lt;div class="carousel-item inactive">
 &lt;div class="hx-flex">
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/furmark2_donut_vk_amd_680m.png">
 &lt;/div>
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/furmark2_donut_vk_flex_pcb.png">
 &lt;/div>
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/furmark2_donut_vk_amd_5700xt.png">
 &lt;/div>
+&lt;div class="responsive-image" style="width: 25%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/furmark2_donut_vk_nvidia_5060ti.png">
+&lt;/div>
 &lt;/div>
 &lt;/div>
 &lt;div class="carousel-item inactive">
 &lt;div class="hx-flex">
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/furmark2_knot_gl_amd_680m.png">
 &lt;/div>
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/furmark2_knot_gl_flex_pcb.png">
 &lt;/div>
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/furmark2_knot_gl_amd_5700xt.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 25%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/furmark2_knot_gl_nvidia_5060ti.png">
 &lt;/div>
 &lt;/div>
 &lt;/div>
 &lt;div class="carousel-item inactive">
 &lt;div class="hx-flex">
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/furmark2_knot_vk_amd_680m.png">
 &lt;/div>
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/furmark2_knot_vk_flex_pcb.png">
 &lt;/div>
-&lt;div class="responsive-image" style="width: 33%">
+&lt;div class="responsive-image" style="width: 25%">
 &lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/furmark2_knot_vk_amd_5700xt.png">
+&lt;/div>
+&lt;div class="responsive-image" style="width: 25%">
+&lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/furmark2_knot_vk_nvidia_5060ti.png">
 &lt;/div>
 &lt;/div>
 &lt;/div>
@@ -492,10 +569,11 @@
 &lt;a href="#gpu-z" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th style="width: 14rem">Name&lt;/th>
-&lt;th style="width: 8rem">AMD 680M&lt;/th>
+&lt;th style="width: 11rem">Name&lt;/th>
+&lt;th style="width: 9rem">AMD 680M&lt;/th>
 &lt;th style="width: 9rem">AMD 5700XT PCIe3&lt;/th>
 &lt;th style="width: 9rem">AMD 5700XT PCIe4&lt;/th>
+&lt;th style="width: 9rem">Nvidia 5060Ti PCIe4&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
@@ -504,6 +582,7 @@
 &lt;td>Gen 4.0 x 16&lt;/td>
 &lt;td>Gen 3.0 x 4&lt;/td>
 &lt;td>Gen 4.0 x 4&lt;/td>
+&lt;td>Gen 4.0 x 4&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -511,6 +590,7 @@
 &lt;div class="responsive-image">&lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/gpuz_amd_680m.png">&lt;/div>
 &lt;div class="responsive-image">&lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/gpuz_flex_pcb.png">&lt;/div>
 &lt;div class="responsive-image">&lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/gpuz_amd_5700xt.png">&lt;/div>
+&lt;div class="responsive-image">&lt;img src="https://williamyang98.github.io/oculink_m2_adapter/images/benchmarks/gpuz_nvidia_5060ti.png">&lt;/div>
 &lt;/div></description></item><item><title>Discussion</title><link>https://williamyang98.github.io/oculink_m2_adapter/docs/results/discussion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://williamyang98.github.io/oculink_m2_adapter/docs/results/discussion/</guid><description>
 &lt;h2>Display setup&lt;span class="hx-absolute -hx-mt-20" id="display-setup">&lt;/span>
 &lt;a href="#display-setup" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;pre class="mermaid hx-mt-6">sequenceDiagram;
