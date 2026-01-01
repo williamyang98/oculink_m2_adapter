@@ -6,9 +6,10 @@
   <thead>
     <tr>
       <th style="width: 14rem">Name</th>
-      <th style="width: 8rem">AMD 680M</th>
+      <th style="width: 9rem">AMD 680M</th>
       <th style="width: 9rem">AMD 5700XT PCIe3</th>
       <th style="width: 9rem">AMD 5700XT PCIe4</th>
+      <th style="width: 9rem">Nvidia 5060Ti PCIe4</th>
     </tr>
   </thead>
   <tbody>
@@ -18,6 +19,7 @@
       <td>{{ .amd_680m.score }}</td>
       <td>{{ .amd_5700xt_pcie3.score }}</td>
       <td>{{ .amd_5700xt_pcie4.score }}</td>
+      <td>{{ .nvidia_5060ti_pcie4.score }}</td>
     </tr>
     {{ end }}
   </tbody>

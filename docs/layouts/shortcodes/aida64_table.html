@@ -9,6 +9,7 @@
       <th style="width: 8rem">AMD 680M</th>
       <th style="width: 9rem">AMD 5700XT PCIe3</th>
       <th style="width: 9rem">AMD 5700XT PCIe4</th>
+      <th style="width: 9rem">Nvidia 5060Ti PCIe4</th>
     </tr>
   </thead>
   <tbody>
@@ -17,24 +18,28 @@
       <td>{{ $rows.amd_680m.read_pinned }}</td>
       <td>{{ $rows.amd_5700xt_pcie3.read_pinned }}</td>
       <td>{{ $rows.amd_5700xt_pcie4.read_pinned }}</td>
+      <td>{{ $rows.nvidia_5060ti_pcie4.read_pinned }}</td>
     </tr>
     <tr>
       <td>Read Pageable (GB/s)</td>
       <td>{{ $rows.amd_680m.read_pageable }}</td>
       <td>{{ $rows.amd_5700xt_pcie3.read_pageable }}</td>
       <td>{{ $rows.amd_5700xt_pcie4.read_pageable }}</td>
+      <td>{{ $rows.nvidia_5060ti_pcie4.read_pageable }}</td>
     </tr>
     <tr>
       <td>Write Pinned (GB/s)</td>
-      <td>{{ $rows.amd_680m.read_pinned }}</td>
-      <td>{{ $rows.amd_5700xt_pcie3.read_pinned }}</td>
-      <td>{{ $rows.amd_5700xt_pcie4.read_pinned }}</td>
+      <td>{{ $rows.amd_680m.write_pinned }}</td>
+      <td>{{ $rows.amd_5700xt_pcie3.write_pinned }}</td>
+      <td>{{ $rows.amd_5700xt_pcie4.write_pinned }}</td>
+      <td>{{ $rows.nvidia_5060ti_pcie4.write_pinned }}</td>
     </tr>
     <tr>
       <td>Write Pageable (GB/s)</td>
-      <td>{{ $rows.amd_680m.read_pageable }}</td>
-      <td>{{ $rows.amd_5700xt_pcie3.read_pageable }}</td>
-      <td>{{ $rows.amd_5700xt_pcie4.read_pageable }}</td>
+      <td>{{ $rows.amd_680m.write_pageable }}</td>
+      <td>{{ $rows.amd_5700xt_pcie3.write_pageable }}</td>
+      <td>{{ $rows.amd_5700xt_pcie4.write_pageable }}</td>
+      <td>{{ $rows.nvidia_5060ti_pcie4.write_pageable }}</td>
     </tr>
   </tbody>
 </table>
@@ -43,5 +48,6 @@
   <div class="responsive-image"><img src="{{ $baseurl }}/{{ $rows.amd_680m.path }}"></div>
   <div class="responsive-image"><img src="{{ $baseurl }}/{{ $rows.amd_5700xt_pcie3.path }}"></div>
   <div class="responsive-image"><img src="{{ $baseurl }}/{{ $rows.amd_5700xt_pcie4.path }}"></div>
+  <div class="responsive-image"><img src="{{ $baseurl }}/{{ $rows.nvidia_5060ti_pcie4.path }}"></div>
 </div>
 

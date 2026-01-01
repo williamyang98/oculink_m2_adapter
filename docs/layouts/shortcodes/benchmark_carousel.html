@@ -7,14 +7,17 @@
   {{ range $rows }}
   <div class="carousel-item inactive">
     <div class="hx-flex">
-      <div class="responsive-image" style="width: 33%">
+      <div class="responsive-image" style="width: 25%">
         <img src="{{ $baseurl }}/{{ .amd_680m.path }}">
       </div>
-      <div class="responsive-image" style="width: 33%">
+      <div class="responsive-image" style="width: 25%">
         <img src="{{ $baseurl }}/{{ .amd_5700xt_pcie3.path }}">
       </div>
-      <div class="responsive-image" style="width: 33%">
+      <div class="responsive-image" style="width: 25%">
         <img src="{{ $baseurl }}/{{ .amd_5700xt_pcie4.path }}">
+      </div>
+      <div class="responsive-image" style="width: 25%">
+        <img src="{{ $baseurl }}/{{ .nvidia_5060ti_pcie4.path }}">
       </div>
     </div>
   </div>
